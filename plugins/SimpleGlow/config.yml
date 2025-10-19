@@ -1,0 +1,65 @@
+#
+# Settings
+#
+sound: 'BLOCK_ANVIL_USE'
+color-sound: 'BLOCK_SHULKER_BOX_OPEN'
+disable-message-feedback: true
+toggle-sound: true
+reload-sound: true
+on-join-disable: false
+rainbow-speed: 20
+#
+# Messages
+#
+prefix: '&b&lSimpleGlow'
+no-permission: 'You do not have permission to run this command!'
+no-color-permission: 'You do not have permission to use this color!'
+text-color: '&b'
+reload: 'Configuration Reloaded'
+enable-glow-message: 'Glow has been enabled'
+disable-glow-message: 'Glow has been disabled'
+no-color-permission: 'You do not have permission to use this color!'
+gui-name: '&7&lGlow GUI'
+gui-glow-toggle: 'You do not have permission to toggle glowing'
+on-join-message: 'Glowing has been disabled'
+enable-glow-others: 'You enabled glowing for'
+disable-glow-others: 'You disabled glowing for'
+glow-message:
+- ''
+- '       &7✦  &b&lSimpleGlow Help Commands &7✦'
+- ''
+- '&b/glow - the base command for SimpleGlow'
+- '&b/glow toggle - enables/disables glowing'
+- '&b/glow player (name) - enables/disables glowing for others'
+- '&b/glow gui - loads the glow gui'
+- '&b/glow reload - reloads the config'
+- ''
+- '  &bSimpleGlow v1.9 created by RandomTomato'
+- ''
+#
+# Items
+#
+disable-name: '&c&lDisable Glowing'
+disable-lore:
+- '&7Click to disable glowing'
+enable-name: '&a&lEnable Glowing'
+enable-lore:
+- '&7Click to enable glowing'
+hasPermission:
+- '&7Permission: &a&lYes&7'
+noPermission:
+- '&7Permission &c&lNo&7'
+red: '&c&lRed'
+orange: '&6&lOrange'
+yellow: '&e&lYellow'
+green: '&a&lGreen'
+darkgreen: '&2&lDark Green'
+aqua: '&b&lAqua'
+cyan: '&3&lCyan'
+blue: '&1&lBlue'
+pink: '&d&lPink'
+purple: '&5&lPurple'
+white: '&f&lWhite'
+lightgray: '&7&lLight Gray'
+gray: '&8&lGray'
+black: '&0&lBlack'

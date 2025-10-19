@@ -1,0 +1,28 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Sherwin1605",
+      "uniqueId": "fe86a590-ac58-32ad-abfc-2189b9705865"
+    },
+    "time": 1760787833230,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/C44QGXgH7b"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Sherwin1605",
+      "uniqueId": "fe86a590-ac58-32ad-abfc-2189b9705865"
+    },
+    "time": 1760787823266,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/Rjdbh3cgCt"
+    }
+  }
+]

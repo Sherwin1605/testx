@@ -1,0 +1,30 @@
+# Sample Config below
+#
+# Globals
+# global_pre: ''
+# global_suf: ''
+# stack_icon: 'x'
+#
+# Enable or disable the plugin
+# enabled: true
+#
+# Displayed name parts:
+#
+# Item Name = #name#
+# Global Prefix: #pre#
+# Global Suffix: #suf#
+# 
+# Default is 'x', this is the little indicator before the stack size. ex. if there's a stack of 5 apples, it will appear as "Apple x5"
+# IMPORTANT: The plugin will automatically add a space before the stackicon to separate it from the item name.
+# Stack Icon: #stackicon#
+#
+# If item is stacked by a clear lagg plugin, it will show the number of items stacked
+# Stack Size: #stacksize#
+#
+# Add colors here
+# display_format: '#pre##name##suf#&6#stackicon##stacksize#'
+global_pre: ''
+global_suf: ''
+stack_icon: 'x'
+enabled: true
+display_format: '#name#&6#stackicon##stacksize#'

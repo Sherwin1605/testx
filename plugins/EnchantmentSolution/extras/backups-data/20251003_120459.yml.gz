@@ -1,0 +1,14 @@
+# +----------------------------------------------------+ #
+# <                Enchantment Solution                > #
+# <                     Plugin by                      > #
+# <                   crashtheparty                    > #
+# +----------------------------------------------------+ #
+
+
+rpg: 
+    0: 
+        player: 'fe86a590-ac58-32ad-abfc-2189b9705865'
+        level: 0
+        experience: '0'
+        enchants: []
+

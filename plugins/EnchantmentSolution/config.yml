@@ -1,0 +1,255 @@
+# +----------------------------------------------------+ #
+# <                Enchantment Solution                > #
+# <                     Plugin by                      > #
+# <                   crashtheparty                    > #
+# +----------------------------------------------------+ #
+
+
+enchanting_table: 
+
+    # Whether to use the custom enchanting table gui
+    # This will always be true if level_fifty is true
+    custom_gui: false
+
+    # Whether to use the level fifty system of enchantments
+    level_fifty: false
+
+    # If players need to insert lapis into the custom table for it to work
+    lapis_in_table: true
+
+    # Resets enchantments in enchanting table whenever the server is reloaded
+    # Setting this to false means the only ways to reset enchantments are through /esreset and enchanting an item
+    reset_on_reload: true
+anvil: 
+
+    # Whether to use the custom anvil gui
+    custom_gui: false
+
+    # Greater numbers allow more anvil uses
+    level_divisor: 999
+
+    # Allow default use of anvil GUI via option at bottom right of custom GUI
+    # Only used when custom_gui is true
+    # Should only be true if anvil is used for custom recipes
+    default_use: false
+
+    # The highest repair level that will be allowed in the anvil
+    # Will show 'Too Expensive to Repair' if using above 39 and using the vanilla GUI
+    max_repair_level: 999
+
+    # The maximum repair cost an item can have
+    # Repair cost increases on an item every time it is repaired in an anvil
+    # This is NOT the same cost as what is displayed in the anvil because that also includes the cost of adding enchantments, repairing, renaming, etc.
+    repair_cost_limit: 0
+
+    # Whether the final repair level should be based on the enchantments on the item or not
+    # When true, the repair cost of the item will not be used or incremented, and the item's cost is only based on repairing the item and the enchantments on the item
+    # Cost increases based on an enchantment's level and rarity
+    repair_from_final: false
+
+    # The anvil will be damaged while using it - normal vanilla behavior on true
+    damage: true
+
+    # Whether players can use the custom rename without a permission
+    rename: true
+grindstone: 
+
+    # Whether to use the custom grindstone gui
+    # Will always use the custom gui in 1.13.2 and below
+    custom_gui: true
+
+    # Whether to use the custom grindstone gui in 1.13.2 and earlier
+    # Will always be false above 1.13.2
+    use_legacy: false
+
+    # Use the grindstone to add enchantments from items to books
+    # Only used when custom_gui is true
+    take_enchantments: true
+
+    # When grindstone takes enchantments, set repair cost of the generated book to the item used's repair cost
+    set_repair_cost: true
+
+    # When grindstone takes enchantments, destroy the item used
+    destroy_take_item: true
+
+# Max enchantments on each item. 0 allows infinite
+max_enchantments: 0
+
+# Update any enchantments generated in EnchantmentSolutionLegacy
+update_legacy_enchantments: false
+
+# Uses the vanilla Enchanted Books rather than Books to store enchantments
+use_enchanted_books: false
+
+# How disabling an enchantment in enchantments.yml or enchantments_advanced.yml will work
+# Options:
+# vanish - removes enchantment from items
+# visible - keeps enchantment on item, but custom effects will not work and anvil will remove enchant
+# repairable - same as above but anvil will not remove enchant
+disable_enchant_method: 'visible'
+
+# Items will drop in the default Minecraft way rather than drop straight to the ground
+# May cause issues with items flying away
+drop_items_naturally: true
+
+# The default language of the language file
+language: 'en_us'
+
+# The yml language file
+language_file: 'language.yml'
+trades: 
+
+    # Allow custom and/or high level enchants to appear in villager trades
+    villager: true
+
+    # Allow custom and/or high level enchants to appear in piglin bartering loot
+    piglin: true
+
+# Show helpful comments in the config files
+use_comments: true
+
+# All protection types conflict with each other
+protection_conflicts: true
+
+# Modify where custom enchantments will be in the item's lore
+# - top: At the top of the lore right under normal enchantments
+# - bottom: At the very bottom of the lore
+# - unset: Enchantments will be placed whereever they are (can change randomly when trying to fix them)
+lore_location: 'top'
+version: 
+
+    # Check github for plugin releases (available on github and spigot)
+    get_latest: true
+
+    # Check github for plugin experimental versions (available only on github)
+    get_experimental: false
+wiki: 
+
+    # Shows the wikipedia page to the user on login
+    on_login: true
+
+    # Shows the wikipedia page to the user on a timer
+    on_timer: false
+
+    # The number of seconds between when users should be alerted to the wiki
+    timer_seconds: 14400
+
+    # The URL to the wiki - the default is the normal EnchantmentSolution wiki
+    url: 'https://bit.ly/2N54NzC'
+loots: 
+    mobs: 
+
+        # Allow custom and/or high level enchantments to spawn on mobs
+        use: true
+
+        # Modify types of enchantments generated by setting the minimum amount of bookshelves
+        bookshelves: 0
+
+        # Modify types of enchantments generated by setting the minimum lapis level
+        levels: 0
+    fishing: 
+
+        # Allow custom and/or high level enchantments to appear while fishing
+        use: true
+        bookshelves: 0
+        levels: 0
+    chests: 
+
+        # Allow custom and/or high level enchants to spawn in chests
+        use: true
+        end_city_treasure: 
+            bookshelves: 15
+            levels: 3
+        simple_dungeon: 
+            bookshelves: 0
+            levels: 0
+        shipwreck_supply: 
+            bookshelves: 0
+            levels: 0
+        woodland_mansion: 
+            bookshelves: 10
+            levels: 1
+        stronghold_library: 
+            bookshelves: 10
+            levels: 1
+        stronghold_crossing: 
+            bookshelves: 10
+            levels: 1
+        stronghold_corridor: 
+            bookshelves: 10
+            levels: 1
+        underwater_ruin_big: 
+            bookshelves: 0
+            levels: 0
+        underwater_ruin_small: 
+            bookshelves: 0
+            levels: 0
+        pillager_outpost: 
+            bookshelves: 10
+            levels: 1
+        bastion_bridge: 
+            bookshelves: 10
+            levels: 2
+        bastion_hoglin_stable: 
+            bookshelves: 10
+            levels: 2
+        bastion_other: 
+            bookshelves: 10
+            levels: 2
+        bastion_treasure: 
+            bookshelves: 12
+            levels: 3
+        ruined_portal: 
+            bookshelves: 6
+            levels: 1
+
+    # If an item in a chest, villager trade, etc. spawns with no enchantments, put no enchantments on the item.
+    # If set to false, will put the original enchantments generated through vanilla Minecraft on the item.
+    allow_no_enchantments: false
+
+# What extra gametypes should be applied to the plugin.
+# MINIGAME: Enchantments are given through a special inventory. Customize with minigame.yml.
+#     Clicking books over enchantable items will anvil them.
+# RPG: Only certain enchantments are enabled by default.
+#     Using enchantments will increase your level to buy new enchantments and levels.
+# HARD: Not implemented fully. A certain percentage of mobs will spawn with increased health.
+gametypes: []
+
+
+# Whether enchantments like Telepathy and Height++ will spawn particles around broken blocks.
+# May cause large amounts of lag with heigher levels of Height++ and Width++.
+use_particles: true
+
+# Whether enchantments like Telepathy and Height++ will play sounds for broken blocks.
+play_sounds: true
+
+# Print usage to player when getting a command wrong.
+# Only works for commands for which they have permission.
+print_usage: true
+debug: 
+
+    # Whether debug messages will appear as information messages in the console
+    # These messages and all other types of messages will appear in debug.yml after using /esdebug
+    send: false
+multi_block: 
+
+    # Whether the Height/Width/Depth++ enchantments should work asynchronously
+    # This increases peformance but nerfs those enchantments slightly
+    async: true
+
+    # Tests for Height/Width/Depth to improve performance and reliability
+    testing: false
+
+    # When HWD is running and may cause lag, HWD will not run for this amount of ticks
+    # This is to keep the server running as smooth as possible
+    delay_on_timeout: 5
+
+    # Whether the async will only check basic block faces (North, South, East, West, Up, Down) or all faces.
+    all_faces: false
+    blocks_per_tick: 
+
+        # The maximum blocks broken per tick per player using Height/Width/Depth++
+        player: 30
+
+        # The maximum blocks broken per tick globally using Height/Width/Depth++
+        global: 250

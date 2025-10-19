@@ -1,0 +1,286 @@
+# +----------------------------------------------------+ #
+# <                Enchantment Solution                > #
+# <                     Plugin by                      > #
+# <                   crashtheparty                    > #
+# +----------------------------------------------------+ #
+
+
+
+# The type of GUI to use for the Minigame Enchanting Table.
+# FAST: List of major enchanting types to enchant items.
+# MONDAYS: List of level 1 enchantments on books to combine quickly.
+# CUSTOM: Custom GUI with combinations of the two systems above and more.
+type: 'FAST'
+
+# Allow players to combine enchantments using the inventory and not an actual anvil.
+quick_anvil: true
+fast: 
+
+    # Override the default enchantment cost to the one set by 'fast.enchant_costs'.
+    override_enchantment_cost: false
+    enchant_costs: 
+
+        # Which costs will be used by ES for a player to buy the item.
+        # level: The player's experience level.
+        # lapis: The lapis lazuli a player has.
+        # economy: The money the player has using a Vault Economy plugin.
+        use: 
+        - 'level'
+        - 'lapis'
+        - 'economy'
+
+
+        # The experience level cost of enchanting an item.
+        level: 1
+
+        # The lapis lazuli a player must have in their inventory to enchant an item.
+        lapis: 0
+
+        # The Vault economy cost of enchanting an item.
+        economy: 0
+
+    # Override the default anvil cost to the one set by 'fast.anvil_level_cost'.
+    override_anvil_cost: false
+
+    # Cost to anvil any item.
+    anvil_level_cost: 1
+    random_bookshelves: false
+mondays: 
+    override_anvil_cost: true
+    anvil_level_cost: 0
+    enchantments: 
+        0: 
+            enchantment: 'protection'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                level: 5
+                lapis: 0
+                economy: 0
+        1: 
+            enchantment: 'sharpness'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                level: 5
+                lapis: 0
+                economy: 0
+        10: 
+            enchantment: 'tank'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                level: 10
+                lapis: 0
+                economy: 0
+        11: 
+            enchantment: 'RandomEnchant'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                level: 10
+                lapis: 0
+                economy: 0
+        2: 
+            enchantment: 'feather_falling'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                level: 5
+                lapis: 0
+                economy: 0
+        3: 
+            enchantment: 'power'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                level: 5
+                lapis: 0
+                economy: 0
+        4: 
+            enchantment: 'unbreaking'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                level: 5
+                lapis: 0
+                economy: 0
+        5: 
+            enchantment: 'luck_of_the_sea'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                level: 5
+                lapis: 0
+                economy: 0
+        6: 
+            enchantment: 'brine'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                level: 10
+                lapis: 0
+                economy: 0
+        7: 
+            enchantment: 'life'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                level: 15
+                lapis: 0
+                economy: 0
+        8: 
+            enchantment: 'gung_ho'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                level: 15
+                lapis: 0
+                economy: 0
+        9: 
+            enchantment: 'quick_strike'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                level: 10
+                lapis: 0
+                economy: 0
+custom: 
+
+    # The paging system to be used.
+    # Can only be 7, 9, 14, 18, 21, 27, 28, or 36.
+    paging: 28
+    items: 
+        first: 
+            material: 
+                show: 'diamond_sword'
+                enchant: 'diamond_sword'
+            type: 'enchantment'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                use_level_cost_increase: false
+                use_lapis_cost_increase: false
+                use_economy_cost_increase: false
+                level: 5
+                extra_level_cost_per_use: 1
+                max_level_cost: 0
+                lapis: 5
+                extra_lapis_cost_per_use: 1
+                max_lapis_cost: 0
+                economy: 0
+                extra_economy_cost_per_use: 0
+                max_economy_cost: 0
+            books: 
+                min: 0
+                max: 23
+            levels: 
+                min: 0
+                max: 5
+            enchantments: 
+            - 'minecraft+sharpness 1'
+
+            slot: 1
+        second: 
+            material: 
+                show: 'enchanted_book'
+                enchant: 'book'
+            type: 'random'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                use_level_cost_increase: true
+                use_lapis_cost_increase: false
+                use_economy_cost_increase: false
+                level: 5
+                extra_level_cost_per_use: 1
+                max_level_cost: 0
+                lapis: 5
+                extra_lapis_cost_per_use: 1
+                max_lapis_cost: 0
+                economy: 0
+                extra_economy_cost_per_use: 0
+                max_economy_cost: 0
+            books: 
+                min: 23
+                max: 23
+            levels: 
+                min: 5
+                max: 5
+            enchantments: []
+
+            slot: 3
+        third: 
+            material: 
+                show: 'enchanted_book'
+                enchant: 'book'
+            type: 'random_multi_bookshelf'
+            costs: 
+                use: 
+                - 'level'
+                - 'lapis'
+                - 'economy'
+
+                use_level_cost_increase: true
+                use_lapis_cost_increase: false
+                use_economy_cost_increase: false
+                level: 5
+                extra_level_cost_per_use: 1
+                max_level_cost: 10
+                lapis: 5
+                extra_lapis_cost_per_use: 1
+                max_lapis_cost: 0
+                economy: 0
+                extra_economy_cost_per_use: 0
+                max_economy_cost: 0
+            books: 
+                min: 0
+                max: 23
+            levels: 
+                min: 0
+                max: 5
+            enchantments: []
+
+            slot: 5

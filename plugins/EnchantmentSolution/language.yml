@@ -1,0 +1,1206 @@
+# +----------------------------------------------------+ #
+# <                Enchantment Solution                > #
+# <                     Plugin by                      > #
+# <                   crashtheparty                    > #
+# +----------------------------------------------------+ #
+
+
+starter: '&8[&dEnchantment Solution&8]'
+wiki: 
+    message: '&fLook for more information on &dEnchantment Solution&f at: '
+anvil: 
+    name: '&9Anvil'
+    mirror: '&f'
+    rename: '&aRename Items'
+    rename-requires-permission: '&cYou do not have permission to use this!'
+    repair-cost: '&aLevel Cost: &9%repairCost%'
+    repair-cost-high: '&cLevel Cost: &9%repairCost%'
+    cannot-repair: '&cLevel Cost: &9Cannot Repair This Item'
+    combine: '&aCombine Items'
+    cannot-combine: '&cCan''t Combine Items'
+    cannot-rename: '&cCan''t Rename Items'
+    message-cannot-combine: 'You may not combine these items!'
+    message-cannot-combine-cost: 'You may not combine these items! Level cost is %level%!'
+    legacy-gui: '&fOpen Minecraft Anvil GUI'
+    legacy-gui-warning: 
+    - '&cCustom enchantments will not work in this anvil and may be lost.'
+    - '&cOther custom features will also not work.'
+    - '&cThis should only be used for custom recipes.'
+
+    legacy-gui-open: '&fMinecraft anvil GUI will open on next anvil click.'
+    legacy-gui-close: '&fMinecraft anvil GUI closed.'
+table: 
+    name: '&9Enchantment Table'
+    black-mirror: '&f'
+    red-mirror: '&f'
+    blue-mirror: '&1Add Lapis'
+    blue-mirror-lore: 
+    - '&9Select lapis in your inventory to add it to this slot.'
+
+    instructions-title: 'Enchantment Instructions.'
+    instructions: 
+    - 'Click items to put them on the left.'
+    - 'You will see a list of books with the level'
+    - ' and lapis needed to enchant.'
+    - 'Select a book to enchant.'
+    - 'Select the item again to remove.'
+    - 'You may see up to 4 items at a time.'
+
+    generate-enchants-error: 'There was an error generating enchantments.'
+    enchant-level: 'Level %level% Enchant.'
+    enchant-level-lore: 
+    - 'Lvl Req: %levelReq%.'
+    - 'Lvl Cost: %level%.'
+    - 'Lvls Taken: %levelsTaken%.'
+
+    level-fifty-disabled: 'Level 50 enchantments disabled.'
+    level-fifty-lack: 'Requires 15 bookshelves around table.'
+    lapis-cost-okay: '&aLapis Cost: %cost%'
+    lapis-cost-lack: '&cLapis Cost: %cost%'
+    level-cost-okay: '&aLevel Req: %levelReq%'
+    level-cost-lack: '&cLevel Req: %levelReq%'
+    level-taken-okay: '&aLevels Taken: %levelsTaken%'
+    level-taken-lack: '&cLevel Taken: %levelsTaken%'
+    item-enchant-name: '%name% Level %level% Enchants'
+    enchant-name: '%enchant%...'
+    lack-reqs: 'You do not meet the requirements to enchant this item.'
+    lack-enchants: 'This item does not have enchantments generated.'
+commands: 
+    no-command: '&cThe subcommand %command% does not exist!'
+    no-permission: '&cYou do not have permission to use this command!'
+    no-permission-other: '&cYou do not have permission to use this command on another player!'
+    invalid-level: '%level% is not a valid level. Setting level to 1.'
+    invalid-level-positive-integer: 'Level (%level%) must be a positive integer.'
+    level-too-low: 'Cannot set a negative or 0 level. Setting level to 1.'
+    level-too-high: '%level% is too high of a level. Setting level to %maxLevel%.'
+    invalid-slot: '%slot% is not a valid slot. Setting slot to player''s main hand.'
+    slot-too-low: 'Cannot set a negative slot. Setting slot to player''s main hand.'
+    slot-too-high: '%slot% is too high of a slot. Setting slot to player''s main hand.'
+    invalid-player: '%player% is not a valid player.'
+    add-enchant: 'Enchantment with name %enchant% with level %level% has been added to the item in slot %slot%.'
+    add-enchant-other: 'Enchantment with name %enchant% with level %level% has been added to %give_player%''s item in slot %slot%.'
+    other-added-enchant: 'Player %player% has given the enchantment %enchant% with level %level% to the item in slot %slot%.'
+    cannot-enchant-item: 'Enchantment does not work with this item.'
+    too-many-enchants: 'This item has too many enchantments already.'
+    enchant-fail: 'You must try to enchant an item.'
+    enchant-not-found: 'Enchantment with name %enchant% not found.'
+    enchant-not-specified: 'You must specify an enchantment.'
+    enchant-removed: 'Enchantment with name %enchant% has been removed from the item in slot %slot%.'
+    enchant-removed-other: 'Enchantment with name %enchant% has been removed from %remove_player%''s item in slot %slot%.'
+    other-removed-enchant: 'Player %player% has removed the enchantment %enchant% from the item in slot %slot%.'
+    enchant-remove-from-item: 'Item does not exist.'
+    reload: 'Config files have been reloaded.'
+    enchant-disabled: 'Cannot enchant item with a disabled enchantment.'
+    reset-inventory: 'Closed all custom inventories and reset enchanting table enchantments.'
+    debug: 'Debug information stored in debug.zip'
+    invalid-amount: '%amount% is not a valid amount. Setting amount to 1.'
+    give-book: 'You gave yourself an enchanted book.'
+    give-book-other: 'You gave %give_player% an enchanted book.'
+    give-book-other-multiple: 'You gave %give_player% %amount% enchanted books.'
+    give-book-multiple: 'You gave yourself %amount% enchanted books.'
+    give-book-console: 'Console must specify a valid player to give the book to.'
+    receive-book: '%player% has given you an enchanted book.'
+    receive-book-multiple: '%player% has given you %amount% enchanted books.'
+    fix-enchants: 'You have fixed %fixed_items% enchanted items out of the %total_items% in your inventory. %fixed_item_string%'
+    fix-enchants-other: 'You have fixed %fixed_items% enchanted items out of the %total_items% in %fix_player%''s inventory. %fixed_item_string%'
+    other-fixed-enchants: 'Player %player% has fixed your enchanted items.'
+    fixed-item-string: 'Slot: %slot% Material: %material%'
+    rpg-set-level: 'Set %player%''s ESRPG level to %level%.'
+    specify-level-integer: 'You must specify an integer to set player''s level.'
+    invalid-experience-positive-double: 'Experience (%experience%) must be a positive double.'
+    rpg-set-experience: 'Set %player%''s ESRPG experience to %experience%.'
+    specify-experience-double: 'You must specify a double to set player''s experience.'
+    rpg-level-too-low: 'Cannot set a negative level in ESRPG. Setting level to 0.'
+    remove-rpg-enchantment: 'Removing enchantment %enchantment% from %player%''s ESRPG values.'
+    set-rpg-enchantment: 'Setting enchantment %enchantment% to level %level% for %player%''s ESRPG values.'
+    rpg-invalid-edit: 'RPGEdit can only edit level, experience, and enchantments for players.'
+    item-test: '&aCopy To Clipboard: {%item%}'
+    console-player: 'Console'
+    invalid: 
+        console: 'Console Sender'
+        null-player: '**null**'
+    aliases: 
+        enchant: 
+        - 'e'
+        - 'customenchant'
+        - 'ce'
+        - 'esce'
+
+        enchantunsafe: 
+        - 'eu'
+        - 'customenchantunsafe'
+        - 'esu'
+        - 'ceu'
+        - 'esceu'
+
+        removeenchant: 
+        - 'esr'
+        - 'customenchantremove'
+        - 'er'
+        - 'cer'
+        - 'escer'
+
+        esanvil: 
+        - 'anvil'
+
+        esgrindstone: 
+        - 'grindstone'
+
+        esdebug: 
+        - 'debug'
+
+        esbook: 
+        - 'book'
+        - 'custombook'
+        - 'cb'
+        - 'escb'
+
+        info: 
+        - 'einfo'
+        - 'enchantinfo'
+
+        esreload: 
+        - 'reload'
+
+        esreset: 
+        - 'reset'
+
+        esconfig: 
+        - 'config'
+        - 'esedit'
+        - 'ed'
+
+        configlore: 
+        - 'lore'
+        - 'clore'
+        - 'cl'
+
+        escalc: 
+        - 'calc'
+        - 'calculator'
+        - 'esc'
+
+        eshelp: 
+        - 'help'
+        - 'h'
+
+        esfix: 
+        - 'fix'
+        - 'f'
+
+        esrpg: 
+        - 'rpg'
+
+        rpgstats: 
+        - 'stats'
+        - 'rpgs'
+
+        rpgtop: 
+        - 'top'
+        - 'rpgt'
+
+        rpgedit: 
+        - 'rpge'
+
+        estest: 
+        - 'test'
+
+    descriptions: 
+        enchant: 'Enchants an item for a given player in the given slot.'
+        enchantunsafe: 'Enchants an item for a given player in the given slot. May enchant any item with any level of enchantment.'
+        removeenchant: 'Removes an enchant from item for a given player in the given slot.'
+        esanvil: 'Opens the ES Anvil GUI for yourself.'
+        esgrindstone: 'Opens the ES Grindstone GUI for yourself.'
+        esdebug: 'Generates a debug.yml file and debug.zip file to help the developer debug issues.'
+        esbook: 'Gives a book with a specified enchantment or random enchantments to a given player. ignoreLimits in random enchantments means to not limit to chest enchantments.'
+        info: 'Gets the information for a specified enchantment, or a list of enchantments.'
+        esreload: 'Reloads the server configuration files.'
+        esreset: 'Resets the inventories and enchantment table data for all players.'
+        esconfig: 'Modifies the configuration files in game.'
+        configlore: 'Returns a chat color-formatted string to allow compatibility with other plugins.'
+        escalc: 'Shows the values of enchantability for certain items and enchantments or potential enchantments.'
+        eshelp: 'Shows description and usage of specified command or commands.'
+        esfix: 'Fixes enchantments on items.'
+        esrpg: 'Opens the RPG mode.'
+        rpgstats: 'Gets the statistics from ESRPG for a particular player.'
+        rpgtop: 'Lists the top players on ESRPG.'
+        rpgedit: 'Edit ESRPG values for players.'
+        test: 'Show information on items.'
+    usage: 
+        enchant: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'enchant <enchantment> <level> [player] [slot]'
+        enchantunsafe: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'enchantunsafe <enchantment> <level> [player] [slot]'
+        removeenchant: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'removeenchant <enchantment> [player] [slot]'
+        esanvil: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'esanvil'
+        esgrindstone: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'esgrindstone'
+        esdebug: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'esdebug'
+        esbook: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'esbook <enchantment> <level> [amount] OR book <RandomEnchant/RandomMultiEnchant> [ignoreLimits] [amount]'
+        info: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'info [enchantment/page]'
+        esreload: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'esreload'
+        esreset: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'esreset'
+        esconfig: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'esconfig'
+        configlore: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'configlore enchantment/enchant <enchantment> [level] OR lore string <string...>'
+        escalc: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'escalc'
+        eshelp: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'eshelp [command]'
+        esfix: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'esfix [player]'
+        esrpg: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'esrpg'
+        rpgstats: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'rpgstats [player]'
+        rpgtop: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'rpgtop [page]'
+        rpgedit: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'rpgedit <player> <subcommand> [...]'
+        estest: 
+            main: 'Usage: %usage%\nAliases: %aliases%'
+            string: 'estest [''item'']'
+    help: 
+        commands_page: '&bCommands Page %page%'
+        commands_info_shrink: '&f: %description%'
+    confirm-reload: 
+    - 'You have made changes using /esconfig that have not been saved!'
+    - 'Reloading will prevent these changes from being saved.'
+    - 'Use ''/esreload confirm'' to reload.'
+
+grindstone: 
+    legacy-open: '&aOpen the Grindstone'
+    name: '&9Grindstone'
+    mirror: '&f'
+    combine-lore: '&fRepair the Items and Remove Enchantments'
+    combine: '&aCombine'
+    cannot-combine: '&cCannot Combine'
+    remove-enchants: '&aRemove Enchantments'
+    no-items: '&fNo Items'
+    no-items-lore: 
+    - '&fAdd items by selecting them from your inventory'
+
+    no-enchants: '&fNo Enchantments On Items'
+    no-enchants-lore: 
+    - '&fAdd a second item to repair'
+
+    anvil: '&aOpen the Anvil'
+    switch-to-anvil: '&fGo back to the Anvil inventory'
+    message-cannot-combine: '&cCannot combine these items.'
+    cannot-take-enchantments: '&cLevel Cost: &9%levelCost%'
+    message-cannot-take-enchantments: '&cCannot take the enchantments off this item'
+    take-enchantments: '&aLevel Cost: &9%levelCost%'
+    take-enchantments-lore: 
+    - '&fAll enchantments from the item will go into the book'
+
+calc: 
+    name: '&9Enchantability Calculator'
+    enchantments: '&9%name%'
+    enchantments_lore: 
+    - '&6Enchantability Constant: &3%constant%'
+    - '&6Enchantability Modifier: &3%modifier%'
+
+    pagination: 
+        enchantability_by_level: '&9View Enchantability by Level'
+    info: 
+        constant: '&9Enchantability Constant'
+        constant_lore: 
+        - '&6Current Value: &3%constant%'
+        - '&7Left click to edit with anvil'
+        - '&7Right click to edit in chat'
+
+        modifier: '&9Enchantability Modifier'
+        modifier_lore: 
+        - '&6Current Value: &3%modifier%'
+        - '&7Left click to edit with anvil'
+        - '&7Right click to edit in chat'
+
+        select_enchantment: '&9Select from Enchantment'
+        calculate: '&9Calculate'
+    enchantability_values: 
+        wooden_tools: '&9Wooden Tools and Weapons'
+        golden_tools: '&9Golden Tools and Weapons'
+        stone_tools: '&9Stone Tools and Weapons'
+        iron_tools: '&9Iron Tools and Weapons'
+        diamond_tools: '&9Diamond Tools and Weapons'
+        netherite_tools: '&9Netherite Tools and Weapons'
+        leather_armor: '&9Leather Armor'
+        golden_armor: '&9Golden Armor'
+        chainmail_armor: '&9Chainmail Armor'
+        iron_armor: '&9Iron Armor'
+        diamond_armor: '&9Diamond Armor'
+        netherite_armor: '&9Netherite Armor'
+        other: '&9Books and Other Items'
+    enchantability_lore: 
+    - '&6Resource Enchantability: &3%resource%'
+    - '&6Max Level from Enchantability: &3%max_level%'
+    - '&6Max Enchantability at Level %level%: &3%max_enchantability%'
+
+    by_level: '&9Level %level%'
+    by_level_lore: 
+    - '&6Required Enchantability: &3%constant%+'
+
+    invalid_number: 'Invalid number, setting to 0.'
+    enter_string: 'Enter the string message into the chat.'
+rpg: 
+    name: '&9ESRPG'
+    name_enchantment: '&9ESRPG: &f%enchantment%'
+    name_confirm: '&9Confirm Unlocking %enchantment% %level%'
+    title: '&9ESRPG Info Page &3%page%'
+    instructions: '&9Instructions'
+    instructions_lore: 
+    - '&6All of your currently owned enchantments will show up as enchanted books.'
+    - '&6To add an enchantment level, select the book,'
+    - '&6 then select the levels one at a time on the next page.'
+
+    info: '&9Player Info'
+    info_lore: 
+    - '&6Experience Level: &3%level%'
+    - '&6Experience: &3%experience%'
+    - '&6Points: &3%points% / %total_points%'
+
+    mirror: '&f'
+    enchantments: '&9%name%'
+    enchantments_lore: 
+    - '&6Player Max Level: &3%level%'
+    - '&6Points to Buy Level %level_plus_one%: &3%points%'
+
+    enchantments_lore_unlocked: 
+    - '&6Player Max Level: &3%level%'
+    - '&7Highest level unlocked.'
+
+    enchantment_levels: '&9%name%'
+    enchantment_levels_lore: 
+    - '&6Points for Level %level%: &3%points%'
+    - '&7Left click to buy a higher level.'
+
+    enchantment_levels_lore_unlocked: 
+    - '&7Level unlocked.'
+
+    no-permission: '&7No permission to buy this enchantment!'
+    invalid-enchantment: '&7Invalid enchantment; please contact an administrator.'
+    unlock: 'You have unlocked %enchantment% up to level %level%.'
+    cancel: '&4Cancel'
+    cancel_lore: 
+    - '&7Go back to the last screen.'
+
+    confirm: '&aConfirm'
+    confirm_lore: 
+    - '&6Required Points: &3%total_points%'
+    - '&6Will Unlock: &3%enchantment% &7at level &3%level%&7.'
+
+    top_bar: 
+        title: '&aESRPG Level &f%level% &7(&f%experience%/%next_experience%&7)'
+        title_level_up: '&aESRPG &6Level Up! &aLevel &f%level% &7(&f%experience%/%next_experience%&7)'
+    level_up_points: '&6Gained &f%added_points% &6points! &a(New Total Points: &f%new_points%&a)'
+    stats: 
+        exp: '&6Level: &3%level% &6Experience: &3%experience%'
+        enchantment: '&6Unlocked Enchantment: &3%enchantment% &fup to level &3%level%'
+    top: 
+        page: '&bRPG Players Top Page %page%'
+        player_stats: '&b%rank%. &3%player% &f(Level &3%level%&f)'
+minigame: 
+    name: '&9Enchantment Table'
+    mirror: '&f'
+    fast: 
+        item: '&9%name%'
+        item_lore: 
+        - '&7Left click to get an enchanted book of this kind.'
+
+    mondays: 
+        item: '&9%name%'
+        item_lore: 
+        - '&4Cost: &6%cost%'
+        - '&7Left click to get an enchanted book'
+        - '&7 with this enchantment at level 1.'
+
+    custom: 
+        item: 
+            name: '&9Enchanting Material: &3%material%'
+            enchantment: '&6Enchantment: &3%enchantment% &6Level: &3%level%'
+            enchantment_multiple: 
+            - '&6Random Enchantments'
+            - '&6Multiple: &3%multiple%'
+
+            enchantment_level_cost: '&6Experience Level Cost: &3%lvl_cost%'
+            enchantment_lapis_cost: '&6Lapis Lazuli Cost: &3%lapis_cost%'
+            enchantment_economy_cost: '&6%money_name% Cost: &3%money_sign%%economy_cost%'
+    invalid_enchant_name: '&cInvalid enchantment name %name%!'
+    invalid_random_enchant: '&cCould not generate a random enchantment this time!'
+    not_enough_levels: '&cYou need more experience levels to get this enchantment! (Have %player_level%, need %level_cost%.)'
+    not_enough_lapis: '&cYou need lapis lazuli in your inventory to get this enchantment! (Have %player_lapis% lapis, need %lapis_cost%.)'
+    not_enough_money: '&cYou need more %money_name% to get this enchantment! (Have %money_sign%%player_economy%, need %money_sign%%economy_cost%.)'
+    cannot_get_enchantment: '&cCannot get enchantment! %level%%lapis%%economy%'
+    default_money_name: 'Dollars'
+    default_money_sign: '\$'
+pagination: 
+    go_back: '&9Go Back'
+    previous_page: '&9Previous Page'
+    next_page: '&9Next Page'
+enchantment: 
+    name: '&6Display Name: &f'
+    description: '&6Description: &f'
+    descriptions: 
+        default_enchantments: 
+            aqua_affinity: 'Increases underwater mining rate.'
+            bane_of_arthropods: 'Increases damage to "arthropod" mobs (spiders, cave spiders, silverfish and endermites).\nEach level separately adds 2.5 (half heart) extra damage to each hit, to "arthropods" only.\nThe enchantment will also cause "arthropods" to have the Slowness IV effect when hit.'
+            blast_protection: 'Reduces explosion damage.\nAlso reduces explosion knockback by (15 * level)%. If multiple pieces have the enchantment, only the highest level''s reduction is used.'
+            channeling: 'Summons a lightning bolt when a mob is hit by a thrown trident.'
+            binding_curse: 'Prevents removal of the cursed item.\nThe cursed item cannot be removed from any armor slot (outside of Creative mode) unless the player dies or the item breaks.'
+            vanishing_curse: 'Causes the item to disappear on death.\nWhen the player dies, the item disappears instead of dropping on the ground. The item may still be dropped normally.'
+            depth_strider: 'Increases underwater movement speed.'
+            efficiency: 'Increases mining speed.\nOne must use the proper tool for a block in order to receive the speed. Does not matter if you mine it with the incorrect tier.'
+            feather_falling: 'Reduces fall damage.'
+            fire_aspect: 'Sets the target on fire.\nFire Aspect adds 80 fire ticks (4 seconds of burning) per level to the target.'
+            fire_protection: 'Reduces fire damage.'
+            flame: 'Flaming arrows.\nArrows are on fire when shot and deal 4 (2 Hearts) fire damage over 5 seconds.'
+            fortune: 'Increases block drops.'
+            frost_walker: 'Creates frosted ice blocks when walking over water.'
+            impaling: 'Increases melee damage against aquatic mobs.\nAdds 2.5 (half heart) extra damage for each additional level.'
+            infinity: 'Shooting doesn''t consume regular arrows.'
+            knockback: 'Increases knockback.'
+            looting: 'Mobs can drop more loot.'
+            loyalty: 'Returns a thrown trident after it hits something.'
+            luck_of_the_sea: 'Increases luck while fishing.'
+            lure: 'Increases rate of fish biting your hook while fishing.'
+            mending: 'Repair durability with experience.'
+            multishot: 'Shoot multiple arrows at once.'
+            piercing: 'Arrows go through and attack multiple mobs.'
+            power: 'Increases arrow damage by 25% * (level + 1), rounded up to nearest half-heart.'
+            projectile_protection: 'Reduces projectile damage (arrows, ghast/blaze fire charges, etc.).'
+            protection: 'Reduces all damage, except damage from the Void, the /kill command, or hunger damage.'
+            punch: 'Increases knockback on bows.'
+            quick_charge: 'Places arrows in the crossbow faster.'
+            respiration: 'Extends underwater breathing time.'
+            riptide: 'Allows the trident to be used as a means of fast transportation.'
+            sharpness: 'Increases melee damage.\nAdds 1 (half heart) extra damage for the first level, and 0.5 (half heart) for each additional level.'
+            silk_touch: 'Mined blocks drop themselves instead of the usual items.\nAllows collection of blocks that are normally unobtainable.'
+            smite: 'Increases damage to "undead" mobs (skeletons, zombies, withers, wither skeletons, zombie pigmen, skeleton horses and zombie horses)\nEach level separately adds 2.5 (half heart) extra damage to each hit, to "undead" mobs only.'
+            soul_speed: 'Increase speed along soul sand and soul soil.'
+            sweeping_edge: 'Increases sweeping attack damage.'
+            swift_sneak: 'Faster movement while sneaking.'
+            thorns: 'Attackers are damaged when they attack the wearer.'
+            unbreaking: 'Increases effective durability.'
+        custom_enchantments: 
+            angler: 'Catch one additional fish per level if you caught a fish.'
+            armored: 'Adds armor points for wearing elytra.'
+            bane_of_anthropoids: 'Increases damage to human-like mobs.'
+            beheading: 'Adds a chance to drop mob heads on death.'
+            blindness: 'Gives the attacked player blindness.'
+            brine: 'Doubles damage if opposing mob is below 50% health.'
+            butcher: 'Earn extra meat from killing animals.'
+            contagion_curse: 'Spreads curses to items in your inventory.'
+            exhaustion_curse: 'Increases exhaustion when equipped.'
+            infestation_curse: 'Mined items become their infested counterpart if it exists.'
+            instability_curse: 'Decays durability over time.'
+            lagging_curse: 'Ah, fireworks!'
+            stagnancy_curse: 'Keeps the item enchanted how it is.'
+            depth_plus_plus: 'Increase forward break radius by 1 per level.'
+            detonator: 'Ignites creepers. Triggers an explosion based on the enchantment level.'
+            drowned: 'Drown non-water mobs for a short time.'
+            exp_share: 'Increase experience earned from killing mobs and breaking blocks.'
+            flash: 'Places and updates light blocks.'
+            fling: 'Knocks mobs towards the attacker.'
+            flower_gift: 'Has a chance of dropping flowers when right clicking them.'
+            force_feed: 'Takes saturation to repair equipped armor and items.'
+            frequent_flyer: 'Allows flight with (20% + 16% * level) speed. Damages item every 3 seconds in flight.'
+            fried: 'Cooks fish upon catching them.'
+            frosty: 'Shoots snowballs out of shovel on left click.'
+            gaia: 'Breaks the blocks of trees over time. Replants saplings.'
+            gold_digger: 'Earn experience and gold nuggets for breaking crops.'
+            green_thumb: 'Breaking crops will replant them if possible.'
+            gung_ho: 'Decreases health to 50% of base value (usually 5 hearts). Melee attacks do 3 times the damage.'
+            hard_bounce: 'Projectiles bounce back from the shield.'
+            height_plus_plus: 'Increase up/down break radius by 1 per level.'
+            hollow_point: 'Increases damage to armored mobs. Allows projectile damage against enderman and armored wither.'
+            husbandry: 'Killing an adult animal gives a chance of leaving a baby behind.'
+            icarus: 'Flying upwards will occasionally increase velocity.'
+            lasso_of_irene: 'Grabs animals to carry around with you and place later.'
+            iron_defense: 'Having the shield equipped will redirect damage to the shield.'
+            javelin: 'Higher damage when throwing trident.'
+            joggers: 'Gives the player speed.'
+            knockup: 'Increases knockback upwards.'
+            lancer: 'Riding mobs increases damage against other mobs.'
+            life: 'Increases maximum health by 4 (half hearts) per level when worn.'
+            life_drain: 'Steals the health of an attacked mob.'
+            light_weight: 'Prevents crop trampling.'
+            magic_guard: 'Negates bad potion effects.'
+            magma_walker: 'Allows players to walk on lava, turning it into magma.'
+            moisturize: 'Waters blocks by right clicking them.'
+            no_rest: 'No phantoms will spawn around you.'
+            overkill: 'Shoot arrows by left-clicking.'
+            pacified: 'Decreases damage against your own tamed mobs.'
+            pillage: 'Increases mob drops.'
+            plyometrics: 'Gives the player jump boost.'
+            pushback: 'An entity hitting you while blocking will knock them back.'
+            quick_strike: 'Increases attack speed.'
+            rare_earth: 'When mining deepslate ore variants, gain a regular ore variant of the block as well.'
+            recycler: 'Turns common mob loot into experience.'
+            sacrifice: 'Damage the mob who killed you based upon your experience level.'
+            sand_veil: 'Lowers accuracy of entity''s attacks.'
+            shock_aspect: 'Has a chance to strike lightning on attacked mobs.'
+            smeltery: 'Smelts blocks while mining.'
+            sniper: 'Increases speed of projectiles.'
+            soulbound: 'Keep items on death.'
+            soul_reaper: 'Steals one item enchanted with Soulbound per level when killing players.'
+            splatter_fest: 'Shoots eggs out of hoe on left click.'
+            sticky_hold: 'Breaking the item will replace it with a stick which can be used to recreate it.'
+            stone_throw: 'Increases ranged damage against flying mobs.\nAdds 40% * level + 20% damage against flying mobs.'
+            streak: 'Killing the same mob repeatedly will increase damage against that mob.'
+            tank: 'Gives additional unbreaking protection to armor.'
+            telepathy: 'Items mined go straight into your inventory.'
+            toughness: 'Increases armor toughness.'
+            transmutation: 'On killing mobs, all non-sea drop items become sea drop items.'
+            truant: 'Gives the attacked entity slowness.'
+            unrest: 'Night vision at the cost of more phantom spawning.'
+            venom: 'Gives the attacked player poison.'
+            void_walker: 'Allows players to walk on air, turning it into obsidian.'
+            wand: 'Places blocks from the offhand.'
+            warp: 'Gives a chance of teleporting a small distance away on hit.'
+            water_breathing: 'Gives the player water breathing.'
+            whipped: 'Chance to tame or severely damage tameable animals.'
+            width_plus_plus: 'Increase left/right break radius by 1 per level.'
+            withering: 'Gives the attacked player wither damage.'
+            zeal: 'Shoots fireballs out of hoe on left click.'
+    max-level: '&6Max Level: &f'
+    weight: '&6Weight: &f'
+    start-level: '&6Start Level: &f'
+    enchantable-items: '&6Enchantable Items: &f'
+    anvilable-items: '&6Anvilable Items: &f'
+    conflicting-enchantments: '&6Conflicting Enchantments: &f'
+    enabled: '&6Enchantment Enabled: &f'
+    treasure: '&6Treasure Enchantment: &f'
+    advancement-description: 'Description: '
+    advancement-max-level: 'Max Level: '
+    advancement-weight: 'Weight: '
+    advancement-conflicting-enchantments: 'Conflicting Enchantments: '
+    display_names: 
+        default_enchantments: 
+            aqua_affinity: 'Aqua Affinity'
+            bane_of_arthropods: 'Bane of Arthropods'
+            blast_protection: 'Blast Protection'
+            channeling: 'Channeling'
+            binding_curse: 'Curse of Binding'
+            vanishing_curse: 'Curse of Vanishing'
+            depth_strider: 'Depth Strider'
+            efficiency: 'Efficiency'
+            feather_falling: 'Feather Falling'
+            fire_aspect: 'Fire Aspect'
+            fire_protection: 'Fire Protection'
+            flame: 'Flame'
+            fortune: 'Fortune'
+            frost_walker: 'Frost Walker'
+            impaling: 'Impaling'
+            infinity: 'Infinity'
+            knockback: 'Knockback'
+            looting: 'Looting'
+            loyalty: 'Loyalty'
+            luck_of_the_sea: 'Luck of the Sea'
+            lure: 'Lure'
+            mending: 'Mending'
+            multishot: 'Multishot'
+            piercing: 'Piercing'
+            power: 'Power'
+            projectile_protection: 'Projectile Protection'
+            protection: 'Protection'
+            punch: 'Punch'
+            quick_charge: 'Quick Charge'
+            respiration: 'Respiration'
+            riptide: 'Riptide'
+            sharpness: 'Sharpness'
+            silk_touch: 'Silk Touch'
+            smite: 'Smite'
+            soul_speed: 'Soul Speed'
+            sweeping_edge: 'Sweeping Edge'
+            swift_sneak: 'Swift Sneak'
+            thorns: 'Thorns'
+            unbreaking: 'Unbreaking'
+        custom_enchantments: 
+            angler: 'Angler'
+            armored: 'Armored'
+            bane_of_anthropoids: 'Bane of Anthropoids'
+            beheading: 'Beheading'
+            blindness: 'Blindness'
+            brine: 'Brine'
+            butcher: 'Butcher'
+            contagion_curse: 'Curse of Contagion'
+            exhaustion_curse: 'Curse of Exhaustion'
+            infestation_curse: 'Curse of Infestation'
+            instability_curse: 'Curse of Instability'
+            lagging_curse: 'Curse of Lag'
+            stagnancy_curse: 'Curse of Stagnancy'
+            depth_plus_plus: 'Depth++'
+            detonator: 'Detonator'
+            drowned: 'Drowned'
+            exp_share: 'Exp. Share'
+            flash: 'Flash'
+            fling: 'Fling'
+            flower_gift: 'Flower Gift'
+            force_feed: 'Force Feed'
+            frequent_flyer: 'Frequent Flyer'
+            fried: 'Fried'
+            frosty: 'Frosty'
+            gaia: 'Gaia'
+            gold_digger: 'Gold Digger'
+            green_thumb: 'Green Thumb'
+            gung_ho: 'Gung-Ho'
+            hard_bounce: 'Hard Bounce'
+            height_plus_plus: 'Height++'
+            hollow_point: 'Hollow Point'
+            husbandry: 'Husbandry'
+            icarus: 'Icarus'
+            lasso_of_irene: 'Irene''s Lasso'
+            iron_defense: 'Iron Defense'
+            javelin: 'Javelin'
+            joggers: 'Joggers'
+            knockup: 'Knockup'
+            lancer: 'Lancer'
+            life: 'Life'
+            life_drain: 'Life Drain'
+            light_weight: 'Light Weight'
+            magic_guard: 'Magic Guard'
+            magma_walker: 'Magma Walker'
+            moisturize: 'Moisturize'
+            no_rest: 'No Rest'
+            overkill: 'Overkill'
+            pacified: 'Pacified'
+            pillage: 'Pillage'
+            plyometrics: 'Plyometrics'
+            pushback: 'Pushback'
+            quick_strike: 'Quick Strike'
+            rare_earth: 'Rare Earth'
+            recycler: 'Recycler'
+            sacrifice: 'Sacrifice'
+            sand_veil: 'Sand Veil'
+            shock_aspect: 'Shock Aspect'
+            smeltery: 'Smeltery'
+            sniper: 'Sniper'
+            soulbound: 'Soulbound'
+            soul_reaper: 'Soul Reaper'
+            splatter_fest: 'Splatter Fest'
+            sticky_hold: 'Sticky Hold'
+            stone_throw: 'Stone Throw'
+            streak: 'Streak'
+            tank: 'Tank'
+            telepathy: 'Telepathy'
+            toughness: 'Toughness'
+            transmutation: 'Transmutation'
+            truant: 'Truant'
+            unrest: 'Unrest'
+            venom: 'Venom'
+            void_walker: 'Void Walker'
+            wand: 'Wand'
+            warp: 'Warp'
+            water_breathing: 'Water Breathing'
+            whipped: 'Whipped'
+            width_plus_plus: 'Width++'
+            withering: 'Withering'
+            zeal: 'Zeal'
+    locations: 
+        none: 'None'
+        table: 'Enchanting Table'
+        non_book: 'Tools/Weapons/Armor'
+        chest_loot: 'Chest Loot'
+        mob_loot: 'Mob Loot'
+        fishing_loot: 'Fishing Loot'
+        villager_trades: 'Villager Trades'
+        piglin_trades: 'Piglin Trades'
+    locations_string: '&6Enchantment Locations: &f'
+    random: 'Random'
+irenes_lasso: 
+    error: 'This animal does not belong to you!'
+vanilla: 
+    item: 
+        minecraft: 
+            leather_boots: 'Leather Boots'
+            iron_pickaxe: 'Iron Pickaxe'
+            leather_leggings: 'Leather Pants'
+            diamond_shovel: 'Diamond Shovel'
+            iron_chestplate: 'Iron Chestplate'
+            diamond_chestplate: 'Diamond Chestplate'
+            chainmail_leggings: 'Chainmail Leggings'
+            book: 'Book'
+            leather_chestplate: 'Leather Tunic'
+            diamond_sword: 'Diamond Sword'
+            golden_chestplate: 'Golden Chestplate'
+            stone_axe: 'Stone Axe'
+            enchanted_book: 'Enchanted Book'
+            wooden_sword: 'Wooden Sword'
+            shears: 'Shears'
+            chainmail_chestplate: 'Chainmail Chestplate'
+            iron_sword: 'Iron Sword'
+            stone_hoe: 'Stone Hoe'
+            golden_leggings: 'Golden Leggings'
+            carrot_on_a_stick: 'Carrot on a Stick'
+            warped_fungus_on_a_stick: 'Warped Fungus on a Stick'
+            stone_pickaxe: 'Stone Pickaxe'
+            stone_shovel: 'Stone Shovel'
+            stone_sword: 'Stone Sword'
+            diamond_leggings: 'Diamond Leggings'
+            iron_leggings: 'Iron Leggings'
+            elytra: 'Elytra'
+            golden_helmet: 'Golden Helmet'
+            chainmail_helmet: 'Chainmail Helmet'
+            diamond_helmet: 'Diamond Helmet'
+            flint_and_steel: 'Flint and Steel'
+            chainmail_boots: 'Chainmail Boots'
+            iron_boots: 'Iron Boots'
+            wooden_axe: 'Wooden Axe'
+            golden_hoe: 'Golden Hoe'
+            golden_boots: 'Golden Boots'
+            shield: 'Shield'
+            wooden_hoe: 'Wooden Hoe'
+            golden_pickaxe: 'Golden Pickaxe'
+            wooden_shovel: 'Wooden Shovel'
+            diamond_boots: 'Diamond Boots'
+            wooden_pickaxe: 'Wooden Pickaxe'
+            iron_shovel: 'Iron Shovel'
+            golden_shovel: 'Golden Shovel'
+            golden_axe: 'Golden Axe'
+            iron_hoe: 'Iron Hoe'
+            iron_helmet: 'Iron Helmet'
+            diamond_axe: 'Diamond Axe'
+            turtle_helmet: 'Turtle Shell'
+            golden_sword: 'Golden Sword'
+            bow: 'Bow'
+            leather_helmet: 'Leather Cap'
+            diamond_pickaxe: 'Diamond Pickaxe'
+            diamond_hoe: 'Diamond Hoe'
+            iron_axe: 'Iron Axe'
+            trident: 'Trident'
+            fishing_rod: 'Fishing Rod'
+            crossbow: 'Crossbow'
+            netherite_helmet: 'Netherite Helmet'
+            netherite_chestplate: 'Netherite Chestplate'
+            netherite_leggings: 'Netherite Leggings'
+            netherite_boots: 'Netherite Boots'
+            netherite_sword: 'Netherite Sword'
+            netherite_axe: 'Netherite Axe'
+            netherite_pickaxe: 'Netherite Pickaxe'
+            netherite_shovel: 'Netherite Shovel'
+            netherite_hoe: 'Netherite Hoe'
+item_display_types: 
+    all: 'All Normal Items'
+    armor: 'Armor'
+    axes: 'Axes'
+    book: 'Books'
+    boots: 'Boots'
+    bow: 'Bow'
+    chainmail_armor: 'Chainmail Armor'
+    chestplates: 'Chestplates'
+    crossbow: 'Crossbow'
+    diamond_armor: 'Diamond Armor'
+    diamond_tools: 'Diamond Tools'
+    elytra: 'Elytra'
+    enchantable: 'Enchantable'
+    fishing_rod: 'Fishing Rod'
+    fishing_stick: 'Fishing Stick'
+    flint_and_steel: 'Flint and Steel'
+    golden_armor: 'Golden Armor'
+    golden_tools: 'Golden Tools'
+    helmets: 'Helmets'
+    hoes: 'Hoes'
+    iron_armor: 'Iron Armor'
+    iron_tools: 'Iron Tools'
+    leather_armor: 'Leather Armor'
+    leggings: 'Leggings'
+    melee: 'Melee Weapons'
+    misc: 'Misc'
+    netherite_armor: 'Netherite Armor'
+    netherite_tools: 'Netherite Tools'
+    other: 'Other'
+    pickaxes: 'Pickaxes'
+    ranged: 'Ranged Weapons'
+    shears: 'Shears'
+    shield: 'Shield'
+    shovels: 'Shovels'
+    shulker_boxes: 'Shulker Boxes'
+    stone_tools: 'Stone Tools'
+    swords: 'Swords'
+    tools: 'Tools'
+    trident: 'Trident'
+    turtle_helmet: 'Turtle Helmet'
+    wooden_tools: 'Wooden Tools'
+    none: 'None'
+misc: 
+    no_conflicting_enchantments: 'None'
+    true: 'True'
+    false: 'False'
+    beheading_skull: '&7%player%''s Skull'
+    null_advancement_name: 'No Name'
+    null_advancement_description: 'No Description'
+    no_enchantment_locations: 'No Enchantment Locations'
+advancements: 
+    discovery: 
+        name: 'Enchantment Discovery'
+        description: 'Use /esinfo for more information.'
+        enchantments: 'Enchantment: %enchantment%'
+    enchantments/agricultural_revolution: 
+        name: 'Agricultural Revolution'
+        description: 'Who likes farming and animals? We do!'
+    enchantments/industrial_revolution: 
+        name: 'Industrial Revolution'
+        description: 'Simplifying your life, one environmentally-destructive way at a time.'
+    enchantments/scientific_revolution: 
+        name: 'Scientific Revolution'
+        description: 'Marvelous wonders or dystopian nightmares? You decide.'
+    enchantments/imperial_revolution: 
+        name: 'Imperial Revolution'
+        description: 'Conquer the world! Take no prisoners.'
+    enchantments/mechanical_revolution: 
+        name: 'Mechanical Revolution'
+        description: 'Hop into your new mech suit and go save the day!'
+    enchantments/fish_sticks: 
+        name: 'Fish Sticks'
+        description: 'Cook a fish with Fried'
+    enchantments/fed_for_a_lifetime: 
+        name: 'Fed For a Lifetime'
+        description: 'Get more than one of each kind of fish with Angler'
+    enchantments/nemo_enim_coquit: 
+        name: 'Nemo Enim Coquit'
+        description: 'Catch a tropical fish with Fried'
+    enchantments/breaker_breaker: 
+        name: 'Breaker, Breaker'
+        description: 'Place blocks over a torch using Wand'
+    enchantments/thorgy: 
+        name: 'Thorgy!'
+        description: 'Put a tamed wolf into your Irene''s Lasso'
+    enchantments/did_you_really_wand_to_do_that: 
+        name: 'Did You Really Wand To Do That?'
+        description: 'Break a Carrot on a Stick with the Wand enchantment'
+    enchantments/free_pets: 
+        name: 'Free Pets'
+        description: 'Grab every tameable animal in Irene''s Lasso'
+    enchantments/sharing_is_caring: 
+        name: 'Sharing Is Caring'
+        description: 'Give your friend an item with Exp. Share'
+    enchantments/not_that_kind: 
+        name: 'Not That Kind'
+        description: 'Kill every breedable animal with Knock Up'
+    enchantments/super_charged: 
+        name: 'Super Charged'
+        description: 'Create a charged creeper with a Shock Aspect attack'
+    enchantments/not_very_effective: 
+        name: 'Not Very Effective...'
+        description: 'Kill a Drowned with a Brine sword'
+    enchantments/pre_combat_update: 
+        name: 'Pre-Combat Update'
+        description: 'Kill a player with a Quick Strike weapon'
+    enchantments/headhunter: 
+        name: 'Headhunter'
+        description: 'Steal a player''s head'
+    enchantments/double_header: 
+        name: 'Double Header'
+        description: 'Get two Wither Skeleton skulls from one kill'
+    enchantments/super_effective: 
+        name: 'Super Effective!'
+        description: 'Kill a Minecraft boss with a Brine sword'
+    enchantments/motherload: 
+        name: 'Motherload'
+        description: 'Kill the Ender Dragon using Exp. Share'
+    enchantments/hex_bag: 
+        name: 'Hex Bag'
+        description: 'Drown a player using Drowned'
+    enchantments/seven_point_eight: 
+        name: '7.8/10'
+        description: 'Have 3 mobs drowning at the same time with Drowned'
+    enchantments/poseidons_day_off: 
+        name: 'Poseidon''s Day Off'
+        description: 'Kill a mob with Transmutation without changing the loot'
+    enchantments/fishy_business: 
+        name: 'Fishier Business'
+        description: 'Collect all types of fish using Transmutation'
+    enchantments/poseidon_reborn: 
+        name: 'Poseidon Reborn'
+        description: 'Use Transmutation to obtain a Trident'
+    enchantments/cerberus: 
+        name: 'Cerberus?'
+        description: 'Increase your reward while using a Transmutation trident'
+    enchantments/bonemeal_plus: 
+        name: 'Bonemeal Plus'
+        description: 'Use Flower Gift on a two-high flower'
+    enchantments/fourty_niners: 
+        name: '49ers'
+        description: 'Get 81 nuggets from using Gold Digger'
+    enchantments/chicken_or_the_egg: 
+        name: 'Chicken or the Egg?'
+        description: 'Hit a chicken with an egg using Splatter Fest'
+    enchantments/egged_by_myself: 
+        name: 'Egged By Myself'
+        description: 'Hit yourself with an egg launched from Splatter Fest'
+    enchantments/missed: 
+        name: 'Missed'
+        description: 'Make 16 attacks miss with Sand Veil'
+    enchantments/just_as_sweet: 
+        name: 'Just As Sweet'
+        description: 'Successfully get a Wither Rose using Flower Gift'
+    enchantments/laaagggggg: 
+        name: 'Laaagggggg'
+        description: 'Lag the server with various particle effects'
+    enchantments/easy_out: 
+        name: 'Easy Out'
+        description: 'Turn off the campfire using Moisturize'
+    enchantments/just_add_water: 
+        name: 'Just Add Water'
+        description: 'Add water to concrete powder using Moisturize'
+    enchantments/repaired: 
+        name: 'Repaired'
+        description: 'Repair a broken block with Moisturize'
+    enchantments/kept_on_hand: 
+        name: 'Kept On Hand'
+        description: 'Keep an item after death using Soulbound'
+    enchantments/fear_the_reaper: 
+        name: 'Fear the Reaper'
+        description: 'Steal another player''s item using Soul Reaper'
+    enchantments/high_metabolism: 
+        name: 'High Metabolism'
+        description: 'Quadruple the amount of exhaustion experienced using Curse of Exhaustion'
+    enchantments/ready_after_death: 
+        name: 'Ready After Death'
+        description: 'Save 9 unique types of diamond tools, weapons, and armor in death using Soulbound'
+    enchantments/reaped_the_reaper: 
+        name: 'Reaped the Reaper'
+        description: 'Steal another player''s Soul Reaper item with Soul Reaper'
+    enchantments/coffee_break: 
+        name: 'Coffee Break'
+        description: 'Put a No Rest helmet on when Phantoms can spawn'
+    enchantments/this_girl_is_on_fire: 
+        name: 'This Girl is on Fire'
+        description: 'While walking on Magma-ized lava, catch fire'
+    enchantments/flame_keeper: 
+        name: 'Flame Keeper'
+        description: 'Create magma in a world that shouldn''t have lava'
+    enchantments/made_for_walking: 
+        name: 'Made for Walking'
+        description: 'Walk over the void with Void Walker'
+    enchantments/determined_cheater: 
+        name: 'Determined Cheater'
+        description: 'Break obsidian made using Void Walker'
+    enchantments/i_aint_afraid_of_no_ghosts: 
+        name: 'I Ain''t Afraid of No Ghosts'
+        description: 'Sleep 10 times while wearing an Unrest helmet'
+    enchantments/im_you_but_shorter: 
+        name: 'I''m You, But Shorter'
+        description: 'Teleport away from an enderman using Warp'
+    enchantments/panzer_soldier: 
+        name: 'Panzer Soldier'
+        description: 'Wear 4 pieces of armor with the highest level of Tank'
+    enchantments/too_close: 
+        name: 'Too Close'
+        description: 'Fail to activate Icarus in flight'
+    enchantments/armored_evolution: 
+        name: 'Armored Evolution'
+        description: 'Upgrade your Elytra with armor using Armored'
+    enchantments/extra_power: 
+        name: 'Extra Power'
+        description: 'Eat an enchanted golden apple while wearing the highest level of Life'
+    enchantments/cruising_altitude: 
+        name: 'Cruising Altitude'
+        description: 'Travel to 12000m using Frequent Flyer'
+    enchantments/graphene_armor: 
+        name: 'Graphene Armor'
+        description: 'Gain 20 armor toughness using Toughness'
+    enchantments/danger_defeated: 
+        name: 'Danger Defeated'
+        description: 'Kill a Wither using Gung Ho'
+    enchantments/divine_retribution: 
+        name: 'Divine Retribution'
+        description: 'Kill a player from the dead using a Sacrifice chestplate'
+    enchantments/look_what_you_made_me_do: 
+        name: 'Look What You Made Me Do'
+        description: 'Kill a Pillager using a Pillage crossbow'
+    enchantments/just_die_already: 
+        name: 'Just DIE Already!'
+        description: 'Kill a Phantom in one shot using Stone Throw'
+    enchantments/underkill: 
+        name: 'Underkill'
+        description: 'Hit the Ender Dragon using Stone Throw'
+    enchantments/where_did_that_come_from: 
+        name: 'Where Did That Come From?'
+        description: 'Kill a skeleton from 100 blocks away using Sniper'
+    enchantments/that_food_is_fine: 
+        name: 'That Food is... Fine?'
+        description: 'Eat a piece of food with a negative potion effect and remove it with Magic Guard'
+    enchantments/deflection: 
+        name: 'Deflection'
+        description: 'Kill a mob with an arrow deflected with Hard Bounce'
+    enchantments/iron_man: 
+        name: 'Iron Man'
+        description: 'Live through a death blow because of Iron Defense'
+    enchantments/iront_you_glad: 
+        name: 'Iron''t You Glad?'
+        description: 'Obtain more than one iron ingot from an iron ore using Smeltery'
+    enchantments/fast_and_furious: 
+        name: 'Fast and Furious'
+        description: 'Break multiple blocks at once using Height++, Width++, and/or Depth++'
+    enchantments/hey_it_works: 
+        name: 'Hey It Works!'
+        description: 'Break a Shulker Box using Telepathy'
+    enchantments/no_panic: 
+        name: 'No Panic'
+        description: 'Grab an item directly over lava using Telepathy'
+    enchantments/over_9000: 
+        name: 'Over 9000'
+        description: 'Collect 9001 extra items with Height++, Width++, and/or Depth++'
+    enchantments/plague_inc: 
+        name: 'Plague Inc.'
+        description: 'Spread the Contagion Curse to another item'
+    enchantments/blast_off: 
+        name: 'Blast Off'
+        description: 'Detonate a creeper faster than usual'
+    enchantments/extermination: 
+        name: 'Extermination'
+        description: 'Infect an item with all possible curses'
+    enchantments/penetration: 
+        name: 'Penetration'
+        description: 'Damage a mob with a projectile when it shouldn''t do damage'
+    enchantments/carpet_bombs: 
+        name: 'Carpet Bombs'
+        description: 'Cause 100 explosions with Detonator'
+    enchantments/kilimanjaro: 
+        name: 'Kilimanjaro!'
+        description: 'Kill 10 mobs within 4.5 seconds with Overkill'
+    enchantments/environmental_protection: 
+        name: 'Environmental Protection'
+        description: 'Earn 1000 experience with Recycler'
+    enchantments/simple_repair: 
+        name: 'Simple Repair'
+        description: 'Turn a stick back into an item'
+    enchantments/sticky_bees: 
+        name: 'Sticky Bees'
+        description: 'Break 8 items into sticks'
+    enchantments/knockback_reversed: 
+        name: 'Knockback Reversed'
+        description: 'Knockback an enemy with Pushback'
+    enchantments/stainless_steel: 
+        name: 'Stainless Steel'
+        description: 'Hold an Iron Pickaxe with the highest level of Unbreaking and Curse of Stagnancy'
+    enchantments/nether_dull: 
+        name: 'Nether Dull'
+        description: 'Hold a Netherite Sword with the highest level of Sharpness and Curse of Stagnancy'
+    enchantments/yummy_repairs: 
+        name: 'Yummy Repairs'
+        description: 'Repair an item with Force Feed'
+    enchantments/hungry_hippos: 
+        name: 'Hungry Hippos'
+        description: 'Wear a full set of armor with Force Feed'
+    enchantments/light_as_a_feather: 
+        name: 'Light as a Feather'
+        description: 'Fail to break a fully grown crop with Light Weight'
+    enchantments/wildlife_conservation: 
+        name: 'Wildlife Conservation'
+        description: 'Spawn all baby animal breeds by killing an adult animal'
+    enchantments/meat_ready_to_eat: 
+        name: 'Meat Ready to Eat'
+        description: 'Earn extra cooked meat with Butcher'
+    enchantments/thumbs_up: 
+        name: 'Thumbs Up'
+        description: 'Replant a crop using Green Thumb'
+    enchantments/reforestation: 
+        name: 'Reforestation'
+        description: 'With Gaia, replant 1000 trees'
+    enchantments/scourge_of_the_forest: 
+        name: 'Scourge of the Forest'
+        description: 'Destroy a Gaia-planted sapling'
+    enchantments/deforestation: 
+        name: 'Deforestation'
+        description: 'With Gaia, break 1000 logs'
+    enchantments/broken_dreams: 
+        name: 'Broken Dreams'
+        description: 'Have an item break from Curse of Instability'
+    enchantments/blind_as_a_bat: 
+        name: 'Blind as a Bat'
+        description: 'Make a bat even more blind with Blindness'
+    enchantments/world_record: 
+        name: 'World Record'
+        description: 'Stay underwater for 11 minutes and 35 seconds using Water Breathing'
+    enchantments/replenished: 
+        name: 'Replenished'
+        description: 'Replenish extra hearts with Life Drain'
+    enchantments/the_snowman: 
+        name: 'The Snowman'
+        description: 'Have a snowball fight with a Snow Golem'
+    enchantments/double_damage: 
+        name: 'Double Damage'
+        description: 'Kill 100 of a single mob in a row with Streak'
+    enchantments/spooky_scary_skeleton: 
+        name: 'Spooky Scary Skeleton'
+        description: 'Give a skeleton the withering effect using Withering'
+    enchantments/saving_grace: 
+        name: 'Saving Grace'
+        description: 'Protect your tamed animal from death with Pacified'
+    enchantments/kill_the_messenger: 
+        name: 'Kill the Messenger'
+        description: 'Kill a ghast with a fire charge using Zeal'
+    enchantments/before_i_melt_away: 
+        name: 'Before I Melt Away...'
+        description: 'Kill an entity who would melt you with Frosty'
+    enchantments/too_high: 
+        name: 'Too High'
+        description: 'Die of fall damage when equipped with Plyometrics'
+    enchantments/evening_stroll: 
+        name: 'Evening Stroll'
+        description: 'Run around at night with Joggers'
+    enchantments/slackin: 
+        name: 'Slackin'''
+        description: 'Be afflicted with the Slowness effect from Truant'
+    enchantments/spider_senses: 
+        name: 'Spider Senses'
+        description: 'Afflict another player with the Poison effect using Venom'
+    enchantments/animal_abuse: 
+        name: 'Animal Abuse'
+        description: 'Kill an animal with Whipped'
+    enchantments/animal_tamer: 
+        name: 'Animal Tamer'
+        description: 'Tame an animal with Whipped'
+    enchantments/flying_bacon: 
+        name: 'Flying Bacon'
+        description: 'Throw a pig saddled with a player using Fling'
+    enchantments/sparkling_fortune: 
+        name: 'Sparkling Fortune'
+        description: 'Receive extra diamond ore with Rare Earth'
+    enchantments/useless: 
+        name: 'Useless'
+        description: 'Place a light block next to a torch with Flash'
+    enchantments/silver_horde: 
+        name: 'Silver Horde'
+        description: 'Create a small army of silverfish with Curse of Infestation'
+    enchantments/yeet: 
+        name: 'YEET!'
+        description: 'Throw a player to their death with Fling'
+    enchantments/poseidons_bane: 
+        name: 'Poseidon''s Bane'
+        description: 'Kill a drowned or guardian with Javelin'
+    enchantments/four_horsemen: 
+        name: 'Four Horsemen'
+        description: 'Kill a mounted Skeleton Rider with Lancer'
+    enchantments/apocalypse_now: 
+        name: 'Apocalypse Now'
+        description: 'Kill 100 humanoid creatures with Bane of Anthropoids'

@@ -1,0 +1,25 @@
+animals:
+  cc311d48-45d2-436f-ba53-9912a7149e9d:
+    hunger: 9
+    maxHunger: 10
+    level: 1
+    feedCount: 0
+    bondLevel: 0
+    resourceCount: 0
+    nameColor: YELLOW
+  cef23fc0-0bf0-410d-8045-07d4abc7e057:
+    hunger: 9
+    maxHunger: 10
+    level: 1
+    feedCount: 0
+    bondLevel: 0
+    resourceCount: 0
+    nameColor: YELLOW
+  b9d03333-10f1-4a64-94d5-25ce3666b8fd:
+    hunger: 9
+    maxHunger: 10
+    level: 1
+    feedCount: 0
+    bondLevel: 0
+    resourceCount: 0
+    nameColor: YELLOW

@@ -1,0 +1,29 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/leather_boots",
+        "layer1": "item/leather_boots_overlay"
+    },
+    "overrides": [
+        {
+            "predicate": {"custom_model_data": 9918290},
+            "model": "item/armor/copper_boots"
+        },
+        {
+            "predicate": {"custom_model_data": 9918291},
+            "model": "item/armor/assassin_boots"
+        },
+        {
+            "predicate": {"custom_model_data": 9918292},
+            "model": "item/armor/royal_diamond_boots"
+        },
+        {
+            "predicate": {"custom_model_data": 9918293},
+            "model": "item/armor/royal_netherite_boots"
+        },
+        {
+            "predicate": {"custom_model_data": 9918294},
+            "model": "item/armor/turtle_boots"
+        }
+    ]
+}

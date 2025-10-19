@@ -1,0 +1,4123 @@
+# +----------------------------------------------------+ #
+# <                Enchantment Solution                > #
+# <                     Plugin by                      > #
+# <                   crashtheparty                    > #
+# +----------------------------------------------------+ #
+
+
+
+# Additional items that should be allowed to be enchanted in the enchanting table.
+# Will not add any enchantments for these items.
+extra_enchantables: 
+- 'COMPASS'
+- 'RECOVERY_COMPASS'
+
+
+# Level of Frequent Flyer increases relative durability instead of the speed.
+legacy_frequent_flyer: false
+advanced_options: 
+
+    # Use the advanced customization options for the plugin
+    # ** Only modify if you understand what you're doing! **
+    use: false
+
+    # Use the permission system per player for all enchantments.
+    # Permissions use the system "enchantmentsolution.<enchant_name>.<type>.level<int>"
+    # enchant_name: Enchantment name as used below
+    # type: either table (for enchanting items) or anvil (for combining items)
+    # int: the enchantment level
+    # Override permission: enchantmentsolution.permissions.ignore
+    use_permissions: false
+
+    # Adds the 1.14-1.14.2 feature of additional enchantments getting lower levels
+    enchantability_decay: false
+
+    # Enchantments will not be available unless the enchanting level is the set value or above
+    starting_level: true
+    lapis_modifiers: 
+
+        # Enchanting with higher amounts of lapis give higher enchantability
+        use: true
+
+        # Extra enchantability: (lapis + constant) * multiplier
+        constant: -1
+        multiplier: 2
+
+    # Chance of multiple enchantments on one item. Lower value = more enchantments.
+    multi_enchant_divisor: 75.0
+default_enchantments: 
+    aqua_affinity: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'helmets'
+
+        anvil_item_types: 
+        - 'helmets'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 15
+            enchantability_modifier: 0
+            enchantability_start_level: 15
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'no_rest'
+            - 'unrest'
+            - 'water_breathing'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    bane_of_arthropods: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'melee'
+
+        anvil_item_types: 
+        - 'melee'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -4
+            enchantability_modifier: 9
+            enchantability_start_level: 1
+            enchantability_max_level: 6
+            conflicting_enchantments: 
+            - 'sharpness'
+            - 'bane_of_anthropoids'
+            - 'smite'
+            - 'quick_strike'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+    blast_protection: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'armor'
+
+        anvil_item_types: 
+        - 'armor'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -8
+            enchantability_modifier: 14
+            enchantability_start_level: 1
+            enchantability_max_level: 4
+            conflicting_enchantments: 
+            - 'protection'
+            - 'blast_protection'
+            - 'fire_protection'
+            - 'projectile_protection'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    channeling: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'trident'
+
+        anvil_item_types: 
+        - 'trident'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 25
+            enchantability_modifier: 0
+            enchantability_start_level: 1
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'riptide'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    binding_curse: 
+        enabled: true
+        enchantment_locations: 
+        - 'CHEST_LOOT'
+        - 'NON_BOOK'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'elytra'
+        - 'armor'
+
+        anvil_item_types: 
+        - 'elytra'
+        - 'armor'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 25
+            enchantability_modifier: 0
+            enchantability_start_level: 1
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    vanishing_curse: 
+        enabled: true
+        enchantment_locations: 
+        - 'CHEST_LOOT'
+        - 'NON_BOOK'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'enchantable'
+
+        anvil_item_types: 
+        - 'all'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 25
+            enchantability_modifier: 0
+            enchantability_start_level: 1
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'soulbound'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    depth_strider: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'boots'
+
+        anvil_item_types: 
+        - 'boots'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 5
+            enchantability_modifier: 15
+            enchantability_start_level: 10
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'frost_walker'
+            - 'magma_walker'
+            - 'void_walker'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    efficiency: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'tools'
+
+        anvil_item_types: 
+        - 'tools'
+        - 'shears'
+
+        advanced: 
+            weight: 'common'
+            enchantability_constant: -11
+            enchantability_modifier: 12
+            enchantability_start_level: 1
+            enchantability_max_level: 6
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+    feather_falling: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'boots'
+
+        anvil_item_types: 
+        - 'boots'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -7
+            enchantability_modifier: 12
+            enchantability_start_level: 1
+            enchantability_max_level: 4
+            conflicting_enchantments: 
+            - 'light_weight'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    fire_aspect: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'swords'
+
+        anvil_item_types: 
+        - 'swords'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: -25
+            enchantability_modifier: 30
+            enchantability_start_level: 5
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'quick_strike'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    fire_protection: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'armor'
+
+        anvil_item_types: 
+        - 'armor'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -8
+            enchantability_modifier: 15
+            enchantability_start_level: 1
+            enchantability_max_level: 4
+            conflicting_enchantments: 
+            - 'protection'
+            - 'blast_protection'
+            - 'fire_protection'
+            - 'projectile_protection'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    flame: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'bow'
+
+        anvil_item_types: 
+        - 'bow'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 35
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    fortune: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'tools'
+
+        anvil_item_types: 
+        - 'tools'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 7
+            enchantability_modifier: 11
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: 
+            - 'silk_touch'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    frost_walker: 
+        enabled: true
+        enchantment_locations: 
+        - 'CHEST_LOOT'
+        - 'NON_BOOK'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'boots'
+
+        anvil_item_types: 
+        - 'boots'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 5
+            enchantability_modifier: 15
+            enchantability_start_level: 10
+            enchantability_max_level: 2
+            conflicting_enchantments: 
+            - 'depth_strider'
+            - 'magma_walker'
+            - 'void_walker'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                anvil: 
+                    level1: false
+                    level2: false
+    impaling: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'trident'
+
+        anvil_item_types: 
+        - 'trident'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: -12
+            enchantability_modifier: 13
+            enchantability_start_level: 1
+            enchantability_max_level: 6
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+    infinity: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'bow'
+
+        anvil_item_types: 
+        - 'bow'
+        - 'shovels'
+        - 'hoes'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 35
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'mending'
+            - 'sticky_hold'
+            - 'force_feed'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    knockback: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'swords'
+
+        anvil_item_types: 
+        - 'swords'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -15
+            enchantability_modifier: 20
+            enchantability_start_level: 1
+            enchantability_max_level: 4
+            conflicting_enchantments: 
+            - 'knockup'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    looting: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'swords'
+
+        anvil_item_types: 
+        - 'swords'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 7
+            enchantability_modifier: 11
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: 
+            - 'husbandry'
+            - 'butcher'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    loyalty: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'trident'
+
+        anvil_item_types: 
+        - 'trident'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: 7
+            enchantability_modifier: 11
+            enchantability_start_level: 1
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'riptide'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    luck_of_the_sea: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'fishing_rod'
+
+        anvil_item_types: 
+        - 'fishing_rod'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 7
+            enchantability_modifier: 11
+            enchantability_start_level: 1
+            enchantability_max_level: 4
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    lure: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'fishing_rod'
+
+        anvil_item_types: 
+        - 'fishing_rod'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 7
+            enchantability_modifier: 11
+            enchantability_start_level: 1
+            enchantability_max_level: 4
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    mending: 
+        enabled: true
+        enchantment_locations: 
+        - 'CHEST_LOOT'
+        - 'NON_BOOK'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'enchantable'
+
+        anvil_item_types: 
+        - 'all'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 25
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'infinity'
+            - 'sticky_hold'
+            - 'force_feed'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    multishot: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'crossbow'
+
+        anvil_item_types: 
+        - 'crossbow'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 35
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'piercing'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    piercing: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'crossbow'
+
+        anvil_item_types: 
+        - 'crossbow'
+
+        advanced: 
+            weight: 'common'
+            enchantability_constant: -14
+            enchantability_modifier: 15
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: 
+            - 'multishot'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    power: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'bow'
+
+        anvil_item_types: 
+        - 'bow'
+
+        advanced: 
+            weight: 'common'
+            enchantability_constant: -10
+            enchantability_modifier: 11
+            enchantability_start_level: 1
+            enchantability_max_level: 6
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+    projectile_protection: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'armor'
+
+        anvil_item_types: 
+        - 'armor'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -9
+            enchantability_modifier: 13
+            enchantability_start_level: 1
+            enchantability_max_level: 4
+            conflicting_enchantments: 
+            - 'protection'
+            - 'blast_protection'
+            - 'fire_protection'
+            - 'projectile_protection'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    protection: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'armor'
+
+        anvil_item_types: 
+        - 'armor'
+
+        advanced: 
+            weight: 'common'
+            enchantability_constant: -15
+            enchantability_modifier: 16
+            enchantability_start_level: 1
+            enchantability_max_level: 4
+            conflicting_enchantments: 
+            - 'protection'
+            - 'blast_protection'
+            - 'fire_protection'
+            - 'projectile_protection'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    punch: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'bow'
+
+        anvil_item_types: 
+        - 'bow'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: -8
+            enchantability_modifier: 20
+            enchantability_start_level: 1
+            enchantability_max_level: 3
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    quick_charge: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'crossbow'
+
+        anvil_item_types: 
+        - 'crossbow'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -15
+            enchantability_modifier: 25
+            enchantability_start_level: 1
+            enchantability_max_level: 4
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    respiration: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'helmets'
+
+        anvil_item_types: 
+        - 'helmets'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: -5
+            enchantability_modifier: 15
+            enchantability_start_level: 1
+            enchantability_max_level: 3
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    riptide: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'trident'
+
+        anvil_item_types: 
+        - 'trident'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 6
+            enchantability_modifier: 11
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: 
+            - 'channeling'
+            - 'loyalty'
+            - 'javelin'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    sharpness: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'melee'
+
+        anvil_item_types: 
+        - 'melee'
+
+        advanced: 
+            weight: 'common'
+            enchantability_constant: -12
+            enchantability_modifier: 13
+            enchantability_start_level: 1
+            enchantability_max_level: 6
+            conflicting_enchantments: 
+            - 'bane_of_arthropods'
+            - 'bane_of_anthropoids'
+            - 'smite'
+            - 'quick_strike'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+    silk_touch: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'tools'
+
+        anvil_item_types: 
+        - 'tools'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 35
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'fortune'
+            - 'smeltery'
+            - 'rare_earth'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    smite: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'melee'
+
+        anvil_item_types: 
+        - 'melee'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -4
+            enchantability_modifier: 9
+            enchantability_start_level: 1
+            enchantability_max_level: 6
+            conflicting_enchantments: 
+            - 'bane_of_arthropods'
+            - 'bane_of_anthropoids'
+            - 'sharpness'
+            - 'quick_strike'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+    soul_speed: 
+        enabled: true
+        enchantment_locations: 
+        - 'PIGLIN_TRADES'
+        - 'NON_BOOK'
+
+        enchantment_item_types: 
+        - 'boots'
+
+        anvil_item_types: 
+        - 'boots'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: -5
+            enchantability_modifier: 20
+            enchantability_start_level: 1
+            enchantability_max_level: 3
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    swift_sneak: 
+        enabled: true
+        enchantment_locations: 
+        - 'DEEP_DARK'
+        - 'NON_BOOK'
+
+        enchantment_item_types: 
+        - 'leggings'
+
+        anvil_item_types: 
+        - 'leggings'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: -4
+            enchantability_modifier: 17
+            enchantability_start_level: 1
+            enchantability_max_level: 4
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    sweeping_edge: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'swords'
+
+        anvil_item_types: 
+        - 'swords'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: -7
+            enchantability_modifier: 12
+            enchantability_start_level: 1
+            enchantability_max_level: 3
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    thorns: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'armor'
+
+        anvil_item_types: 
+        - 'armor'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 10
+            enchantability_modifier: 20
+            enchantability_start_level: 20
+            enchantability_max_level: 3
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    unbreaking: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'enchantable'
+
+        anvil_item_types: 
+        - 'all'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -10
+            enchantability_modifier: 15
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+custom_enchantments: 
+    angler: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'fishing_rod'
+
+        anvil_item_types: 
+        - 'fishing_rod'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 0
+            enchantability_modifier: 10
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    armored: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'elytra'
+
+        anvil_item_types: 
+        - 'elytra'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 20
+            enchantability_modifier: 15
+            enchantability_start_level: 30
+            enchantability_max_level: 3
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    bane_of_anthropoids: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'melee'
+
+        anvil_item_types: 
+        - 'melee'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -4
+            enchantability_modifier: 9
+            enchantability_start_level: 1
+            enchantability_max_level: 6
+            conflicting_enchantments: 
+            - 'bane_of_arthropods'
+            - 'smite'
+            - 'sharpness'
+            - 'quick_strike'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+    beheading: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'swords'
+
+        anvil_item_types: 
+        - 'melee'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 10
+            enchantability_modifier: 20
+            enchantability_start_level: 20
+            enchantability_max_level: 3
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    blindness: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'melee'
+        - 'ranged'
+
+        anvil_item_types: 
+        - 'melee'
+        - 'ranged'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 0
+            enchantability_modifier: 20
+            enchantability_start_level: 15
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'truant'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    brine: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'swords'
+
+        anvil_item_types: 
+        - 'melee'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 30
+            enchantability_modifier: 0
+            enchantability_start_level: 25
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    butcher: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'swords'
+
+        anvil_item_types: 
+        - 'swords'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 7
+            enchantability_modifier: 11
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: 
+            - 'looting'
+            - 'husbandry'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    contagion_curse: 
+        enabled: true
+        enchantment_locations: 
+        - 'CHEST_LOOT'
+        - 'NON_BOOK'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'enchantable'
+
+        anvil_item_types: 
+        - 'all'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 25
+            enchantability_modifier: 0
+            enchantability_start_level: 1
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'stagnancy_curse'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    exhaustion_curse: 
+        enabled: true
+        enchantment_locations: 
+        - 'CHEST_LOOT'
+        - 'NON_BOOK'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'enchantable'
+
+        anvil_item_types: 
+        - 'all'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 25
+            enchantability_modifier: 0
+            enchantability_start_level: 1
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    infestation_curse: 
+        enabled: true
+        enchantment_locations: 
+        - 'CHEST_LOOT'
+        - 'NON_BOOK'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'pickaxes'
+
+        anvil_item_types: 
+        - 'pickaxes'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 25
+            enchantability_modifier: 0
+            enchantability_start_level: 1
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    instability_curse: 
+        enabled: true
+        enchantment_locations: 
+        - 'CHEST_LOOT'
+        - 'NON_BOOK'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'enchantable'
+
+        anvil_item_types: 
+        - 'all'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 25
+            enchantability_modifier: 0
+            enchantability_start_level: 1
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    lagging_curse: 
+        enabled: true
+        enchantment_locations: 
+        - 'CHEST_LOOT'
+        - 'NON_BOOK'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'tools'
+        - 'melee'
+        - 'ranged'
+
+        anvil_item_types: 
+        - 'tools'
+        - 'melee'
+        - 'ranged'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 25
+            enchantability_modifier: 0
+            enchantability_start_level: 1
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    stagnancy_curse: 
+        enabled: true
+        enchantment_locations: 
+        - 'CHEST_LOOT'
+        - 'NON_BOOK'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'enchantable'
+
+        anvil_item_types: 
+        - 'all'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 25
+            enchantability_modifier: 0
+            enchantability_start_level: 1
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'contagion_curse'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    depth_plus_plus: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'tools'
+
+        anvil_item_types: 
+        - 'tools'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 0
+            enchantability_modifier: 20
+            enchantability_start_level: 15
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'gaia'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    detonator: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'bow'
+        - 'crossbow'
+
+        anvil_item_types: 
+        - 'bow'
+        - 'crossbow'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 4
+            enchantability_modifier: 13
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: 
+            - 'hollow_point'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    drowned: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'trident'
+
+        anvil_item_types: 
+        - 'trident'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 10
+            enchantability_modifier: 20
+            enchantability_start_level: 20
+            enchantability_max_level: 3
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    exp_share: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'swords'
+        - 'tools'
+        - 'trident'
+
+        anvil_item_types: 
+        - 'swords'
+        - 'tools'
+        - 'trident'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: 0
+            enchantability_modifier: 20
+            enchantability_start_level: 1
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'recycler'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    flash: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'fishing_stick'
+
+        anvil_item_types: 
+        - 'fishing_stick'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: 50
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'moisturize'
+            - 'wand'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    fling: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'fishing_stick'
+
+        anvil_item_types: 
+        - 'fishing_stick'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -15
+            enchantability_modifier: 20
+            enchantability_start_level: 1
+            enchantability_max_level: 4
+            conflicting_enchantments: 
+            - 'lasso_of_irene'
+            - 'whipped'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    flower_gift: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'hoes'
+
+        anvil_item_types: 
+        - 'hoes'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 30
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'gold_digger'
+            - 'green_thumb'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    force_feed: 
+        enabled: true
+        enchantment_locations: 
+        - 'CHEST_LOOT'
+        - 'NON_BOOK'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'enchantable'
+
+        anvil_item_types: 
+        - 'all'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 16
+            enchantability_modifier: 12
+            enchantability_start_level: 10
+            enchantability_max_level: 5
+            conflicting_enchantments: 
+            - 'mending'
+            - 'sticky_hold'
+            - 'infinity'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    frequent_flyer: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'elytra'
+
+        anvil_item_types: 
+        - 'elytra'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 8
+            enchantability_modifier: 12
+            enchantability_start_level: 20
+            enchantability_max_level: 5
+            conflicting_enchantments: 
+            - 'icarus'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    fried: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'fishing_rod'
+
+        anvil_item_types: 
+        - 'fishing_rod'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 40
+            enchantability_modifier: 0
+            enchantability_start_level: 30
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    frosty: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'shovels'
+
+        anvil_item_types: 
+        - 'shovels'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 25
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    gaia: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'axes'
+
+        anvil_item_types: 
+        - 'axes'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: -5
+            enchantability_modifier: 25
+            enchantability_start_level: 10
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'width_plus_plus'
+            - 'height_plus_plus'
+            - 'depth_plus_plus'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    gold_digger: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'hoes'
+
+        anvil_item_types: 
+        - 'hoes'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -2
+            enchantability_modifier: 12
+            enchantability_start_level: 10
+            enchantability_max_level: 6
+            conflicting_enchantments: 
+            - 'flower_gift'
+            - 'green_thumb'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+    green_thumb: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'hoes'
+
+        anvil_item_types: 
+        - 'hoes'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 30
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'flower_gift'
+            - 'gold_digger'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    gung_ho: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'chestplates'
+
+        anvil_item_types: 
+        - 'chestplates'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 40
+            enchantability_modifier: 0
+            enchantability_start_level: 30
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'life'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    hard_bounce: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'shield'
+
+        anvil_item_types: 
+        - 'shield'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: -4
+            enchantability_modifier: 14
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: 
+            - 'iron_defense'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    height_plus_plus: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'tools'
+
+        anvil_item_types: 
+        - 'tools'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 0
+            enchantability_modifier: 20
+            enchantability_start_level: 15
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'gaia'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    hollow_point: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'bow'
+        - 'crossbow'
+
+        anvil_item_types: 
+        - 'bow'
+        - 'crossbow'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 40
+            enchantability_modifier: 0
+            enchantability_start_level: 30
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'detonator'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    husbandry: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'swords'
+
+        anvil_item_types: 
+        - 'swords'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 7
+            enchantability_modifier: 11
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: 
+            - 'looting'
+            - 'butcher'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    icarus: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'elytra'
+
+        anvil_item_types: 
+        - 'elytra'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 8
+            enchantability_modifier: 12
+            enchantability_start_level: 20
+            enchantability_max_level: 5
+            conflicting_enchantments: 
+            - 'frequent_flyer'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    lasso_of_irene: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'fishing_stick'
+
+        anvil_item_types: 
+        - 'fishing_stick'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 0
+            enchantability_modifier: 30
+            enchantability_start_level: 30
+            enchantability_max_level: 2
+            conflicting_enchantments: 
+            - 'whipped'
+            - 'fling'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                anvil: 
+                    level1: false
+                    level2: false
+    iron_defense: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'shield'
+
+        anvil_item_types: 
+        - 'shield'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: -4
+            enchantability_modifier: 14
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: 
+            - 'hard_bounce'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    javelin: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'trident'
+
+        anvil_item_types: 
+        - 'trident'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -12
+            enchantability_modifier: 13
+            enchantability_start_level: 1
+            enchantability_max_level: 6
+            conflicting_enchantments: 
+            - 'lancer'
+            - 'riptide'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+    joggers: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'leggings'
+
+        anvil_item_types: 
+        - 'leggings'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 0
+            enchantability_modifier: 20
+            enchantability_start_level: 15
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'plyometrics'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    knockup: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'swords'
+
+        anvil_item_types: 
+        - 'swords'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -15
+            enchantability_modifier: 20
+            enchantability_start_level: 1
+            enchantability_max_level: 4
+            conflicting_enchantments: 
+            - 'knockback'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    lancer: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'trident'
+
+        anvil_item_types: 
+        - 'trident'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -12
+            enchantability_modifier: 13
+            enchantability_start_level: 1
+            enchantability_max_level: 6
+            conflicting_enchantments: 
+            - 'javelin'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+    light_weight: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'boots'
+
+        anvil_item_types: 
+        - 'boots'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 40
+            enchantability_modifier: 0
+            enchantability_start_level: 30
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'feather_falling'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    life: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'chestplates'
+
+        anvil_item_types: 
+        - 'chestplates'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: -5
+            enchantability_modifier: 25
+            enchantability_start_level: 10
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'gung_ho'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    life_drain: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'melee'
+
+        anvil_item_types: 
+        - 'melee'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 12
+            enchantability_modifier: 11
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    magic_guard: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'shield'
+
+        anvil_item_types: 
+        - 'shield'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 30
+            enchantability_modifier: 0
+            enchantability_start_level: 25
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    magma_walker: 
+        enabled: true
+        enchantment_locations: 
+        - 'CHEST_LOOT'
+        - 'NON_BOOK'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'boots'
+
+        anvil_item_types: 
+        - 'boots'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 5
+            enchantability_modifier: 15
+            enchantability_start_level: 10
+            enchantability_max_level: 2
+            conflicting_enchantments: 
+            - 'frost_walker'
+            - 'depth_strider'
+            - 'void_walker'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                anvil: 
+                    level1: false
+                    level2: false
+    moisturize: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'fishing_stick'
+
+        anvil_item_types: 
+        - 'fishing_stick'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 50
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'wand'
+            - 'flash'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    no_rest: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'helmets'
+
+        anvil_item_types: 
+        - 'helmets'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 15
+            enchantability_modifier: 0
+            enchantability_start_level: 15
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'unrest'
+            - 'aqua_affinity'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    overkill: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'bow'
+
+        anvil_item_types: 
+        - 'bow'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 35
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    pacified: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'melee'
+
+        anvil_item_types: 
+        - 'melee'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 5
+            enchantability_modifier: 15
+            enchantability_start_level: 10
+            enchantability_max_level: 3
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    pillage: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'crossbow'
+
+        anvil_item_types: 
+        - 'crossbow'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 7
+            enchantability_modifier: 11
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    plyometrics: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'leggings'
+
+        anvil_item_types: 
+        - 'leggings'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 0
+            enchantability_modifier: 20
+            enchantability_start_level: 15
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'joggers'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    pushback: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'shield'
+
+        anvil_item_types: 
+        - 'shield'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -15
+            enchantability_modifier: 20
+            enchantability_start_level: 1
+            enchantability_max_level: 4
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    quick_strike: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'melee'
+
+        anvil_item_types: 
+        - 'melee'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 7
+            enchantability_modifier: 11
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: 
+            - 'sharpness'
+            - 'bane_of_anthropoids'
+            - 'bane_of_arthropods'
+            - 'smite'
+            - 'fire_aspect'
+            - 'shock_aspect'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    rare_earth: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'pickaxes'
+
+        anvil_item_types: 
+        - 'pickaxes'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 20
+            enchantability_modifier: 15
+            enchantability_start_level: 40
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'silk_touch'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    recycler: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'melee'
+
+        anvil_item_types: 
+        - 'melee'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 40
+            enchantability_modifier: 0
+            enchantability_start_level: 30
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'exp_share'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    sacrifice: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'chestplates'
+
+        anvil_item_types: 
+        - 'chestplates'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 35
+            enchantability_modifier: 15
+            enchantability_start_level: 30
+            enchantability_max_level: 2
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                anvil: 
+                    level1: false
+                    level2: false
+    sand_veil: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'hoes'
+
+        anvil_item_types: 
+        - 'hoes'
+
+        advanced: 
+            weight: 'common'
+            enchantability_constant: -12
+            enchantability_modifier: 13
+            enchantability_start_level: 1
+            enchantability_max_level: 6
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+    shock_aspect: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'axes'
+
+        anvil_item_types: 
+        - 'axes'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: -15
+            enchantability_modifier: 20
+            enchantability_start_level: 5
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'quick_strike'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    smeltery: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'tools'
+
+        anvil_item_types: 
+        - 'tools'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 40
+            enchantability_modifier: 0
+            enchantability_start_level: 30
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'silk_touch'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    sniper: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'ranged'
+
+        anvil_item_types: 
+        - 'ranged'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 12
+            enchantability_modifier: 18
+            enchantability_start_level: 25
+            enchantability_max_level: 3
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    soulbound: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'enchantable'
+
+        anvil_item_types: 
+        - 'all'
+        - 'shulker_boxes'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 40
+            enchantability_modifier: 0
+            enchantability_start_level: 30
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'vanishing_curse'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    soul_reaper: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'hoes'
+
+        anvil_item_types: 
+        - 'hoes'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 20
+            enchantability_modifier: 12
+            enchantability_start_level: 25
+            enchantability_max_level: 4
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    splatter_fest: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'hoes'
+
+        anvil_item_types: 
+        - 'hoes'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 25
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    sticky_hold: 
+        enabled: true
+        enchantment_locations: 
+        - 'CHEST_LOOT'
+        - 'NON_BOOK'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'enchantable'
+
+        anvil_item_types: 
+        - 'all'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 25
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'infinity'
+            - 'mending'
+            - 'force_feed'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    stone_throw: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'crossbow'
+
+        anvil_item_types: 
+        - 'crossbow'
+
+        advanced: 
+            weight: 'common'
+            enchantability_constant: -12
+            enchantability_modifier: 13
+            enchantability_start_level: 1
+            enchantability_max_level: 6
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                    level6: false
+    streak: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'melee'
+
+        anvil_item_types: 
+        - 'melee'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 35
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    tank: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'armor'
+
+        anvil_item_types: 
+        - 'armor'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 10
+            enchantability_modifier: 20
+            enchantability_start_level: 20
+            enchantability_max_level: 3
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    telepathy: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'tools'
+
+        anvil_item_types: 
+        - 'tools'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 65
+            enchantability_modifier: 0
+            enchantability_start_level: 40
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    toughness: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'armor'
+
+        anvil_item_types: 
+        - 'armor'
+
+        advanced: 
+            weight: 'uncommon'
+            enchantability_constant: -15
+            enchantability_modifier: 16
+            enchantability_start_level: 1
+            enchantability_max_level: 4
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+    transmutation: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'trident'
+
+        anvil_item_types: 
+        - 'trident'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 65
+            enchantability_modifier: 0
+            enchantability_start_level: 40
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    truant: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'melee'
+        - 'ranged'
+
+        anvil_item_types: 
+        - 'melee'
+        - 'ranged'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 0
+            enchantability_modifier: 20
+            enchantability_start_level: 15
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'blindness'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    unrest: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'helmets'
+
+        anvil_item_types: 
+        - 'helmets'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 15
+            enchantability_modifier: 0
+            enchantability_start_level: 15
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'aqua_affinity'
+            - 'no_rest'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    venom: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'melee'
+        - 'ranged'
+
+        anvil_item_types: 
+        - 'melee'
+        - 'ranged'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 0
+            enchantability_modifier: 20
+            enchantability_start_level: 15
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'withering'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    void_walker: 
+        enabled: true
+        enchantment_locations: 
+        - 'CHEST_LOOT'
+        - 'NON_BOOK'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'boots'
+
+        anvil_item_types: 
+        - 'boots'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 5
+            enchantability_modifier: 15
+            enchantability_start_level: 10
+            enchantability_max_level: 2
+            conflicting_enchantments: 
+            - 'frost_walker'
+            - 'depth_strider'
+            - 'magma_walker'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                anvil: 
+                    level1: false
+                    level2: false
+    wand: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'fishing_stick'
+
+        anvil_item_types: 
+        - 'fishing_stick'
+
+        advanced: 
+            weight: 'very_rare'
+            enchantability_constant: 20
+            enchantability_modifier: 15
+            enchantability_start_level: 30
+            enchantability_max_level: 3
+            conflicting_enchantments: 
+            - 'moisturize'
+            - 'flash'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    warp: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'leggings'
+
+        anvil_item_types: 
+        - 'leggings'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: -5
+            enchantability_modifier: 20
+            enchantability_start_level: 10
+            enchantability_max_level: 3
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    water_breathing: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'helmets'
+
+        anvil_item_types: 
+        - 'helmets'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 40
+            enchantability_modifier: 0
+            enchantability_start_level: 30
+            enchantability_max_level: 1
+            conflicting_enchantments: 
+            - 'aqua_affinity'
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false
+    whipped: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'fishing_stick'
+
+        anvil_item_types: 
+        - 'fishing_stick'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 7
+            enchantability_modifier: 11
+            enchantability_start_level: 1
+            enchantability_max_level: 5
+            conflicting_enchantments: 
+            - 'fling'
+            - 'lasso_of_irene'
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+                    level4: false
+                    level5: false
+    width_plus_plus: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'tools'
+
+        anvil_item_types: 
+        - 'tools'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 0
+            enchantability_modifier: 20
+            enchantability_start_level: 15
+            enchantability_max_level: 3
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    withering: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'melee'
+        - 'ranged'
+
+        anvil_item_types: 
+        - 'melee'
+        - 'ranged'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 0
+            enchantability_modifier: 20
+            enchantability_start_level: 15
+            enchantability_max_level: 3
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                    level2: false
+                    level3: false
+                anvil: 
+                    level1: false
+                    level2: false
+                    level3: false
+    zeal: 
+        enabled: true
+        enchantment_locations: 
+        - 'TABLE'
+        - 'NON_BOOK'
+        - 'CHEST_LOOT'
+        - 'MOB_LOOT'
+        - 'FISHING_LOOT'
+        - 'VILLAGER_TRADES'
+
+        enchantment_item_types: 
+        - 'hoes'
+
+        anvil_item_types: 
+        - 'hoes'
+
+        advanced: 
+            weight: 'rare'
+            enchantability_constant: 25
+            enchantability_modifier: 0
+            enchantability_start_level: 20
+            enchantability_max_level: 1
+            conflicting_enchantments: []
+
+            permissions: 
+                table: 
+                    level1: false
+                anvil: 
+                    level1: false

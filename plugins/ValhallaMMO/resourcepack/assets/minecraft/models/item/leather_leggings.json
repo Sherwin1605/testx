@@ -1,0 +1,29 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/leather_leggings",
+        "layer1": "item/leather_leggings_overlay"
+    },
+    "overrides": [
+        {
+            "predicate": {"custom_model_data": 9918290},
+            "model": "item/armor/copper_leggings"
+        },
+        {
+            "predicate": {"custom_model_data": 9918291},
+            "model": "item/armor/assassin_leggings"
+        },
+        {
+            "predicate": {"custom_model_data": 9918292},
+            "model": "item/armor/royal_diamond_leggings"
+        },
+        {
+            "predicate": {"custom_model_data": 9918293},
+            "model": "item/armor/royal_netherite_leggings"
+        },
+        {
+            "predicate": {"custom_model_data": 9918294},
+            "model": "item/armor/turtle_leggings"
+        }
+    ]
+}

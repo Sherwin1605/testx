@@ -1,0 +1,420 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/lime_dye"
+    },
+    "overrides": [
+        {
+            "predicate": {"custom_model_data": 1172900},
+            "model": "item/gui/connection_pieces/unlocked_direct_vertical"
+        },
+        {
+            "predicate": {"custom_model_data": 1172901},
+            "model": "item/gui/connection_pieces/unlocked_direct_horizontal"
+        },
+        {
+            "predicate": {"custom_model_data": 1172902},
+            "model": "item/gui/connection_pieces/unlocked_direct_corner_botlft"
+        },
+        {
+            "predicate": {"custom_model_data": 1172903},
+            "model": "item/gui/connection_pieces/unlocked_direct_corner_toplft"
+        },
+        {
+            "predicate": {"custom_model_data": 1172904},
+            "model": "item/gui/connection_pieces/unlocked_direct_corner_botrgt"
+        },
+        {
+            "predicate": {"custom_model_data": 1172905},
+            "model": "item/gui/connection_pieces/unlocked_direct_corner_toprgt"
+        },
+        {
+            "predicate": {"custom_model_data": 1172906},
+            "model": "item/gui/connection_pieces/unlocked_continuous_vertical"
+        },
+        {
+            "predicate": {"custom_model_data": 1172907},
+            "model": "item/gui/connection_pieces/unlocked_continuous_horizontal"
+        },
+        {
+            "predicate": {"custom_model_data": 1172908},
+            "model": "item/gui/connection_pieces/unlocked_endpoint_horiz_right"
+        },
+        {
+            "predicate": {"custom_model_data": 1172909},
+            "model": "item/gui/connection_pieces/unlocked_endpoint_horiz_left"
+        },
+        {
+            "predicate": {"custom_model_data": 1172910},
+            "model": "item/gui/connection_pieces/unlocked_endpoint_verti_top"
+        },
+        {
+            "predicate": {"custom_model_data": 1172911},
+            "model": "item/gui/connection_pieces/unlocked_endpoint_verti_bottom"
+        },
+        {
+            "predicate": {"custom_model_data": 1172912},
+            "model": "item/gui/connection_pieces/unlocked_endpoint_corner_botlft_side"
+        },
+        {
+            "predicate": {"custom_model_data": 1172913},
+            "model": "item/gui/connection_pieces/unlocked_endpoint_corner_toplft_side"
+        },
+        {
+            "predicate": {"custom_model_data": 1172914},
+            "model": "item/gui/connection_pieces/unlocked_endpoint_corner_botrgt_side"
+        },
+        {
+            "predicate": {"custom_model_data": 1172915},
+            "model": "item/gui/connection_pieces/unlocked_endpoint_corner_toprgt_side"
+        },
+        {
+            "predicate": {"custom_model_data": 1172916},
+            "model": "item/gui/connection_pieces/unlocked_endpoint_corner_botlft_ends"
+        },
+        {
+            "predicate": {"custom_model_data": 1172917},
+            "model": "item/gui/connection_pieces/unlocked_endpoint_corner_toplft_ends"
+        },
+        {
+            "predicate": {"custom_model_data": 1172918},
+            "model": "item/gui/connection_pieces/unlocked_endpoint_corner_botrgt_ends"
+        },
+        {
+            "predicate": {"custom_model_data": 1172919},
+            "model": "item/gui/connection_pieces/unlocked_endpoint_corner_toprgt_ends"
+        },
+        {
+            "predicate": {"custom_model_data": 1172920},
+            "model": "item/gui/connection_pieces/unlocked_continuous_corner_botlft"
+        },
+        {
+            "predicate": {"custom_model_data": 1172921},
+            "model": "item/gui/connection_pieces/unlocked_continuous_corner_toplft"
+        },
+        {
+            "predicate": {"custom_model_data": 1172922},
+            "model": "item/gui/connection_pieces/unlocked_continuous_corner_botrgt"
+        },
+        {
+            "predicate": {"custom_model_data": 1172923},
+            "model": "item/gui/connection_pieces/unlocked_continuous_corner_toprgt"
+        },
+        {
+            "predicate": {"custom_model_data": 1829130},
+            "model": "item/gui/button_newrecipe"
+        },
+        {
+            "predicate": {"custom_model_data": 1829131},
+            "model": "item/gui/button_loot_selection_active"
+        },
+        {
+            "predicate": {"custom_model_data": 9192780},
+            "model": "item/materials/tutor_lotus"
+        },
+        {
+            "predicate": {"custom_model_data": 9192781},
+            "model": "item/materials/steelblossom"
+        },
+        {
+            "predicate": {"custom_model_data": 9192782},
+            "model": "item/materials/shimmerleaf"
+        },
+        {
+            "predicate": {"custom_model_data": 9192783},
+            "model": "item/materials/goldroot"
+        },
+        {
+            "predicate": {"custom_model_data": 9192784},
+            "model": "item/materials/pollen_stalks"
+        },
+        {
+            "predicate": {"custom_model_data": 9192785},
+            "model": "item/materials/knightsreed"
+        },
+        {
+            "predicate": {"custom_model_data": 9192786},
+            "model": "item/materials/burnt_bark"
+        },
+        {
+            "predicate": {"custom_model_data": 9192787},
+            "model": "item/materials/ambrosial_nectar"
+        },
+        {
+            "predicate": {"custom_model_data": 9192788},
+            "model": "item/materials/bustling_fungus"
+        },
+        {
+            "predicate": {"custom_model_data": 9192789},
+            "model": "item/materials/calcified_seed"
+        },
+        {
+            "predicate": {"custom_model_data": 9192790},
+            "model": "item/materials/withered_filament"
+        },
+        {
+            "predicate": {"custom_model_data": 9192791},
+            "model": "item/materials/noxious_spores"
+        },
+		{
+			"predicate": {"custom_model_data": 9199199},
+            "model": "item/gui/merchants/services/service_ordering_confirm"
+		},
+		{
+			"predicate": {"custom_model_data": 9199200},
+            "model": "item/gui/merchants/empty"
+		},
+		{
+			"predicate": {"custom_model_data": 9199201},
+            "model": "item/gui/merchants/services/service_trading_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199202},
+            "model": "item/gui/merchants/services/service_trading_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199203},
+            "model": "item/gui/merchants/services/service_trading_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199204},
+            "model": "item/gui/merchants/services/service_ordering_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199205},
+            "model": "item/gui/merchants/services/service_ordering_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199206},
+            "model": "item/gui/merchants/services/service_ordering_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199207},
+            "model": "item/gui/merchants/services/service_training_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199208},
+            "model": "item/gui/merchants/services/service_training_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199209},
+            "model": "item/gui/merchants/services/service_training_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199210},
+            "model": "item/gui/merchants/services/service_upgrading_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199211},
+            "model": "item/gui/merchants/services/service_upgrading_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199212},
+            "model": "item/gui/merchants/services/service_upgrading_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199213},
+            "model": "item/gui/merchants/services/service_learning_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199214},
+            "model": "item/gui/merchants/services/service_learning_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199215},
+            "model": "item/gui/merchants/services/service_learning_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199216},
+            "model": "item/gui/merchants/services/service_investing_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199217},
+            "model": "item/gui/merchants/services/service_investing_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199218},
+            "model": "item/gui/merchants/services/service_investing_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199500},
+            "model": "item/gui/merchants/services/service_training_skill_smithing_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199501},
+            "model": "item/gui/merchants/services/service_training_skill_smithing_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199502},
+            "model": "item/gui/merchants/services/service_training_skill_smithing_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199503},
+            "model": "item/gui/merchants/services/service_training_skill_trading_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199504},
+            "model": "item/gui/merchants/services/service_training_skill_trading_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199505},
+            "model": "item/gui/merchants/services/service_training_skill_trading_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199506},
+            "model": "item/gui/merchants/services/service_training_skill_woodcutting_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199507},
+            "model": "item/gui/merchants/services/service_training_skill_woodcutting_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199508},
+            "model": "item/gui/merchants/services/service_training_skill_woodcutting_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199509},
+            "model": "item/gui/merchants/services/service_training_skill_alchemy_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199510},
+            "model": "item/gui/merchants/services/service_training_skill_alchemy_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199511},
+            "model": "item/gui/merchants/services/service_training_skill_alchemy_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199512},
+            "model": "item/gui/merchants/services/service_training_skill_archery_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199513},
+            "model": "item/gui/merchants/services/service_training_skill_archery_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199514},
+            "model": "item/gui/merchants/services/service_training_skill_archery_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199515},
+            "model": "item/gui/merchants/services/service_training_skill_digging_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199516},
+            "model": "item/gui/merchants/services/service_training_skill_digging_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199517},
+            "model": "item/gui/merchants/services/service_training_skill_digging_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199518},
+            "model": "item/gui/merchants/services/service_training_skill_enchanting_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199519},
+            "model": "item/gui/merchants/services/service_training_skill_enchanting_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199520},
+            "model": "item/gui/merchants/services/service_training_skill_enchanting_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199521},
+            "model": "item/gui/merchants/services/service_training_skill_farming_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199522},
+            "model": "item/gui/merchants/services/service_training_skill_farming_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199523},
+            "model": "item/gui/merchants/services/service_training_skill_farming_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199524},
+            "model": "item/gui/merchants/services/service_training_skill_fishing_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199525},
+            "model": "item/gui/merchants/services/service_training_skill_fishing_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199526},
+            "model": "item/gui/merchants/services/service_training_skill_fishing_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199527},
+            "model": "item/gui/merchants/services/service_training_skill_heavy_armor_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199528},
+            "model": "item/gui/merchants/services/service_training_skill_heavy_armor_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199529},
+            "model": "item/gui/merchants/services/service_training_skill_heavy_armor_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199530},
+            "model": "item/gui/merchants/services/service_training_skill_heavy_weapons_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199531},
+            "model": "item/gui/merchants/services/service_training_skill_heavy_weapons_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199532},
+            "model": "item/gui/merchants/services/service_training_skill_heavy_weapons_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199533},
+            "model": "item/gui/merchants/services/service_training_skill_light_armor_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199534},
+            "model": "item/gui/merchants/services/service_training_skill_light_armor_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199535},
+            "model": "item/gui/merchants/services/service_training_skill_light_armor_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199536},
+            "model": "item/gui/merchants/services/service_training_skill_light_weapons_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199537},
+            "model": "item/gui/merchants/services/service_training_skill_light_weapons_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199538},
+            "model": "item/gui/merchants/services/service_training_skill_light_weapons_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199539},
+            "model": "item/gui/merchants/services/service_training_skill_martial_arts_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199540},
+            "model": "item/gui/merchants/services/service_training_skill_martial_arts_medium"
+		},
+		{
+			"predicate": {"custom_model_data": 9199541},
+            "model": "item/gui/merchants/services/service_training_skill_martial_arts_small"
+		},
+		{
+			"predicate": {"custom_model_data": 9199542},
+            "model": "item/gui/merchants/services/service_training_skill_mining_big"
+		},
+		{
+			"predicate": {"custom_model_data": 9199543},
+            "model": "item/gui/merchants/services/service_training_skill_mining_medium"
+			},
+		{
+			"predicate": {"custom_model_data": 9199544},
+            "model": "item/gui/merchants/services/service_training_skill_mining_small"
+		}
+    ]
+}

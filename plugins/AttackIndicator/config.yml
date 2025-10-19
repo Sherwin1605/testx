@@ -1,0 +1,60 @@
+# Format of the damage indicator. {damage} is replaced with the damage value.
+placeholder-format: "&f{damage}&c❤"
+# Duration for which the indicator is displayed (in ticks, 1 tick = 1/20 second).
+indicator-duration: 20
+# Base vertical movement speed per tick (in blocks).
+animation-speed: 0.05
+# Enable or disable the indicator animation.
+animation-enabled: true
+# If enabled, the animation speed adapts based on the damage value.
+adaptive-animation: true
+# Damage source filter:
+# "ALL" - show damage indicator for any damage cause (default)
+# "PLAYER" - show indicator only if damage is inflicted by a player.
+damage-source: "ALL"
+
+# Combo counter settings:
+# Enable combo counter to display a multiplier if the same entity is hit in quick succession.
+enable-combo: false
+# Combo timeout in ticks (if no further hit occurs within this time, combo resets).
+combo-timeout: 20
+
+# Combo design customization:
+# Define combo design formats for specific thresholds.
+# The plugin selects the highest threshold that is less than or equal to the current combo count.
+# Use the placeholder {combo} to represent the current combo count.
+combo-designs:
+  1: "&e{combo}x"
+  5: "&6Combo! {combo}x"
+  6: "&6{combo}x"
+  10: "&cultra combo! {combo}x"
+  11: "&c{combo}x"
+
+# Worlds where the plugin is active.
+# Leave the list empty to enable the plugin in all worlds.
+enabled-worlds:
+#  - world
+#  - world_nether
+#  - world_the_end
+
+# Particle effects configuration.
+# Enable or disable particle effects around the damage indicator.
+enable-particles: true
+# Particle type to display (must match a valid org.bukkit.Particle enum, e.g., CRIT, CRIT_MAGIC).
+particle-effect: "CRIT_MAGIC"
+# Number of particles to spawn.
+particle-count: 10
+# Offsets for particle spawning.
+particle-offset-x: 0.2
+particle-offset-y: 0.2
+particle-offset-z: 0.2
+
+# Sound effects configuration.
+# Enable or disable sound effects when the indicator spawns.
+enable-sound: true
+# Sound effect to play (must match a valid org.bukkit.Sound enum, e.g., ENTITY_PLAYER_ATTACK_CRIT).
+sound-effect: "ENTITY_PLAYER_ATTACK_CRIT"
+# Volume of the sound.
+sound-volume: 1.0
+# Pitch of the sound.
+sound-pitch: 1.0

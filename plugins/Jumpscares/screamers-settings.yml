@@ -1,0 +1,135 @@
+WELCOME_HOME:
+  enabled: true
+  fear: 17
+ANGRY_CHEST:
+  enabled: true
+  fear: 15
+CREEPY_LAUGH:
+  enabled: true
+  fear: 8
+FUNERAL_MARCH:
+  enabled: true
+  fear: 9
+SOUND_COLOSSUS:
+  enabled: true
+  fear: 10
+SOUND_STEPS:
+  enabled: true
+  fear: 8
+SOUND_SCREAM:
+  enabled: true
+  fear: 12
+PUMPKIN_HELMET:
+  enabled: true
+  fear: 14
+LOOK_DOWN:
+  enabled: true
+  fear: 13
+DONT_TURN_AROUND:
+  enabled: true
+  fear: 21
+  title:
+    message: '&4DON''T TURN AROUND'
+    duration-in-ticks: 30
+  lifetime: 8
+SPINNING_PLAYER:
+  enabled: true
+  fear: 16
+SPINNING_MOBS:
+  enabled: true
+  fear: 11
+  duration: 20
+  bats-count: 3
+  destroy-on-touch: true
+PUSHING_MOB:
+  enabled: true
+  fear: 23
+  throw-distance: 5
+CREEPY_STATUE:
+  enabled: true
+  fear: 16
+TO_THE_HEAVEN:
+  enabled: true
+  fear: 19
+FALLING_SPIDERS:
+  enabled: true
+  fear: 14
+BURNING_SKULL:
+  enabled: true
+  fear: 16
+ELDER_CURSE:
+  enabled: true
+  fear: 13
+SOMETHING_INSIDE:
+  enabled: true
+  fear: 15
+CRAZY_GUY:
+  enabled: true
+  fear: 22
+LIGHTNING:
+  enabled: true
+  fear: 25
+FAKE_TNT:
+  enabled: true
+  fear: 14
+FAKE_CREEPER:
+  enabled: true
+  fear: 18
+  apply-slowness: true
+ANGRY_WOLVES:
+  enabled: true
+  fear: 5
+  count: 5
+WINDOWS_CRASHER:
+  enabled: true
+  fear: 24
+FIREWORKS:
+  enabled: true
+  fear: 19
+BAT_ON_HEAD:
+  enabled: true
+  fear: 1
+  lifetime: 20
+TRAP_MOB:
+  enabled: true
+  fear: 20
+FAKE_DAMAGE:
+  enabled: true
+  fear: 20
+FAKE_LAVA:
+  enabled: true
+  fear: 25
+DARKNESS:
+  enabled: true
+  fear: 12
+  duration: 15
+LOOK_AT_ENDER:
+  enabled: true
+  fear: 26
+WEEPING_ANGEL:
+  enabled: true
+  fear: 10
+  damage: 4
+  lifetime: 60
+  death-messages:
+  - '&8&l| &9%p was slain by Weeping Angel...'
+THEY_ARE_WATCHING_YOU:
+  enabled: true
+  duration: 20
+WATCHING_MOBS:
+  enabled: true
+  duration: 20
+  unfreeze-on-hit: true
+POLTERGEIST_DOORS:
+  enabled: true
+  fear: 13
+POLTERGEIST_LIGHT:
+  enabled: true
+  fear: 8
+FAKE_SKELETON:
+  enabled: true
+  duration: 12
+FAKE_WARDEN:
+  enabled: true
+  dark-duration: 8
+  fear: 20

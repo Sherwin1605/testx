@@ -1,0 +1,29 @@
+worlds: # Worlds that allow leashed mobs to teleport in/out of them.
+  #- world
+  #- world_nether
+  #- world_the_end
+  - ALL
+
+damage:
+  # Allow damage when it's source is from entities listed below.
+  damager: # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+    - PLAYER # This allows players to attack leashed entities.
+    #- ALL # This allows all entities to attack leashed entities.
+
+protect:
+  # Protect entities that are being leashed when leashed by entities listed below.
+  holder: # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+    #- PLAYER
+    #- LEASH_HITCH
+    - ALL # This allows entities being leashed by all entities to be protected.
+
+  # Protect entities when the damage cause is listed below.
+  cause: # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html
+    - ALL # This allows entities taking damage from all causes to be protected.
+
+ignore: # ignored entities will not function with the function of the plugin as you define them
+  leash: ## list cannot contain ALL
+    - ENDER_DRAGON
+  safety: ## list cannot contain ALL
+    - SPIDER
+    - CREEPER

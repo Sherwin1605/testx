@@ -1,0 +1,25 @@
+worlds:
+  world: WINTER
+dates:
+  world:
+    day: 4
+    month: 12
+    year: 2025
+players:
+  colorsdisabled: []
+  tempdisabled: []
+  particlesdisabled: []
+  knownplayers:
+  - fe86a590-ac58-32ad-abfc-2189b9705865
+  - 8a370a96-91f9-3eee-8b06-0aacc36308ce
+  - ddc80a84-53c8-3dfb-aba9-512eb565597c
+  - 59b3f216-307b-3aaa-a284-4dd1e8bbd5e1
+  - cac193a3-d306-31d2-9b80-a46727fdb592
+  - 9dca150a-c20a-3d23-9367-d926ea295255
+  fahrenheit-mode: []
+last-recorded-date: 2025-10-02T00:00Z[Etc/UTC]
+temperature:
+  world: true
+time-paused: []
+placedblocks:
+  world: []

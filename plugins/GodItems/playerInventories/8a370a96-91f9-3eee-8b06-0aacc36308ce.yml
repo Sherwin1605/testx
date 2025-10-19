@@ -1,0 +1,198 @@
+armor:
+  offhand:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: AIR
+    amount: 0
+charms: {}
+contents:
+  slot_0:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Good"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"105.1%
+        Shot Speed"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        112/462"}],"text":""}'
+      enchants:
+        MENDING: 1
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 290
+      PublicBukkitValues:
+        valhallammo:actual_stats: BOW_STRENGTH:1.05102:ADD_NUMBER:false
+        valhallammo:quality_smithing: 80i
+        valhallammo:default_stats: BOW_STRENGTH:1.0:ADD_NUMBER:false
+        valhallammo:durability: 112i
+        valhallammo:max_durability: 462i
+        valhallammo:neutral_quality: 80i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  slot_1:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Hollow
+        Point"}],"text":""}'
+      PublicBukkitValues:
+        enchantmentsolution:hollow_point_level: '1'
+        enchantmentsolution:hollow_point: Hollow Point
+  slot_2:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Untempered"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Blunt"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Upgrades:
+        3"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Shoddy"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"6.77
+        Attack Damage"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"0.88
+        Attack Speed"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"0%
+        Mining Speed"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        72/96"}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ATTACK_DAMAGE:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 5.767442
+          name: generic.attack_damage
+          slot: HAND
+          uuid: 4f74d191-23eb-4195-baa8-7c3c0397d5b3
+          operation: 0
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: -3.123256
+          name: generic.attack_speed
+          slot: HAND
+          uuid: a1e8db42-cbda-42a2-a83f-d2444ab88910
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 62
+      PublicBukkitValues:
+        valhallammo:actual_stats: MINING_SPEED:6.0:ADD_NUMBER:true;GENERIC_ATTACK_SPEED:0.876744:ADD_NUMBER:false;DIG_SPEED:-0.0:ADD_NUMBER:false;GENERIC_ATTACK_DAMAGE:6.767442:ADD_NUMBER:false
+        valhallammo:quality_smithing: 60i
+        valhallammo:default_stats: GENERIC_ATTACK_DAMAGE:9.0:ADD_NUMBER:false;MINING_SPEED:6.0:ADD_NUMBER:true;DIG_SPEED:0.0:ADD_NUMBER:false;GENERIC_ATTACK_SPEED:0.9:ADD_NUMBER:false
+        valhallammo:durability: 72i
+        valhallammo:smithing_treatments: 1:1,2:1,8:3
+        valhallammo:max_durability: 96i
+        valhallammo:neutral_quality: 110i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  slot_3:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Untempered"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Blunt"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Upgrades:
+        3"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Shoddy"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"1.77
+        Attack Damage"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"1.18
+        Attack Speed"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"0%
+        Mining Speed"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        96/96"}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ATTACK_DAMAGE:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.767442
+          name: generic.attack_damage
+          slot: HAND
+          uuid: 976b0c08-2a25-4ab6-b6f2-1b12196874b6
+          operation: 0
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: -2.8232559999999998
+          name: generic.attack_speed
+          slot: HAND
+          uuid: cf275e1a-839a-40a8-8bed-114431facfdc
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      PublicBukkitValues:
+        valhallammo:actual_stats: DIG_SPEED:-0.0:ADD_NUMBER:false;GENERIC_ATTACK_SPEED:1.176744:ADD_NUMBER:false;MINING_SPEED:6.0:ADD_NUMBER:true;GENERIC_ATTACK_DAMAGE:1.767442:ADD_NUMBER:false
+        valhallammo:quality_smithing: 60i
+        valhallammo:default_stats: GENERIC_ATTACK_DAMAGE:4.0:ADD_NUMBER:false;MINING_SPEED:6.0:ADD_NUMBER:true;DIG_SPEED:0.0:ADD_NUMBER:false;GENERIC_ATTACK_SPEED:1.2:ADD_NUMBER:false
+        valhallammo:durability: 96i
+        valhallammo:smithing_treatments: 1:1,2:1,8:3
+        valhallammo:max_durability: 96i
+        valhallammo:neutral_quality: 110i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  slot_8:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BROWN_DYE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00C2C6","text":"Diamond
+        Backpack"}],"text":""}'
+      custom-model-data: 800003
+      PublicBukkitValues:
+        backpackplus:backpackuuid: e0ab6e3f-e8dd-4e67-9ec8-345746e04cb3
+        backpackplus:backpackused: 1i
+        backpackplus:database: SQLITE
+        backpackplus:backpacktier: 3i
+  slot_21:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: DARK_OAK_WOOD
+    amount: 46
+  slot_6:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: COOKED_PORKCHOP
+    amount: 6
+  slot_14:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: DARK_OAK_PLANKS
+    amount: 6
+  slot_16:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_INGOT
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Hot
+        Iron Ingot"}],"text":""}'
+      custom-model-data: 9827320
+  slot_22:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_INGOT
+    amount: 57
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Hot
+        Iron Ingot"}],"text":""}'
+      custom-model-data: 9827320
+  slot_23:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: STICK
+    amount: 16

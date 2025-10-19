@@ -1,0 +1,17 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/diamond_pickaxe"
+    },
+    "overrides": [
+        
+        {
+            "predicate": {"custom_model_data": 1829130},
+            "model": "item/gui/button_custom_tool_requirement"
+        },
+		{
+            "predicate": {"custom_model_data": 1981900},
+            "model": "item/tools/royal_diamond_pickaxe"
+        }
+    ]
+}

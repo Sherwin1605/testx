@@ -1,0 +1,925 @@
+[20:34:11] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[20:34:17] [ServerMain/INFO]: Loaded 7 recipes
+[20:34:18] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[20:34:18] [Server thread/INFO]: Loading properties
+[20:34:18] [Server thread/INFO]: This server is running Paper version git-Paper-196 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 773dd72)
+[20:34:20] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:34:20] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:34:21] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[20:34:21] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[20:34:21] [Server thread/INFO]: Default game type: SURVIVAL
+[20:34:21] [Server thread/INFO]: Generating keypair
+[20:34:21] [Server thread/INFO]: Starting Minecraft server on 0.0.0.0:25565
+[20:34:21] [Server thread/INFO]: Using epoll channel type
+[20:34:21] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[20:34:21] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[20:34:23] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Initializing Terra...
+[20:34:23] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading config.yml
+[20:34:23] [Server thread/INFO]: [com.dfsek.terra.config.PluginConfigImpl] Loading config values from config.yml
+[20:34:24] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading 35 Terra addons:
+        - biome-provider-extrusion@1.0.0-BETA+73baaec6c
+        - biome-provider-image@1.0.0-BETA+73baaec6c
+        - biome-provider-image-v2@1.0.0-BETA+73baaec6c
+        - biome-provider-pipeline@1.0.1-BETA+73baaec6c
+        - biome-provider-pipeline-v2@1.0.0-BETA+73baaec6c
+        - biome-provider-single@1.0.0-BETA+73baaec6c
+        - biome-query-api@1.0.0-BETA+73baaec6c
+        - chunk-generator-noise-3d@1.1.0-BETA+73baaec6c
+        - command-addons@1.0.0-BETA+73baaec6c
+        - command-packs@1.0.0-BETA+73baaec6c
+        - command-profiler@1.0.0-BETA+73baaec6c
+        - command-structures@1.0.0-BETA+73baaec6c
+        - config-biome@1.0.0-BETA+73baaec6c
+        - config-distributors@1.0.0-BETA+73baaec6c
+        - config-feature@1.0.0-BETA+73baaec6c
+        - config-flora@1.0.0-BETA+73baaec6c
+        - config-locators@1.1.0-BETA+73baaec6c
+        - config-noise-function@1.0.0-BETA+73baaec6c
+        - config-ore@1.0.0-BETA+73baaec6c
+        - config-palette@1.0.0-BETA+73baaec6c
+        - config-structure@1.0.0-BETA+73baaec6c
+        - generation-stage-feature@1.1.0-BETA+73baaec6c
+        - generation-stage-structure@1.0.0-BETA+73baaec6c
+        - language-yaml@1.0.0-BETA+73baaec6c
+        - library-image@1.0.0-BETA+73baaec6c
+        - palette-block-shortcut@1.0.0-BETA+73baaec6c
+        - pipeline-image@1.0.0-BETA+73baaec6c
+        - structure-block-shortcut@1.0.0-BETA+73baaec6c
+        - structure-function-check-noise-3d@1.0.0-BETA+73baaec6c
+        - structure-mutator@0.1.0-BETA+73baaec6c
+        - structure-sponge-loader@1.0.0-BETA+73baaec6c
+        - structure-terrascript-loader@1.1.0-BETA+73baaec6c
+        - terra@1.0.0
+        - terra-bukkit@1.0.0
+        - terrascript-function-sampler@1.0.0-BETA+73baaec6c
+[20:34:24] [Server thread/WARN]: [com.dfsek.terra.addons.biome.pipeline.BiomePipelineAddon] The biome-provider-pipeline addon is deprecated and scheduled for removal in Terra 7.0. It is recommended to use the biome-provider-pipeline-v2 addon for future pack development instead.
+[20:34:24] [Server thread/WARN]: [com.dfsek.terra.addons.biome.image.ImageBiomeProviderAddon] The biome-provider-image addon is deprecated and scheduled for removal in Terra 7.0. It is recommended to use the biome-provider-image-v2 addon for future pack development instead.
+[20:34:24] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Terra addons successfully loaded.
+[20:34:24] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Finished initialization.
+[20:34:24] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R1.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[20:34:29] [Server thread/WARN]: Legacy plugin BloodEffect v3.0.3 does not specify an api-version.
+[20:34:29] [Server thread/INFO]: [SpigotLibraryLoader] [BackpackPlus] Loading 4 libraries... please wait
+[20:34:29] [Server thread/INFO]: [SpigotLibraryLoader] [BackpackPlus] Loaded library /home/container/libraries/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar
+[20:34:29] [Server thread/INFO]: [SpigotLibraryLoader] [BackpackPlus] Loaded library /home/container/libraries/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar
+[20:34:29] [Server thread/INFO]: [SpigotLibraryLoader] [BackpackPlus] Loaded library /home/container/libraries/com/mysql/mysql-connector-j/9.4.0/mysql-connector-j-9.4.0.jar
+[20:34:29] [Server thread/INFO]: [SpigotLibraryLoader] [BackpackPlus] Loaded library /home/container/libraries/com/google/protobuf/protobuf-java/4.31.1/protobuf-java-4.31.1.jar
+[20:34:29] [Server thread/INFO]: [SpigotLibraryLoader] [BackpackPlus] Loaded library /home/container/libraries/org/xerial/sqlite-jdbc/3.50.3.0/sqlite-jdbc-3.50.3.0.jar
+[20:34:29] [Server thread/INFO]: [SpigotLibraryLoader] [BackpackPlus] Loaded library /home/container/libraries/org/postgresql/postgresql/42.7.7/postgresql-42.7.7.jar
+[20:34:29] [Server thread/INFO]: [SpigotLibraryLoader] [BackpackPlus] Loaded library /home/container/libraries/org/checkerframework/checker-qual/3.49.3/checker-qual-3.49.3.jar
+[20:34:29] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.6
+[20:34:29] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.1+6763-2e55f4f
+[20:34:30] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@2a72c582]
+[20:34:30] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0
+[20:34:31] [Server thread/INFO]: [ValhallaMMO] Loading server plugin ValhallaMMO vpremium_1.4
+[20:34:31] [Server thread/INFO]: [ValhallaMMO] Loading ValhallaMMO config with language en-us selected
+[20:34:31] [Server thread/INFO]: [ValhallaMMO] Initialized plugin hook with PlaceholderAPI
+[20:34:31] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.0
+[20:34:32] [Server thread/INFO]: [RealisticSeasons] Loading server plugin RealisticSeasons v11.8.2
+[20:34:32] [Server thread/INFO]: [LevelledMobs] Loading server plugin LevelledMobs v4.3.2.1 b125
+[20:34:32] [Server thread/INFO]: [LevelledMobs] Loading commands
+[20:34:32] [Server thread/INFO]: [CrashAPI] Loading server plugin CrashAPI v1.1.13
+[20:34:32] [Server thread/INFO]: [CrashAPI] Checking Bukkit Version: 1.20.1
+[20:34:32] [Server thread/INFO]: [CrashAPI] Bukkit Version 1.20.1 is compatible through NMS!
+[20:34:32] [Server thread/INFO]: [CrashAPI] Using API version v1_20_R1.
+[20:34:32] [Server thread/INFO]: [CrashAPI] Initializing main configuration...
+[20:34:32] [Server thread/INFO]: [CrashAPI] Main configuration initialized!
+[20:34:32] [Server thread/INFO]: [CrashAPI] Initializing language configuration...
+[20:34:32] [Server thread/INFO]: [CrashAPI] Language configuration initialized!
+[20:34:32] [Server thread/INFO]: [VeinMiner] Loading server plugin VeinMiner v2.3.0
+[20:34:32] [Server thread/INFO]: [Terra] Loading server plugin Terra v6.3.1-BETA+73baaec6c
+[20:34:32] [Server thread/INFO]: [ValhallaTrinkets] Loading server plugin ValhallaTrinkets v2.5
+[20:34:32] [Server thread/INFO]: [AttackIndicator] Loading server plugin AttackIndicator v1.6
+[20:34:32] [Server thread/INFO]: [AFKPlus] Loading server plugin AFKPlus v3.4.9
+[20:34:32] [Server thread/INFO]: [BloodEffect] Loading server plugin BloodEffect v3.0.3
+[20:34:32] [Server thread/INFO]: [TimeBar] Loading server plugin TimeBar v1.4.5
+[20:34:32] [Server thread/INFO]: [BackpackPlus] Loading server plugin BackpackPlus v2.0.1
+[20:34:32] [Server thread/INFO]: [PhysicsControl] Loading server plugin PhysicsControl v1.2.2
+[20:34:32] [Server thread/INFO]: [RealScoreboard] Loading server plugin RealScoreboard v1.5.6
+[20:34:32] [Server thread/INFO]: [HealthBar-Reloaded] Loading server plugin HealthBar-Reloaded v2.0.5-beta
+[20:34:32] [Server thread/INFO]: [EnchantmentSolution] Loading server plugin EnchantmentSolution v2.5.15.2
+[20:34:32] [Server thread/INFO]: [EnchantmentSolution] Minecraft Version: 1.20.1
+[20:34:32] [Server thread/INFO]: [EnchantmentSolution] Minecraft API Version: v1_20_R1
+[20:34:32] [Server thread/INFO]: [EnchantmentSolution] EnchantmentSolution Version: 2.5.15.2
+[20:34:32] [Server thread/INFO]: [EnchantmentSolution] Loading Item Break Types...
+[20:34:33] [Server thread/INFO]: [EnchantmentSolution] Item Break Types Loaded!
+[20:34:33] [Server thread/INFO]: [EnchantmentSolution] Initializing main configuration...
+[20:34:33] [Server thread/INFO]: [EnchantmentSolution] Main configuration initialized!
+[20:34:33] [Server thread/INFO]: [EnchantmentSolution] Initializing fishing config...
+[20:34:33] [Server thread/INFO]: [EnchantmentSolution] Fishing config initialized!
+[20:34:33] [Server thread/INFO]: [EnchantmentSolution] Initializing enchantment configuration...
+[20:34:33] [Server thread/INFO]: [EnchantmentSolution] Enchantment configuration initialized!
+[20:34:33] [Server thread/INFO]: [EnchantmentSolution] Initializing advancements configuration...
+[20:34:33] [Server thread/INFO]: [EnchantmentSolution] Advancements configuration initialized!
+[20:34:33] [Server thread/INFO]: [EnchantmentSolution] Initializing Hard Mode configuration...
+[20:34:33] [Server thread/INFO]: [EnchantmentSolution] Hard Mode configuration initialized!
+[20:34:33] [Server thread/INFO]: [EnchantmentSolution] Initializing language configuration...
+[20:34:33] [Server thread/INFO]: [EnchantmentSolution] Language configuration initialized!
+[20:34:34] [Server thread/INFO]: [EnchantmentSolution] Initializing enchantments...
+[20:34:34] [Server thread/INFO]: [EnchantmentSolution] All enchantments initialized!
+[20:34:34] [Server thread/INFO]: [InteractionVisualizer] Loading server plugin InteractionVisualizer v1.18.18.0
+[20:34:34] [Server thread/INFO]: [hardcore-hearts] Loading server plugin hardcore-hearts v1.1.7
+[20:34:34] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.40
+[20:34:34] [Server thread/INFO]: [BukkitInventoryTweaks] Loading server plugin BukkitInventoryTweaks v1.1.2
+[20:34:34] [Server thread/INFO]: [PlugManX] Loading server plugin PlugManX v2.3.6
+[20:34:34] [Server thread/INFO]: [Jumpscares] Loading server plugin Jumpscares v1.22.1
+[20:34:34] [Server thread/INFO]: [SimpleRTP] Loading server plugin SimpleRTP v5.4
+[20:34:34] [Server thread/INFO]: [ChestSort] Loading server plugin ChestSort v14.2.0
+[20:34:34] [Server thread/INFO]: [BetterStructures] Loading server plugin BetterStructures v2.0.3
+[20:34:34] [Server thread/INFO]: [BetterStructures] MagmaCore v1.13-SNAPSHOT initialized!
+[20:34:34] [Server thread/INFO]: [BetterStructures] Registered /logify command
+[20:34:34] [Server thread/INFO]: [BetterStructures] WorldGuard is not enabled! WorldGuard is recommended when using the EliteMobs integration.
+[20:34:34] [Server thread/INFO]: [DoorsReloaded] Loading server plugin DoorsReloaded v1.3.1
+[20:34:34] [Server thread/INFO]: [ValhallaRaces] Loading server plugin ValhallaRaces v2.2
+[20:34:34] [Server thread/INFO]: [EnchantsSquared] Loading server plugin EnchantsSquared v2.5.17
+[20:34:34] [Server thread/INFO]: [EnchantsSquared] ValhallaMMO hooked! Adding a bunch of cool stuff.
+[20:34:34] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.8.2
+[20:34:34] [Server thread/INFO]: [PhysicsToGo] Loading server plugin PhysicsToGo v2.1.2
+[20:34:34] [Server thread/INFO]: [LumberJack] Loading server plugin LumberJack v5.4.0
+[20:34:34] [Server thread/INFO]: [TabList] Loading server plugin TabList v5.7.7
+[20:34:34] [Server thread/INFO]: [GodItems] Loading server plugin GodItems v3.0.1
+[20:34:34] [Server thread/INFO]: [GodItems] Optional dependency WorldGuard not found. WorldGuard related features will not work.
+[20:34:34] [Server thread/INFO]: [BeaconWaypoints] Loading server plugin BeaconWaypoints v1.7.2
+[20:34:34] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v7.9
+[20:34:34] [Server thread/INFO]: [spark] Loading server plugin spark v1.10.144
+[20:34:34] [Server thread/INFO]: [superleashes] Loading server plugin superleashes v1.0.6
+[20:34:34] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:34:34] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.1+6763-2e55f4f
+[20:34:34] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[20:34:34] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[20:34:34] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R1.PaperweightAdapter as the Bukkit adapter
+[20:34:35] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0
+[20:34:35] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.0
+[20:34:37] [Server thread/INFO]:         __    
+[20:34:37] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.0
+[20:34:37] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[20:34:37] [Server thread/INFO]: 
+[20:34:37] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[20:34:38] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[20:34:39] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[20:34:39] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[20:34:39] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 4132ms)
+[20:34:39] [Server thread/INFO]: [Terra] Enabling Terra v6.3.1-BETA+73baaec6c
+[20:34:39] [Server thread/INFO]: [com.dfsek.terra.bukkit.TerraBukkitPlugin] Running on Minecraft version v1.20.1 with server implementation Paper.
+[20:34:39] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading config packs...
+[20:34:39] [Server thread/INFO]: [com.dfsek.terra.registry.master.ConfigRegistry] Loading ZIP archive: default.zip
+[20:34:41] [Server thread/INFO]: [com.dfsek.terra.config.pack.ConfigPackImpl] Loading config pack "OVERWORLD:OVERWORLD"
+[20:34:46] [Server thread/INFO]: [com.dfsek.terra.config.pack.ConfigPackImpl] Loaded config pack "OVERWORLD:OVERWORLD" v1.3.3 by Astrash, Sancires, Aureus in 6491.754741ms.
+[20:34:46] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loaded packs.
+[20:34:46] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R1.AwfulBukkitHacks] Hacking biome registry...
+[20:34:46] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R1.AwfulBukkitHacks] Doing tag garbage....
+[20:34:46] [Server thread/INFO]: [PlugManX] Enabling PlugManX v2.3.6
+[20:34:46] [Server thread/WARN]: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[20:34:46] [Server thread/WARN]: It seems like you're running on paper.
+[20:34:46] [Server thread/WARN]: This may cause issues.
+[20:34:46] [Server thread/WARN]: If you encounter any issues, please join my discord: https://discord.gg/dBhfCzdZxq
+[20:34:46] [Server thread/WARN]: Or create an issue on GitHub: https://github.com/TheBlackEntity/PlugMan
+[20:34:46] [Server thread/WARN]: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[20:34:47] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
+[20:34:48] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.20.1.
+[20:34:48] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[20:34:48] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.8.2]
+[20:34:48] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
+[20:34:48] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:34:48] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:34:48] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:34:48] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:34:48] [Server thread/INFO]: Preparing level "world"
+[20:34:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[20:34:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[20:34:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[20:34:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[20:34:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[20:34:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[20:34:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[20:34:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.8.2
+[20:34:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: cf773a3
+[20:34:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[20:34:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[20:34:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[20:34:48] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[20:34:50] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R1.NMSInjectListener] Preparing to take over the world: world
+[20:34:50] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R1.NMSInjectListener] Successfully injected into world.
+[20:34:50] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:34:51] [Server thread/INFO]: Time elapsed: 531 ms
+[20:34:51] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[20:34:51] [Server thread/INFO]: Time elapsed: 119 ms
+[20:34:51] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[20:34:51] [Server thread/INFO]: Time elapsed: 187 ms
+[20:34:51] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.6
+[20:34:52] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[20:34:52] [Server thread/INFO]: [ValhallaMMO] Enabling ValhallaMMO vpremium_1.4
+[20:34:52] [Server thread/INFO]: [ValhallaMMO] NMS version NMS_v1_20_R1 registered!
+[20:34:52] [Server thread/INFO]: [ValhallaMMO] Resource pack hosting not established! Use /val resourcepack setup if you want ValhallaMMO's resource pack hosted for you
+[20:34:52] [Server thread/WARN]: [ValhallaMMO] No valid host for the resource pack configured! You may ignore this warning if you've not set up the resource pack.
+[20:34:52] [Server thread/INFO]: [ValhallaMMO] MiniMessage support initialized
+[20:34:52] [Server thread/INFO]: [ValhallaMMO] SQLite connection created! Deleting this file will reset everyone's progress, so back this file up or ignore it in case you want to delete/reset the configs.
+[20:34:52] [Server thread/INFO]: [ValhallaMMO] SQLite connection created! Deleting this file will reset all custom merchant trades and reputation data.
+[20:34:58] [Server thread/WARN]: [ValhallaMMO] The following materials in skills/farming_progression.yml do not exist, no exp values set (ignore warning if your version does not have these materials)
+[20:34:58] [Server thread/WARN]: [ValhallaMMO] OPEN_EYEBLOSSOM, CLOSED_EYEBLOSSOM
+[20:34:58] [Server thread/WARN]: [ValhallaMMO] The following entities in skills/farming_progression.yml do not exist, no exp values set (ignore warning if your version does not have these entities)
+[20:34:58] [Server thread/WARN]: [ValhallaMMO] MOOSHROOM
+[20:35:00] [Server thread/WARN]: [ValhallaMMO] The following materials in skills/woodcutting_progression.yml do not exist, no exp values set (ignore warning if your version does not have these materials)
+[20:35:00] [Server thread/WARN]: [ValhallaMMO] PALE_OAK_LOG, PALE_OAK_WOOD, STRIPPED_PALE_OAK_LOG, STRIPPED_PALE_OAK_WOOD
+[20:35:03] [Server thread/INFO]: [ValhallaMMO] Loading brewing recipes from plugins/ValhallaMMO/recipes/brewing_recipes.json
+[20:35:03] [Server thread/INFO]: [ValhallaMMO] Loading crafting grid recipes from plugins/ValhallaMMO/recipes/grid_recipes.json
+[20:35:03] [Server thread/INFO]: [ValhallaMMO] Loading smithing recipes from plugins/ValhallaMMO/recipes/smithing_recipes.json
+[20:35:03] [Server thread/INFO]: [ValhallaMMO] Loading immersive recipes from plugins/ValhallaMMO/recipes/immersive_recipes.json
+[20:35:03] [Server thread/INFO]: [ValhallaMMO] Loading cauldron recipes from plugins/ValhallaMMO/recipes/cauldron_recipes.json
+[20:35:03] [Server thread/INFO]: [ValhallaMMO] Loading cooking recipes from plugins/ValhallaMMO/recipes/cooking_recipes.json
+[20:35:04] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: valhallammo [premium_1.4]
+[20:35:04] [Server thread/INFO]: [RealisticSeasons] Enabling RealisticSeasons v11.8.2
+[20:35:05] [Server thread/INFO]: [LevelledMobs] Enabling LevelledMobs v4.3.2.1 b125
+[20:35:05] [Server thread/INFO]: [LevelledMobs] Enabling commands
+[20:35:05] [Server thread/INFO]: [LevelledMobs] Building reflection cache, use simple names: false
+[20:35:05] [Server thread/INFO]: [LevelledMobs] Using NMS version v1_20_R1 for nametag support
+[20:35:05] [Server thread/INFO]: [LevelledMobs] File Loader: Loading files...
+[20:35:05] [Server thread/INFO]: [LevelledMobs] File Loader: Loading file 'settings.yml'...
+[20:35:05] [Server thread/INFO]: [LevelledMobs] File Loader: Loading file 'messages.yml'...
+[20:35:05] [Server thread/INFO]: [LevelledMobs] File Loader: Loading file 'externalplugins.yml'...
+[20:35:05] [Server thread/INFO]: [LevelledMobs] File Loader: Loading file 'rules.yml'...
+[20:35:05] [Server thread/INFO]: [LevelledMobs] Current rules hash: 9b0f48e3273bb9cc29d2891ad33fb3410fec8cf1e77c2092ff670fd38f6d4ff5
+[20:35:05] [Server thread/INFO]: [LevelledMobs] File Loader: Loading file 'customdrops.yml'...
+[20:35:05] [Server thread/INFO]: [LevelledMobs] Listeners: Registering event listeners...
+[20:35:05] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: LevelledMobs [4.3.2.1 b125]
+[20:35:05] [Server thread/INFO]: [LevelledMobs] Running misc procedures
+[20:35:05] [Server thread/INFO]: [LevelledMobs] Tasks: Starting async nametag auto update task...
+[20:35:05] [Server thread/INFO]: [LevelledMobs] Start-up complete (took 620ms)
+[20:35:05] [Server thread/INFO]: [CrashAPI] Enabling CrashAPI v1.1.13
+[20:35:05] [Server thread/INFO]: [VeinMiner] Enabling VeinMiner v2.3.0
+[20:35:05] [Server thread/INFO]: [VeinMiner] Using "sqlite" for persistent data storage.
+[20:35:05] [Server thread/INFO]: [VeinMiner] Loading configuration options to local memory
+[20:35:05] [Server thread/WARN]: [VeinMiner] No such block with key "minecraft:short_grass"
+[20:35:05] [Server thread/WARN]: [VeinMiner] No such block with key "minecraft:pale_oak_log"
+[20:35:05] [Server thread/WARN]: [VeinMiner] No such block with key "minecraft:pale_oak_wood"
+[20:35:05] [Server thread/INFO]: [VeinMiner] Added 13 aliases.
+[20:35:05] [Server thread/WARN]: [VeinMiner] No such block with key "minecraft:pale_oak_log"
+[20:35:05] [Server thread/WARN]: [VeinMiner] No such block with key "minecraft:pale_oak_wood"
+[20:35:05] [Server thread/INFO]: [VeinMiner] Registered category with id "Axe" holding 6 unique items and 26 unique blocks.
+[20:35:05] [Server thread/WARN]: [VeinMiner] No such block with key "minecraft:pale_moss_block"
+[20:35:05] [Server thread/WARN]: [VeinMiner] No such block with key "minecraft:pale_moss_carpet"
+[20:35:05] [Server thread/INFO]: [VeinMiner] Registered category with id "Hoe" holding 6 unique items and 10 unique blocks.
+[20:35:05] [Server thread/INFO]: [VeinMiner] Registered category with id "Pickaxe" holding 6 unique items and 14 unique blocks.
+[20:35:05] [Server thread/INFO]: [VeinMiner] Registered category with id "Shears" holding 1 unique items and 4 unique blocks.
+[20:35:05] [Server thread/INFO]: [VeinMiner] Registered category with id "Shovel" holding 6 unique items and 10 unique blocks.
+[20:35:05] [Server thread/WARN]: [VeinMiner] No block list configured for category with id "Hand"! Is this intentional?
+[20:35:05] [Server thread/INFO]: [VeinMiner] Registered category with id "Hand" holding 0 unique items and 0 unique blocks.
+[20:35:05] [Server thread/INFO]: [VeinMiner] Performing an update check!
+[20:35:06] [Server thread/INFO]: [VeinMiner] Registering commands
+[20:35:06] [Server thread/INFO]: [VeinMiner] Registering events
+[20:35:06] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: veinminer [2.3.0]
+[20:35:06] [Server thread/INFO]: [VeinMiner] Vault not found. Economy support suspended
+[20:35:06] [Server thread/INFO]: [VeinMiner] Enabling Plugin Metrics
+[20:35:06] [Server thread/INFO]: [VeinMiner] Thanks for enabling Metrics! The anonymous stats are appreciated
+[20:35:06] [Server thread/INFO]: [ValhallaTrinkets] Enabling ValhallaTrinkets v2.5
+[20:35:06] [Server thread/WARN]: filler item type NONE_GRAY_STAINED_GLASS_PANE is not valid
+[20:35:06] [Server thread/INFO]: [ValhallaTrinkets] ValhallaMMO hooked! Adding a bunch of cool stuff. Use /val setuptrinkets to load in its custom recipes
+[20:35:06] [Server thread/INFO]: [AttackIndicator] Enabling AttackIndicator v1.6
+[20:35:06] [Server thread/INFO]: [AFKPlus] Enabling AFKPlus v3.4.9
+[20:35:06] [Server thread/INFO]: [AFKPlus] AFKPlus v.3.4.9 has been enabled!
+[20:35:06] [Server thread/INFO]: [BloodEffect] Enabling BloodEffect v3.0.3*
+[20:35:06] [Server thread/INFO]: [Blood Effects Reborn] The plugin has been successfully loaded!
+[20:35:06] [Server thread/INFO]: [TimeBar] Enabling TimeBar v1.4.5
+[20:35:06] [Thread-16/INFO]: [VeinMiner] You are on the latest version of VeinMiner!
+[20:35:07] [Server thread/INFO]: [TimeBar] PlaceholderAPI is detected! Enabling support.
+[20:35:07] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: timebar [1.4.5]
+[20:35:07] [Server thread/INFO]: [TimeBar] Successfully registered placeholders!
+[20:35:07] [Server thread/INFO]: [TimeBar] RealisticSeasons is detected! Enabling support.
+[20:35:07] [Server thread/WARN]: [TimeBar] world2 is not a valid world, skipping. If it is a valid world, wait for your server to load then try '/timebar reload'
+[20:35:07] [Server thread/INFO]: [TimeBar] Starting time tracker for 'world' (RealisticSeasons support)
+[20:35:07] [Server thread/INFO]: [TimeBar] Display worlds: [world, world_nether, world_the_end]
+[20:35:07] [Server thread/INFO]: [BackpackPlus] Enabling BackpackPlus v2.0.1
+[20:35:07] [Server thread/INFO]: [BackpackPlus] [Pack] No update needed; current readme is up to date.
+[20:35:07] [Server thread/WARN]: [BackpackPlus] Invalid InventoryType: CRAFTER in blocked-containers
+[20:35:07] [Server thread/INFO]: [BackpackPlus] [Settings] Configuration loaded successfully. No missing fields detected.
+[20:35:07] [Server thread/INFO]: [BackpackPlus] [Database] Configuration loaded successfully. No missing fields detected.
+[20:35:07] [Server thread/INFO]: [BackpackPlus] [Database] SQLite Successfully connected to database
+[20:35:07] [Server thread/INFO]: [BackpackPlus] Tables and indexes created successfully.
+[20:35:07] [Server thread/INFO]: [BackpackPlus] Language used: eng
+[20:35:07] [Server thread/INFO]: [BackpackPlus] Plugin initialized successfully.
+[20:35:07] [Server thread/INFO]: [PhysicsControl] Enabling PhysicsControl v1.2.2
+[20:35:08] [Server thread/INFO]: [RealScoreboard] Enabling RealScoreboard v1.5.6
+[20:35:08] [Server thread/INFO]: [RealScoreboard]    ____            _ ____                     _                         _
+[20:35:08] [Server thread/INFO]: [RealScoreboard]   |  _ \ ___  __ _| / ___|  ___ ___  _ __ ___| |__   ___   __ _ _ __ __| |
+[20:35:08] [Server thread/INFO]: [RealScoreboard]   | |_) / _ \/ _` | \___ \ / __/ _ \| '__/ _ \ '_ \ / _ \ / _` | '__/ _` |
+[20:35:08] [Server thread/INFO]: [RealScoreboard]   |  _ <  __/ (_| | |___) | (_| (_) | | |  __/ |_) | (_) | (_| | | | (_| |
+[20:35:08] [Server thread/INFO]: [RealScoreboard]   |_| \_\___|\__,_|_|____/ \___\___/|_|  \___|_.__/ \___/ \__,_|_|  \__,_|
+[20:35:08] [Server thread/INFO]: [RealScoreboard]   Made by: JoseGamer_PT 		                      Version: 1.5.6
+[20:35:08] [Server thread/INFO]: [RealScoreboard] 
+[20:35:08] [Server thread/INFO]: [RealScoreboard] Loaded 2 conditions.
+[20:35:08] [Server thread/INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[20:35:08] [Server thread/WARN]: [RealScoreboard] Vault is not installed on the server.
+[20:35:09] [Server thread/INFO]: [RealScoreboard] Server version: 1.20.1-R0.1-SNAPSHOT
+[20:35:09] [Server thread/INFO]: [RealScoreboard] Finished loading in 0.642 seconds.
+[20:35:09] [Server thread/INFO]: [RealScoreboard] <------------------ RealScoreboard v1.5.6 ------------------>
+[20:35:09] [Server thread/INFO]: [HealthBar-Reloaded] Enabling HealthBar-Reloaded v2.0.5-beta
+[20:35:09] [Server thread/INFO]: [EnchantmentSolution] Enabling EnchantmentSolution v2.5.15.2
+[20:35:09] [Server thread/INFO]: [InteractionVisualizer] Enabling InteractionVisualizer v1.18.18.0
+[20:35:17] [Server thread/INFO]: [InteractionVisualizer] Opened Sqlite database successfully
+[20:35:19] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: interactionvisualizer [2.0.0]
+[20:35:19] [Server thread/INFO]: [InteractionVisualizer] InteractionVisualizer has been enabled!
+[20:35:19] [Server thread/INFO]: [hardcore-hearts] Enabling hardcore-hearts v1.1.7
+[20:35:19] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.40
+[20:35:19] [Server thread/INFO]: [BukkitInventoryTweaks] Enabling BukkitInventoryTweaks v1.1.2
+[20:35:19] [Server thread/INFO]: [BukkitInventoryTweaks] Thanks for using bstats, it was enabled!
+[20:35:19] [Server thread/INFO]: [BukkitInventoryTweaks] Loading ItemGroups!
+[20:35:19] [Server thread/INFO]: [BukkitInventoryTweaks] Plugin is now enabled!
+[20:35:19] [Server thread/INFO]: [Jumpscares] Enabling Jumpscares v1.22.1
+[20:35:19] [Server thread/INFO]: [Jumpscares] PlaceholderAPI support enabled! Use %jumpscares_scares_count% to get how many times a player was scared.
+[20:35:19] [Server thread/INFO]: [Jumpscares] PlaceholderAPI support enabled! Use %jumpscares_fear_got% to get how many fear a player got by screamers.
+[20:35:19] [Server thread/INFO]: [Jumpscares] PlaceholderAPI support enabled! Use %jumpscares_screamers_status% to get screamers enabled status.
+[20:35:19] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: jumpscares [1.22.1]
+[20:35:19] [Server thread/INFO]: [SimpleRTP] Enabling SimpleRTP v5.4
+[20:35:19] [Server thread/INFO]: [ChestSort] Enabling ChestSort v14.2.0
+[20:35:19] [Server thread/INFO]: [ChestSort] Use permissions: true
+[20:35:19] [Server thread/INFO]: [ChestSort] Current sorting method: {category},{itemsFirst},{name},{color},{customName}
+[20:35:19] [Server thread/INFO]: [ChestSort] Allow automatic chest sorting:true
+[20:35:19] [Server thread/INFO]: [ChestSort]   |- Chest sorting enabled by default: false
+[20:35:19] [Server thread/INFO]: [ChestSort]   |- Sort time: close
+[20:35:19] [Server thread/INFO]: [ChestSort] Allow automatic inventory sorting:true
+[20:35:19] [Server thread/INFO]: [ChestSort]   |- Inventory sorting enabled by default: false
+[20:35:19] [Server thread/INFO]: [ChestSort] Auto generate category files: true
+[20:35:19] [Server thread/INFO]: [ChestSort] Allow hotkeys: true
+[20:35:19] [Server thread/INFO]: [ChestSort] Hotkeys enabled by default:
+[20:35:19] [Server thread/INFO]: [ChestSort]   |- Middle-Click: true
+[20:35:19] [Server thread/INFO]: [ChestSort]   |- Shift-Click: true
+[20:35:19] [Server thread/INFO]: [ChestSort]   |- Double-Click: true
+[20:35:19] [Server thread/INFO]: [ChestSort]   |- Shift-Right-Click: true
+[20:35:19] [Server thread/INFO]: [ChestSort] Allow additional hotkeys: true
+[20:35:19] [Server thread/INFO]: [ChestSort] Additional hotkeys enabled by default:
+[20:35:19] [Server thread/INFO]: [ChestSort]   |- Left-Click: false
+[20:35:19] [Server thread/INFO]: [ChestSort]   |- Right-Click: false
+[20:35:19] [Server thread/INFO]: [ChestSort] Check for updates: true
+[20:35:19] [Server thread/INFO]: [ChestSort] Check interval: 4 hours (4.0 seconds)
+[20:35:19] [Server thread/INFO]: [ChestSort] Categories: 900-weapons (6), 905-common-tools (4), 907-other-tools (6), 909-food (33), 910-valuables (47), 920-armor-and-arrows (9), 930-brewing (18), 950-redstone (23), 960-wood (60), 970-stone (38), 980-plants (50), 981-corals (1)
+[20:35:19] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: chestsort [14.2.0]
+[20:35:19] [Server thread/INFO]: [BetterStructures] Enabling BetterStructures v2.0.3
+[20:35:19] [Server thread/INFO]:     ____       __  __            _____ __                  __                      
+[20:35:19] [Server thread/INFO]:    / __ )___  / /_/ /____  _____/ ___// /________  _______/ /___  __________  _____
+[20:35:19] [Server thread/INFO]:   / __  / _ \/ __/ __/ _ \/ ___/\__ \/ __/ ___/ / / / ___/ __/ / / / ___/ _ \/ ___/
+[20:35:19] [Server thread/INFO]:  / /_/ /  __/ /_/ /_/  __/ /   ___/ / /_/ /  / /_/ / /__/ /_/ /_/ / /  /  __(__  ) 
+[20:35:19] [Server thread/INFO]: /_____/\___/\__/\__/\___/_/   /____/\__/_/   \__,_/\___/\__/\__,_/_/   \___/____/
+[20:35:19] [Server thread/INFO]: [BetterStructures] Initialized version 2.0.3!
+[20:35:19] [Server thread/INFO]: [BetterStructures] Supported server version detected: v1_20_R1
+[20:35:20] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 46 ms to scan 1 urls, producing 1 keys and 5 values
+[20:35:20] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 7 ms to scan 1 urls, producing 1 keys and 29 values
+[20:35:20] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 3 ms to scan 1 urls, producing 1 keys and 1 values
+[20:35:20] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 122 ms to scan 116 urls, producing 0 keys and 0 values
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[9]. Block will be replaced with air.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[9]. Block will be replaced with air.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[20]. Block will be replaced with air.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[8]. Block will be replaced with air.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[16]. Block will be replaced with air.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[7]. Block will be replaced with air.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[17]. Block will be replaced with air.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[7]. Block will be replaced with air.
+[20:35:28] [Server thread/WARN]: Invalid BlockState in palette: minecraft:chiseled_tuff_bricks=LinIntTag[34]. Block will be replaced with air.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Invalid BlockState in palette: minecraft:chiseled_tuff_bricks=LinIntTag[25]. Block will be replaced with air.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:28] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[10]. Block will be replaced with air.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[9]. Block will be replaced with air.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[8]. Block will be replaced with air.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[8]. Block will be replaced with air.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[10]. Block will be replaced with air.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[12]. Block will be replaced with air.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[10]. Block will be replaced with air.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[11]. Block will be replaced with air.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:29] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[16]. Block will be replaced with air.
+[20:35:29] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3953 > 3465). Data may be incompatible.
+[20:35:33] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:34] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_church_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:34] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_church_end.yml will not be used.
+[20:35:35] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_tower_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:35] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_tower_tundra.yml will not be used.
+[20:35:36] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_floatingisland_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:36] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_floatingisland_end.yml will not be used.
+[20:35:37] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_floatingisland_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:37] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_floatingisland_tundra.yml will not be used.
+[20:35:37] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_prison_shallow.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:37] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_prison_shallow.yml will not be used.
+[20:35:38] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_pyramid_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:38] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_pyramid_barren.yml will not be used.
+[20:35:38] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_tower_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:38] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_tower_desert.yml will not be used.
+[20:35:38] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_church_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:38] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_church_tundra.yml will not be used.
+[20:35:38] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_arena_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:38] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_arena_end.yml will not be used.
+[20:35:38] [Server thread/WARN]: [BetterStructures] bs_lostcivilizations_free_mines_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:38] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, bs_lostcivilizations_free_mines_end.yml will not be used.
+[20:35:38] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_pyramid_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:38] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_pyramid_end.yml will not be used.
+[20:35:38] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_squaredungeon_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:38] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_squaredungeon_desert.yml will not be used.
+[20:35:40] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_arena_grassland.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:40] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_arena_grassland.yml will not be used.
+[20:35:40] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_floatingisland_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:40] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_floatingisland_desert.yml will not be used.
+[20:35:41] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_undergrounddungeon_shallow.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:41] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_undergrounddungeon_shallow.yml will not be used.
+[20:35:41] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_well_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:41] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_well_barren.yml will not be used.
+[20:35:41] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_hole_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:41] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_hole_nether.yml will not be used.
+[20:35:42] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_amphitheatre_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:42] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_amphitheatre_tundra.yml will not be used.
+[20:35:42] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_hole_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:42] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_hole_barren.yml will not be used.
+[20:35:42] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_church_grassland.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:42] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_church_grassland.yml will not be used.
+[20:35:42] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_prison_lush.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:42] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_prison_lush.yml will not be used.
+[20:35:42] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_watertemple_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:42] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_watertemple_end.yml will not be used.
+[20:35:42] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_pyramid_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:42] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_pyramid_nether.yml will not be used.
+[20:35:42] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_greenhouse_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:42] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_greenhouse_barren.yml will not be used.
+[20:35:42] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_prison_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:42] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_prison_end.yml will not be used.
+[20:35:43] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_spikes_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:43] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_spikes_tundra.yml will not be used.
+[20:35:43] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_floatingisland_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:43] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_floatingisland_nether.yml will not be used.
+[20:35:43] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_watertemple_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:43] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_watertemple_tundra.yml will not be used.
+[20:35:43] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_hole_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:43] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_hole_desert.yml will not be used.
+[20:35:43] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_arena_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:43] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_arena_desert.yml will not be used.
+[20:35:43] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_church_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:43] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_church_nether.yml will not be used.
+[20:35:43] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_undergrounddungeon_dripstone.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:43] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_undergrounddungeon_dripstone.yml will not be used.
+[20:35:43] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_spikes_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:43] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_spikes_desert.yml will not be used.
+[20:35:43] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_graveyard_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:43] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_graveyard_tundra.yml will not be used.
+[20:35:44] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_amphitheatre_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:44] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_amphitheatre_desert.yml will not be used.
+[20:35:44] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_well_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:44] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_well_nether.yml will not be used.
+[20:35:44] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_tower_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:44] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_tower_nether.yml will not be used.
+[20:35:44] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_undergrounddungeon_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:44] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_undergrounddungeon_end.yml will not be used.
+[20:35:44] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_watertemple_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:44] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_watertemple_desert.yml will not be used.
+[20:35:45] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_undergrounddungeon_lush.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:45] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_undergrounddungeon_lush.yml will not be used.
+[20:35:45] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_arenaroom_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:45] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_arenaroom_barren.yml will not be used.
+[20:35:45] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_hole_grassland.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:45] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_hole_grassland.yml will not be used.
+[20:35:46] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_graveyard_grassland.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:46] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_graveyard_grassland.yml will not be used.
+[20:35:46] [Server thread/WARN]: [BetterStructures] Failed to determine entity type for sign! Entry was END_CRYSTAL in schematic bs_lostcivilizations_free_verticalcave_end.schem ! Fix this by inputting a valid entity type!
+[20:35:46] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_watertemple_grassland.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:46] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_watertemple_grassland.yml will not be used.
+[20:35:46] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_arenaroom_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:46] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_arenaroom_nether.yml will not be used.
+[20:35:47] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_flagship_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:47] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_flagship_barren.yml will not be used.
+[20:35:47] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_squaredungeon_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:47] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_squaredungeon_tundra.yml will not be used.
+[20:35:48] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_tower_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:48] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_tower_end.yml will not be used.
+[20:35:48] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_arena_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:48] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_arena_tundra.yml will not be used.
+[20:35:48] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_graveyard_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:48] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_graveyard_desert.yml will not be used.
+[20:35:48] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_church_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:48] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_church_barren.yml will not be used.
+[20:35:48] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_squaredungeon_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:48] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_squaredungeon_end.yml will not be used.
+[20:35:48] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_flagship_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:48] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_flagship_nether.yml will not be used.
+[20:35:48] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_pyramid_grassland.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:48] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_pyramid_grassland.yml will not be used.
+[20:35:48] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_arenaroom_grassland.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:48] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_arenaroom_grassland.yml will not be used.
+[20:35:48] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_floatingisland_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:48] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_floatingisland_barren.yml will not be used.
+[20:35:48] [Server thread/WARN]: [BetterStructures] bs_lostcivilizations_free_ruins_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:48] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, bs_lostcivilizations_free_ruins_end.yml will not be used.
+[20:35:48] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_graveyard_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:48] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_graveyard_nether.yml will not be used.
+[20:35:51] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_tower_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:51] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_tower_barren.yml will not be used.
+[20:35:51] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_squaredungeon_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:51] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_squaredungeon_barren.yml will not be used.
+[20:35:51] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_amphitheatre_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:51] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_amphitheatre_barren.yml will not be used.
+[20:35:51] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_spikes_grassland.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:51] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_spikes_grassland.yml will not be used.
+[20:35:51] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_tower_grassland.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:51] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_tower_grassland.yml will not be used.
+[20:35:52] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_spikes_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:52] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_spikes_nether.yml will not be used.
+[20:35:52] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_prison_deep.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:52] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_prison_deep.yml will not be used.
+[20:35:52] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_squaredungeon_grassland.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:52] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_squaredungeon_grassland.yml will not be used.
+[20:35:52] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_well_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:52] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_well_tundra.yml will not be used.
+[20:35:52] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_greenhouse_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:52] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_greenhouse_desert.yml will not be used.
+[20:35:52] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_well_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:52] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_well_end.yml will not be used.
+[20:35:53] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_prison_dripstone.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:53] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_prison_dripstone.yml will not be used.
+[20:35:53] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_undergrounddungeon_deep.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:53] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_undergrounddungeon_deep.yml will not be used.
+[20:35:54] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_well_grassland.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:54] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_well_grassland.yml will not be used.
+[20:35:54] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_greenhouse_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:54] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_greenhouse_nether.yml will not be used.
+[20:35:54] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_arenaroom_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:54] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_arenaroom_end.yml will not be used.
+[20:35:55] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_arenaroom_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:55] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_arenaroom_desert.yml will not be used.
+[20:35:55] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_graveyard_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:55] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_graveyard_barren.yml will not be used.
+[20:35:55] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_spikes_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:55] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_spikes_barren.yml will not be used.
+[20:35:55] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_greenhouse_grassland.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:55] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_greenhouse_grassland.yml will not be used.
+[20:35:55] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_pyramid_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:55] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_pyramid_desert.yml will not be used.
+[20:35:55] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_arena_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:55] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_arena_nether.yml will not be used.
+[20:35:56] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_hole_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:56] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_hole_tundra.yml will not be used.
+[20:35:56] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_greenhouse_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:56] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_greenhouse_tundra.yml will not be used.
+[20:35:56] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_amphitheatre_grassland.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:56] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_amphitheatre_grassland.yml will not be used.
+[20:35:56] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_squaredungeon_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:56] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_squaredungeon_nether.yml will not be used.
+[20:35:56] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_amphitheatre_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:56] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_amphitheatre_nether.yml will not be used.
+[20:35:56] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_arenaroom_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:56] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_arenaroom_tundra.yml will not be used.
+[20:35:56] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_well_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:56] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_well_desert.yml will not be used.
+[20:35:56] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_flagship_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:56] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_flagship_tundra.yml will not be used.
+[20:35:56] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_arena_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:56] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_arena_barren.yml will not be used.
+[20:35:56] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_church_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:56] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_church_desert.yml will not be used.
+[20:35:57] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_prison_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:57] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_prison_nether.yml will not be used.
+[20:35:57] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_watertemple_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:57] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_watertemple_nether.yml will not be used.
+[20:35:57] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_flagship_desert.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:57] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_flagship_desert.yml will not be used.
+[20:35:57] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_greenhouse_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:57] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_greenhouse_end.yml will not be used.
+[20:35:58] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_hole_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:58] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_hole_end.yml will not be used.
+[20:35:58] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_graveyard_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:58] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_graveyard_end.yml will not be used.
+[20:35:58] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_watertemple_barren.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:58] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_watertemple_barren.yml will not be used.
+[20:35:58] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_flagship_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:58] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_flagship_end.yml will not be used.
+[20:35:58] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_undergrounddungeon_nether.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:58] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_undergrounddungeon_nether.yml will not be used.
+[20:35:59] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_spikes_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:59] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_spikes_end.yml will not be used.
+[20:35:59] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_amphitheatre_end.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:59] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_amphitheatre_end.yml will not be used.
+[20:35:59] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_floatingisland_grassland.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:59] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_floatingisland_grassland.yml will not be used.
+[20:35:59] [Server thread/WARN]: [BetterStructures] betterstructures_em_premium_pyramid_tundra.yml uses EliteMobs bosses but you do not have EliteMobs installed! BetterStructures does not require EliteMobs to work, but if you want cool EliteMobs boss fights you will have to install EliteMobs here: https://nightbreak.io/plugin/elitemobs/
+[20:35:59] [Server thread/WARN]: [BetterStructures] Since EliteMobs is not installed, betterstructures_em_premium_pyramid_tundra.yml will not be used.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[19]. Block will be replaced with air.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[27]. Block will be replaced with air.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[14]. Block will be replaced with air.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[14]. Block will be replaced with air.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[21]. Block will be replaced with air.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[26]. Block will be replaced with air.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[33]. Block will be replaced with air.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[26]. Block will be replaced with air.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[13]. Block will be replaced with air.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[24]. Block will be replaced with air.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[31]. Block will be replaced with air.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[15]. Block will be replaced with air.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[8]. Block will be replaced with air.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Schematic was made in a newer Minecraft version (3955 > 3465). Data may be incompatible.
+[20:35:59] [Server thread/WARN]: Invalid BlockState in palette: minecraft:short_grass=LinIntTag[20]. Block will be replaced with air.
+[20:35:59] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 41 ms to scan 1 urls, producing 1 keys and 10 values
+[20:36:00] [Server thread/INFO]: [DoorsReloaded] Enabling DoorsReloaded v1.3.1
+[20:36:00] [Server thread/INFO]: [ValhallaRaces] Enabling ValhallaRaces v2.2
+[20:36:00] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: valhallaraces [1.1]
+[20:36:00] [Server thread/INFO]: [EnchantsSquared] Enabling EnchantsSquared v2.5.17
+[20:36:00] [Server thread/INFO]: ValhallaMMO enchantments loaded in! 5 were registered.
+[20:36:00] [Server thread/INFO]: [PhysicsToGo] Enabling PhysicsToGo v2.1.2
+[20:36:00] [Server thread/INFO]: [PhysicsToGo] Everything inside the configuration seems to be up to date. (Took 2ms)
+[20:36:00] [Server thread/INFO]: [LumberJack] Enabling LumberJack v5.4.0
+[20:36:00] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: lumberjack [5.4.0]
+[20:36:00] [Server thread/INFO]: [TabList] Enabling TabList v5.7.7
+[20:36:00] [Server thread/INFO]: [TabList] Found PlaceholderAPI version: 2.11.6
+[20:36:00] [Server thread/INFO]: [TabList] v5.7.7 on v1_20_1 (274ms)
+[20:36:00] [Server thread/INFO]: [GodItems] Enabling GodItems v3.0.1
+[20:36:00] [Server thread/INFO]: [GodItems] Made by MitromniZ and Cros_bow
+[20:36:00] [Server thread/INFO]: [GodItems] The texture pack is only available if you download the plugin from our patreon page
+[20:36:01] [Server thread/INFO]: [BeaconWaypoints] Enabling BeaconWaypoints v1.7.2
+[20:36:01] [Server thread/INFO]: [BeaconWaypoints] Loading module for version 1.20.1-R0.1-SNAPSHOT
+[20:36:01] [Server thread/WARN]: [BeaconWaypoints] EssentialsX is not installed, ignoring Essentials money cost for teleporting.
+[20:36:01] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v7.9
+[20:36:01] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[20:36:01] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 7.9
+[20:36:01] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[20:36:01] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: SimpleTpa [7.9]
+[20:36:01] [Server thread/INFO]: [spark] Enabling spark v1.10.144
+[20:36:02] [Server thread/INFO]: [spark] Using Paper ServerTickStartEvent for tick monitoring
+[20:36:02] [Server thread/INFO]: [spark] Starting background profiler...
+[20:36:02] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: spark [1.10.144]
+[20:36:02] [Server thread/INFO]: [spark] Registered PlaceholderAPI placeholders
+[20:36:02] [Server thread/INFO]: [superleashes] Enabling superleashes v1.0.6
+[20:36:03] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[20:36:03] [Server thread/INFO]: Running delayed init tasks
+[20:36:03] [Craft Scheduler Thread - 23 - BloodEffect/INFO]: [BloodEffect] §aYou are running at the latest version of BloodEffects 3.0.3
+[20:36:03] [Craft Scheduler Thread - 15 - AFKPlus/INFO]: [AFKPlus] AFKPlus file watcher started!
+[20:36:03] [Craft Scheduler Thread - 9 - EnchantmentSolution/INFO]: [EnchantmentSolution] Checking for latest version.
+[20:36:03] [Craft Scheduler Thread - 25 - InteractionVisualizer/INFO]: [InteractionVisualizer] Downloading and extracting latest Language files...
+[20:36:03] [Craft Scheduler Thread - 4 - RealScoreboard/INFO]: [RealScoreboard] The plugin is updated to the latest version.
+[20:36:03] [Craft Scheduler Thread - 20 - BackpackPlus/INFO]: =============================[BackpackPlus]=============================
+[20:36:03] [Craft Scheduler Thread - 20 - BackpackPlus/INFO]: The plugin is up to date: (RELEASE 2.0.1)
+[20:36:03] [Craft Scheduler Thread - 20 - BackpackPlus/INFO]: =============================[BackpackPlus]=============================
+[20:36:03] [Craft Scheduler Thread - 16 - BukkitInventoryTweaks/INFO]: [BukkitInventoryTweaks] Checking for update...
+[20:36:03] [Craft Scheduler Thread - 28 - BetterStructures/INFO]: [BetterStructures] Latest public release is 2.0.3
+[20:36:03] [Craft Scheduler Thread - 28 - BetterStructures/INFO]: [BetterStructures] Your version is 2.0.3
+[20:36:03] [Craft Scheduler Thread - 22 - AFKPlus/INFO]: [AFKPlus] §6There is no update available
+[20:36:03] [Craft Scheduler Thread - 28 - BetterStructures/INFO]: [BetterStructures] You are running the latest version!
+[20:36:04] [Craft Scheduler Thread - 20 - SimpleTpa/INFO]: [SimpleTpa] There is a new update available.
+[20:36:04] [Craft Scheduler Thread - 20 - SimpleTpa/INFO]: [SimpleTpa] There is a new update available:
+[20:36:04] [Craft Scheduler Thread - 20 - SimpleTpa/INFO]: [SimpleTpa] https://www.spigotmc.org/resources/simple-tpa.64270/
+[20:36:04] [Craft Scheduler Thread - 16 - BukkitInventoryTweaks/INFO]: [BukkitInventoryTweaks] Version installed is 1.1.2
+[20:36:04] [Craft Scheduler Thread - 16 - BukkitInventoryTweaks/INFO]: [BukkitInventoryTweaks] Latest version found online is 1.1.2
+[20:36:04] [Craft Scheduler Thread - 16 - BukkitInventoryTweaks/INFO]: [BukkitInventoryTweaks] No update found.
+[20:36:04] [Craft Scheduler Thread - 9 - EnchantmentSolution/INFO]: [EnchantmentSolution] Your version is up-to-date.
+[20:36:04] [Craft Scheduler Thread - 14 - TimeBar/WARN]: [TimeBar] A new version is available (1.4.8-hotfix)! You are running version 1.4.5. You are 4 version(s) behind.
+[20:36:04] [Craft Scheduler Thread - 25 - InteractionVisualizer/INFO]: [InteractionVisualizer] Sucessfully downloaded the latest Language files!
+[20:36:05] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: rs [1.0.0]
+[20:36:05] [Server thread/INFO]: [RealisticSeasons] Total biomes registered on server: 778
+[20:36:05] [Server thread/INFO]: [EnchantmentSolution] Vein Miner compatibility enabled!
+[20:36:05] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: localtime [1.2]
+[20:36:05] [Server thread/INFO]: 1 placeholder hook(s) registered!
+[20:36:05] [Server thread/WARN]: [ValhallaMMO] There is a new version of ValhallaMMO available: premium_1.6
+[20:36:05] [Server thread/WARN]: [ValhallaMMO] Please don't forget to look at the change notes, this update might be important and additional steps may be required to have the update go smoothly
+[20:36:05] [Server thread/WARN]: [ValhallaMMO] https://www.spigotmc.org/resources/valhallammo-1-19-1-21-8.94921/
+[20:36:05] [Server thread/WARN]: java.net.UnknownHostException: api.jeff-media.de
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.net.Socket.connect(Socket.java:751)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1253)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1139)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223)
+[20:36:05] [Server thread/WARN]: 	at DoorsReloaded-1.3.1.jar//de.jeff_media.doorsreloaded.updatechecker.UpdateChecker.lambda$checkNow$5(UpdateChecker.java:203)
+[20:36:05] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftTask.run(CraftTask.java:101)
+[20:36:05] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57)
+[20:36:05] [Server thread/WARN]: 	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[20:36:05] [Server thread/WARN]: java.net.UnknownHostException: api.jeff-media.de
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.net.Socket.connect(Socket.java:751)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1253)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1139)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223)
+[20:36:05] [Server thread/WARN]: 	at LumberJack-5.4.0.jar//de.jeff_media.lumberjack.libs.updatechecker.UpdateChecker.lambda$checkNow$5(UpdateChecker.java:203)
+[20:36:05] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftTask.run(CraftTask.java:101)
+[20:36:05] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57)
+[20:36:05] [Server thread/WARN]: 	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[20:36:05] [Server thread/WARN]: java.net.UnknownHostException: api.jeff-media.de
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.net.Socket.connect(Socket.java:751)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1253)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1139)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615)
+[20:36:05] [Server thread/WARN]: 	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223)
+[20:36:05] [Server thread/WARN]: 	at ChestSort-14.2.0.jar//de.jeff_media.chestsort.updatechecker.UpdateChecker.lambda$checkNow$5(UpdateChecker.java:273)
+[20:36:05] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftTask.run(CraftTask.java:101)
+[20:36:05] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57)
+[20:36:05] [Server thread/WARN]: 	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+[20:36:05] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[20:36:05] [Server thread/WARN]: [DoorsReloaded] Could not check for updates.
+[20:36:05] [Server thread/WARN]: [LumberJack] Could not check for updates.
+[20:36:05] [Server thread/WARN]: [ChestSort] Could not check for updates.
+[20:36:07] [Server thread/INFO]: Done (108.803s)! For help, type "help"
+[20:36:07] [Server thread/INFO]: Timings Reset
+[20:36:09] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5222ms or 104 ticks behind
+[20:36:10] [Craft Scheduler Thread - 5 - CrashAPI/INFO]: [CrashAPI] Checking for latest version.
+[20:36:10] [Craft Scheduler Thread - 5 - CrashAPI/INFO]: [CrashAPI] Your version is up-to-date.
+[20:36:15] [User Authenticator #0/INFO]: UUID of player Sherwin1605 is fe86a590-ac58-32ad-abfc-2189b9705865
+[20:36:17] [Server thread/INFO]: Sherwin1605 joined the game
+[20:36:17] [Server thread/INFO]: Sherwin1605[/127.0.0.1:60878] logged in with entity id 288 at ([world]-332.40089117641253, 66.0, -411.33764197616955)
+[20:36:18] [Craft Scheduler Thread - 22 - RealScoreboard/INFO]: [RealScoreboard] Using 1.17+ ping method.
+[20:36:29] [Server thread/INFO]: Sherwin1605 issued server command: //
+[20:36:53] [Server thread/INFO]: Sherwin1605 issued server command: //set spruce_planks
+[20:37:20] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 41234ms or 824 ticks behind
+[20:37:57] [Server thread/INFO]: Sherwin1605 issued server command: /gamemode survival
+[20:37:57] [Server thread/INFO]: [Sherwin1605 - 28/28: Set own game mode to Survival Mode]
+[20:38:04] [Server thread/INFO]: Sherwin1605 issued server command: /timebar
+[20:38:07] [Server thread/INFO]: Sherwin1605 issued server command: /timebar on
+[20:39:09] [Server thread/INFO]: Player Sherwin1605 was scared by the BURNING_SKULL screamer
+[20:39:14] [Server thread/INFO]: Sherwin1605 lost connection: Disconnected
+[20:39:14] [Server thread/INFO]: [TimeBar] Stopping current TimeBar task for 'world'
+[20:39:14] [Server thread/INFO]: Sherwin1605 - 28/28 left the game
+[20:40:40] [Server thread/INFO]: Preparing Timings Report...
+[20:40:43] [Timings paste thread/INFO]: View Timings Report: https://timings.aikar.co/dev/?id=fc7e5bebd4c749b2aab8c08314ab1065
+[20:43:42] [Server thread/INFO]: Stopping the server
+[20:43:42] [Server thread/INFO]: Stopping server
+[20:43:42] [Server thread/INFO]: [superleashes] Disabling superleashes v1.0.6
+[20:43:42] [Server thread/INFO]: [spark] Disabling spark v1.10.144
+[20:43:42] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v7.9
+[20:43:42] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[20:43:42] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 7.9
+[20:43:42] [Server thread/INFO]: [BeaconWaypoints] Disabling BeaconWaypoints v1.7.2
+[20:43:42] [Server thread/INFO]: [GodItems] Disabling GodItems v3.0.1
+[20:43:42] [Server thread/INFO]: [GodItems] Saved player inventories: true
+[20:43:42] [Server thread/INFO]: [TabList] Disabling TabList v5.7.7
+[20:43:42] [Server thread/INFO]: [LumberJack] Disabling LumberJack v5.4.0
+[20:43:42] [Server thread/INFO]: [PhysicsToGo] Disabling PhysicsToGo v2.1.2
+[20:43:42] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.8.2
+[20:43:42] [Server thread/INFO]: [EnchantsSquared] Disabling EnchantsSquared v2.5.17
+[20:43:42] [Server thread/INFO]: [ValhallaRaces] Disabling ValhallaRaces v2.2
+[20:43:42] [Server thread/INFO]: [DoorsReloaded] Disabling DoorsReloaded v1.3.1
+[20:43:42] [Server thread/INFO]: [BetterStructures] Disabling BetterStructures v2.0.3
+[20:43:42] [Server thread/INFO]: [BetterStructures] Shutdown!
+[20:43:42] [Server thread/INFO]: [ChestSort] Disabling ChestSort v14.2.0
+[20:43:42] [Server thread/INFO]: [SimpleRTP] Disabling SimpleRTP v5.4
+[20:43:42] [Server thread/INFO]: [Jumpscares] Disabling Jumpscares v1.22.1
+[20:43:42] [Server thread/INFO]: [PlugManX] Disabling PlugManX v2.3.6
+[20:43:42] [Server thread/INFO]: [BukkitInventoryTweaks] Disabling BukkitInventoryTweaks v1.1.2
+[20:43:42] [Server thread/INFO]: [BukkitInventoryTweaks] Plugin is now disabled!
+[20:43:42] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.40
+[20:43:42] [Server thread/INFO]: [hardcore-hearts] Disabling hardcore-hearts v1.1.7
+[20:43:42] [Server thread/INFO]: [InteractionVisualizer] Disabling InteractionVisualizer v1.18.18.0
+[20:43:42] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion interactionvisualizer
+[20:43:42] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin InteractionVisualizer was disabled.
+[20:43:42] [Server thread/INFO]: [InteractionVisualizer] Saving player preferences bitmask index, do not halt the server.
+[20:43:42] [Server thread/INFO]: [InteractionVisualizer] InteractionVisualizer has been disabled!
+[20:43:42] [Server thread/INFO]: [EnchantmentSolution] Disabling EnchantmentSolution v2.5.15.2
+[20:43:42] [Server thread/INFO]: [HealthBar-Reloaded] Disabling HealthBar-Reloaded v2.0.5-beta
+[20:43:42] [Server thread/INFO]: HealthBar disabled: all the health bars have been removed.
+[20:43:42] [Server thread/INFO]: [RealScoreboard] Disabling RealScoreboard v1.5.6
+[20:43:42] [Server thread/INFO]: [PhysicsControl] Disabling PhysicsControl v1.2.2
+[20:43:42] [Server thread/INFO]: [BackpackPlus] Disabling BackpackPlus v2.0.1
+[20:43:42] [Server thread/INFO]: [BackpackPlus] SQLite Successfully disconnected from the database
+[20:43:42] [Server thread/INFO]: [TimeBar] Disabling TimeBar v1.4.5
+[20:43:42] [Server thread/INFO]: [BloodEffect] Disabling BloodEffect v3.0.3
+[20:43:42] [Server thread/INFO]: [Blood Effects Reborn] The plugin has successfully unloaded!
+[20:43:42] [Server thread/INFO]: [AFKPlus] Disabling AFKPlus v3.4.9
+[20:43:42] [Server thread/INFO]: [AFKPlus] AFKPlus has been disabled!
+[20:43:42] [Server thread/INFO]: [AttackIndicator] Disabling AttackIndicator v1.6
+[20:43:42] [Server thread/INFO]: [ValhallaTrinkets] Disabling ValhallaTrinkets v2.5
+[20:43:42] [Server thread/INFO]: [Terra] Disabling Terra v6.3.1-BETA+73baaec6c
+[20:43:42] [Server thread/INFO]: [VeinMiner] Disabling VeinMiner v2.3.0
+[20:43:42] [Server thread/INFO]: [VeinMiner] Clearing localized data
+[20:43:42] [Server thread/INFO]: [CrashAPI] Disabling CrashAPI v1.1.13
+[20:43:42] [Server thread/INFO]: [LevelledMobs] Disabling LevelledMobs v4.3.2.1 b125
+[20:43:42] [Server thread/INFO]: [LevelledMobs] Unregistering commands
+[20:43:42] [Server thread/INFO]: [LevelledMobs] Tasks: Shutting down other async tasks...
+[20:43:42] [Craft Scheduler Thread - 13 - LevelledMobs/INFO]: [LevelledMobs] Nametag update queue Manager has exited
+[20:43:42] [Server thread/INFO]: [LevelledMobs] Shut-down complete (took 2ms)
+[20:43:42] [Craft Scheduler Thread - 21 - LevelledMobs/INFO]: [LevelledMobs] Mob processing queue Manager has exited
+[20:43:42] [Server thread/INFO]: [RealisticSeasons] Disabling RealisticSeasons v11.8.2
+[20:43:42] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.5.0
+[20:43:42] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[20:43:42] [Server thread/INFO]: [LuckPerms] Closing storage...
+[20:43:42] [Server thread/INFO]: [LuckPerms] Goodbye!
+[20:43:42] [Server thread/INFO]: [ValhallaMMO] Disabling ValhallaMMO vpremium_1.4
+[20:43:42] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
+[20:43:42] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.1+6763-2e55f4f
+[20:43:42] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[20:43:42] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.6
+[20:43:42] [Server thread/INFO]: Saving players
+[20:43:42] [Server thread/INFO]: Saving worlds
+[20:43:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[20:43:42] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[20:43:42] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[20:43:42] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[20:43:42] [Server thread/INFO]: [ChunkHolderManager] Saved 7 block chunks, 76 entity chunks, 0 poi chunks in world 'world' in 0.03s
+[20:43:42] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[20:43:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[20:43:42] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[20:43:42] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[20:43:42] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[20:43:42] [Server thread/INFO]: [ChunkHolderManager] Saved 4 block chunks, 83 entity chunks, 0 poi chunks in world 'world_nether' in 0.03s
+[20:43:42] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20:43:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[20:43:42] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[20:43:42] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[20:43:42] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[20:43:42] [Server thread/INFO]: [ChunkHolderManager] Saved 9 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[20:43:42] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20:43:42] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[20:43:42] [Server thread/INFO]: Flushing Chunk IO
+[20:43:42] [Server thread/INFO]: Closing Thread Pool
+[20:43:42] [Server thread/INFO]: Closing Server

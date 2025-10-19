@@ -1,0 +1,696 @@
+[
+  {
+    "id": "royal_diamond_chestplate",
+    "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\nLk51bWJlcoaslR0LlOCLAgAAeHAAAA2JdAASTEVBVEhFUl9DSEVTVFBMQVRFc3EAfgAAc3EAfgAD\ndXEAfgAGAAAABHEAfgAIdAAJbWV0YS10eXBldAAMZGlzcGxheS1uYW1ldAARY3VzdG9tLW1vZGVs\nLWRhdGF1cQB+AAYAAAAEdAAISXRlbU1ldGF0AA9DT0xPUkFCTEVfQVJNT1J0ALF7ImV4dHJhIjpb\neyJ0ZXh0IjoiPCJ9LHsiY2xpY2tFdmVudCI6eyJhY3Rpb24iOiJvcGVuX3VybCIsInZhbHVlIjoi\naHR0cDovL2xhbmcubWF0ZXJpYWwtcm95YWwtZGlhbW9uZC1jaGVzdHBsYXRlPiJ9LCJ0ZXh0Ijoi\nbGFuZy5tYXRlcmlhbC1yb3lhbC1kaWFtb25kLWNoZXN0cGxhdGU+In1dLCJ0ZXh0IjoiIn1zcQB+\nAA4Al1dU\n",
+    "modifiers": [
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.ItemType",
+        "DATA": {
+          "material": "LEATHER_CHESTPLATE",
+          "name": "material",
+          "priority": "SOONEST"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FancyPantsOrEquippable",
+        "DATA": {
+          "newMaterial": "DIAMOND_CHESTPLATE",
+          "model": "minecraft:royal_diamond",
+          "slot": "CHEST",
+          "oldMaterial": "LEATHER_CHESTPLATE",
+          "red": 161,
+          "green": 251,
+          "blue": 232,
+          "name": "fancypants_or_equippable",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
+        "DATA": {
+          "flag": "DISPLAY_ATTRIBUTES",
+          "name": "flag_display_attributes",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.CustomModelDataSet",
+        "DATA": {
+          "customModelData": 9918292,
+          "name": "custom_model_data",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagVanillaAdd",
+        "DATA": {
+          "flag": "HIDE_ATTRIBUTES",
+          "name": "flag_hide_attributes",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.SmithingNeutralQualitySet",
+        "DATA": {
+          "neutral": 140,
+          "name": "smithing_neutral_quality_set",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagVanillaAdd",
+        "DATA": {
+          "flag": "HIDE_DYE",
+          "name": "flag_hide_dye",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.ItemRarity",
+        "DATA": {
+          "rarity": "EPIC",
+          "name": "rarity",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.LoreSet",
+        "DATA": {
+          "lore": [
+            "&f<lang.lore_royal_diamond_equipment>"
+          ],
+          "mode": 2,
+          "name": "relore",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.ItemMaterialClass",
+        "DATA": {
+          "materialClass": "DIAMOND",
+          "name": "material_type",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.DisplayNameSet",
+        "DATA": {
+          "displayName": "<lang.material-royal-diamond-chestplate>",
+          "name": "rename",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ARMOR",
+          "value": 12.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "IRON_CHESTPLATE",
+          "name": "attribute_add_generic_armor",
+          "priority": "LATERISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ARMOR_TOUGHNESS",
+          "value": 4.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "DIAMOND_CHESTPLATE",
+          "name": "attribute_add_generic_armor_toughness",
+          "priority": "LATERISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "DAMAGE_ABSORPTION",
+          "value": 0.5,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "OBSIDIAN",
+          "name": "attribute_add_damage_absorption",
+          "priority": "LATERISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.potion_effects.PermanentPotionEffectAdd",
+        "DATA": {
+          "effect": "CUSTOM_HEAL",
+          "amplifier": 0.2,
+          "duration": 200,
+          "condition": "while_day_or_light",
+          "icon": "GLISTERING_MELON_SLICE",
+          "smallStep": 0.1,
+          "bigStep": 1.0,
+          "name": "permanent_effect_add_custom_heal",
+          "priority": "LATERISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DurabilityDefaultSet",
+        "DATA": {
+          "value": 2000,
+          "name": "durability_max_set",
+          "priority": "LAST"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hot_netherite",
+    "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\nLk51bWJlcoaslR0LlOCLAgAAeHAAAA2JdAAPTkVUSEVSSVRFX0lOR09Uc3EAfgAAc3EAfgADdXEA\nfgAGAAAAA3EAfgAIdAAJbWV0YS10eXBldAAMZGlzcGxheS1uYW1ldXEAfgAGAAAAA3QACEl0ZW1N\nZXRhdAAKVU5TUEVDSUZJQ3QAp3siZXh0cmEiOlt7InRleHQiOiI8In0seyJjbGlja0V2ZW50Ijp7\nImFjdGlvbiI6Im9wZW5fdXJsIiwidmFsdWUiOiJodHRwOi8vbGFuZy5tYXRlcmlhbC1ob3QtbmV0\naGVyaXRlLWluZ290PiJ9LCJ0ZXh0IjoibGFuZy5tYXRlcmlhbC1ob3QtbmV0aGVyaXRlLWluZ290\nPiJ9XSwidGV4dCI6IiJ9\n",
+    "modifiers": [
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.CustomModelDataSet",
+        "DATA": {
+          "customModelData": 9827320,
+          "name": "custom_model_data",
+          "priority": "NEUTRAL"
+        }
+      }
+    ]
+  },
+  {
+    "id": "netherite_warhammer_scaling",
+    "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\nLk51bWJlcoaslR0LlOCLAgAAeHAAAA2JdAAPTkVUSEVSSVRFX1NXT1JEc3EAfgAAc3EAfgADdXEA\nfgAGAAAAA3EAfgAIdAAJbWV0YS10eXBldAARY3VzdG9tLW1vZGVsLWRhdGF1cQB+AAYAAAADdAAI\nSXRlbU1ldGF0AApVTlNQRUNJRklDc3EAfgAOAB49gQ==\n",
+    "modifiers": [
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.ItemType",
+        "DATA": {
+          "material": "NETHERITE_SWORD",
+          "name": "material",
+          "priority": "SOONEST"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
+        "DATA": {
+          "flag": "DISPLAY_ATTRIBUTES",
+          "name": "flag_display_attributes",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.ItemWeightClass",
+        "DATA": {
+          "weightClass": "HEAVY",
+          "name": "weight_class",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagVanillaAdd",
+        "DATA": {
+          "flag": "HIDE_ATTRIBUTES",
+          "name": "flag_hide_attributes",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.CustomModelDataSet",
+        "DATA": {
+          "customModelData": 1981825,
+          "name": "custom_model_data",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.CustomIDSet",
+        "DATA": {
+          "customID": 105,
+          "name": "custom_id",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.SmithingNeutralQualitySet",
+        "DATA": {
+          "neutral": 170,
+          "name": "smithing_neutral_quality_set",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.DisplayNameSet",
+        "DATA": {
+          "displayName": "<lang.material-netherite-warhammer>",
+          "name": "rename",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeRemove",
+        "DATA": {
+          "attribute": "GENERIC_ATTACK_DAMAGE",
+          "icon": "IRON_SWORD",
+          "name": "attribute_remove_generic_attack_damage",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ATTACK_SPEED",
+          "value": 1.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "GOLDEN_SWORD",
+          "name": "attribute_add_generic_attack_speed",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "STUN_CHANCE",
+          "value": 0.2,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "IRON_BLOCK",
+          "name": "attribute_add_stun_chance",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "KNOCKBACK",
+          "value": 0.5,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "SLIME_BLOCK",
+          "name": "attribute_add_knockback",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "EXTRA_BLUDGEONING_DAMAGE",
+          "value": 10.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "COBBLESTONE",
+          "name": "attribute_add_extra_bludgeoning_damage",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
+        "DATA": {
+          "mode": "ADD_ON_DEFAULT",
+          "amplifier": 0.2,
+          "skillRange": 185.0,
+          "rangeOffset": 115.0,
+          "minimum": 0.0,
+          "skillToScaleWith": "SMITHING",
+          "skillEfficiency": 1.0,
+          "minimumValue": 0.0,
+          "attribute": "GENERIC_ATTACK_SPEED",
+          "icon": "GOLDEN_SWORD",
+          "name": "attribute_scale_generic_attack_speed",
+          "priority": "NEUTRAL"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
+        "DATA": {
+          "mode": "ADD_ON_DEFAULT",
+          "amplifier": 4.0,
+          "skillRange": 185.0,
+          "rangeOffset": 115.0,
+          "minimum": 0.0,
+          "skillToScaleWith": "SMITHING",
+          "skillEfficiency": 1.0,
+          "minimumValue": 0.0,
+          "attribute": "EXTRA_BLUDGEONING_DAMAGE",
+          "icon": "COBBLESTONE",
+          "name": "attribute_scale_extra_bludgeoning_damage",
+          "priority": "NEUTRAL"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DurabilityScale",
+        "DATA": {
+          "mode": "MULTIPLIER",
+          "amplifier": 2.0,
+          "skillRange": 185.0,
+          "rangeOffset": 115.0,
+          "minimum": 1.0,
+          "skillToScaleWith": "SMITHING",
+          "skillEfficiency": 1.0,
+          "minimumValue": 0.2,
+          "name": "durability_scale",
+          "priority": "LAST"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hot_iron",
+    "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\nLk51bWJlcoaslR0LlOCLAgAAeHAAAA2JdAAKSVJPTl9JTkdPVHNxAH4AAHNxAH4AA3VxAH4ABgAA\nAANxAH4ACHQACW1ldGEtdHlwZXQADGRpc3BsYXktbmFtZXVxAH4ABgAAAAN0AAhJdGVtTWV0YXQA\nClVOU1BFQ0lGSUN0AJ17ImV4dHJhIjpbeyJ0ZXh0IjoiPCJ9LHsiY2xpY2tFdmVudCI6eyJhY3Rp\nb24iOiJvcGVuX3VybCIsInZhbHVlIjoiaHR0cDovL2xhbmcubWF0ZXJpYWwtaG90LWlyb24taW5n\nb3Q+In0sInRleHQiOiJsYW5nLm1hdGVyaWFsLWhvdC1pcm9uLWluZ290PiJ9XSwidGV4dCI6IiJ9\n",
+    "modifiers": [
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.CustomModelDataSet",
+        "DATA": {
+          "customModelData": 9827320,
+          "name": "custom_model_data",
+          "priority": "NEUTRAL"
+        }
+      }
+    ]
+  },
+  {
+    "id": "unstable_diamond",
+    "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\nLk51bWJlcoaslR0LlOCLAgAAeHAAAA2JdAAHRElBTU9ORHNxAH4AAHNxAH4AA3VxAH4ABgAAAANx\nAH4ACHQACW1ldGEtdHlwZXQADGRpc3BsYXktbmFtZXVxAH4ABgAAAAN0AAhJdGVtTWV0YXQAClVO\nU1BFQ0lGSUN0AKF7ImV4dHJhIjpbeyJ0ZXh0IjoiPCJ9LHsiY2xpY2tFdmVudCI6eyJhY3Rpb24i\nOiJvcGVuX3VybCIsInZhbHVlIjoiaHR0cDovL2xhbmcubWF0ZXJpYWwtdW5zdGFibGUtZGlhbW9u\nZD4ifSwidGV4dCI6ImxhbmcubWF0ZXJpYWwtdW5zdGFibGUtZGlhbW9uZD4ifV0sInRleHQiOiIi\nfQ==\n",
+    "modifiers": [
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.CustomModelDataSet",
+        "DATA": {
+          "customModelData": 9827320,
+          "name": "custom_model_data",
+          "priority": "NEUTRAL"
+        }
+      }
+    ]
+  },
+  {
+    "id": "enchantment_respiration_scaling",
+    "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09\ndAABdnQABHR5cGV1cQB+AAYAAAADdAAeb3JnLmJ1a2tpdC5pbnZlbnRvcnkuSXRlbVN0YWNrc3IA\nEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVy\nhqyVHQuU4IsCAAB4cAAADYl0AARCT09L\n",
+    "modifiers": [
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.ItemType",
+        "DATA": {
+          "material": "BOOK",
+          "name": "material",
+          "priority": "SOONEST"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.enchantments.EnchantmentAdd",
+        "DATA": {
+          "enchantment": "respiration",
+          "level": 2,
+          "icon": "KELP",
+          "scaleWithSkill": true,
+          "name": "enchant_add_respiration",
+          "priority": "NEUTRAL"
+        }
+      }
+    ]
+  },
+  {
+    "id": "royal_netherite_leggings",
+    "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\nLk51bWJlcoaslR0LlOCLAgAAeHAAAA2JdAAQTEVBVEhFUl9MRUdHSU5HU3NxAH4AAHNxAH4AA3Vx\nAH4ABgAAAARxAH4ACHQACW1ldGEtdHlwZXQADGRpc3BsYXktbmFtZXQAEWN1c3RvbS1tb2RlbC1k\nYXRhdXEAfgAGAAAABHQACEl0ZW1NZXRhdAAPQ09MT1JBQkxFX0FSTU9SdACxeyJleHRyYSI6W3si\ndGV4dCI6IjwifSx7ImNsaWNrRXZlbnQiOnsiYWN0aW9uIjoib3Blbl91cmwiLCJ2YWx1ZSI6Imh0\ndHA6Ly9sYW5nLm1hdGVyaWFsLXJveWFsLW5ldGhlcml0ZS1sZWdnaW5ncz4ifSwidGV4dCI6Imxh\nbmcubWF0ZXJpYWwtcm95YWwtbmV0aGVyaXRlLWxlZ2dpbmdzPiJ9XSwidGV4dCI6IiJ9c3EAfgAO\nAJdXVQ==\n",
+    "modifiers": [
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.ItemType",
+        "DATA": {
+          "material": "LEATHER_LEGGINGS",
+          "name": "material",
+          "priority": "SOONEST"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FancyPantsOrEquippable",
+        "DATA": {
+          "newMaterial": "NETHERITE_LEGGINGS",
+          "model": "minecraft:royal_netherite",
+          "slot": "LEGS",
+          "oldMaterial": "LEATHER_LEGGINGS",
+          "red": 118,
+          "green": 106,
+          "blue": 118,
+          "name": "fancypants_or_equippable",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
+        "DATA": {
+          "flag": "DISPLAY_ATTRIBUTES",
+          "name": "flag_display_attributes",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.CustomModelDataSet",
+        "DATA": {
+          "customModelData": 9918293,
+          "name": "custom_model_data",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagVanillaAdd",
+        "DATA": {
+          "flag": "HIDE_ATTRIBUTES",
+          "name": "flag_hide_attributes",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagVanillaAdd",
+        "DATA": {
+          "flag": "HIDE_DYE",
+          "name": "flag_hide_dye",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.LoreSet",
+        "DATA": {
+          "lore": [
+            "&f<lang.lore_royal_netherite_equipment>"
+          ],
+          "mode": 2,
+          "name": "relore",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.SmithingNeutralQualitySet",
+        "DATA": {
+          "neutral": 170,
+          "name": "smithing_neutral_quality_set",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.ItemWeightClass",
+        "DATA": {
+          "weightClass": "HEAVY",
+          "name": "weight_class",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.ItemRarity",
+        "DATA": {
+          "rarity": "EPIC",
+          "name": "rarity",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.DisplayNameSet",
+        "DATA": {
+          "displayName": "<lang.material-royal-netherite-leggings>",
+          "name": "rename",
+          "priority": "SOONISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "DAMAGE_ABSORPTION",
+          "value": 0.5,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "OBSIDIAN",
+          "name": "attribute_add_damage_absorption",
+          "priority": "LATERISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ARMOR",
+          "value": 9.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "IRON_CHESTPLATE",
+          "name": "attribute_add_generic_armor",
+          "priority": "LATERISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.potion_effects.PermanentPotionEffectAdd",
+        "DATA": {
+          "effect": "CRIT_CHANCE",
+          "amplifier": 0.05,
+          "duration": 40,
+          "condition": "while_night_or_dark",
+          "icon": "GOLDEN_SWORD",
+          "smallStep": 0.01,
+          "bigStep": 0.1,
+          "name": "permanent_effect_add_crit_chance",
+          "priority": "LATERISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_KNOCKBACK_RESISTANCE",
+          "value": 0.10000000000000009,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "NETHERITE_CHESTPLATE",
+          "name": "attribute_add_generic_knockback_resistance",
+          "priority": "LATERISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ARMOR_TOUGHNESS",
+          "value": 6.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "DIAMOND_CHESTPLATE",
+          "name": "attribute_add_generic_armor_toughness",
+          "priority": "LATERISH"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DurabilityDefaultSet",
+        "DATA": {
+          "value": 2450,
+          "name": "durability_max_set",
+          "priority": "LAST"
+        }
+      }
+    ]
+  },
+  {
+    "id": "leather_helmet_scaling",
+    "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAA3QAAj09\ndAABdnQABHR5cGV1cQB+AAYAAAADdAAeb3JnLmJ1a2tpdC5pbnZlbnRvcnkuSXRlbVN0YWNrc3IA\nEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVy\nhqyVHQuU4IsCAAB4cAAADYl0AA5MRUFUSEVSX0hFTE1FVA==\n",
+    "modifiers": [
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.ItemType",
+        "DATA": {
+          "material": "LEATHER_HELMET",
+          "name": "material",
+          "priority": "SOONEST"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
+        "DATA": {
+          "flag": "DISPLAY_ATTRIBUTES",
+          "name": "flag_display_attributes",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagVanillaAdd",
+        "DATA": {
+          "flag": "HIDE_ATTRIBUTES",
+          "name": "flag_hide_attributes",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.SmithingNeutralQualitySet",
+        "DATA": {
+          "neutral": 50,
+          "name": "smithing_neutral_quality_set",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
+        "DATA": {
+          "mode": "MULTIPLIER",
+          "amplifier": 0.5,
+          "skillRange": 275.0,
+          "rangeOffset": 25.0,
+          "minimum": 1.0,
+          "skillToScaleWith": "SMITHING",
+          "skillEfficiency": 1.0,
+          "minimumValue": 0.0,
+          "attribute": "GENERIC_ARMOR",
+          "icon": "IRON_CHESTPLATE",
+          "name": "attribute_scale_generic_armor",
+          "priority": "NEUTRAL"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DurabilityScale",
+        "DATA": {
+          "mode": "MULTIPLIER",
+          "amplifier": 2.0,
+          "skillRange": 275.0,
+          "rangeOffset": 25.0,
+          "minimum": 1.0,
+          "skillToScaleWith": "SMITHING",
+          "skillEfficiency": 1.0,
+          "minimumValue": 0.2,
+          "name": "durability_scale",
+          "priority": "LAST"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hot_gold",
+    "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\nLk51bWJlcoaslR0LlOCLAgAAeHAAAA2JdAAKR09MRF9JTkdPVHNxAH4AAHNxAH4AA3VxAH4ABgAA\nAANxAH4ACHQACW1ldGEtdHlwZXQADGRpc3BsYXktbmFtZXVxAH4ABgAAAAN0AAhJdGVtTWV0YXQA\nClVOU1BFQ0lGSUN0AJ17ImV4dHJhIjpbeyJ0ZXh0IjoiPCJ9LHsiY2xpY2tFdmVudCI6eyJhY3Rp\nb24iOiJvcGVuX3VybCIsInZhbHVlIjoiaHR0cDovL2xhbmcubWF0ZXJpYWwtaG90LWdvbGQtaW5n\nb3Q+In0sInRleHQiOiJsYW5nLm1hdGVyaWFsLWhvdC1nb2xkLWluZ290PiJ9XSwidGV4dCI6IiJ9\n",
+    "modifiers": [
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.CustomModelDataSet",
+        "DATA": {
+          "customModelData": 9827320,
+          "name": "custom_model_data",
+          "priority": "NEUTRAL"
+        }
+      }
+    ]
+  }
+]

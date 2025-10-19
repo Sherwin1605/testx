@@ -1,0 +1,12 @@
+armor:
+  offhand:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: AIR
+    amount: 0
+charms: {}
+contents:
+  slot_0:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: WHEAT_SEEDS

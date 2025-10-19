@@ -1,0 +1,8 @@
+folderNameV2: dungeoneering_modules_premium
+isEnabled: true
+name: '&2Dungeoneering Modules Premium'
+description:
+- '&fThe first modular dungeon for BetterStructures!'
+version: 0
+folderName: dungeoneering_pack_premium
+contentPackageType: MODULAR

@@ -1,0 +1,646 @@
+armor:
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Untempered"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Unfit"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Upgrades:
+        3"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Great"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"1.15
+        Armor"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        51/132"}],"text":""}'
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+      attribute-modifiers:
+        GENERIC_ARMOR:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 1.151163
+          name: generic.armor
+          slot: HEAD
+          uuid: a3dbfd4a-5d32-45f8-a462-781da1fab49e
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 101
+      PublicBukkitValues:
+        valhallammo:actual_stats: GENERIC_ARMOR:1.151163:ADD_NUMBER:false
+        valhallammo:quality_smithing: 150i
+        valhallammo:default_stats: GENERIC_ARMOR:2.0:ADD_NUMBER:false
+        valhallammo:durability: 51i
+        valhallammo:smithing_treatments: 1:1,7:1,8:3
+        valhallammo:max_durability: 132i
+        valhallammo:neutral_quality: 110i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Untempered"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Unfit"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Upgrades:
+        3"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Great"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"3.38
+        Armor"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        100/181"}],"text":""}'
+      enchants:
+        PROTECTION_PROJECTILE: 1
+      attribute-modifiers:
+        GENERIC_ARMOR:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 3.383721
+          name: generic.armor
+          slot: CHEST
+          uuid: 5921d24a-c1dc-4f13-b81f-1bfa290dad81
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 107
+      PublicBukkitValues:
+        valhallammo:actual_stats: GENERIC_ARMOR:3.383721:ADD_NUMBER:false
+        valhallammo:quality_smithing: 140i
+        valhallammo:default_stats: GENERIC_ARMOR:6.0:ADD_NUMBER:false
+        valhallammo:durability: 100i
+        valhallammo:smithing_treatments: 1:1,7:1,8:3
+        valhallammo:max_durability: 181i
+        valhallammo:neutral_quality: 110i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Untempered"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Unfit"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Upgrades:
+        3"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Great"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"2.82
+        Armor"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        106/170"}],"text":""}'
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+        DURABILITY: 1
+      attribute-modifiers:
+        GENERIC_ARMOR:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 2.819767
+          name: generic.armor
+          slot: LEGS
+          uuid: a244ba30-de75-4624-ae87-50e2d0c83e90
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 84
+      PublicBukkitValues:
+        valhallammo:actual_stats: GENERIC_ARMOR:2.819767:ADD_NUMBER:false
+        valhallammo:quality_smithing: 140i
+        valhallammo:default_stats: GENERIC_ARMOR:5.0:ADD_NUMBER:false
+        valhallammo:durability: 106i
+        valhallammo:smithing_treatments: 1:1,7:1,8:3
+        valhallammo:max_durability: 170i
+        valhallammo:neutral_quality: 110i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Toughness
+        I"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Untempered"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Unfit"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Upgrades:
+        3"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Great"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"1.15
+        Armor"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        75/156"}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ARMOR:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 1.151163
+          name: generic.armor
+          slot: FEET
+          uuid: 0d540928-22d8-4bee-921b-b943970dcdf2
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 101
+      PublicBukkitValues:
+        enchantmentsolution:toughness_level: '1'
+        enchantmentsolution:toughness: Toughness
+        valhallammo:actual_stats: GENERIC_ARMOR:1.151163:ADD_NUMBER:false
+        valhallammo:quality_smithing: 150i
+        valhallammo:default_stats: GENERIC_ARMOR:2.0:ADD_NUMBER:false
+        valhallammo:durability: 75i
+        valhallammo:smithing_treatments: 1:1,7:1,8:3
+        valhallammo:max_durability: 156i
+        valhallammo:neutral_quality: 110i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  offhand:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: COD
+    amount: 64
+charms: {}
+contents:
+  slot_0:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: FISHING_ROD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        LUCK: 2
+        LURE: 2
+        MENDING: 1
+        DURABILITY: 3
+  slot_1:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: SALMON
+    amount: 64
+  slot_2:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: COD
+    amount: 64
+  slot_5:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Decent"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"101%
+        Shot Speed"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        88/400"}],"text":""}'
+      enchants:
+        ARROW_DAMAGE: 4
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 299
+      PublicBukkitValues:
+        valhallammo:actual_stats: BOW_STRENGTH:1.010204:ADD_NUMBER:false
+        valhallammo:quality_smithing: 60i
+        valhallammo:default_stats: BOW_STRENGTH:1.0:ADD_NUMBER:false
+        valhallammo:durability: 88i
+        valhallammo:max_durability: 400i
+        valhallammo:neutral_quality: 80i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  slot_9:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: NAUTILUS_SHELL
+    amount: 4
+  slot_10:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: LILY_PAD
+    amount: 11
+  slot_11:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: TRIPWIRE_HOOK
+    amount: 6
+  slot_12:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BONE
+    amount: 4
+  slot_13:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Good"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"107.1%
+        Shot Speed"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        31/494"}],"text":""}'
+      enchants:
+        ARROW_FIRE: 1
+        DURABILITY: 3
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 359
+      PublicBukkitValues:
+        valhallammo:actual_stats: BOW_STRENGTH:1.071429:ADD_NUMBER:false
+        valhallammo:quality_smithing: 90i
+        valhallammo:default_stats: BOW_STRENGTH:1.0:ADD_NUMBER:false
+        valhallammo:durability: 31i
+        valhallammo:max_durability: 494i
+        valhallammo:neutral_quality: 80i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  slot_14:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: NAME_TAG
+    amount: 7
+  slot_15:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: ENCHANTED_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: ENCHANTED
+      stored-enchants:
+        DIG_SPEED: 4
+        ARROW_DAMAGE: 4
+        OXYGEN: 3
+        DAMAGE_ALL: 3
+  slot_16:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: ENCHANTED_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: ENCHANTED
+      stored-enchants:
+        LUCK: 2
+        DURABILITY: 3
+  slot_17:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: COD
+    amount: 64
+  slot_18:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: FISHING_ROD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        LUCK: 2
+        MENDING: 1
+      Damage: 60
+  slot_19:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Good"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"105.1%
+        Shot Speed"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        67/462"}],"text":""}'
+      enchants:
+        ARROW_DAMAGE: 3
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 328
+      PublicBukkitValues:
+        valhallammo:actual_stats: BOW_STRENGTH:1.05102:ADD_NUMBER:false
+        valhallammo:quality_smithing: 80i
+        valhallammo:default_stats: BOW_STRENGTH:1.0:ADD_NUMBER:false
+        valhallammo:durability: 67i
+        valhallammo:max_durability: 462i
+        valhallammo:neutral_quality: 80i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  slot_3:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: PUFFERFISH
+    amount: 36
+  slot_4:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BROWN_DYE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00C2C6","text":"Diamond
+        Backpack"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"169x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Cooked
+        Cod"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"104x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Salmon"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"80x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Cod"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"67x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Pufferfish"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"65x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Stick"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"34x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Cooked
+        Salmon"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"18x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Arrow"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"12x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Nautilus
+        Shell"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"12x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Name
+        Tag"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"9x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Tropical
+        Fish"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"9x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Leather"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"9x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Bow"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"8x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Fishing
+        Rod"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"7x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Iron
+        Ingot"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"6x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Enchanted
+        Book"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"6x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Diamond"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"6x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Beef"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"4x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Jungle
+        Log"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"3x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Bone"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"3x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Jungle
+        Wood"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"2x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"White
+        Wool"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Saddle"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Iron
+        Pickaxe"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Tripwire
+        Hook"}],"text":""}'
+      custom-model-data: 800003
+      PublicBukkitValues:
+        backpackplus:backpackuuid: 6f5703bd-ee3c-4c84-b9ab-7eda3b3d4ee4
+        backpackplus:backpackused: 1i
+        backpackplus:database: SQLITE
+        backpackplus:backpacktier: 3i
+  slot_22:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: LEATHER_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: COLORABLE_ARMOR
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Good"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"1.08
+        Armor"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        12/86"}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ARMOR:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 1.081818
+          name: generic.armor
+          slot: FEET
+          uuid: fb8e7b2c-5259-4e0e-900a-480ab482f304
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 55
+      PublicBukkitValues:
+        valhallammo:actual_stats: GENERIC_ARMOR:1.081818:ADD_NUMBER:false
+        valhallammo:quality_smithing: 70i
+        valhallammo:default_stats: GENERIC_ARMOR:1.0:ADD_NUMBER:false
+        valhallammo:durability: 12i
+        valhallammo:max_durability: 86i
+        valhallammo:neutral_quality: 50i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  slot_29:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: SALMON
+  slot_6:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: ROTTEN_FLESH
+    amount: 2
+  slot_7:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: TROPICAL_FISH
+    amount: 7
+  slot_8:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BROWN_DYE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00C2C6","text":"Diamond
+        Backpack"}],"text":""}'
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Iron
+        Dagger"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"79x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Hot
+        Iron Ingot"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"light_purple","text":"Unstable
+        Diamond"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Stone
+        Dagger"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"311x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Cobbled
+        Deepslate"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"82x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Stick"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"62x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"String"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"52x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Cobblestone"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"50x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Redstone"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"38x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Lapis
+        Lazuli"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"36x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Oak
+        Planks"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"35x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Rotten
+        Flesh"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"28x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Jungle
+        Planks"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"20x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Stone"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"14x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Beef"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"14x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Tuff"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"12x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Bone"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"12x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Leather"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"12x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Mutton"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"8x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Gold
+        Ingot"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"6x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Raw
+        Gold"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"6x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Raw
+        Iron"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"4x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Chest"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"4x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Stone
+        Bricks"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"2x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Golden
+        Apple"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"2x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Furnace"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Moss
+        Block"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Brown
+        Wool"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Iron
+        Pickaxe"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Bow"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Dirt"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Crafting
+        Table"}],"text":""}'
+      custom-model-data: 800003
+      PublicBukkitValues:
+        backpackplus:backpackuuid: f3190062-f776-4f89-8e55-79e245e9fe4d
+        backpackplus:backpackused: 1i
+        backpackplus:database: SQLITE
+        backpackplus:backpacktier: 3i
+  slot_21:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Decent"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"103.1%
+        Shot Speed"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        93/431"}],"text":""}'
+      enchants:
+        DURABILITY: 3
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 301
+      PublicBukkitValues:
+        valhallammo:actual_stats: BOW_STRENGTH:1.030612:ADD_NUMBER:false
+        valhallammo:quality_smithing: 70i
+        valhallammo:default_stats: BOW_STRENGTH:1.0:ADD_NUMBER:false
+        valhallammo:durability: 93i
+        valhallammo:max_durability: 431i
+        valhallammo:neutral_quality: 80i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  slot_23:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: ENCHANTED_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: ENCHANTED
+      stored-enchants:
+        LOYALTY: 3
+        ARROW_KNOCKBACK: 1
+  slot_25:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: STICK
+  slot_26:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: SADDLE
+  slot_28:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BOWL
+  slot_20:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: SADDLE
+  slot_24:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: COD
+    amount: 26
+  slot_27:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: LEATHER_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: COLORABLE_ARMOR
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Good"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        17/132"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"2.13
+        Armor"}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ARMOR:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 2.127273
+          name: generic.armor
+          slot: LEGS
+          uuid: b3c449cd-5bcc-4c8c-9c63-ad52b92232fb
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 65
+      PublicBukkitValues:
+        valhallammo:actual_stats: GENERIC_ARMOR:2.127273:ADD_NUMBER:false
+        valhallammo:quality_smithing: 60i
+        valhallammo:default_stats: GENERIC_ARMOR:2.0:ADD_NUMBER:false
+        valhallammo:durability: 17i
+        valhallammo:max_durability: 132i
+        valhallammo:neutral_quality: 50i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES

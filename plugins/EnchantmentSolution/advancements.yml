@@ -1,0 +1,461 @@
+# +----------------------------------------------------+ #
+# <                Enchantment Solution                > #
+# <                     Plugin by                      > #
+# <                   crashtheparty                    > #
+# +----------------------------------------------------+ #
+
+
+discovery_advancements: false
+advancements: 
+    enchantments/agricultural_revolution: 
+        enable: false
+        toast: false
+        announce: false
+    enchantments/fish_sticks: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/fed_for_a_lifetime: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/fishy_business: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/nemo_enim_coquit: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/bonemeal_plus: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/just_as_sweet: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/not_that_kind: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/high_metabolism: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/wildlife_conservation: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/fourty_niners: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/that_food_is_fine: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/meat_ready_to_eat: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/chicken_or_the_egg: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/egged_by_myself: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/thorgy: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/free_pets: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/yummy_repairs: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/hungry_hippos: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/thumbs_up: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/reforestation: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/animal_abuse: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/animal_tamer: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/flying_bacon: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/industrial_revolution: 
+        enable: false
+        toast: false
+        announce: false
+    enchantments/easy_out: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/just_add_water: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/repaired: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/flame_keeper: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/determined_cheater: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/iront_you_glad: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/stainless_steel: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/nether_dull: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/fast_and_furious: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/carpet_bombs: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/over_9000: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/hey_it_works: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/no_panic: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/scourge_of_the_forest: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/deforestation: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/scientific_revolution: 
+        enable: false
+        toast: false
+        announce: false
+    enchantments/breaker_breaker: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/useless: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/did_you_really_wand_to_do_that: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/sharing_is_caring: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/laaagggggg: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/kept_on_hand: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/fear_the_reaper: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/ready_after_death: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/reaped_the_reaper: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/plague_inc: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/extermination: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/silver_horde: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/broken_dreams: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/environmental_protection: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/blind_as_a_bat: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/light_as_a_feather: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/world_record: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/replenished: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/the_snowman: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/imperial_revolution: 
+        enable: false
+        toast: false
+        announce: false
+    enchantments/hex_bag: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/super_charged: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/double_damage: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/seven_point_eight: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/not_very_effective: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/super_effective: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/yeet: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/pre_combat_update: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/headhunter: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/double_header: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/spooky_scary_skeleton: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/motherload: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/poseidons_day_off: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/poseidons_bane: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/poseidon_reborn: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/cerberus: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/missed: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/saving_grace: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/look_what_you_made_me_do: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/just_die_already: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/underkill: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/where_did_that_come_from: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/kill_the_messenger: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/blast_off: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/penetration: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/kilimanjaro: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/knockback_reversed: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/before_i_melt_away: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/four_horsemen: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/apocalypse_now: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/mechanical_revolution: 
+        enable: false
+        toast: false
+        announce: false
+    enchantments/coffee_break: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/too_high: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/evening_stroll: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/slackin: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/spider_senses: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/i_aint_afraid_of_no_ghosts: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/this_girl_is_on_fire: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/made_for_walking: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/im_you_but_shorter: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/panzer_soldier: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/armored_evolution: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/graphene_armor: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/danger_defeated: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/extra_power: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/divine_retribution: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/too_close: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/cruising_altitude: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/deflection: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/iron_man: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/simple_repair: 
+        enable: true
+        toast: true
+        announce: true
+    enchantments/sticky_bees: 
+        enable: true
+        toast: true
+        announce: true

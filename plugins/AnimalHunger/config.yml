@@ -1,0 +1,798 @@
+# AnimalHunger Plugin Configuration - Enhanced Version v2.1
+config-version: 2.1
+debug: false # Enable debug logging
+hunger-decrease-interval: 6000 # Ticks between hunger decreases (6000 ticks = 5 minutes)
+hunger-restore-amount: 2 # Amount of hunger restored per feeding (increased)
+feed-item: WHEAT # Default item for feeding
+max-hunger-cap: 20 # Maximum hunger value (increased)
+max-level: 10 # Maximum animal level (increased)
+feedings-per-level: 3 # Number of feedings required to level up (reduced)
+language: en # Default language (en, ru, etc.)
+enable-particles: true # Enable particle effects
+
+# Disable the driving system completely
+disable-riding: false
+
+# Performance monitoring configuration
+performance:
+  resource-check-interval: 6000 # Interval in ticks for resource usage command (default 5 min = 6000 ticks)
+
+# Disable resource collection (milking cows, shearing sheep, etc.)
+disable-resource-collection: false
+
+# Bond system configuration
+bond:
+  feeding-bond-gain: 8 # Bond gained per feeding (increased)
+  starving-bond-loss: 1 # Bond lost when animal is hungry (reduced)
+  upgrade-bond-gain: 15 # Bond gained when upgrading animal (increased)
+  thresholds:
+    resource-production: 40 # Minimum bond to start producing resources (reduced)
+    rare-drops: 70 # Minimum bond for rare drops when killing (reduced)
+    bonus-resources: 90 # Bond needed for bonus resource generation (reduced)
+  enable-decay: false # Whether bond decays over time
+  decay-rate: 1 # Bond lost per decay interval
+  decay-interval: 24000 # Ticks between bond decay (20 minutes, increased)
+
+riding:
+  min_level: 6
+  cooldown: 5000
+  speed_multiplier: 1.5
+  jump_force: 0.42
+  min_hunger_to_ride: 5
+  jump_cooldown: 500
+  auto_jump_threshold: 0.1
+  auto_jump_enabled: true
+  pig_requires_saddle: true
+  require_saddle: false
+  show_auto_jump_messages: false # Disable auto-jump messages
+  show_control_messages: false # Disable control messages
+  show_riding_tips: false # Disable riding tips
+
+disable-vanilla-milking: false
+
+# Displaying information above the animal
+entity_display:
+  enabled: false # true = show name+bar, false = only custom name or hidden
+  show_level: true  # add level: "Cow [Lvl 8]"
+  show_bond: false  # add affection: "Cow [85%]"
+  format: "{name} {level} {bond}"  # display format
+
+# =============== Ignoring animal types ===============
+# If enabled, the specified animal types will behave like vanilla ones:
+# - no menu opens
+# - no hunger indicator
+# - no feeding via plugin
+# - no breeding, killing, etc.
+ignored-entity-types:
+  enabled: true # false
+  types:
+  # - "HORSE"
+  # - "DONKEY"
+  # - "MULE"
+  # - "COW"
+  # - "SHEEP"
+
+
+# Drop configuration
+drop:
+  min-level: 1
+  chances:
+    1: 60.0 # 60% chance for level 1
+    2: 35.0 # 35% chance for level 2
+    3: 20.0 # 20% chance for level 3
+    4: 10.0 # 10% chance for level 4
+    5: 5.0  # 5% chance for level 5+
+
+# Animal configuration
+animals:
+  # Farm animals
+  cow:
+    display_name: "Cow"
+    feed_items: ["WHEAT", "HAY_BLOCK", "GRASS", "GOLDEN_CARROT"]
+    resource_items: ["LEATHER", "BEEF"]
+    riding_speed: 0.12
+
+  sheep:
+    display_name: "Sheep"
+    feed_items: ["WHEAT", "HAY_BLOCK", "GRASS", "GOLDEN_CARROT"]
+    resource_items: ["WOOL", "MUTTON"]
+    riding_speed: 0.15
+
+  pig:
+    display_name: "Pig"
+    feed_items: ["CARROT", "POTATO", "BEETROOT", "GOLDEN_CARROT"]
+    resource_items: ["PORKCHOP", "LEATHER"]
+    riding_speed: 0.15
+    requires_saddle: true
+
+  chicken:
+    display_name: "Chicken"
+    feed_items: ["WHEAT_SEEDS", "BEETROOT_SEEDS", "PUMPKIN_SEEDS", "MELON_SEEDS"]
+    resource_items: ["FEATHER", "CHICKEN"]
+    riding_speed: 0.10
+    rideable: false # Too small
+
+  # Equines
+  horse:
+    display_name: "Horse"
+    feed_items: ["WHEAT", "APPLE", "CARROT", "SUGAR", "HAY_BLOCK", "GOLDEN_CARROT", "GOLDEN_APPLE"]
+    resource_items: ["LEATHER"]
+    riding_speed: 0.25
+
+  donkey:
+    display_name: "Donkey"
+    feed_items: ["WHEAT", "APPLE", "CARROT", "SUGAR", "HAY_BLOCK", "GOLDEN_CARROT"]
+    resource_items: ["LEATHER"]
+    riding_speed: 0.20
+
+  mule:
+    display_name: "Mule"
+    feed_items: ["WHEAT", "APPLE", "CARROT", "SUGAR", "HAY_BLOCK", "GOLDEN_CARROT"]
+    resource_items: ["LEATHER"]
+    riding_speed: 0.20
+
+  llama:
+    display_name: "Llama"
+    feed_items: ["WHEAT", "HAY_BLOCK", "GOLDEN_CARROT"]
+    resource_items: ["LEATHER"]
+    riding_speed: 0.18
+
+  # Predators and wild animals
+  wolf:
+    display_name: "Wolf"
+    feed_items: ["BEEF", "CHICKEN", "PORKCHOP", "MUTTON", "RABBIT", "COD", "SALMON"]
+    resource_items: ["LEATHER"]
+    riding_speed: 0.20
+
+  cat:
+    display_name: "Cat"
+    feed_items: ["COD", "SALMON", "CHICKEN", "RABBIT"]
+    resource_items: ["STRING"]
+    riding_speed: 0.20
+
+  ocelot:
+    display_name: "Ocelot"
+    feed_items: ["COD", "SALMON", "CHICKEN", "RABBIT"]
+    resource_items: ["STRING", "LEATHER"]
+    riding_speed: 0.20
+
+  fox:
+    display_name: "Fox"
+    feed_items: ["SWEET_BERRIES", "GLOW_BERRIES", "CHICKEN", "RABBIT", "COD", "SALMON"]
+    resource_items: ["LEATHER", "RABBIT_HIDE"]
+    riding_speed: 0.22
+
+  # Exotic animals
+  panda:
+    display_name: "Panda"
+    feed_items: ["BAMBOO", "GOLDEN_CARROT"]
+    resource_items: ["BAMBOO"]
+    riding_speed: 0.10
+
+  polar_bear:
+    display_name: "Polar Bear"
+    feed_items: ["COD", "SALMON", "BEEF", "PORKCHOP"]
+    resource_items: ["LEATHER", "COD"]
+    riding_speed: 0.16
+
+  goat:
+    display_name: "Goat"
+    feed_items: ["WHEAT", "HAY_BLOCK", "GRASS", "GOLDEN_CARROT"]
+    resource_items: ["LEATHER", "MUTTON"]
+    riding_speed: 0.18
+
+  # Nether animals
+  strider:
+    display_name: "Strider"
+    feed_items: ["WARPED_FUNGUS", "GOLDEN_CARROT"]
+    resource_items: ["STRING"]
+    riding_speed: 0.16
+    requires_saddle: true
+    lava_walking: true
+
+  # Aquatic animals
+  turtle:
+    display_name: "Turtle"
+    feed_items: ["SEAGRASS", "KELP", "GOLDEN_CARROT"]
+    resource_items: ["SCUTE", "TURTLE_EGG"]
+    riding_speed: 0.06
+
+  # Flying animals
+  bee:
+    display_name: "Bee"
+    feed_items: ["SUGAR", "GOLDEN_CARROT"]
+    resource_items: ["HONEY_BOTTLE", "HONEYCOMB"]
+    riding_speed: 0.25
+    can_fly: true
+
+  # Golems
+  iron_golem:
+    display_name: "Iron Golem"
+    feed_items: ["IRON_INGOT", "GOLDEN_CARROT", "GOLDEN_APPLE"]
+    resource_items: ["IRON_INGOT", "POPPY"]
+    riding_speed: 0.08
+    gives_protection: true
+
+  snow_golem:
+    display_name: "Snow Golem"
+    feed_items: ["SNOWBALL", "CARROT", "GOLDEN_CARROT"]
+    resource_items: ["SNOWBALL", "CARVED_PUMPKIN"]
+    riding_speed: 0.10
+
+  # Villagers
+  villager:
+    display_name: "Villager"
+    feed_items: ["BREAD", "CARROT", "POTATO", "BEETROOT", "GOLDEN_CARROT"]
+    resource_items: ["EMERALD"]
+    riding_speed: 0.12
+
+  wandering_trader:
+    display_name: "Wandering Trader"
+    feed_items: ["BREAD", "APPLE", "GOLDEN_CARROT", "GOLDEN_APPLE"]
+    resource_items: ["EMERALD"]
+    riding_speed: 0.12
+
+  # Small animals (not rideable)
+  rabbit:
+    display_name: "Rabbit"
+    feed_items: ["CARROT", "DANDELION", "GOLDEN_CARROT"]
+    resource_items: ["RABBIT", "RABBIT_HIDE", "RABBIT_FOOT"]
+    rideable: false
+
+  bat:
+    display_name: "Bat"
+    rideable: false
+
+  parrot:
+    display_name: "Parrot"
+    feed_items: ["WHEAT_SEEDS", "MELON_SEEDS", "PUMPKIN_SEEDS", "BEETROOT_SEEDS"]
+    resource_items: ["FEATHER"]
+    rideable: false
+
+custom_drops:
+  animal:
+    kill_drops:
+      legendary_sword:
+        type: mmoitems
+        mmo_type: AXE
+        mmo_id: SILVER_AXE
+        chance: 100.0
+        amount: 1
+      bone_fragment:
+        type: mmoitems
+        mmo_type: MATERIAL
+        mmo_id: CURSED_BONE
+        chance: 75.0
+        amount: 3
+
+# MMOItems command settings (for admins)
+mmoitems_integration:
+  # Enable commands for giving MMOItems items via AnimalHunger
+  enable_give_commands: true
+  # Log all MMOItems operations
+  log_mmoitem_operations: true
+  # Maximum number of items at a time
+  max_items_per_command: 64
+
+# MMOItems debug settings
+mmoitems_debug:
+  # Show all available MMOItems types on load
+  show_available_types: true
+  # Show all available items for each type
+  show_available_items: false # Can be many, enable only for debugging
+  # Log every attempt to create MMOItems items
+  log_creation_attempts: true
+  # Log successful MMOItems drops
+  log_successful_drops: true
+
+# PlaceholderAPI configuration
+placeholders:
+  fallback: "N/A"
+  list:
+    - key: "hunger"
+      format: "{hunger}"
+    - key: "max_hunger"
+      format: "{max_hunger}"
+    - key: "level"
+      format: "{level}"
+    - key: "bond"
+      format: "{bond}%"
+    - key: "resources"
+      format: "{resources}"
+    - key: "hunger_bar"
+      format: "{hunger_bar}"
+    - key: "bond_bar"
+      format: "{bond_bar}"
+    - key: "level_bar"
+      format: "{level_bar}"
+    - key: "bond_multiplier"
+      format: "{bond_multiplier}x"
+    - key: "resource_threshold"
+      format: "{resource_threshold}%"
+
+# Enhanced GUI Configuration
+gui:
+  titles:
+    small: "&6←⭐ {animal_name} Care ⭐→"
+    medium: "&6←⭐ {animal_name} Management ⭐→"
+    large: "&6←⭐ {animal_name} Sanctuary ⭐→"
+    bond_progress_display: false
+
+  animations:
+    enabled: true
+    hunger_bar_animation: true
+    bond_particles: true
+    level_up_effect: true
+    gui_open_sound: true
+    action_feedback: true
+
+  layouts:
+    small:
+      info_slots: [11, 12, 13, 14, 15]
+      action_slots: [19, 20, 21, 22, 23]
+      decoration_border: [1, 2, 3, 4, 5, 6, 7, 9, 17, 18, 26]
+    medium:
+      info_slots: [11, 12, 13, 14, 15, 20, 21, 22, 23, 24]
+      action_slots: [29, 30, 31, 32, 33]
+      decoration_border: [1, 2, 3, 4, 5, 6, 7, 9, 17, 27, 35, 37, 38, 39, 40, 41, 42, 43]
+    large:
+      info_slots: [12, 13, 14, 15, 16, 21, 22, 23, 24, 25]
+      action_slots: [29, 30, 31, 32, 33]
+      decoration_border: [1, 2, 3, 4, 5, 6, 7, 9, 17, 27, 35, 36, 44, 46, 47, 48, 49, 50, 51, 52]
+
+  items:
+    level_display:
+      material: "EXPERIENCE_BOTTLE"
+      customModelData: 1001
+      display: "&e←★→ &lLevel: &f{level}&7/&f{max_level}"
+      lore:
+        - "&7┌────────────────────────────┐"
+        - "&7│ &b{animal_name} - Experience"
+        - "&7│ &aHigher Level = Better Rewards!"
+        - "&7└────────────────────────────┘"
+        - ""
+        - "&8▸ &7Current Level: &e{level}"
+        - "&8▸ &7Maximum: &e{max_level}"
+        - "&8▸ &7Progress: &a{feed_count}&7/&a{required_feeds}"
+        - "&8▸ &7Progress Bar: {level_bar}"
+        - ""
+        - "&f↓ &7Feed the animal to level up!"
+      positions:
+        small: 11
+        medium: 11
+        large: 21
+
+    hunger_display:
+      material: "GOLDEN_APPLE"
+      customModelData: 1002
+      display: "&a←🍖→ &lHunger: &f{hunger}&7/&f{maxhunger} &7({hunger_percent}%)"
+      lore:
+        - "&7┌────────────────────────────┐"
+        - "&7│ &c{animal_name} - Appetite"
+        - "&7│ &aKeep it well-fed!"
+        - "&7└────────────────────────────┘"
+        - ""
+        - "&8▸ &7Hunger: &a{hunger}&7/&a{maxhunger}"
+        - "&8▸ &7Status: {hunger_status}"
+        - "&8▸ &7Hunger Bar: {hunger_bar}"
+        - "&8▸ &7Accepts: &e{feed_items}"
+        - ""
+        - "&f↓ &7Right-click with food to feed!"
+      positions:
+        small: 12
+        medium: 12
+        large: 22
+
+    bond_display:
+      material: "HEART_OF_THE_SEA"
+      customModelData: 1003
+      display: "&b←⚡→ &lBond: &f{bond}% &7(x{bond_multiplier})"
+      lore:
+        - "&7┌────────────────────────────┐"
+        - "&7│ &dBond Strength"
+        - "&7│ &aAffects all bonuses!"
+        - "&7└────────────────────────────┘"
+        - ""
+        - "&8▸ &7Bond Level: &b{bond}%"
+        - "&8▸ &7Bond Multiplier: &b{bond_multiplier}x"
+        - "&8▸ &7Bond Bar: {bond_bar}"
+        - "&8▸ &7Resource Bonus: &a+{bond_multiplier}x"
+        - "&8▸ &7Next Threshold: &e{next_threshold}%"
+        - ""
+        - "&f↓ &7Bond Effects:"
+        - "{bond_effects}"
+      positions:
+        small: 13
+        medium: 13
+        large: 23
+
+    name_display:
+      material: "NAME_TAG"
+      customModelData: 1004
+      action: "rename"
+      display: "&d←✎→ &lName: &f{name}"
+      lore:
+        - "&7┌────────────────────────────┐"
+        - "&7│ &ePersonalize Your Pet"
+        - "&7│ &aClick to rename!"
+        - "&7└────────────────────────────┘"
+        - ""
+        - "&8▸ &7Current Name: &f{name}"
+        - "&8▸ &7Max Length: &e20 characters"
+        - "&8▸ &7Action: &eLeft Click"
+        - ""
+        - "&f↓ &7Type new name in chat after clicking!"
+      positions:
+        small: 14
+        medium: 14
+        large: 24
+
+    feed_action:
+      material: "WHEAT"
+      customModelData: 1005
+      action: "feed"
+      display: "&a←🍖→ &lFeed {animal_name}"
+      lore:
+        - "&7┌────────────────────────────┐"
+        - "&7│ &aNourish Your Pet"
+        - "&7│ &bStrengthen the Bond"
+        - "&7└────────────────────────────┘"
+        - ""
+        - "&8▸ &7Accepted Food: &e{feed_items}"
+        - "&8▸ &7Hunger Restore: &a+{hunger_restore}"
+        - "&8▸ &7Bond Gain: &b+{bond_gain}%"
+        - "&8▸ &7Requires: &eFood in Hand"
+        - ""
+        - "&a↓ &fClick to Feed!"
+        - "&7&o(Make sure you have food in hand)"
+      positions:
+        small: 19
+        medium: 29
+        large: 29
+
+    kill_action:
+      material: "NETHERITE_SWORD"
+      customModelData: 1006
+      action: "kill"
+      display: "&c←⚔→ &lRelease {animal_name}"
+      lore:
+        - "&7┌────────────────────────────┐"
+        - "&7│ &4⚠ IRREVERSIBLE ACTION ⚠"
+        - "&7│ &cCannot be undone!"
+        - "&7└────────────────────────────┘"
+        - ""
+        - "&8▸ &7Required Level: &c{min_kill_level}"
+        - "&8▸ &7Current Level: &e{level}"
+        - "&8▸ &7Drop Quality: &f{drop_quality}"
+        - "&8▸ &7Confirmation: &eShift + Click"
+        - ""
+        - "&c↓ &fThink Twice!"
+        - "&7&o(Hold Shift and click to confirm)"
+      positions:
+        small: 21
+        medium: 31
+        large: 31
+
+    upgrade_action:
+      material: "GOLDEN_CARROT"
+      customModelData: 1007
+      action: "upgrade"
+      cost: 5
+      display: "&6←⭐→ &lUpgrade {animal_name}"
+      lore:
+        - "&7┌────────────────────────────┐"
+        - "&7│ &6Enhance Your Pet"
+        - "&7│ &aUnlock Better Rewards!"
+        - "&7└────────────────────────────┘"
+        - ""
+        - "&8▸ &7Current Level: &e{level}"
+        - "&8▸ &7Next Level: &e{nextlevel}"
+        - "&8▸ &7Cost: &e{upgrade_cost} &f{upgrade_item}"
+        - "&8▸ &7Bond Gain: &b+{upgrade_bond_gain}%"
+        - "&8▸ &7Max Hunger Increase: &a+2"
+        - ""
+        - "&a↓ &fClick to Upgrade!"
+        - "&7&o(Requires resources in inventory)"
+      positions:
+        small: 23
+        medium: 33
+        large: 33
+
+    collect_action:
+      material: "CHEST"
+      customModelData: 1008
+      action: "collect"
+      display: "&e←⭐→ &lCollect Resources"
+      lore:
+        - "&7┌────────────────────────────┐"
+        - "&7│ &eGather Produced Resources"
+        - "&7│ &aPassive Income!"
+        - "&7└────────────────────────────┘"
+        - ""
+        - "&8▸ &7Available Resources: &e{resources}"
+        - "&8▸ &7Resource Type: &f{resource_type}"
+        - "&8▸ &7Min Bond for Collection: &b{resource_threshold}%"
+        - "&8▸ &7Current Bond: &b{bond}%"
+        - "&8▸ &7Production Rate: &a{production_rate}"
+        - ""
+        - "&e↓ &fClick to Collect!"
+        - "&7&o(Automatic production with high bond)"
+      positions:
+        small: 20
+        medium: 30
+        large: 30
+
+    name_color:
+      material: "REDSTONE"
+      customModelData: 1011
+      action: "name_color"
+      display: "&c←⭐→ &lName Color"
+      lore:
+        - "&7┌────────────────────────────┐"
+        - "&7│ &dCustomize Name Color"
+        - "&7│ &aChoose from color palette"
+        - "&7└────────────────────────────┘"
+        - ""
+        - "&8▸ &7Current Color: &f{name}"
+        - "&8▸ &7Available Colors: &eConcrete Blocks"
+        - ""
+        - "&f↓ &7Click to open color menu"
+      positions:
+        small: 11
+        medium: 11
+        large: 20
+
+    info_display:
+      material: "BOOK"
+      customModelData: 1009
+      display: "&9←⭐→ &l{animal_name} Info"
+      lore:
+        - "&7┌────────────────────────────┐"
+        - "&7│ &9Detailed Statistics"
+        - "&7│ &aAll Pet Information"
+        - "&7└────────────────────────────┘"
+        - ""
+        - "&8▸ &7Type: &f{animal_name}"
+        - "&8▸ &7Level: &e{level}&7/&e{max_level}"
+        - "&8▸ &7Hunger: &a{hunger}&7/&a{maxhunger} &7({hunger_percent}%)"
+        - "&8▸ &7Bond: &b{bond}%"
+        - "&8▸ &7Resources: &e{resources}"
+        - "&8▸ &7Feedings: &f{feed_count}"
+        - "&8▸ &7Name: &f{name}"
+        - ""
+        - "&f↓ &7Overall Pet Statistics"
+      positions:
+        small: 22
+        medium: 32
+        large: 32
+
+# Name color selection menu configuration
+color_selection_gui:
+  # Menu title (supports color codes &)
+  title: "&d←⭐→ Name Color Selection"
+
+  # Menu size (9, 18, 27, 36, 45, 54)
+  size: 36
+
+  # List of available colors
+  colors:
+    - material: "RED_WOOL"
+      color: "RED"
+      slot: 10
+      display_name: "&cRed"
+      lore:
+        - "&7Set name to red"
+        - "&7Click to select"
+
+    - material: "ORANGE_WOOL"
+      color: "GOLD"
+      slot: 11
+      display_name: "&6Orange"
+      lore:
+        - "&7Set name to orange"
+        - "&7Click to select"
+
+    - material: "YELLOW_WOOL"
+      color: "YELLOW"
+      slot: 12
+      display_name: "&eYellow"
+      lore:
+        - "&7Set name to yellow (default)"
+        - "&7Click to select"
+
+    - material: "LIME_WOOL"
+      color: "GREEN"
+      slot: 13
+      display_name: "&aGreen"
+      lore:
+        - "&7Set name to green"
+        - "&7Click to select"
+
+    - material: "LIGHT_BLUE_WOOL"
+      color: "AQUA"
+      slot: 14
+      display_name: "&bLight Blue"
+      lore:
+        - "&7Set name to light blue"
+        - "&7Click to select"
+
+    - material: "BLUE_WOOL"
+      color: "BLUE"
+      slot: 15
+      display_name: "&9Blue"
+      lore:
+        - "&7Set name to blue"
+        - "&7Click to select"
+
+    - material: "PURPLE_WOOL"
+      color: "DARK_PURPLE"
+      slot: 16
+      display_name: "&5Purple"
+      lore:
+        - "&7Set name to purple"
+        - "&7Click to select"
+
+    - material: "PINK_WOOL"
+      color: "LIGHT_PURPLE"
+      slot: 20
+      display_name: "&dPink"
+      lore:
+        - "&7Set name to pink"
+        - "&7Click to select"
+
+    - material: "WHITE_WOOL"
+      color: "WHITE"
+      slot: 21
+      display_name: "&fWhite"
+      lore:
+        - "&7Set name to white"
+        - "&7Click to select"
+
+    - material: "LIGHT_GRAY_WOOL"
+      color: "GRAY"
+      slot: 22
+      display_name: "&7Gray"
+      lore:
+        - "&7Set name to gray"
+        - "&7Click to select"
+
+    - material: "GRAY_WOOL"
+      color: "DARK_GRAY"
+      slot: 23
+      display_name: "&8Dark Gray"
+      lore:
+        - "&7Set name to dark gray"
+        - "&7Click to select"
+
+    - material: "BLACK_WOOL"
+      color: "BLACK"
+      slot: 24
+      display_name: "&0Black"
+      lore:
+        - "&7Set name to black"
+        - "&7Click to select"
+
+  # Menu decoration elements
+  decoration:
+    # Border material
+    border_material: "GRAY_STAINED_GLASS_PANE"
+    border_name: " "
+
+    # Border slots (automatically filled if not specified)
+    border_slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 17, 18, 24, 25, 26]
+
+# Sounds for name color selection menu
+color_gui_sounds:
+  open: "BLOCK_NOTE_BLOCK_HARP"
+  select: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  error: "BLOCK_NOTE_BLOCK_BASS"
+
+# Decoration themes for different bond levels
+decoration_themes:
+  bond_0_25:
+    primary: "GRAY_STAINED_GLASS_PANE"
+    secondary: "LIGHT_GRAY_STAINED_GLASS_PANE"
+    accent: "WHITE_STAINED_GLASS_PANE"
+  bond_25_50:
+    primary: "YELLOW_STAINED_GLASS_PANE"
+    secondary: "ORANGE_STAINED_GLASS_PANE"
+    accent: "RED_STAINED_GLASS_PANE"
+  bond_50_75:
+    primary: "LIME_STAINED_GLASS_PANE"
+    secondary: "GREEN_STAINED_GLASS_PANE"
+    accent: "CYAN_STAINED_GLASS_PANE"
+  bond_75_100:
+    primary: "PURPLE_STAINED_GLASS_PANE"
+    secondary: "MAGENTA_STAINED_GLASS_PANE"
+    accent: "PINK_STAINED_GLASS_PANE"
+
+# Kill drop configuration
+kill:
+  standard_drops:
+    pig: "PORKCHOP"
+    cow: "BEEF"
+    sheep: "MUTTON"
+    chicken: "CHICKEN"
+    rabbit: "RABBIT"
+    horse: "LEATHER"
+    wolf: "BONE"
+    cat: "STRING"
+    panda: "BAMBOO"
+    goat: "MUTTON"
+    llama: "LEATHER"
+    donkey: "LEATHER"
+    mule: "LEATHER"
+    fox: "FEATHER"
+    bee: "HONEYCOMB"
+  rare_drops:
+    pig: "GOLDEN_CARROT"
+    cow: "MILK_BUCKET"
+    sheep: "WHITE_WOOL"
+    chicken: "EGG"
+    rabbit: "RABBIT_FOOT"
+    horse: "SADDLE"
+    wolf: "BONE_BLOCK"
+    cat: "PHANTOM_MEMBRANE"
+    panda: "SLIME_BALL"
+    goat: "GOAT_HORN"
+    llama: "CARPET"
+    donkey: "CHEST"
+    mule: "CHEST"
+    fox: "EMERALD"
+    bee: "HONEY_BOTTLE"
+  garbage_drops:
+    pig: "ROTTEN_FLESH"
+    cow: "LEATHER"
+    sheep: "STRING"
+    chicken: "FEATHER"
+    rabbit: "RABBIT_HIDE"
+    horse: "STICK"
+    wolf: "ROTTEN_FLESH"
+    cat: "STRING"
+    panda: "BAMBOO"
+    goat: "LEATHER"
+    llama: "STRING"
+    donkey: "STICK"
+    mule: "STICK"
+    fox: "FEATHER"
+    bee: "GLASS_BOTTLE"
+  required-level: 2 # Minimum level required to kill animal
+  required-item: "" # Required item to kill (empty = any)
+  drop-chance: 0.85 # Chance to get drops when killing (85%)
+
+  # INSTRUCTIONS FOR CONFIGURING MMOITEMS DROPS:
+  #
+  # 1. Make sure the MMOItems plugin is installed and working.
+  # 2. Enable debug: true at the beginning of the config for debugging.
+  # 3. For each animal, create a section custom_drops -> animal_name -> kill_drops
+  # 4. For MMOItems items, use the “mmoitem” type
+  # 5. Be sure to specify:
+  #    - mmo_type: item type in MMOItems (SWORD, ARMOR, etc.)
+  #    - mmo_id: exact item ID as in MMOItems
+  #    - amount: quantity (usually 1 for MMOItems)
+  #    - chance: chance in percent (1.0 = 1%, 10.0 = 10%)
+  #
+  # EXAMPLE COMMAND TO CHECK IF AN ITEM EXISTS:
+  # /mmoitems get LEGGINGS DRAGON_LEGGINGS
+  #
+  # IMPORTANT POINTS:
+  # - The animal must reach at least level 2 (kill.required-level setting)
+  # - MMOItems drops only work when killed via GUI or command
+  # - MMOItems drop chances are independent of normal drops
+  # - You can configure multiple MMOItems drops for one animal
+  #
+  # EXAMPLE OF DROP CONFIGURATION:
+  # custom_drops:
+  #   cow:
+  #     kill_drops:
+  #       legendary_sword:
+  #         type: mmoitem
+  #         mmo_type: SWORD              # Type in MMOItems
+  #         mmo_id: EXCALIBUR           # ID in MMOItems
+  #         amount: 1                    # Quantity
+  #         chance: 2.5                 # 2.5% chance
+  #
+  # RECOMMENDED CHANCES:
+  # - Common MMOItems: 5-15%
+  # - Rare MMOItems: 1-5%
+  # - Legendary MMOItems: 0.1-1%

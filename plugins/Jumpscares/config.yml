@@ -1,0 +1,51 @@
+# locales: ru, en, ua
+locale: en
+
+# default - 6% FOR A PLAYER every 20 seconds. more players - more chances to keep balance
+# minimal-fear-level-to-start-scaring // the player will be scared only if he has the specified fear level (ignored if FearFeeling isn't installed)
+# conditions:
+#   always-if-light-level-equals-or-lower // screamers will always be sent if a player light-level equals or lower the value. must be [0;15]. -1 to disable.
+#   always-at-time // screamers will always be sent if the world time falls within the specified limits. both limits must be [0;24000]
+# try-to-spare-last-player - tries not to touch the last auto-scared player
+# disabled-by-default - if true, screamers won't be sent to players before they switch them on manually with the /js toggle command
+auto-screamers-sending:
+  enabled: true
+  period-in-seconds: 20
+  chance-percents: 6
+  minimal-fear-level-to-start-scaring: 0
+  conditions:
+    always-if-light-level-equals-or-lower: 7
+    always-at-time: "13000-23000"
+    always-at-thunderstorm: true
+  notifications:
+    admins: false
+    console: true
+  try-to-spare-last-player: true
+  disabled-by-default: false
+
+# should the screamers, which are called via a trigger (ANGRY_CHEST in example), be triggered
+# only under the specified in the auto-screamer-sending section conditions?
+# Example: true -> opened chest will scream if time is between 13000 and 23000 or a light-level equals or lower 7 (auto-screamers-sending
+# section -> conditions), else nothing will happen
+# if set to false a trigger-screamer will be applied even if the conditions aren't met [on a bright sunny day ^_^]
+triggers-with-conditions: false
+
+# specify worlds where screamers will be active. you can choose one of these modes: BLACKLIST or WHITELIST
+# if it is the BLACKLIST mode, the worlds which added to the list will be unavailable for screamers
+# if it is the WHITELIST mode, the only worlds which added to the list will be available for screamers
+# Example:
+# restrict-worlds:
+#   mode: WHITELIST
+#   list:
+#     - world
+#     - world_nether
+restrict-worlds:
+  mode: BLACKLIST
+  list: []
+
+# screamers will spawn mobs even if an EntitySpawnEvent is cancelled (by the WG flag in example)
+spawn-mobs-even-if-cancelled: true
+
+# will screamers be disables for players in some game modes?
+game-modes-blacklist:
+  - "SPECTATOR"

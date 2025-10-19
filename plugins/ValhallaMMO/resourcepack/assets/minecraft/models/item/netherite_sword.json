@@ -1,0 +1,68 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/netherite_sword"
+    },
+    "overrides": [
+        {
+            "predicate": {"custom_model_data": 1981820},
+            "model": "item/weapons/netherite_dagger"
+        },
+        {
+            "predicate": {"custom_model_data": 1981821},
+            "model": "item/weapons/netherite_mace"
+        },
+        {
+            "predicate": {"custom_model_data": 1981822},
+            "model": "item/weapons/netherite_rapier"
+        },
+        {
+            "predicate": {"custom_model_data": 1981825},
+            "model": "item/weapons/netherite_warhammer"
+        },
+        {
+            "predicate": {"custom_model_data": 1981826},
+            "model": "item/weapons/netherite_spear"
+        },
+        {
+            "predicate": {"custom_model_data": 1981827},
+            "model": "item/weapons/netherite_greataxe"
+        },
+        {
+            "predicate": {"custom_model_data": 1981840},
+            "model": "item/weapons/netherite_knuckles"
+        },
+        {
+            "predicate": {"custom_model_data": 1981920},
+            "model": "item/weapons/royal_netherite_dagger"
+        },
+        {
+            "predicate": {"custom_model_data": 1981921},
+            "model": "item/weapons/royal_netherite_mace"
+        },
+        {
+            "predicate": {"custom_model_data": 1981922},
+            "model": "item/weapons/royal_netherite_rapier"
+        },
+        {
+            "predicate": {"custom_model_data": 1981925},
+            "model": "item/weapons/royal_netherite_warhammer"
+        },
+        {
+            "predicate": {"custom_model_data": 1981926},
+            "model": "item/weapons/royal_netherite_spear"
+        },
+        {
+            "predicate": {"custom_model_data": 1981927},
+            "model": "item/weapons/royal_netherite_greataxe"
+        },
+        {
+            "predicate": {"custom_model_data": 1981940},
+            "model": "item/weapons/royal_netherite_knuckles"
+        },
+        {
+            "predicate": {"custom_model_data": 1981941},
+            "model": "item/weapons/royal_netherite_sword"
+        }
+    ]
+}

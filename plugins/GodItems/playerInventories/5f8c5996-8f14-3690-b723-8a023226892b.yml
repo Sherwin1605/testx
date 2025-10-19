@@ -1,0 +1,85 @@
+armor:
+  offhand:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: AIR
+    amount: 0
+charms: {}
+contents:
+  slot_0:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: OAK_LOG
+    amount: 20
+  slot_1:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: STONE_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Damage: 63
+  slot_2:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: OAK_SAPLING
+  slot_3:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: ROTTEN_FLESH
+    amount: 3
+  slot_4:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BREAD
+    amount: 16
+  slot_5:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: RAW_IRON
+    amount: 2
+  slot_6:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: TORCH
+    amount: 8
+  slot_7:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: WOODEN_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Damage: 48
+  slot_8:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: WOODEN_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Damage: 27
+  slot_10:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: COAL
+    amount: 64
+  slot_11:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: MOSS_BLOCK
+  slot_17:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: OAK_PLANKS
+    amount: 30
+  slot_26:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: OAK_PLANKS
+    amount: 30
+  slot_28:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: OAK_PLANKS
+    amount: 8

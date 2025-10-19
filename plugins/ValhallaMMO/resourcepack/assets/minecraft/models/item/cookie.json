@@ -1,0 +1,60 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/cookie"
+    },
+    "overrides": [
+        {
+            "predicate": {"custom_model_data": 1998271},
+            "model": "item/foods/aegis_stroganoff"
+        },
+        {
+            "predicate": {"custom_model_data": 1998272},
+            "model": "item/foods/apple_pie"
+        },
+        {
+            "predicate": {"custom_model_data": 1998273},
+            "model": "item/foods/battle_burrito"
+        },
+        {
+            "predicate": {"custom_model_data": 1998274},
+            "model": "item/foods/cooked_lionfish"
+        },
+        {
+            "predicate": {"custom_model_data": 1998275},
+            "model": "item/foods/glazed_ribs"
+        },
+        {
+            "predicate": {"custom_model_data": 1998276},
+            "model": "item/foods/lembas_bread"
+        },
+        {
+            "predicate": {"custom_model_data": 1998277},
+            "model": "item/foods/luxurious_stew"
+        },
+        {
+            "predicate": {"custom_model_data": 1998278},
+            "model": "item/foods/poached_lobster"
+        },
+        {
+            "predicate": {"custom_model_data": 1998279},
+            "model": "item/foods/salmon_en_croute"
+        },
+        {
+            "predicate": {"custom_model_data": 1998280},
+            "model": "item/foods/stuffed_hen"
+        },
+        {
+            "predicate": {"custom_model_data": 1998281},
+            "model": "item/foods/tender_steak"
+        },
+        {
+            "predicate": {"custom_model_data": 1998282},
+            "model": "item/foods/titanic_goulash"
+        },
+        {
+            "predicate": {"custom_model_data": 1998283},
+            "model": "item/foods/wagyu_steak"
+        }
+    ]
+}

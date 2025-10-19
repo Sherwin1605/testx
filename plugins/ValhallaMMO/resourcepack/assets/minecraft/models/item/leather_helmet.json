@@ -1,0 +1,25 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/leather_helmet",
+        "layer1": "item/leather_helmet_overlay"
+    },
+    "overrides": [
+        {
+            "predicate": {"custom_model_data": 9918290},
+            "model": "item/armor/copper_helmet"
+        },
+        {
+            "predicate": {"custom_model_data": 9918291},
+            "model": "item/armor/assassin_helmet"
+        },
+        {
+            "predicate": {"custom_model_data": 9918292},
+            "model": "item/armor/royal_diamond_helmet"
+        },
+        {
+            "predicate": {"custom_model_data": 9918293},
+            "model": "item/armor/royal_netherite_helmet"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/golden_apple"
+    },
+    "overrides": [
+        {
+            "predicate": {"custom_model_data": 1998270},
+            "model": "item/foods/jewelled_apple"
+        },
+        {
+            "predicate": {"custom_model_data": 1998271},
+            "model": "item/foods/caviar"
+        },
+        {
+            "predicate": {"custom_model_data": 1998272},
+            "model": "item/foods/churro"
+        },
+        {
+            "predicate": {"custom_model_data": 1998273},
+            "model": "item/foods/golden_apple_pie"
+        },
+        {
+            "predicate": {"custom_model_data": 1998274},
+            "model": "item/foods/regeneration_mushroom_stew"
+        },
+        {
+            "predicate": {"custom_model_data": 1998275},
+            "model": "item/foods/uni_sushi"
+        }
+    ]
+}

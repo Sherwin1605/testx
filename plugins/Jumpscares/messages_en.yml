@@ -1,0 +1,29 @@
+commands:
+  plugin-reloaded: "&8&l| &bPlugin reloaded!"
+  no-permissions: "&cYou don't have permissions!"
+  no-screamer-access: "&cYou can't send this screamer!"
+  cant-toggle-for-others: "&cYou can't toggle screamers for others!"
+  no-such-player: "&cNo such player on the server!"
+  no-nearest-players: "&cThere are no players in this world except you!"
+  no-such-screamer: "&cNo such screamer with this name!"
+  screamers-enabled: "&8&l| &6Screamers enabled!"
+  screamers-disabled: "&8&l| &aScreamers disabled!"
+  player-protected: "&6%p &7is currently protected from screamers"
+  player-scared: "&6%p &7was scared by the &6%s &7screamer"
+  all-players-were-scared: "&7All players were scared by the &6%s &7screamer"
+  players-only: "&cFor players only!"
+  scarepoints:
+    created: "&8&l| &dScarepoint created!"
+    removed: "&8&l| &aScarepoint removed!"
+    list-empty: "&8&l| &eScarepoints list is empty."
+    no-such-mode: "&cNo such scarepoint mode with this name!"
+
+panic: "&cYou can't! You are panicking."
+screamers-are-disabled: "&8&l| &7Screamers were disabled. Type /jumpscares toggle to enable them again."
+screamers-are-enabled: "&8&l| &7Screamers were enabled. Type /jumpscares toggle to disable them again."
+player-auto-scared: "&7Player &e%p &7was scared by the &e%s &7screamer"
+
+placeholders:
+  screamers:
+    enabled: "&aEnabled"
+    disabled: "&cDisabled"
