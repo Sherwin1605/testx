@@ -448,7 +448,7 @@ contents:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: COBBLESTONE
-    amount: 64
+    amount: 61
   slot_12:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
