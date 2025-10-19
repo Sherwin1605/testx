@@ -1,36 +1,20 @@
 [
   {
-    "type": "FARMER",
+    "type": "FLETCHER",
     "merchantTypes": [
-      "farmer_simple"
+      "fletcher_simple"
     ]
   },
   {
-    "type": "LEATHERWORKER",
+    "type": "SHEPHERD",
     "merchantTypes": [
-      "leatherworker_simple"
+      "shepherd_simple"
     ]
   },
   {
-    "type": "ARMORER",
+    "type": "TOOLSMITH",
     "merchantTypes": [
-      "armorer_simple"
-    ]
-  },
-  {
-    "type": "CLERIC",
-    "merchantTypes": [
-      "cleric_simple"
-    ]
-  },
-  {
-    "type": "NITWIT",
-    "merchantTypes": []
-  },
-  {
-    "type": "FISHERMAN",
-    "merchantTypes": [
-      "fisherman_simple"
+      "toolsmith_simple"
     ]
   },
   {
@@ -38,9 +22,13 @@
     "merchantTypes": []
   },
   {
-    "type": "SHEPHERD",
+    "type": "CARTOGRAPHER",
+    "merchantTypes": []
+  },
+  {
+    "type": "LEATHERWORKER",
     "merchantTypes": [
-      "shepherd_simple"
+      "leatherworker_simple"
     ]
   },
   {
@@ -50,29 +38,9 @@
     ]
   },
   {
-    "type": "CARTOGRAPHER",
-    "merchantTypes": []
-  },
-  {
-    "type": "WEAPONSMITH",
+    "type": "FISHERMAN",
     "merchantTypes": [
-      "weaponsmith_simple"
-    ]
-  },
-  {
-    "type": "TRAVELING",
-    "merchantTypes": []
-  },
-  {
-    "type": "FLETCHER",
-    "merchantTypes": [
-      "fletcher_simple"
-    ]
-  },
-  {
-    "type": "LIBRARIAN",
-    "merchantTypes": [
-      "librarian_simple"
+      "fisherman_simple"
     ]
   },
   {
@@ -82,9 +50,41 @@
     ]
   },
   {
-    "type": "TOOLSMITH",
+    "type": "TRAVELING",
+    "merchantTypes": []
+  },
+  {
+    "type": "WEAPONSMITH",
     "merchantTypes": [
-      "toolsmith_simple"
+      "weaponsmith_simple"
     ]
+  },
+  {
+    "type": "CLERIC",
+    "merchantTypes": [
+      "cleric_simple"
+    ]
+  },
+  {
+    "type": "FARMER",
+    "merchantTypes": [
+      "farmer_simple"
+    ]
+  },
+  {
+    "type": "LIBRARIAN",
+    "merchantTypes": [
+      "librarian_simple"
+    ]
+  },
+  {
+    "type": "ARMORER",
+    "merchantTypes": [
+      "armorer_simple"
+    ]
+  },
+  {
+    "type": "NITWIT",
+    "merchantTypes": []
   }
 ]
