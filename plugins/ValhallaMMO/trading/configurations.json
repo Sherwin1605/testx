@@ -1,8 +1,8 @@
 [
   {
-    "type": "CLERIC",
+    "type": "FARMER",
     "merchantTypes": [
-      "cleric_simple"
+      "farmer_simple"
     ]
   },
   {
@@ -12,10 +12,30 @@
     ]
   },
   {
+    "type": "ARMORER",
+    "merchantTypes": [
+      "armorer_simple"
+    ]
+  },
+  {
+    "type": "CLERIC",
+    "merchantTypes": [
+      "cleric_simple"
+    ]
+  },
+  {
+    "type": "NITWIT",
+    "merchantTypes": []
+  },
+  {
     "type": "FISHERMAN",
     "merchantTypes": [
       "fisherman_simple"
     ]
+  },
+  {
+    "type": "NONE",
+    "merchantTypes": []
   },
   {
     "type": "SHEPHERD",
@@ -24,24 +44,14 @@
     ]
   },
   {
-    "type": "ARMORER",
+    "type": "BUTCHER",
     "merchantTypes": [
-      "armorer_simple"
+      "butcher_simple"
     ]
   },
   {
     "type": "CARTOGRAPHER",
     "merchantTypes": []
-  },
-  {
-    "type": "NITWIT",
-    "merchantTypes": []
-  },
-  {
-    "type": "BUTCHER",
-    "merchantTypes": [
-      "butcher_simple"
-    ]
   },
   {
     "type": "WEAPONSMITH",
@@ -50,14 +60,8 @@
     ]
   },
   {
-    "type": "NONE",
+    "type": "TRAVELING",
     "merchantTypes": []
-  },
-  {
-    "type": "LIBRARIAN",
-    "merchantTypes": [
-      "librarian_simple"
-    ]
   },
   {
     "type": "FLETCHER",
@@ -66,13 +70,9 @@
     ]
   },
   {
-    "type": "TRAVELING",
-    "merchantTypes": []
-  },
-  {
-    "type": "FARMER",
+    "type": "LIBRARIAN",
     "merchantTypes": [
-      "farmer_simple"
+      "librarian_simple"
     ]
   },
   {
