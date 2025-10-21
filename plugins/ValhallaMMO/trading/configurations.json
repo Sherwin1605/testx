@@ -1,36 +1,8 @@
 [
   {
-    "type": "CARTOGRAPHER",
-    "merchantTypes": []
-  },
-  {
-    "type": "TRAVELING",
-    "merchantTypes": []
-  },
-  {
-    "type": "NITWIT",
-    "merchantTypes": []
-  },
-  {
-    "type": "FLETCHER",
-    "merchantTypes": [
-      "fletcher_simple"
-    ]
-  },
-  {
     "type": "FARMER",
     "merchantTypes": [
       "farmer_simple"
-    ]
-  },
-  {
-    "type": "NONE",
-    "merchantTypes": []
-  },
-  {
-    "type": "LIBRARIAN",
-    "merchantTypes": [
-      "librarian_simple"
     ]
   },
   {
@@ -46,27 +18,29 @@
     ]
   },
   {
+    "type": "TRAVELING",
+    "merchantTypes": []
+  },
+  {
+    "type": "CARTOGRAPHER",
+    "merchantTypes": []
+  },
+  {
+    "type": "CLERIC",
+    "merchantTypes": [
+      "cleric_simple"
+    ]
+  },
+  {
     "type": "LEATHERWORKER",
     "merchantTypes": [
       "leatherworker_simple"
     ]
   },
   {
-    "type": "FISHERMAN",
+    "type": "LIBRARIAN",
     "merchantTypes": [
-      "fisherman_simple"
-    ]
-  },
-  {
-    "type": "BUTCHER",
-    "merchantTypes": [
-      "butcher_simple"
-    ]
-  },
-  {
-    "type": "MASON",
-    "merchantTypes": [
-      "mason_simple"
+      "librarian_simple"
     ]
   },
   {
@@ -76,15 +50,41 @@
     ]
   },
   {
-    "type": "CLERIC",
+    "type": "FISHERMAN",
     "merchantTypes": [
-      "cleric_simple"
+      "fisherman_simple"
+    ]
+  },
+  {
+    "type": "NONE",
+    "merchantTypes": []
+  },
+  {
+    "type": "NITWIT",
+    "merchantTypes": []
+  },
+  {
+    "type": "FLETCHER",
+    "merchantTypes": [
+      "fletcher_simple"
+    ]
+  },
+  {
+    "type": "BUTCHER",
+    "merchantTypes": [
+      "butcher_simple"
     ]
   },
   {
     "type": "ARMORER",
     "merchantTypes": [
       "armorer_simple"
+    ]
+  },
+  {
+    "type": "MASON",
+    "merchantTypes": [
+      "mason_simple"
     ]
   }
 ]

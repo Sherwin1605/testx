@@ -2,8 +2,33 @@ armor:
   offhand:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: AIR
-    amount: 0
+    type: ENCHANTED_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: ENCHANTED
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_blue","text":"Arcane
+        Tome of Ice"}],"text":""}'
+      lore:
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Ancient
+        knowledge is hidden within these pages,"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"allowing
+        you to control the ice"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"(Sheak
+        + Right Click) - Launch an Ice Shard"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"(Sneak
+        + Swap) - Magic Barrier"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Item
+        Ability: "},{"italic":false,"color":"green","text":"ON"}],"text":""}'
+      custom-model-data: 1000035
+      enchants:
+        DURABILITY: 3
+      ItemFlags:
+      - HIDE_ENCHANTS
+      PublicBukkitValues:
+        goditems:code_name: ice_book
   helmet:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
@@ -40,21 +65,21 @@ armor:
           amount: 6.0
           name: generic.armor
           slot: HEAD
-          uuid: b7f99247-7204-4f3c-8ac3-db25e90dab84
+          uuid: 519a9caf-ba94-4045-8704-80e204ccad64
           operation: 0
         GENERIC_ARMOR_TOUGHNESS:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: 1.0
           name: generic.armor_toughness
           slot: HEAD
-          uuid: cd1b1a4a-e6b7-4c79-998b-2e6ef41f03f2
+          uuid: 741c94f1-c9f1-4057-a0e5-fca526009489
           operation: 0
         GENERIC_KNOCKBACK_RESISTANCE:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: 0.0
           name: generic.knockback_resistance
           slot: HEAD
-          uuid: cc5af12a-5e46-457d-922e-00c7d42e1ec0
+          uuid: 1e058ad1-bcd1-4c2a-9ad4-b0048db100fa
           operation: 0
       ItemFlags:
       - HIDE_ENCHANTS
@@ -190,7 +215,7 @@ armor:
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"1.57
         Armor Toughness"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
-        368/458"}],"text":""}'
+        358/458"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Vitality
         IV"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Metabolism
@@ -215,14 +240,14 @@ armor:
           operation: 0
       ItemFlags:
       - HIDE_ATTRIBUTES
-      Damage: 84
+      Damage: 93
       PublicBukkitValues:
         valhallammo:actual_stats: GENERIC_ARMOR_TOUGHNESS:1.567568:ADD_NUMBER:false;GENERIC_ARMOR:1.925676:ADD_NUMBER:false
         valhallammo:quality_smithing: 220i
         valhallammo:default_stats: GENERIC_ARMOR:3.0:ADD_NUMBER:false;GENERIC_ARMOR_TOUGHNESS:2.0:ADD_NUMBER:false
         enchantssquared:es_enchantments: 31:4;12:1
         enchantmentsolution:stone_throw: Stone Throw
-        valhallammo:durability: 368i
+        valhallammo:durability: 358i
         valhallammo:smithing_treatments: 1:1,7:1,8:3
         valhallammo:max_durability: 458i
         valhallammo:neutral_quality: 140i
@@ -270,14 +295,14 @@ contents:
           amount: 11.0
           name: generic.attack_damage
           slot: HAND
-          uuid: 0b51572a-b839-41fe-b0a0-26f2901df0ad
+          uuid: a57a3d71-661f-4a34-9004-acdb80656fcd
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: 36703f16-68d5-4efe-a62f-1d438ee97726
+          uuid: 38880627-429c-4b00-8224-90f4561b88ba
           operation: 0
       ItemFlags:
       - HIDE_ENCHANTS
@@ -303,7 +328,7 @@ contents:
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"20%
         Immunity Reduction"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
-        1588/2827"}],"text":""}'
+        1572/2827"}],"text":""}'
       custom-model-data: 1981840
       attribute-modifiers:
         GENERIC_ATTACK_DAMAGE:
@@ -322,14 +347,14 @@ contents:
           operation: 0
       ItemFlags:
       - HIDE_ATTRIBUTES
-      Damage: 684
+      Damage: 692
       PublicBukkitValues:
         valhallammo:id: 10102i
         valhallammo:actual_stats: GENERIC_ATTACK_DAMAGE:4.310811:ADD_NUMBER:false;GENERIC_ATTACK_SPEED:4.0:ADD_NUMBER:false;IMMUNITY_REDUCTION:0.2:ADD_NUMBER:false
         valhallammo:quality_smithing: 190i
         valhallammo:weight_class: WEIGHTLESS
         valhallammo:default_stats: IMMUNITY_REDUCTION:0.2:ADD_NUMBER:false;GENERIC_ATTACK_DAMAGE:3.5000000000000013:ADD_NUMBER:false;GENERIC_ATTACK_SPEED:4.0:ADD_NUMBER:false
-        valhallammo:durability: 1588i
+        valhallammo:durability: 1572i
         valhallammo:max_durability: 2827i
         valhallammo:neutral_quality: 140i
         valhallammo:item_flags: DISPLAY_ATTRIBUTES
@@ -368,33 +393,7 @@ contents:
   slot_11:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_blue","text":"Arcane
-        Tome of Ice"}],"text":""}'
-      lore:
-      - '{"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Ancient
-        knowledge is hidden within these pages,"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"allowing
-        you to control the ice"}],"text":""}'
-      - '{"text":""}'
-      - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"(Sheak
-        + Right Click) - Launch an Ice Shard"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"(Sneak
-        + Swap) - Magic Barrier"}],"text":""}'
-      - '{"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Item
-        Ability: "},{"italic":false,"color":"green","text":"ON"}],"text":""}'
-      custom-model-data: 1000035
-      enchants:
-        DURABILITY: 3
-      ItemFlags:
-      - HIDE_ENCHANTS
-      PublicBukkitValues:
-        goditems:code_name: ice_book
+    type: ENCHANTED_GOLDEN_APPLE
   slot_8:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
@@ -408,18 +407,18 @@ contents:
   slot_14:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: LAPIS_LAZULI
-    amount: 11
-  slot_15:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
     type: NETHER_STAR
     amount: 2
-  slot_16:
+  slot_15:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: ARROW
     amount: 23
+  slot_16:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: REDSTONE
+    amount: 31
   slot_9:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
@@ -432,31 +431,32 @@ contents:
   slot_17:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: REDSTONE
-    amount: 31
-  slot_18:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
     type: STICK
     amount: 18
-  slot_19:
+  slot_18:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: BOOK
     amount: 35
-  slot_12:
+  slot_19:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: ENCHANTED_GOLDEN_APPLE
-  slot_13:
+    type: BUCKET
+  slot_12:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: IRON_INGOT
     amount: 17
+  slot_13:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: LAPIS_LAZULI
+    amount: 11
   slot_20:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: BUCKET
+    type: CHARCOAL
+    amount: 8
   slot_3:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
@@ -522,14 +522,9 @@ contents:
   slot_21:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: CHARCOAL
-    amount: 8
-  slot_22:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
     type: COAL
     amount: 64
-  slot_23:
+  slot_22:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: BROWN_DYE
@@ -551,7 +546,7 @@ contents:
         backpackplus:backpackused: 1i
         backpackplus:database: SQLITE
         backpackplus:backpacktier: 3i
-  slot_24:
+  slot_23:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: BROWN_DYE
@@ -689,22 +684,22 @@ contents:
         backpackplus:backpackused: 1i
         backpackplus:database: SQLITE
         backpackplus:backpacktier: 3i
-  slot_25:
+  slot_24:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: LEATHER
     amount: 22
-  slot_26:
+  slot_25:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: RAW_GOLD
     amount: 24
-  slot_27:
+  slot_26:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: RAW_IRON
     amount: 4
-  slot_28:
+  slot_27:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: SOUL_SAND
