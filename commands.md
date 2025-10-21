@@ -1,4 +1,4 @@
-chmod u+x start_server.sh
+chmod u+x start.sh
 
 ./start.sh
 
