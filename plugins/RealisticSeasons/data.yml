@@ -2,7 +2,7 @@ worlds:
   world: WINTER
 dates:
   world:
-    day: 4
+    day: 5
     month: 12
     year: 2025
 players:

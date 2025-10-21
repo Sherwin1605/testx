@@ -11,7 +11,7 @@ armor:
     meta:
       ==: ItemMeta
       meta-type: ARMOR
-      Damage: 187
+      Damage: 190
   leggings:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
@@ -56,6 +56,76 @@ armor:
         valhallammo:max_durability: 468i
         valhallammo:neutral_quality: 140i
         valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: IRON_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Untempered"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Unfit"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Upgrades:
+        3"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Great"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"3.52
+        Armor"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        204/204"}],"text":""}'
+      attribute-modifiers:
+        GENERIC_ARMOR:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 3.523256
+          name: generic.armor
+          slot: CHEST
+          uuid: d1ac964c-2db5-44ae-be86-1f30f3f070bb
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      PublicBukkitValues:
+        valhallammo:actual_stats: GENERIC_ARMOR:3.523256:ADD_NUMBER:false
+        valhallammo:quality_smithing: 160i
+        valhallammo:default_stats: GENERIC_ARMOR:6.0:ADD_NUMBER:false
+        valhallammo:durability: 204i
+        valhallammo:smithing_treatments: 1:1,7:1,8:3
+        valhallammo:max_durability: 204i
+        valhallammo:neutral_quality: 110i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: LEATHER_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: COLORABLE_ARMOR
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Good"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"1.05
+        Armor"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        9/77"}],"text":""}'
+      enchants:
+        FROST_WALKER: 2
+      attribute-modifiers:
+        GENERIC_ARMOR:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 1.045455
+          name: generic.armor
+          slot: FEET
+          uuid: 983ec56f-e12e-454f-8a49-4c8701d74eb4
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 57
+      PublicBukkitValues:
+        valhallammo:actual_stats: GENERIC_ARMOR:1.045455:ADD_NUMBER:false
+        valhallammo:quality_smithing: 50i
+        valhallammo:default_stats: GENERIC_ARMOR:1.0:ADD_NUMBER:false
+        valhallammo:durability: 9i
+        valhallammo:max_durability: 77i
+        valhallammo:neutral_quality: 50i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
 charms: {}
 contents:
   slot_0:
@@ -96,14 +166,14 @@ contents:
           amount: 15.0
           name: generic.attack_damage
           slot: HAND
-          uuid: 6c314d49-dc2c-4f46-b3f7-f7871c28f7d8
+          uuid: 659a54b8-e2f9-4f37-8ef2-d06af2cd453d
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: dd59c583-b79e-48a7-8e0b-fa949eddf233
+          uuid: 2097e225-667c-4b9f-b5e9-38634e392b4c
           operation: 0
       ItemFlags:
       - HIDE_ENCHANTS
@@ -151,14 +221,14 @@ contents:
           amount: 11.0
           name: generic.attack_damage
           slot: HAND
-          uuid: bacfa0d0-6c3a-4bce-8a73-25cd18ef2328
+          uuid: 63deeee9-aa8b-4aa7-a6ea-bc36e441832e
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: 28e7d3cc-7d79-4e57-811a-5cd358d4b5e1
+          uuid: 57ada6cd-9721-4987-ab1b-10a8aeb65967
           operation: 0
       ItemFlags:
       - HIDE_ENCHANTS
@@ -204,14 +274,14 @@ contents:
           amount: 11.0
           name: generic.attack_damage
           slot: HAND
-          uuid: 3c4a03c8-07ad-4bda-9459-f5fc9a5cd9a1
+          uuid: 5e242613-42c4-44b8-ac95-2a7c89751f1a
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: b4cc112d-e995-43bf-b57f-a8862ea445a4
+          uuid: 76903639-68c8-4a63-b32f-05e06fb248de
           operation: 0
       ItemFlags:
       - HIDE_ENCHANTS
@@ -223,7 +293,7 @@ contents:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: COOKED_BEEF
-    amount: 55
+    amount: 52
   slot_5:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
@@ -257,14 +327,8 @@ contents:
   slot_14:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: IRON_INGOT
-    amount: 49
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Hot
-        Iron Ingot"}],"text":""}'
-      custom-model-data: 9827320
+    type: SPRUCE_LOG
+    amount: 38
   slot_7:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
@@ -316,28 +380,24 @@ contents:
   slot_15:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: LAPIS_LAZULI
-    amount: 47
-  slot_6:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: SAND
-    amount: 64
+    type: CHARCOAL
+    amount: 2
   slot_12:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: SAND
-    amount: 64
+    type: IRON_INGOT
+    amount: 41
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Hot
+        Iron Ingot"}],"text":""}'
+      custom-model-data: 9827320
   slot_13:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: BONE
-    amount: 50
-  slot_4:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: COBBLESTONE
-    amount: 64
+    type: LAPIS_LAZULI
+    amount: 47
   slot_8:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
@@ -397,51 +457,12 @@ contents:
         backpackplus:backpackused: 1i
         backpackplus:database: SQLITE
         backpackplus:backpacktier: 3i
-  slot_26:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: SAND
-    amount: 42
   slot_16:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: LEATHER_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: COLORABLE_ARMOR
-      lore:
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Good"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"1.05
-        Armor"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
-        9/77"}],"text":""}'
-      enchants:
-        FROST_WALKER: 2
-      attribute-modifiers:
-        GENERIC_ARMOR:
-        - ==: org.bukkit.attribute.AttributeModifier
-          amount: 1.045455
-          name: generic.armor
-          slot: FEET
-          uuid: 983ec56f-e12e-454f-8a49-4c8701d74eb4
-          operation: 0
-      ItemFlags:
-      - HIDE_ATTRIBUTES
-      Damage: 57
-      PublicBukkitValues:
-        valhallammo:actual_stats: GENERIC_ARMOR:1.045455:ADD_NUMBER:false
-        valhallammo:quality_smithing: 50i
-        valhallammo:default_stats: GENERIC_ARMOR:1.0:ADD_NUMBER:false
-        valhallammo:durability: 9i
-        valhallammo:max_durability: 77i
-        valhallammo:neutral_quality: 50i
-        valhallammo:item_flags: DISPLAY_ATTRIBUTES
-  slot_17:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: COAL
     amount: 64
-  slot_18:
+  slot_17:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: BROWN_DYE
@@ -456,55 +477,30 @@ contents:
         backpackplus:backpackused: 1i
         backpackplus:database: SQLITE
         backpackplus:backpacktier: 3i
+  slot_18:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BROWN_DYE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00C2C6","text":"Diamond
+        Backpack"}],"text":""}'
+      custom-model-data: 800003
+      PublicBukkitValues:
+        backpackplus:backpackuuid: 9399f236-99b8-4a61-9b7c-abd5d701b342
+        backpackplus:backpackused: 1i
+        backpackplus:database: SQLITE
+        backpackplus:backpacktier: 3i
   slot_20:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: NETHERITE_INGOT
-    amount: 23
+    type: NETHERITE_SCRAP
+    amount: 2
   slot_21:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: NETHERITE_SCRAP
-    amount: 64
-  slot_22:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: NETHERITE_SCRAP
-    amount: 64
-  slot_23:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: NETHERITE_SCRAP
-    amount: 9
-  slot_24:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
     type: WATER_BUCKET
-  slot_25:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: PACKED_MUD
-    amount: 2
-  slot_27:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: DIRT
-    amount: 64
-  slot_33:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: DIRT
-    amount: 64
-  slot_35:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: COBBLESTONE
-    amount: 64
-  slot_32:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: DIRT
-    amount: 64
   slot_9:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
@@ -612,40 +608,5 @@ contents:
   slot_19:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: BROWN_DYE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00C2C6","text":"Diamond
-        Backpack"}],"text":""}'
-      custom-model-data: 800003
-      PublicBukkitValues:
-        backpackplus:backpackuuid: 9399f236-99b8-4a61-9b7c-abd5d701b342
-        backpackplus:backpackused: 1i
-        backpackplus:database: SQLITE
-        backpackplus:backpacktier: 3i
-  slot_28:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: SANDSTONE
-    amount: 9
-  slot_29:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: ROTTEN_FLESH
-    amount: 20
-  slot_30:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: COARSE_DIRT
-    amount: 60
-  slot_31:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: CHARCOAL
-    amount: 2
-  slot_34:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: COBBLESTONE
-    amount: 64
+    type: NETHERITE_INGOT
+    amount: 57
