@@ -4,4 +4,4 @@ chmod u+x start.sh
 
 chmod +x ngrok
 
-./ngrok tcp --region ap 25565
+./ngrok tcp -region ap 25565

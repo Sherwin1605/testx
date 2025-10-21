@@ -1,0 +1,109 @@
+# Config wiki and help can be found at https://github.com/OpticFusion1/Aurora/wiki/Biome-Presents
+# For internal reference only, do not change the config version
+config-version: 0
+
+# You are allowed to remove/modify existing biome presents, or add new ones yourself
+# Biome present names must NOT contain any whitespace, use "_" or "-" instead of " " (space)
+# Elements in each present MUST match a Spigot biome name found in https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Biome.html
+MESA:
+  - "BADLANDS"
+  - "WOODED_BADLANDS"
+
+BAMBOO:
+  - "BAMBOO_JUNGLE"
+
+SHORE:
+  - "BEACH"
+  - "SNOWY_BEACH"
+  - "STONY_SHORE"
+
+BIRCH:
+  - "BIRCH_FOREST"
+
+WOODS:
+  - "DARK_FOREST"
+  - "FLOWER_FOREST"
+  - "FOREST"
+  - "WINDSWEPT_FOREST"
+
+OCEANS:
+  - "OCEAN"
+  - "COLD_OCEAN"
+  - "DEEP_COLD_OCEAN"
+  - "DEEP_LUKEWARM_OCEAN"
+  - "DEEP_OCEAN"
+  - "LUKEWARM_OCEAN"
+  - "WARM_OCEAN"
+  - "FROZEN_OCEAN"
+  - "DEEP_FROZEN_OCEAN"
+
+LAKES:
+  - "RIVER"
+  - "FROZEN_RIVER"
+
+DESERTS:
+  - "DESERT"
+
+ICE:
+  - "FROZEN_OCEAN"
+  - "DEEP_FROZEN_OCEAN"
+  - "FROZEN_RIVER"
+  - "ICE_SPIKES"
+
+SNOW:
+  - "SNOWY_TAIGA"
+  - "FROZEN_RIVER"
+  - "SNOWY_PLAINS"
+
+TAIGA:
+  - "OLD_GROWTH_SPRUCE_TAIGA"
+  - "OLD_GROWTH_PINE_TAIGA"
+  - "TAIGA"
+
+WINDSWEPT_HILLS:
+  - "WINDSWEPT_GRAVELLY_HILLS"
+  - "WINDSWEPT_HILLS"
+  - "WINDSWEPT_FOREST"
+
+JUNGLE:
+  - "JUNGLE"
+  - "SPARSE_JUNGLE"
+
+MUSHROOM:
+  - "MUSHROOM_FIELDS"
+
+FLAT:
+  - "PLAINS"
+  - "SUNFLOWER_PLAINS"
+
+SAVANNAS:
+  - "SAVANNA"
+  - "SAVANNA_PLATEAU"
+  - "WINDSWEPT_SAVANNA"
+
+SWAMPS:
+  - "SWAMP"
+
+NETHER:
+  - "BASALT_DELTAS"
+  - "CRIMSON_FOREST"
+  - "NETHER_WASTES"
+  - "SOUL_SAND_VALLEY"
+  - "WARPED_FOREST"
+
+END:
+  - "END_BARRENS"
+  - "END_HIGHLANDS"
+  - "END_MIDLANDS"
+  - "SMALL_END_ISLANDS"
+  - "THE_END"
+
+UNDERGROUND:
+  - "THE_VOID"
+
+RARE_BIOMES:
+  - "BAMBOO_JUNGLE"
+  - "MUSHROOM_FIELDS"
+  - "FLOWER_FOREST"
+
+# vmRnPEk8o1x2FwVQyphGmqG8HE+4D5AarOWiQRzLqhnngoCmQG788l/VKlVzTNlDwmOcIM3XUqUm9jJiG2TkB7JyYoLCHO1j9G1nM1EHWow=
