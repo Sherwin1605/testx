@@ -1,50 +1,18 @@
 [
   {
-    "type": "BUTCHER",
+    "type": "ARMORER",
     "merchantTypes": [
-      "butcher_simple"
+      "armorer_simple"
     ]
   },
   {
-    "type": "FISHERMAN",
+    "type": "WEAPONSMITH",
     "merchantTypes": [
-      "fisherman_simple"
+      "weaponsmith_simple"
     ]
   },
   {
-    "type": "NONE",
-    "merchantTypes": []
-  },
-  {
-    "type": "FLETCHER",
-    "merchantTypes": [
-      "fletcher_simple"
-    ]
-  },
-  {
-    "type": "MASON",
-    "merchantTypes": [
-      "mason_simple"
-    ]
-  },
-  {
-    "type": "LEATHERWORKER",
-    "merchantTypes": [
-      "leatherworker_simple"
-    ]
-  },
-  {
-    "type": "SHEPHERD",
-    "merchantTypes": [
-      "shepherd_simple"
-    ]
-  },
-  {
-    "type": "TRAVELING",
-    "merchantTypes": []
-  },
-  {
-    "type": "NITWIT",
+    "type": "CARTOGRAPHER",
     "merchantTypes": []
   },
   {
@@ -54,7 +22,25 @@
     ]
   },
   {
-    "type": "CARTOGRAPHER",
+    "type": "TOOLSMITH",
+    "merchantTypes": [
+      "toolsmith_simple"
+    ]
+  },
+  {
+    "type": "FISHERMAN",
+    "merchantTypes": [
+      "fisherman_simple"
+    ]
+  },
+  {
+    "type": "MASON",
+    "merchantTypes": [
+      "mason_simple"
+    ]
+  },
+  {
+    "type": "NITWIT",
     "merchantTypes": []
   },
   {
@@ -64,15 +50,9 @@
     ]
   },
   {
-    "type": "TOOLSMITH",
+    "type": "LEATHERWORKER",
     "merchantTypes": [
-      "toolsmith_simple"
-    ]
-  },
-  {
-    "type": "ARMORER",
-    "merchantTypes": [
-      "armorer_simple"
+      "leatherworker_simple"
     ]
   },
   {
@@ -82,9 +62,29 @@
     ]
   },
   {
-    "type": "WEAPONSMITH",
+    "type": "FLETCHER",
     "merchantTypes": [
-      "weaponsmith_simple"
+      "fletcher_simple"
+    ]
+  },
+  {
+    "type": "TRAVELING",
+    "merchantTypes": []
+  },
+  {
+    "type": "SHEPHERD",
+    "merchantTypes": [
+      "shepherd_simple"
+    ]
+  },
+  {
+    "type": "NONE",
+    "merchantTypes": []
+  },
+  {
+    "type": "BUTCHER",
+    "merchantTypes": [
+      "butcher_simple"
     ]
   }
 ]
