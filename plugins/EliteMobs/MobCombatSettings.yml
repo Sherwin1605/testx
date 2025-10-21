@@ -1,0 +1,40 @@
+doNaturalEliteMobSpawning: false
+doSpawnersSpawnEliteMobs: false
+eliteMobsSpawnPercentage: 0.05
+superMobStackRange: 15
+naturalEliteMobsLevelCap: 250
+doElitesWearArmor: false
+doElitesWearHelmets: false
+doNaturalEliteMobVisualEffects: false
+doSpawnerEliteMobVisualEffects: false
+doPowerBuildupVisualEffects: false
+doCustomEliteMobsDeathMessages: false
+doDisplayMobHealthOnHit: false
+doDisplayMobDamageOnHit: false
+doIncreaseEliteMobLevelBasedOnSpawnDistance: false
+distanceBetweenIncrements: 100.0
+levelIncreaseAtIncrements: 1.0
+hideEliteMobPowersUntilAggro: false
+damageToEliteMobMultiplierV2: 1.0
+damageToPlayerMultiplierV2: 1.0
+showCustomBossLocation: false
+bossLocationMessage: '&7[EM] &2[Click to track!]'
+commandsOnEliteMobDeath: []
+bossKillParticipationMessage: '&eYour damage: &2$playerDamage'
+regenerateCustomBossHealthOnCombatEnd: false
+defaultOtherWorldBossLocationMessage: '$name: In different world!'
+weakTextColor: '&9'
+resistTextColor: '&c'
+weakText: '&9&lWeak!'
+resistText: '&c&lResist!'
+doWeakEffect: false
+doResistEffect: false
+damageToEliteMobMultiplier: 1.0
+damageToPlayerMultiplier: 1.0
+normalizedRegionalBossBaselineDamageV2: 3.0
+normalizedRegionalBossBaselineHealthV3: 4.0
+normalizeRegionalBosses: false
+fullHealMessage: '&2FULL HEAL!'
+strengthAndWeaknessDamageMultipliers: 2.0
+resistanceDamageMultiplier: 1.0
+blockingDamageReduction: 0.8
