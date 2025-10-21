@@ -1,56 +1,14 @@
 [
   {
+    "type": "WEAPONSMITH",
+    "merchantTypes": [
+      "weaponsmith_simple"
+    ]
+  },
+  {
     "type": "MASON",
     "merchantTypes": [
       "mason_simple"
-    ]
-  },
-  {
-    "type": "NITWIT",
-    "merchantTypes": []
-  },
-  {
-    "type": "FLETCHER",
-    "merchantTypes": [
-      "fletcher_simple"
-    ]
-  },
-  {
-    "type": "TRAVELING",
-    "merchantTypes": []
-  },
-  {
-    "type": "TOOLSMITH",
-    "merchantTypes": [
-      "toolsmith_simple"
-    ]
-  },
-  {
-    "type": "LIBRARIAN",
-    "merchantTypes": [
-      "librarian_simple"
-    ]
-  },
-  {
-    "type": "NONE",
-    "merchantTypes": []
-  },
-  {
-    "type": "SHEPHERD",
-    "merchantTypes": [
-      "shepherd_simple"
-    ]
-  },
-  {
-    "type": "FARMER",
-    "merchantTypes": [
-      "farmer_simple"
-    ]
-  },
-  {
-    "type": "BUTCHER",
-    "merchantTypes": [
-      "butcher_simple"
     ]
   },
   {
@@ -60,9 +18,15 @@
     ]
   },
   {
-    "type": "WEAPONSMITH",
+    "type": "LIBRARIAN",
     "merchantTypes": [
-      "weaponsmith_simple"
+      "librarian_simple"
+    ]
+  },
+  {
+    "type": "TOOLSMITH",
+    "merchantTypes": [
+      "toolsmith_simple"
     ]
   },
   {
@@ -72,19 +36,55 @@
     ]
   },
   {
-    "type": "CLERIC",
+    "type": "FLETCHER",
     "merchantTypes": [
-      "cleric_simple"
+      "fletcher_simple"
     ]
+  },
+  {
+    "type": "NONE",
+    "merchantTypes": []
   },
   {
     "type": "CARTOGRAPHER",
     "merchantTypes": []
   },
   {
+    "type": "BUTCHER",
+    "merchantTypes": [
+      "butcher_simple"
+    ]
+  },
+  {
+    "type": "CLERIC",
+    "merchantTypes": [
+      "cleric_simple"
+    ]
+  },
+  {
+    "type": "FARMER",
+    "merchantTypes": [
+      "farmer_simple"
+    ]
+  },
+  {
     "type": "ARMORER",
     "merchantTypes": [
       "armorer_simple"
     ]
+  },
+  {
+    "type": "SHEPHERD",
+    "merchantTypes": [
+      "shepherd_simple"
+    ]
+  },
+  {
+    "type": "TRAVELING",
+    "merchantTypes": []
+  },
+  {
+    "type": "NITWIT",
+    "merchantTypes": []
   }
 ]

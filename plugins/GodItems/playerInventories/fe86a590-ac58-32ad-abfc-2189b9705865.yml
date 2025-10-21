@@ -65,21 +65,21 @@ armor:
           amount: 6.0
           name: generic.armor
           slot: HEAD
-          uuid: 938fb710-e6c6-4185-b7ef-95939c822fb0
+          uuid: cd11a7a2-979b-4904-a611-9f25abbff01b
           operation: 0
         GENERIC_ARMOR_TOUGHNESS:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: 1.0
           name: generic.armor_toughness
           slot: HEAD
-          uuid: c84a3485-5162-45ef-8481-7457ef94fbbc
+          uuid: b2e1cc1b-1e17-4ad3-baec-1129718c7b5b
           operation: 0
         GENERIC_KNOCKBACK_RESISTANCE:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: 0.0
           name: generic.knockback_resistance
           slot: HEAD
-          uuid: 82a034a5-e134-4418-9817-27992a2cd2ec
+          uuid: 564cb3fa-4866-4817-9701-1c062dbe5d44
           operation: 0
       ItemFlags:
       - HIDE_ENCHANTS
@@ -296,14 +296,14 @@ contents:
           amount: 11.0
           name: generic.attack_damage
           slot: HAND
-          uuid: 31924384-575d-4800-b82e-83c4e92bc77f
+          uuid: e624b8b9-8b02-4ba9-a2fd-b71e96e8b2e5
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: f7458b62-8d25-403d-a242-7ad21be3c0df
+          uuid: edbddd3f-437f-48c3-9cfe-e9c0f1a16f4f
           operation: 0
       ItemFlags:
       - HIDE_ENCHANTS
