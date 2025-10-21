@@ -1,6 +1,6 @@
 chmod u+x start_server.sh
 
-./start_server.sh
+./start.sh
 
 chmod +x ngrok
 
