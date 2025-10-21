@@ -65,21 +65,21 @@ armor:
           amount: 6.0
           name: generic.armor
           slot: HEAD
-          uuid: dbdeeceb-49cf-40a7-b38a-70e0d15b9e2e
+          uuid: d4799c84-633e-4bfe-9d84-b2e994414992
           operation: 0
         GENERIC_ARMOR_TOUGHNESS:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: 1.0
           name: generic.armor_toughness
           slot: HEAD
-          uuid: 3d1bfe61-b99c-4330-be7e-3723b02f7f36
+          uuid: 7953a4d9-2d53-4524-ae28-5a6abd3f2662
           operation: 0
         GENERIC_KNOCKBACK_RESISTANCE:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: 0.0
           name: generic.knockback_resistance
           slot: HEAD
-          uuid: 1342191b-1653-41c8-982a-b9839d44abf4
+          uuid: d30d1648-32b3-4f3d-8563-556335fc21b0
           operation: 0
       ItemFlags:
       - HIDE_ENCHANTS
@@ -100,7 +100,7 @@ armor:
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"2.49
         Armor Toughness"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
-        735/736"}],"text":""}'
+        720/736"}],"text":""}'
       enchants:
         MENDING: 1
         PROTECTION_ENVIRONMENTAL: 4
@@ -122,11 +122,12 @@ armor:
           operation: 0
       ItemFlags:
       - HIDE_ATTRIBUTES
+      Damage: 10
       PublicBukkitValues:
         valhallammo:actual_stats: GENERIC_ARMOR_TOUGHNESS:2.486486:ADD_NUMBER:false;GENERIC_ARMOR:6.72973:ADD_NUMBER:false
         valhallammo:quality_smithing: 160i
         valhallammo:default_stats: GENERIC_ARMOR:6.0:ADD_NUMBER:false;GENERIC_ARMOR_TOUGHNESS:2.0:ADD_NUMBER:false
-        valhallammo:durability: 735i
+        valhallammo:durability: 720i
         valhallammo:max_durability: 736i
         valhallammo:neutral_quality: 140i
         valhallammo:item_flags: DISPLAY_ATTRIBUTES
@@ -215,7 +216,7 @@ armor:
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"1.57
         Armor Toughness"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
-        358/458"}],"text":""}'
+        339/458"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Vitality
         IV"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Metabolism
@@ -240,14 +241,14 @@ armor:
           operation: 0
       ItemFlags:
       - HIDE_ATTRIBUTES
-      Damage: 93
+      Damage: 111
       PublicBukkitValues:
         valhallammo:actual_stats: GENERIC_ARMOR_TOUGHNESS:1.567568:ADD_NUMBER:false;GENERIC_ARMOR:1.925676:ADD_NUMBER:false
         valhallammo:quality_smithing: 220i
         valhallammo:default_stats: GENERIC_ARMOR:3.0:ADD_NUMBER:false;GENERIC_ARMOR_TOUGHNESS:2.0:ADD_NUMBER:false
         enchantssquared:es_enchantments: 31:4;12:1
         enchantmentsolution:stone_throw: Stone Throw
-        valhallammo:durability: 358i
+        valhallammo:durability: 339i
         valhallammo:smithing_treatments: 1:1,7:1,8:3
         valhallammo:max_durability: 458i
         valhallammo:neutral_quality: 140i
@@ -295,14 +296,14 @@ contents:
           amount: 11.0
           name: generic.attack_damage
           slot: HAND
-          uuid: d3c5170b-09f1-46ae-9ed3-00798676eb65
+          uuid: b3336f77-5412-48eb-b3aa-f26d027e39af
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: ee560f4b-b094-43d1-b347-7334496a628f
+          uuid: 6564753b-ddc5-4bd0-8e84-d460291fee66
           operation: 0
       ItemFlags:
       - HIDE_ENCHANTS
@@ -403,7 +404,7 @@ contents:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: COOKED_BEEF
-    amount: 41
+    amount: 40
   slot_14:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
