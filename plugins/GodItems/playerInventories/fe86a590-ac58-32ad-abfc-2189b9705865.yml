@@ -65,21 +65,21 @@ armor:
           amount: 6.0
           name: generic.armor
           slot: HEAD
-          uuid: 1719f480-eb71-43b6-9cfc-4c00f4883fc5
+          uuid: 0967bc6a-9164-4b05-a417-4c25dfc871c5
           operation: 0
         GENERIC_ARMOR_TOUGHNESS:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: 1.0
           name: generic.armor_toughness
           slot: HEAD
-          uuid: ea1cb861-ae7a-4aa5-9fb9-717a85a9e655
+          uuid: c9a26369-acd9-403b-a568-cbeeff5b9d95
           operation: 0
         GENERIC_KNOCKBACK_RESISTANCE:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: 0.0
           name: generic.knockback_resistance
           slot: HEAD
-          uuid: e61746c7-693f-4585-a9c0-05706016ba51
+          uuid: fe91928c-935b-4c84-8f8b-eae9358e7b8b
           operation: 0
       ItemFlags:
       - HIDE_ENCHANTS
@@ -193,7 +193,6 @@ armor:
         valhallammo:neutral_quality: 140i
         valhallammo:actual_stats: GENERIC_ARMOR:5.135135:ADD_NUMBER:false;GENERIC_ARMOR_TOUGHNESS:1.567568:ADD_NUMBER:false
         enchantmentsolution:stone_throw: Stone Throw
-        valhallammo:temporary_type_storage: DIAMOND_CHESTPLATE
         valhallammo:item_flags: DISPLAY_ATTRIBUTES
         enchantmentsolution:stone_throw_level: '3'
   boots:
@@ -296,14 +295,14 @@ contents:
           amount: 11.0
           name: generic.attack_damage
           slot: HAND
-          uuid: 10b4cd09-d937-4812-a70e-8cb217b30760
+          uuid: 45564c66-a2ec-4554-95eb-8d446b8f5d49
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: 30ef0f50-8782-4824-b332-5ff3aa24b30f
+          uuid: 3011f84d-d454-41b0-b953-75334b43f2ad
           operation: 0
       ItemFlags:
       - HIDE_ENCHANTS
