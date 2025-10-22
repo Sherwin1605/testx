@@ -21,12 +21,12 @@ contentType: INSTANCED_DUNGEON
 dungeonConfigFolderName: em_id_the_deep_mines
 contentLevel: 45
 difficulties:
-- name: normal
+- levelSync: 47
   id: 0
-  levelSync: 47
-- name: hard
+  name: normal
+- levelSync: 45
   id: 1
-  levelSync: 45
-- name: mythic
+  name: hard
+- levelSync: 43
   id: 2
-  levelSync: 43
+  name: mythic

@@ -1,11 +1,11 @@
-isEnabled: true
+isEnabled: false
 entityType: ZOMBIE
 name: $eventBossLevel &3Armor Goblin
 level: dynamic
-isPersistent: true
+isPersistent: false
 healthMultiplier: 4.0
 damageMultiplier: 2.0
-isBaby: true
+isBaby: false
 deathMessages:
 - '&e&l---------------------------------------------'
 - '&eThe Armor Goblin has been pillaged!'

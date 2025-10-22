@@ -24,12 +24,12 @@ contentType: INSTANCED_DUNGEON
 dungeonConfigFolderName: em_id_the_climb
 contentLevel: 10
 difficulties:
-- name: normal
+- levelSync: 15
   id: 0
-  levelSync: 15
-- name: hard
+  name: normal
+- levelSync: 10
   id: 1
-  levelSync: 10
-- name: mythic
+  name: hard
+- levelSync: 5
   id: 2
-  levelSync: 5
+  name: mythic

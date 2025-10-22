@@ -22,12 +22,12 @@ contentType: INSTANCED_DUNGEON
 dungeonConfigFolderName: em_id_the_quarry
 contentLevel: 40
 difficulties:
-- name: normal
+- levelSync: 42
   id: 0
-  levelSync: 42
-- name: hard
+  name: normal
+- levelSync: 40
   id: 1
-  levelSync: 40
-- name: mythic
+  name: hard
+- levelSync: 37
   id: 2
-  levelSync: 37
+  name: mythic

@@ -21,12 +21,12 @@ contentType: INSTANCED_DUNGEON
 dungeonConfigFolderName: em_id_the_palace
 contentLevel: 35
 difficulties:
-- name: normal
+- levelSync: 40
   id: 0
-  levelSync: 40
-- name: hard
+  name: normal
+- levelSync: 35
   id: 1
-  levelSync: 35
-- name: mythic
+  name: hard
+- levelSync: 30
   id: 2
-  levelSync: 30
+  name: mythic

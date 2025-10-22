@@ -25,12 +25,12 @@ contentType: INSTANCED_DUNGEON
 dungeonConfigFolderName: the_binder_of_worlds
 contentLevel: 50
 difficulties:
-- name: normal
+- levelSync: 205
   id: 0
-  levelSync: 205
-- name: hard
+  name: normal
+- levelSync: 200
   id: 1
-  levelSync: 200
-- name: mythic
+  name: hard
+- levelSync: 195
   id: 2
-  levelSync: 195
+  name: mythic

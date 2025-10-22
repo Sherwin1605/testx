@@ -199,17 +199,16 @@ contents:
           amount: 15.0
           name: generic.attack_damage
           slot: HAND
-          uuid: 96ea19b8-73c8-43c8-aae8-30f556631089
+          uuid: b1958ec5-6ade-4b22-a2a2-1cc6500b1d67
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: c891609d-53f7-4340-b375-22621fba059f
+          uuid: 0d51d3d5-40e3-4a62-9115-de0c2385500f
           operation: 0
       ItemFlags:
-      - HIDE_ENCHANTS
       - HIDE_ATTRIBUTES
       Unbreakable: true
       PublicBukkitValues:
@@ -254,17 +253,16 @@ contents:
           amount: 11.0
           name: generic.attack_damage
           slot: HAND
-          uuid: 82e85abc-9997-43b5-a60c-616e22496c16
+          uuid: 014d4686-7376-4855-bf50-baf229b479eb
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: 5e7768f8-bbfa-44a4-85a2-5826518af94b
+          uuid: 72e09c78-60e8-46f7-a38d-17a92c909409
           operation: 0
       ItemFlags:
-      - HIDE_ENCHANTS
       - HIDE_ATTRIBUTES
       Unbreakable: true
       PublicBukkitValues:
@@ -307,17 +305,16 @@ contents:
           amount: 11.0
           name: generic.attack_damage
           slot: HAND
-          uuid: e49920ba-2633-47a4-8ff6-869899a33d5f
+          uuid: 23804a5a-f34c-447e-985b-bf8c73d19e95
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: 83eaf5b5-709d-4257-ab29-38a1bb3b8dc5
+          uuid: 73fd08c5-5eb7-4836-8ce7-9e5489ee6f83
           operation: 0
       ItemFlags:
-      - HIDE_ENCHANTS
       - HIDE_ATTRIBUTES
       Unbreakable: true
       PublicBukkitValues:
@@ -353,8 +350,6 @@ contents:
       custom-model-data: 1000035
       enchants:
         DURABILITY: 3
-      ItemFlags:
-      - HIDE_ENCHANTS
       PublicBukkitValues:
         goditems:code_name: ice_book
   slot_8:

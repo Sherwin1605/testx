@@ -1,8 +1,8 @@
-isEnabled: true
+isEnabled: false
 entityType: VINDICATOR
 name: $eventBossLevel &7Alpha Werewolf
 level: dynamic
-isPersistent: true
+isPersistent: false
 healthMultiplier: 4.0
 damageMultiplier: 2.0
 deathMessages:
@@ -25,8 +25,8 @@ powers:
 - ground_pound.yml
 - moonwalk.yml
 - spirit_walk.yml
-- summonable:summonType=ON_HIT:filename=beta_wolf.yml:amount=5:chance=0.1:inheritAggro=true:spawnNearby=true
-- summonable:summonType=ON_HIT:filename=gamma_werewolf.yml:amount=1:chance=0.1:inheritAggro=true:spawnNearby=true
+- summonable:summonType=ON_HIT:filename=beta_wolf.yml:amount=5:chance=0.1:inheritAggro=false:spawnNearby=false
+- summonable:summonType=ON_HIT:filename=gamma_werewolf.yml:amount=1:chance=0.1:inheritAggro=false:spawnNearby=false
 - summonable:summonType=GLOBAL:filename=gamma_werewolf.yml:amount=1:customSpawn=normal_surface_spawn.yml
 - summonable:summonType=GLOBAL:filename=omega_wolf.yml:amount=2:customSpawn=normal_surface_spawn.yml
 trails:

@@ -8,7 +8,7 @@ eliteScript:
     Actions:
     - duration: 2147483647
       action: POTION_EFFECT
-      amplifier: 0
       potionEffectType: invisibility
+      amplifier: 0
       Target:
         targetType: SELF

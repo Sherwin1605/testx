@@ -11,17 +11,17 @@ eliteScript:
     Actions:
     - duration: 60
       action: POTION_EFFECT
-      amplifier: 5
       potionEffectType: slowness
+      amplifier: 5
       Target:
         targetType: DIRECT_TARGET
     - duration: 60
       action: PLACE_BLOCK
       Target:
         targetType: DIRECT_TARGET
+      material: PACKED_ICE
       conditions:
         locationIsAir: true
-      material: PACKED_ICE
     - action: VISUAL_FREEZE
       repeatEvery: 1
       times: 60

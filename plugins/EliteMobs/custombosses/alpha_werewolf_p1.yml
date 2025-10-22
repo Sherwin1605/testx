@@ -1,8 +1,8 @@
-isEnabled: true
+isEnabled: false
 entityType: VINDICATOR
 name: $eventBossLevel &7Enraged Vindicator
 level: dynamic
-isPersistent: true
+isPersistent: false
 healthMultiplier: 4.0
 damageMultiplier: 2.0
 deathMessages:

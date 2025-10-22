@@ -13,6 +13,6 @@ eliteScript:
       action: PLACE_BLOCK
       Target:
         targetType: DIRECT_TARGET
+      material: COBWEB
       conditions:
         locationIsAir: true
-      material: COBWEB

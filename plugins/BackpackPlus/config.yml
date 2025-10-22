@@ -134,12 +134,12 @@ resource-pack-url: "https://www.dropbox.com/scl/fi/jjp2h0nn2s5ck52i1vp2a/ThanhHo
 resource-pack-hash: "d0475e76717fb22eb52e94c2db2fe46076a70979"
 # If you are using server resourcepack set this to false
 # Just remember to add the texture and model of the backpack
-use-resource-pack: false
+use-resource-pack: true
 
 # If the player does not accept the resourcepack, then if the value is on true it will be discarded
-force-resource-pack: false
+force-resource-pack: true
 resource-pack-message:
-  - "&l&8[&6To play you must accept the server resourcepack&l&8]"
+  - "&l&8[&6Bấm vào hoặc bị ĐỊT&l&8]"
 
 # If you change this backpacks will use players' heads instead of resourcepack
 use-skulls-backpack: false

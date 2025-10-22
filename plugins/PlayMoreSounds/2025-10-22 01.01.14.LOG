@@ -1,0 +1,17 @@
+=====================================================================
+>> Please report this file to [Epicnicity322]
+>> https://github.com/Epicnicity322/PlayMoreSounds/
+=====================================================================
+
+ - 2025/10/22 01:01:14.823
+ - PlayMoreSounds v4.2
+
+Download Addons Exception:
+java.io.IOException: Server returned HTTP response code: 403 for URL: https://api.github.com/repos/Epicnicity322/PlayMoreSounds/releases
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:2013)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1614)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223)
+	at EpicPluginLib.jar//com.epicnicity322.epicpluginlib.core.tools.Downloader.run(Downloader.java:94)
+	at PlayMoreSounds.jar//com.epicnicity322.playmoresounds.bukkit.inventory.AddonsInventory.downloadAddons(AddonsInventory.java:195)
+	at PlayMoreSounds.jar//com.epicnicity322.playmoresounds.bukkit.inventory.AddonsInventory.lambda$openInstallerInventory$2(AddonsInventory.java:149)
+	at java.base/java.lang.Thread.run(Thread.java:1583)

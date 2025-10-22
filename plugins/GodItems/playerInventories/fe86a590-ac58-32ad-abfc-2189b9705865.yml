@@ -25,8 +25,6 @@ armor:
       custom-model-data: 1000035
       enchants:
         DURABILITY: 3
-      ItemFlags:
-      - HIDE_ENCHANTS
       PublicBukkitValues:
         goditems:code_name: ice_book
   helmet:
@@ -65,24 +63,22 @@ armor:
           amount: 6.0
           name: generic.armor
           slot: HEAD
-          uuid: 66ced0b3-2152-4fb4-9bf8-c040bd152c68
+          uuid: a615b702-0bcd-4cef-a6cb-e02524997ff1
           operation: 0
         GENERIC_ARMOR_TOUGHNESS:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: 1.0
           name: generic.armor_toughness
           slot: HEAD
-          uuid: 84f67dbb-229f-4e8f-b5d6-1c939cad4c19
+          uuid: b10f61a0-6812-4d03-a105-128f31eadcbb
           operation: 0
         GENERIC_KNOCKBACK_RESISTANCE:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: 0.0
           name: generic.knockback_resistance
           slot: HEAD
-          uuid: 6b8b4bbb-477e-4a0f-93de-6443b17c1d32
+          uuid: b21e0f3f-5b14-411a-9f17-7e156171daa8
           operation: 0
-      ItemFlags:
-      - HIDE_ENCHANTS
       Unbreakable: true
       PublicBukkitValues:
         goditems:code_name: necromancer_crown
@@ -193,6 +189,7 @@ armor:
         valhallammo:neutral_quality: 140i
         valhallammo:actual_stats: GENERIC_ARMOR:5.135135:ADD_NUMBER:false;GENERIC_ARMOR_TOUGHNESS:1.567568:ADD_NUMBER:false
         enchantmentsolution:stone_throw: Stone Throw
+        valhallammo:temporary_type_storage: DIAMOND_CHESTPLATE
         valhallammo:item_flags: DISPLAY_ATTRIBUTES
         enchantmentsolution:stone_throw_level: '3'
   boots:
@@ -295,17 +292,16 @@ contents:
           amount: 11.0
           name: generic.attack_damage
           slot: HAND
-          uuid: 82e85abc-9997-43b5-a60c-616e22496c16
+          uuid: 014d4686-7376-4855-bf50-baf229b479eb
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: 5e7768f8-bbfa-44a4-85a2-5826518af94b
+          uuid: 72e09c78-60e8-46f7-a38d-17a92c909409
           operation: 0
       ItemFlags:
-      - HIDE_ENCHANTS
       - HIDE_ATTRIBUTES
       Unbreakable: true
       PublicBukkitValues:
@@ -372,7 +368,7 @@ contents:
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"111.2%
         Shot Speed"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
-        555/556"}],"text":""}'
+        554/556"}],"text":""}'
       enchants:
         ARROW_FIRE: 2
         ARROW_INFINITE: 1
@@ -382,11 +378,12 @@ contents:
         DURABILITY: 5
       ItemFlags:
       - HIDE_ATTRIBUTES
+      Damage: 1
       PublicBukkitValues:
         valhallammo:actual_stats: BOW_STRENGTH:1.112245:ADD_NUMBER:false
         valhallammo:quality_smithing: 110i
         valhallammo:default_stats: BOW_STRENGTH:1.0:ADD_NUMBER:false
-        valhallammo:durability: 555i
+        valhallammo:durability: 554i
         valhallammo:max_durability: 556i
         valhallammo:neutral_quality: 80i
         valhallammo:item_flags: DISPLAY_ATTRIBUTES
@@ -403,7 +400,7 @@ contents:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: COOKED_BEEF
-    amount: 40
+    amount: 39
   slot_14:
     ==: org.bukkit.inventory.ItemStack
     v: 3465

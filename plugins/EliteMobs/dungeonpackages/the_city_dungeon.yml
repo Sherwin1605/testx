@@ -24,12 +24,12 @@ contentType: INSTANCED_DUNGEON
 dungeonConfigFolderName: em_id_the_city
 contentLevel: 30
 difficulties:
-- name: normal
+- levelSync: 35
   id: 0
-  levelSync: 35
-- name: hard
+  name: normal
+- levelSync: 30
   id: 1
-  levelSync: 30
-- name: mythic
+  name: hard
+- levelSync: 25
   id: 2
-  levelSync: 25
+  name: mythic

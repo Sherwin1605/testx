@@ -21,12 +21,12 @@ contentType: INSTANCED_DUNGEON
 dungeonConfigFolderName: frost_palace
 contentLevel: 50
 difficulties:
-- name: normal
+- levelSync: 55
   id: 0
-  levelSync: 55
-- name: hard
+  name: normal
+- levelSync: 50
   id: 1
-  levelSync: 50
-- name: mythic
+  name: hard
+- levelSync: 45
   id: 2
-  levelSync: 45
+  name: mythic

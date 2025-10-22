@@ -20,12 +20,12 @@ contentType: INSTANCED_DUNGEON
 dungeonConfigFolderName: em_id_the_nether_wastes
 contentLevel: 50
 difficulties:
-- name: normal
+- levelSync: 52
   id: 0
-  levelSync: 52
-- name: hard
+  name: normal
+- levelSync: 50
   id: 1
-  levelSync: 50
-- name: mythic
+  name: hard
+- levelSync: 48
   id: 2
-  levelSync: 48
+  name: mythic

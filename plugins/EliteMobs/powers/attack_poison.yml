@@ -8,7 +8,7 @@ eliteScript:
     Actions:
     - duration: 60
       action: POTION_EFFECT
-      amplifier: 0
       potionEffectType: poison
+      amplifier: 0
       Target:
         targetType: DIRECT_TARGET

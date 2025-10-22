@@ -1,4 +1,4 @@
-isEnabled: true
+isEnabled: false
 eventType: TIMED
 bossFilenames:
 - treasure_goblin.yml

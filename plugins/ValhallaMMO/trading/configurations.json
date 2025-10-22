@@ -1,62 +1,14 @@
 [
   {
-    "type": "NONE",
-    "merchantTypes": []
-  },
-  {
-    "type": "MASON",
-    "merchantTypes": [
-      "mason_simple"
-    ]
-  },
-  {
-    "type": "SHEPHERD",
-    "merchantTypes": [
-      "shepherd_simple"
-    ]
-  },
-  {
-    "type": "ARMORER",
-    "merchantTypes": [
-      "armorer_simple"
-    ]
-  },
-  {
-    "type": "CARTOGRAPHER",
-    "merchantTypes": []
-  },
-  {
     "type": "LIBRARIAN",
     "merchantTypes": [
       "librarian_simple"
     ]
   },
   {
-    "type": "TOOLSMITH",
+    "type": "LEATHERWORKER",
     "merchantTypes": [
-      "toolsmith_simple"
-    ]
-  },
-  {
-    "type": "FISHERMAN",
-    "merchantTypes": [
-      "fisherman_simple"
-    ]
-  },
-  {
-    "type": "TRAVELING",
-    "merchantTypes": []
-  },
-  {
-    "type": "CLERIC",
-    "merchantTypes": [
-      "cleric_simple"
-    ]
-  },
-  {
-    "type": "WEAPONSMITH",
-    "merchantTypes": [
-      "weaponsmith_simple"
+      "leatherworker_simple"
     ]
   },
   {
@@ -66,9 +18,31 @@
     ]
   },
   {
+    "type": "NONE",
+    "merchantTypes": []
+  },
+  {
+    "type": "WEAPONSMITH",
+    "merchantTypes": [
+      "weaponsmith_simple"
+    ]
+  },
+  {
     "type": "BUTCHER",
     "merchantTypes": [
       "butcher_simple"
+    ]
+  },
+  {
+    "type": "SHEPHERD",
+    "merchantTypes": [
+      "shepherd_simple"
+    ]
+  },
+  {
+    "type": "FISHERMAN",
+    "merchantTypes": [
+      "fisherman_simple"
     ]
   },
   {
@@ -78,13 +52,39 @@
     ]
   },
   {
+    "type": "TOOLSMITH",
+    "merchantTypes": [
+      "toolsmith_simple"
+    ]
+  },
+  {
+    "type": "TRAVELING",
+    "merchantTypes": []
+  },
+  {
     "type": "NITWIT",
     "merchantTypes": []
   },
   {
-    "type": "LEATHERWORKER",
+    "type": "CARTOGRAPHER",
+    "merchantTypes": []
+  },
+  {
+    "type": "MASON",
     "merchantTypes": [
-      "leatherworker_simple"
+      "mason_simple"
+    ]
+  },
+  {
+    "type": "ARMORER",
+    "merchantTypes": [
+      "armorer_simple"
+    ]
+  },
+  {
+    "type": "CLERIC",
+    "merchantTypes": [
+      "cleric_simple"
     ]
   }
 ]

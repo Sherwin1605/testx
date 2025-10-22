@@ -21,12 +21,12 @@ contentType: INSTANCED_DUNGEON
 dungeonConfigFolderName: em_id_the_cave
 contentLevel: 15
 difficulties:
-- name: normal
+- levelSync: 20
   id: 0
-  levelSync: 20
-- name: hard
+  name: normal
+- levelSync: 15
   id: 1
-  levelSync: 15
-- name: mythic
+  name: hard
+- levelSync: 10
   id: 2
-  levelSync: 10
+  name: mythic
