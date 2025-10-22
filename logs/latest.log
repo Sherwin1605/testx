@@ -664,3 +664,229 @@
 [01:07:17] [Server thread/INFO]: Timings Reset
 [01:07:18] [Craft Scheduler Thread - 35 - CrashAPI/INFO]: [CrashAPI] Checking for latest version.
 [01:07:18] [Craft Scheduler Thread - 35 - CrashAPI/INFO]: [CrashAPI] Your version is up-to-date.
+[01:16:31] [ValhallaMMO-Async-Profile-Thread/INFO]: [ValhallaMMO] Starting saving all profiles
+[01:16:31] [ValhallaMMO-Async-Profile-Thread/INFO]: [ValhallaMMO] Finished saving all profiles in 0.002s
+[01:36:31] [ValhallaMMO-Async-Profile-Thread/INFO]: [ValhallaMMO] Starting saving all profiles
+[01:36:31] [ValhallaMMO-Async-Profile-Thread/INFO]: [ValhallaMMO] Finished saving all profiles in 0.001s
+[01:42:52] [User Authenticator #0/INFO]: UUID of player Sherwin1605 is fe86a590-ac58-32ad-abfc-2189b9705865
+[01:42:53] [Server thread/INFO]: Sherwin1605 joined the game
+[01:42:53] [Server thread/INFO]: Sherwin1605[/[0:0:0:0:0:0:0:1%0]:48258] logged in with entity id 282 at ([world]-465.37383763383497, 58.0, -311.69999998807907)
+[01:42:53] [Server thread/ERROR]: Could not pass event ParticleUpdateEvent to Aurora v5.11
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.block.Biome, but interface was expected
+	at optic_fusion1.aurora.biome.BiomeLib.getBiome(BiomeLib.java:19) ~[Aurora.jar:?]
+	at com.zenya.aurora.event.Listeners.onParticleUpdateEvent(Listeners.java:114) ~[Aurora.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor781.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:git-Paper-196]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:615) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at com.zenya.aurora.event.Listeners$1.run(Listeners.java:97) ~[Aurora.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftTask.run(CraftTask.java:101) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:480) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1479) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:446) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1393) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1170) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[01:42:54] [Craft Scheduler Thread - 46 - RealScoreboard/INFO]: [RealScoreboard] Using 1.17+ ping method.
+[01:42:55] [Server thread/ERROR]: Could not pass event ParticleUpdateEvent to Aurora v5.11
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.block.Biome, but interface was expected
+	at optic_fusion1.aurora.biome.BiomeLib.getBiome(BiomeLib.java:19) ~[Aurora.jar:?]
+	at com.zenya.aurora.event.Listeners.onParticleUpdateEvent(Listeners.java:114) ~[Aurora.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor781.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:git-Paper-196]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:615) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at com.zenya.aurora.scheduler.TrackLocationTask$1$1.run(TrackLocationTask.java:49) ~[Aurora.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftTask.run(CraftTask.java:101) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:480) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1479) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:446) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1393) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1170) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[01:42:56] [Craft Scheduler Thread - 39 - EliteMobs/INFO]: [EliteMobs] No player entry detected, generating new entry!
+[01:43:00] [Server thread/ERROR]: Could not pass event ParticleUpdateEvent to Aurora v5.11
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.block.Biome, but interface was expected
+	at optic_fusion1.aurora.biome.BiomeLib.getBiome(BiomeLib.java:19) ~[Aurora.jar:?]
+	at com.zenya.aurora.event.Listeners.onParticleUpdateEvent(Listeners.java:114) ~[Aurora.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor781.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:git-Paper-196]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:615) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at com.zenya.aurora.scheduler.TrackLocationTask$1$1.run(TrackLocationTask.java:49) ~[Aurora.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftTask.run(CraftTask.java:101) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.craftbukkit.v1_20_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:480) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1479) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:446) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1393) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1170) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[01:43:05] [Server thread/INFO]: Sherwin1605 lost connection: Disconnected
+[01:43:05] [Server thread/ERROR]: Could not pass event ParticleUpdateEvent to Aurora v5.11
+java.lang.IncompatibleClassChangeError: Found class org.bukkit.block.Biome, but interface was expected
+	at optic_fusion1.aurora.biome.BiomeLib.getBiome(BiomeLib.java:19) ~[Aurora.jar:?]
+	at com.zenya.aurora.event.Listeners.onParticleUpdateEvent(Listeners.java:114) ~[Aurora.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor781.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:git-Paper-196]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:615) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at com.zenya.aurora.event.Listeners.onPlayerQuitEvent(Listeners.java:107) ~[Aurora.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor780.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:git-Paper-196]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.20.1.jar:git-Paper-196]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[paper-1.20.1.jar:git-Paper-196]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:615) ~[paper-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.players.PlayerList.remove(PlayerList.java:607) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.players.PlayerList.remove(PlayerList.java:592) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.onDisconnect(ServerGamePacketListenerImpl.java:2178) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.onDisconnect(ServerGamePacketListenerImpl.java:2157) ~[?:?]
+	at net.minecraft.network.Connection.handleDisconnection(Connection.java:818) ~[?:?]
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:254) ~[?:?]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1586) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:446) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1393) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1170) ~[paper-1.20.1.jar:git-Paper-196]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:317) ~[paper-1.20.1.jar:git-Paper-196]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[01:43:05] [Server thread/INFO]: [TimeBar] Stopping current TimeBar task for 'world'
+[01:43:05] [Server thread/INFO]: Sherwin1605 - 28/28 left the game
+[01:43:34] [Server thread/INFO]: Stopping the server
+[01:43:34] [Server thread/INFO]: Stopping server
+[01:43:34] [Server thread/INFO]: [TimePauser] Disabling TimePauser v1.0
+[01:43:34] [Server thread/INFO]: [LumberJack] Disabling LumberJack v5.4.0
+[01:43:34] [Server thread/INFO]: [TabList] Disabling TabList v5.7.7
+[01:43:34] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.8.2
+[01:43:34] [Server thread/INFO]: [NoDamageIndicator] Disabling NoDamageIndicator v1.0
+[01:43:34] [Server thread/INFO]: [NoDamageIndicator] Disabled!
+[01:43:34] [Server thread/INFO]: [ChestSort] Disabling ChestSort v14.2.0
+[01:43:34] [Server thread/INFO]: [UltraDamageIndicators] Disabling UltraDamageIndicators v1.0.0-release
+[01:43:34] [Server thread/INFO]: [UltraDamageIndicators] UltraDamageIndicators 1.0.0-release has been disabled!
+[01:43:34] [Server thread/INFO]: [superleashes] Disabling superleashes v1.0.6
+[01:43:34] [Server thread/INFO]: [EnchantmentSolution] Disabling EnchantmentSolution v2.5.15.2
+[01:43:34] [Server thread/INFO]: [AFKPlus] Disabling AFKPlus v3.4.9
+[01:43:34] [Server thread/INFO]: [AFKPlus] AFKPlus has been disabled!
+[01:43:34] [Server thread/INFO]: [ValhallaRaces] Disabling ValhallaRaces v2.2
+[01:43:34] [Server thread/INFO]: [HealthBar-Reloaded] Disabling HealthBar-Reloaded v2.0.5-beta
+[01:43:34] [Server thread/INFO]: HealthBar disabled: all the health bars have been removed.
+[01:43:34] [Server thread/INFO]: [PhysicsControl] Disabling PhysicsControl v1.2.2
+[01:43:34] [Server thread/INFO]: [BetterStructures] Disabling BetterStructures v2.0.3
+[01:43:34] [Server thread/INFO]: [BetterStructures] Shutdown!
+[01:43:34] [Server thread/INFO]: [spark] Disabling spark v1.10.152
+[01:43:34] [Server thread/INFO]: [BloodEffect] Disabling BloodEffect v3.0.3
+[01:43:34] [Server thread/INFO]: [Blood Effects Reborn] The plugin has successfully unloaded!
+[01:43:34] [Server thread/INFO]: [EnchantsSquared] Disabling EnchantsSquared v2.5.17
+[01:43:34] [Server thread/INFO]: [BackpackPlus] Disabling BackpackPlus v2.0.1
+[01:43:34] [Server thread/INFO]: [BackpackPlus] SQLite Successfully disconnected from the database
+[01:43:34] [Server thread/INFO]: [PlayMoreSounds] Disabling PlayMoreSounds v4.2
+[01:43:34] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v7.9
+[01:43:34] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[01:43:34] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 7.9
+[01:43:34] [Server thread/INFO]: [Jumpscares] Disabling Jumpscares v1.22.1
+[01:43:34] [Server thread/INFO]: [TimeBar] Disabling TimeBar v1.4.5
+[01:43:34] [Server thread/INFO]: [PhysicsToGo] Disabling PhysicsToGo v2.1.2
+[01:43:34] [Server thread/INFO]: [RealScoreboard] Disabling RealScoreboard v1.5.6
+[01:43:34] [Server thread/INFO]: [BukkitInventoryTweaks] Disabling BukkitInventoryTweaks v1.1.2
+[01:43:34] [Server thread/INFO]: [BukkitInventoryTweaks] Plugin is now disabled!
+[01:43:34] [Server thread/INFO]: [BookShelf] Disabling Bookshelf v3.1.18.0
+[01:43:34] [Server thread/INFO]: [Bookshelf] Saving bookshelves..
+[01:43:34] [Server thread/INFO]: [Bookshelf] Saving bookshelves for world world
+[01:43:34] [Server thread/INFO]: [Bookshelf] (world): All bookshelves are saved
+[01:43:34] [Server thread/INFO]: [Bookshelf] Saving bookshelves for world world_nether
+[01:43:34] [Server thread/INFO]: [Bookshelf] (world_nether): All bookshelves are saved
+[01:43:34] [Server thread/INFO]: [Bookshelf] Saving bookshelves for world world_the_end
+[01:43:34] [Server thread/INFO]: [Bookshelf] (world_the_end): All bookshelves are saved
+[01:43:34] [Server thread/INFO]: [Bookshelf] Bookshelves saved! (10ms)
+[01:43:34] [Server thread/INFO]: [Bookshelf] BookShelf has been Disabled!
+[01:43:34] [Server thread/INFO]: [Aurora] Disabling Aurora v5.11
+[01:43:34] [Server thread/INFO]: [GodItems] Disabling GodItems v3.0.1
+[01:43:34] [Server thread/INFO]: [GodItems] Saved player inventories: true
+[01:43:34] [Server thread/INFO]: [DoorsReloaded] Disabling DoorsReloaded v1.3.1
+[01:43:34] [Server thread/INFO]: [BeaconWaypoints] Disabling BeaconWaypoints v1.7.2
+[01:43:34] [Server thread/INFO]: [VeinMiner] Disabling VeinMiner v2.3.0
+[01:43:34] [Server thread/INFO]: [VeinMiner] Clearing localized data
+[01:43:34] [Server thread/INFO]: [CrashAPI] Disabling CrashAPI v1.1.13
+[01:43:34] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.5.0
+[01:43:34] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[01:43:34] [Server thread/INFO]: [LuckPerms] Closing storage...
+[01:43:35] [Server thread/INFO]: [LuckPerms] Goodbye!
+[01:43:35] [Server thread/INFO]: [EliteMobs] Disabling EliteMobs v8.7.16
+[01:43:35] [Server thread/INFO]: [EliteMobs] Starting EliteMobs shutdown sequence...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Regenerating exploded blocks...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Cancelling tasks...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Closing wormholes...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Spinning Regional Bosses down...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Wiping Elite entities clean...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Clearing events...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Clearing valid worlds...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Clearing zone based worlds...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Clearing config regional elites...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Clearing custom enchantments...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Clearing custom items...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Clearing Minidungeons...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Unregistering placeholders...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Unregistering handlers...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Clearing Treasure Chests...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Untracking quests...
+[01:43:35] [Server thread/INFO]: [EliteMobs] Saving EliteMobs databases...
+[01:43:35] [Server thread/INFO]: [EliteMobs] All done! Good night.
+[01:43:35] [Server thread/INFO]: [Terra] Disabling Terra v6.3.1-BETA+73baaec6c
+[01:43:35] [Server thread/INFO]: [ValhallaTrinkets] Disabling ValhallaTrinkets v2.6
+[01:43:35] [Server thread/INFO]: [EpicPluginLib] Disabling EpicPluginLib v2.7
+[01:43:35] [Server thread/INFO]: [RealisticSeasons] Disabling RealisticSeasons v11.8.2
+[01:43:35] [Server thread/INFO]: [InteractionVisualizer] Disabling InteractionVisualizer v1.18.18.0
+[01:43:35] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion interactionvisualizer
+[01:43:35] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin InteractionVisualizer was disabled.
+[01:43:35] [Server thread/INFO]: [InteractionVisualizer] Saving player preferences bitmask index, do not halt the server.
+[01:43:35] [Server thread/INFO]: [InteractionVisualizer] InteractionVisualizer has been disabled!
+[01:43:35] [Server thread/INFO]: [LevelledMobs] Disabling LevelledMobs v4.3.2.1 b125
+[01:43:35] [Server thread/INFO]: [LevelledMobs] Unregistering commands
+[01:43:35] [Server thread/INFO]: [LevelledMobs] Tasks: Shutting down other async tasks...
+[01:43:35] [Server thread/INFO]: [LevelledMobs] Shut-down complete (took 4ms)
+[01:43:35] [Server thread/INFO]: [ValhallaMMO] Disabling ValhallaMMO vpremium_1.4
+[01:43:35] [Craft Scheduler Thread - 24 - LevelledMobs/INFO]: [LevelledMobs] Mob processing queue Manager has exited
+[01:43:35] [Craft Scheduler Thread - 26 - LevelledMobs/INFO]: [LevelledMobs] Nametag update queue Manager has exited
+[01:43:35] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
+[01:43:35] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.1+6763-2e55f4f
+[01:43:35] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[01:43:35] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.6
+[01:43:35] [Server thread/INFO]: Saving players
+[01:43:35] [Server thread/INFO]: Saving worlds
+[01:43:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[01:43:35] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[01:43:35] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[01:43:35] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[01:43:35] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 25 entity chunks, 0 poi chunks in world 'world' in 0.01s
+[01:43:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[01:43:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[01:43:35] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[01:43:35] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[01:43:35] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[01:43:35] [Server thread/INFO]: [ChunkHolderManager] Saved 4 block chunks, 67 entity chunks, 0 poi chunks in world 'world_nether' in 0.03s
+[01:43:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[01:43:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[01:43:35] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[01:43:35] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[01:43:35] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[01:43:35] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[01:43:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[01:43:35] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[01:43:35] [Server thread/INFO]: Flushing Chunk IO
+[01:43:35] [Server thread/INFO]: Closing Thread Pool
+[01:43:35] [Server thread/INFO]: Closing Server
