@@ -1,5 +1,7 @@
 isEnabled: false
+# Sets the display name of the menu
 menuName: '&6Enchantment Menu'
+# Sets the item slot number of the information button in the chest menu.
 infoSlot: 4
 infoButton:
   material: PLAYER_HEAD
@@ -15,6 +17,7 @@ infoButton:
   - '&8Critical failures make you lose the item!'
   owner: magmaguy
   customModelID: 31173
+# Sets the item slot number of the cancel button in the chest menu.
 cancelSlot: 27
 cancelButton:
   material: BARRIER
@@ -22,6 +25,7 @@ cancelButton:
   lore:
   - §cCancel repair!
   customModelID: 31173
+# Sets the item slot number of the confirm button in the chest menu.
 confirmSlot: 35
 confirmButton:
   material: EMERALD
@@ -33,7 +37,9 @@ confirmButton:
   - '§6Challenge chance: $challengeChance%'
   - '§4Chance of critical failure: $criticalFailureChance%'
   customModelID: 31174
+# Sets the item slot number of the elite item in the chest menu.
 itemSlot: 29
+# Sets the item slot number of the elite item info button in the chest menu.
 itemInfoSlot: 20
 itemInfoButton:
   material: GREEN_BANNER
@@ -41,6 +47,7 @@ itemInfoButton:
   lore:
   - §aPut your elite item here!
   customModelID: 31173
+# Sets the item slot number of the enchanted book info button in the chest menu.
 enchantedBookInfoSlot: 22
 enchantedBookInfoButton:
   material: GREEN_BANNER
@@ -48,8 +55,10 @@ enchantedBookInfoButton:
   lore:
   - §aPut your elite enchanted books here!
   customModelID: 31173
+# Sets the item slot number of the enchanted book in the chest menu.
 enchantedBookSlot: 31
 luckyTicketSlot: 33
+# Sets the item slot number of the lucky ticket info button in the chest menu.
 luckyTicketInfoSlot: 24
 luckyTicketInfoButton:
   material: GREEN_BANNER
@@ -59,4 +68,5 @@ luckyTicketInfoButton:
   - §2Increase the odds of the enchantment succeeding
   - §2by adding an elite lucky ticket!
   customModelID: 31173
+# Sets the message that appears when a player attempts to enchant an item beyond the configured maximum enchantment level of any enchantment.
 enchantmentLimitMessage: '&c[EliteMobs] Can''t enchant item beyond enchantment limit!'

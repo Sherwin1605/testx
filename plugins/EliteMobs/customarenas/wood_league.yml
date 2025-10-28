@@ -746,8 +746,9 @@ arenaMessages:
   it's all about the legwork!
 - wave=29:message=&8[Gladius] &fAnd now, let's have some &ctarget practice&f! The
   challenger is the target!
-- wave=30:message=&8[Gladius] &fA false arena champion approaches! The &2Southern Viper
-  &fonce again seeks to &cpoison &ftheir enemies to death with his &cthousand poisons&f!
+- wave=30:message=&8[Gladius] &fA false arena champion approaches! The &2Southern
+  Viper &fonce again seeks to &cpoison &ftheir enemies to death with his &cthousand
+  poisons&f!
 - wave=31:message=&8[Gladius] &fThe Southern Viper has fallen! The crowd goes wild!
   What a day, ladies and gentlemen, what a day!
 - wave=32:message=&8[Gladius] &fI have been told that the arena custodians are done
