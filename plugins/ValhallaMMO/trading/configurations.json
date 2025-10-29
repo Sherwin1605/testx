@@ -1,8 +1,8 @@
 [
   {
-    "type": "FARMER",
+    "type": "SHEPHERD",
     "merchantTypes": [
-      "farmer_simple"
+      "shepherd_simple"
     ]
   },
   {
@@ -12,21 +12,17 @@
     ]
   },
   {
-    "type": "MASON",
-    "merchantTypes": [
-      "mason_simple"
-    ]
+    "type": "NITWIT",
+    "merchantTypes": []
   },
   {
-    "type": "TOOLSMITH",
-    "merchantTypes": [
-      "toolsmith_simple"
-    ]
+    "type": "NONE",
+    "merchantTypes": []
   },
   {
-    "type": "CLERIC",
+    "type": "LEATHERWORKER",
     "merchantTypes": [
-      "cleric_simple"
+      "leatherworker_simple"
     ]
   },
   {
@@ -36,25 +32,13 @@
     ]
   },
   {
-    "type": "BUTCHER",
-    "merchantTypes": [
-      "butcher_simple"
-    ]
-  },
-  {
-    "type": "SHEPHERD",
-    "merchantTypes": [
-      "shepherd_simple"
-    ]
-  },
-  {
-    "type": "NITWIT",
+    "type": "CARTOGRAPHER",
     "merchantTypes": []
   },
   {
-    "type": "ARMORER",
+    "type": "CLERIC",
     "merchantTypes": [
-      "armorer_simple"
+      "cleric_simple"
     ]
   },
   {
@@ -64,27 +48,43 @@
     ]
   },
   {
+    "type": "MASON",
+    "merchantTypes": [
+      "mason_simple"
+    ]
+  },
+  {
+    "type": "ARMORER",
+    "merchantTypes": [
+      "armorer_simple"
+    ]
+  },
+  {
     "type": "FLETCHER",
     "merchantTypes": [
       "fletcher_simple"
     ]
   },
   {
-    "type": "LEATHERWORKER",
+    "type": "BUTCHER",
     "merchantTypes": [
-      "leatherworker_simple"
+      "butcher_simple"
+    ]
+  },
+  {
+    "type": "FARMER",
+    "merchantTypes": [
+      "farmer_simple"
+    ]
+  },
+  {
+    "type": "TOOLSMITH",
+    "merchantTypes": [
+      "toolsmith_simple"
     ]
   },
   {
     "type": "TRAVELING",
-    "merchantTypes": []
-  },
-  {
-    "type": "CARTOGRAPHER",
-    "merchantTypes": []
-  },
-  {
-    "type": "NONE",
     "merchantTypes": []
   }
 ]

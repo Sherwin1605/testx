@@ -1,5 +1,5 @@
 bar-color: yellow
-disable-level-text: true
+disable-level-text: false
 hotbar:
   enable-hotbar-relocation: false
   locations:

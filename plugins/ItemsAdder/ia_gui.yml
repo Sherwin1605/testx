@@ -63,8 +63,6 @@ settings:
         item: FISHING_ROD
       vehicle_fuel:
         item: COAL
-      worlds_populators:
-        item: CHEST
 categories:
   all:
     enabled: true

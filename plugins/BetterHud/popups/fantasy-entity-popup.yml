@@ -13,18 +13,21 @@ fantasy_entity_health_popup:
   layouts:
     1:
       name: entity_image
+      scale: 2.0
       gui:
         x: 50
         y: 0
       pixel:
         x: 0
-        y: 25
+        y: 55
+        
     2:
       name: entity_text
+      scale: 2.0
       gui:
         x: 50
         y: 0
       pixel:
         x: 0
-        y: 22
+        y: 52
   duration: 20

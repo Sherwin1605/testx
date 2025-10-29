@@ -2,8 +2,8 @@ top_center_layout:
   images:
     1:
       name: compass_background_image
-      scale: 1
-      layer: -1000
+      scale: 2
+      layer: -3
       x: 0
       y: 20
 
@@ -66,14 +66,15 @@ left_vehicle_bar_layout:
   texts:
     1:
       name: entity_font
-      pattern: "<#ffffff>[vehicle_health]//[vehicle_max_health]"
+      pattern: "<#ad2a27>HP <#ffffff>[vehicle_health]//[vehicle_max_health]"
       placeholder-string-format:
         number: "#,###"
-      layer: 3
+      layer: -3
       x: 91
-      y: -28
-      scale: 0.2
+      y: -43
+      scale: 0.5
       align: center
+      outline: true
       conditions:
         1:
           first: papi:player_is_inside_vehicle
@@ -89,250 +90,250 @@ top_center_layout_sublevel_image:
   images:
     1:
       name: sublevel_empty_image
-      scale: 0.5
-      layer: 0
-      x: -102
-      y: 38
+      scale: 1.0
+      layer: -3
+      x: -204
+      y: 45
     2:
       name: alchemy_sublevel_bar_image
-      scale: 0.5
-      layer: 1
-      x: -102
-      y: 38
+      scale: 1.0
+      layer: -2
+      x: -204
+      y: 45
     3:
       name: alchemy_icon_image
-      scale: 0.5
-      layer: 2
-      x: -102
-      y: 38
+      scale: 1.0
+      layer: -1
+      x: -204
+      y: 45
       #---------------------------------------------
     4:
       name: sublevel_empty_image
-      scale: 0.5
-      layer: 0
-      x: -85
-      y: 38
+      scale: 1.0
+      layer: -3
+      x: -170
+      y: 45
     5:
       name: archery_sublevel_bar_image
-      scale: 0.5
-      layer: 1
-      x: -85
-      y: 38
+      scale: 1.0
+      layer: -2
+      x: -170
+      y: 45
     6:
       name: archery_icon_image
-      scale: 0.5
-      layer: 2
-      x: -85
-      y: 38
+      scale: 1.0
+      layer: -1
+      x: -170
+      y: 45
       #---------------------------------------------
     7:
       name: sublevel_empty_image
-      scale: 0.5
-      layer: 0
-      x: -68
-      y: 38
+      scale: 1.0
+      layer: -3
+      x: -136
+      y: 45
     8:
       name: digging_sublevel_bar_image
-      scale: 0.5
-      layer: 1
-      x: -68
-      y: 38
+      scale: 1.0
+      layer: -2
+      x: -136
+      y: 45
     9:
       name: digging_icon_image
-      scale: 0.5
-      layer: 2
-      x: -68
-      y: 38
+      scale: 1.0
+      layer: -1
+      x: -136
+      y: 45
       #---------------------------------------------
     10:
       name: sublevel_empty_image
-      scale: 0.5
-      layer: 0
-      x: -51
-      y: 38
+      scale: 1.0
+      layer: -3
+      x: -102
+      y: 45
     11:
       name: enchanting_sublevel_bar_image
-      scale: 0.5
-      layer: 1
-      x: -51
-      y: 38
+      scale: 1.0
+      layer: -2
+      x: -102
+      y: 45
     12:
       name: enchanting_icon_image
-      scale: 0.5
-      layer: 2
-      x: -51
-      y: 38
+      scale: 1.0
+      layer: -1
+      x: -102
+      y: 45
       #---------------------------------------------
     13:
       name: sublevel_empty_image
-      scale: 0.5
-      layer: 0
-      x: -34
-      y: 38
+      scale: 1.0
+      layer: -3
+      x: -68
+      y: 45
     14:
       name: farming_sublevel_bar_image
-      scale: 0.5
-      layer: 1
-      x: -34
-      y: 38
+      scale: 1.0
+      layer: -2
+      x: -68
+      y: 45
     15:
       name: farming_icon_image
-      scale: 0.5
-      layer: 2
-      x: -34
-      y: 38
+      scale: 1.0
+      layer: -1
+      x: -68
+      y: 45
       #---------------------------------------------
     16:
       name: sublevel_empty_image
-      scale: 0.5
-      layer: 0
-      x: -17
-      y: 38
+      scale: 1.0
+      layer: -3
+      x: -34
+      y: 45
     17:
       name: woodcutting_sublevel_bar_image
-      scale: 0.5
-      layer: 1
-      x: -17
-      y: 38
+      scale: 1.0
+      layer: -2
+      x: -34
+      y: 45
     18:
       name: woodcutting_icon_image
-      scale: 0.5
-      layer: 2
-      x: -17
-      y: 38
+      scale: 1.0
+      layer: -1
+      x: -34
+      y: 45
       #---------------------------------------------
     19:
       name: sublevel_empty_image
-      scale: 0.5
-      layer: 0
-      x: 17
-      y: 38
+      scale: 1.0
+      layer: -3
+      x: 34
+      y: 45
     20:
       name: mining_sublevel_bar_image
-      scale: 0.5
-      layer: 1
-      x: 17
-      y: 38
+      scale: 1.0
+      layer: -2
+      x: 34
+      y: 45
     21:
       name: mining_icon_image
-      scale: 0.5
-      layer: 2
-      x: 17
-      y: 38
+      scale: 1.0
+      layer: -1
+      x: 34
+      y: 45
       #---------------------------------------------
     22:
       name: sublevel_empty_image
-      scale: 0.5
-      layer: 0
-      x: 34
-      y: 38
+      scale: 1.0
+      layer: -3
+      x: 68
+      y: 45
     23:
       name: smithing_sublevel_bar_image
-      scale: 0.5
-      layer: 1
-      x: 34
-      y: 38
+      scale: 1.0
+      layer: -2
+      x: 68
+      y: 45
     24:
       name: smithing_icon_image
-      scale: 0.5
-      layer: 2
-      x: 34
-      y: 38
+      scale: 1.0
+      layer: -1
+      x: 68
+      y: 45
       #---------------------------------------------
     25:
       name: sublevel_empty_image
-      scale: 0.5
-      layer: 0
-      x: 51
-      y: 38
+      scale: 1.0
+      layer: -3
+      x: 102
+      y: 45
     26:
       name: light_armor_sublevel_bar_image
-      scale: 0.5
-      layer: 1
-      x: 51
-      y: 38
+      scale: 1.0
+      layer: -2
+      x: 102
+      y: 45
     27:
       name: light_armor_icon_image
-      scale: 0.5
-      layer: 2
-      x: 51
-      y: 38
+      scale: 1.0
+      layer: -1
+      x: 102
+      y: 45
       #---------------------------------------------
     28:
       name: sublevel_empty_image
-      scale: 0.5
-      layer: 0
-      x: 68
-      y: 38
+      scale: 1.0
+      layer: -3
+      x: 136
+      y: 45
     29:
       name: light_weapons_sublevel_bar_image
-      scale: 0.5
-      layer: 1
-      x: 68
-      y: 38
+      scale: 1.0
+      layer: -2
+      x: 136
+      y: 45
     30:
       name: light_weapons_icon_image
-      scale: 0.5
-      layer: 2
-      x: 68
-      y: 38
+      scale: 1.0
+      layer: -1
+      x: 136
+      y: 45
       #---------------------------------------------
     31:
       name: sublevel_empty_image
-      scale: 0.5
-      layer: 0
-      x: 85
-      y: 38
+      scale: 1.0
+      layer: -3
+      x: 170
+      y: 45
     34:
       name: heavy_armor_sublevel_bar_image
-      scale: 0.5
-      layer: 1
-      x: 85
-      y: 38
+      scale: 1.0
+      layer: -2
+      x: 170
+      y: 45
     33:
       name: heavy_armor_icon_image
-      scale: 0.5
-      layer: 2
-      x: 85
-      y: 38
+      scale: 1.0
+      layer: -1
+      x: 170
+      y: 45
       #---------------------------------------------
     34:
       name: sublevel_empty_image
-      scale: 0.5
-      layer: 0
-      x: 102
-      y: 38
+      scale: 1.0
+      layer: -3
+      x: 204
+      y: 45
     35:
       name: heavy_weapons_sublevel_bar_image
-      scale: 0.5
-      layer: 1
-      x: 102
-      y: 38
+      scale: 1.0
+      layer: -2
+      x: 204
+      y: 45
     36:
       name: heavy_weapons_icon_image
-      scale: 0.5
-      layer: 2
-      x: 102
-      y: 38
+      scale: 1.0
+      layer: -1
+      x: 204
+      y: 45
       #---------------------------------------------
     37:
       name: sublevel_empty_image
-      scale: 0.5
-      layer: 0
+      scale: 1.0
+      layer: -3
       x: 0
-      y: 38
+      y: 45
     38:
       name: fishing_sublevel_bar_image
-      scale: 0.5
-      layer: 1
+      scale: 1.0
+      layer: -2
       x: 0
-      y: 38
+      y: 45
     39:
       name: fishing_icon_image
-      scale: 0.5
-      layer: 2
+      scale: 1.0
+      layer: -1
       x: 0
-      y: 38
+      y: 45
       #---------------------------------------------
 
 top_center_layout_sublevel_text:
@@ -342,301 +343,321 @@ top_center_layout_sublevel_text:
       pattern: "<#ffffff>[papi:valhallammo_alchemyprofile_level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 3
-      x: -95
-      y: 38
-      scale: 0.2
+      layer: -3
+      x: -188
+      y: 45
+      scale: 0.4
       align: center
+      outline: true
     2:
       name: entity_font
       pattern: "<#ffffff>[papi:valhallammo_archeryprofile_level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 3
-      x: -78
-      y: 38
-      scale: 0.2
+      layer: -3
+      x: -154
+      y: 45
+      scale: 0.4
       align: center
+      outline: true
     4:
       name: entity_font
       pattern: "<#ffffff>[papi:valhallammo_diggingprofile_level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 3
-      x: -61
-      y: 38
-      scale: 0.2
+      layer: -3
+      x: -120
+      y: 45
+      scale: 0.4
       align: center
+      outline: true
     5:
       name: entity_font
       pattern: "<#ffffff>[papi:valhallammo_enchantingprofile_level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 3
-      x: -44
-      y: 38
-      scale: 0.2
+      layer: -3
+      x: -86
+      y: 45
+      scale: 0.4
       align: center
+      outline: true
     6:
       name: entity_font
       pattern: "<#ffffff>[papi:valhallammo_farmingprofile_level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 3
-      x: -27
-      y: 38
-      scale: 0.2
+      layer: -3
+      x: -52
+      y: 45
+      scale: 0.4
       align: center
+      outline: true
     7:
       name: entity_font
       pattern: "<#ffffff>[papi:valhallammo_woodcuttingprofile_level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 3
-      x: -10
-      y: 38
-      scale: 0.2
+      layer: -3
+      x: -18
+      y: 45
+      scale: 0.4
       align: center
+      outline: true
     8:
       name: entity_font
       pattern: "<#ffffff>[papi:valhallammo_fishingprofile_level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 3
-      x: 7
-      y: 38
-      scale: 0.2
+      layer: -3
+      x: 16
+      y: 45
+      scale: 0.4
       align: center
+      outline: true
     9:
       name: entity_font
       pattern: "<#ffffff>[papi:valhallammo_miningprofile_level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 3
-      x: 24
-      y: 38
-      scale: 0.2
+      layer: -3
+      x: 49
+      y: 45
+      scale: 0.4
       align: center
+      outline: true
     10:
       name: entity_font
       pattern: "<#ffffff>[papi:valhallammo_smithingprofile_level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 3
-      x: 41
-      y: 38
-      scale: 0.2
+      layer: -3
+      x: 84
+      y: 45
+      scale: 0.4
       align: center
+      outline: true
     11:
       name: entity_font
       pattern: "<#ffffff>[papi:valhallammo_lightarmorprofile_level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 3
-      x: 58
-      y: 38
-      scale: 0.2
+      layer: -3
+      x: 118
+      y: 45
+      scale: 0.4
       align: center
+      outline: true
     12:
       name: entity_font
       pattern: "<#ffffff>[papi:valhallammo_lightweaponsprofile_level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 3
-      x: 75
-      y: 38
-      scale: 0.2
+      layer: -3
+      x: 152
+      y: 45
+      scale: 0.4
       align: center
+      outline: true
     13:
       name: entity_font
       pattern: "<#ffffff>[papi:valhallammo_heavyarmorprofile_level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 3
-      x: 92
-      y: 38
-      scale: 0.2
+      layer: -3
+      x: 186
+      y: 45
+      scale: 0.4
       align: center
+      outline: true
     14:
       name: entity_font
       pattern: "<#ffffff>[papi:valhallammo_heavyweaponsprofile_level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 3
-      x: 109
-      y: 38
-      scale: 0.2
+      layer: -3
+      x: 220
+      y: 45
+      scale: 0.4
       align: center
+      outline: true
 left_top:
   images:
     1:
       name: level_empty_image
-      x: 45
+      x: 85
       y: 10
-      scale: 0.7
-      layer: 0
+      scale: 1.2
+      layer: -3
     2:
       name: level_bar_image
-      x: 45
-      y: 10
-      scale: 0.7
-      layer: 1
+      x: 85
+      y: 11
+      scale: 1.2
+      layer: -2
     3:
       name: hp_empty_image
-      x: 80
-      y: 20
-      scale: 0.5
-      layer: 0
+      x: 142
+      y: 25
+      scale: 1.0
+      layer: -3
     4:
       name: hp_bar_image
-      x: 80
-      y: 20
-      scale: 0.5
-      layer: 1
+      x: 142
+      y: 25
+      scale: 1.0
+      layer: -2
     5:
       name: hunger_empty_image
-      x: 82
-      y: 29
-      scale: 0.5
-      layer: 0
-    6:
-      name: hunger_bar_image
-      x: 82
-      y: 29
-      scale: 0.5
-      layer: 1
-    7:
-      name: stamina_empty_image
-      x: 77
-      y: 35
-      scale: 0.5
-      layer: 0
-    8:
-      name: stamina_bar_image
-      x: 77
-      y: 35
-      scale: 0.5
-      layer: 1
-    9:
-      name: armor_empty_image
-      x: 130
-      y: 35
-      scale: 0.5
-      layer: 0
-    10:
-      name: armor_bar_image
-      x: 130
-      y: 35
-      scale: 0.5
-      layer: 1
-    11:
-      name: exporbs_icon_image
-      x: 78
-      y: 41
-      scale: 0.7
-      layer: 1
-    12:
-      name: coin_icon_image
-      x: 110
-      y: 41
-      scale: 0.7
-      layer: 1
-    13:
-      name: premiumcoin_icon_image
       x: 150
       y: 41
-      scale: 0.7
-      layer: 1
+      scale: 0.9
+      layer: -3
+    6:
+      name: hunger_bar_image
+      x: 150
+      y: 41
+      scale: 0.9
+      layer: -2
+    7:
+      name: stamina_empty_image
+      x: 140
+      y: 51
+      scale: 1.0
+      layer: -3
+    8:
+      name: stamina_bar_image
+      x: 140
+      y: 51
+      scale: 1.0
+      layer: -2
+    9:
+      name: armor_empty_image
+      x: 240
+      y: 51
+      scale: 1.0
+      layer: -3
+    10:
+      name: armor_bar_image
+      x: 240
+      y: 51
+      scale: 1.0
+      layer: -2
+    11:
+      name: exporbs_icon_image
+      x: 145
+      y: 59
+      scale: 1.4
+      layer: -3
+    12:
+      name: coin_icon_image
+      x: 190
+      y: 59
+      scale: 1.4
+      layer: -3
+    13:
+      name: premiumcoin_icon_image
+      x: 255
+      y: 59
+      scale: 1.4
+      layer: -3
   texts:
     1:
       name: entity_font
       pattern: "<#ffffff>[papi:valhallammo_powerprofile_level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 2
-      x: 69
-      y: 20
-      scale: 0.4
+      layer: -1
+      x: 127
+      y: 25
+      scale: 0.7
       align: center
     2:
       name: entity_font
       pattern: "<#ffffff>[papi:valhallammo_powerprofile_exp]//[papi:valhallammo_powerprofile_next_level_exp]"
       placeholder-string-format:
         number: "#,###"
-      layer: 2
-      x: 69
-      y: 30
-      scale: 0.1
+      layer: -1
+      x: 127
+      y: 40
+      scale: 0.3
       align: center
     3:
       name: entity_font
-      pattern: "<#ffffff>[papi:customfont_mini_HP] [health]//[max_health]"
+      pattern: "<#ffffff>HP [health]//[max_health]"
       placeholder-string-format:
         number: "#,###"
-      layer: 2
-      x: 125
-      y: 24
-      scale: 0.2
+      layer: -1
+      x: 220
+      y: 29
+      scale: 0.4
       align: center
     4:
       name: entity_font
-      pattern: "<#ffffff>[papi:customfont_mini_HRG] [food]//20"
+      pattern: "<#ffffff>HRG [food]//20"
       placeholder-string-format:
         number: "#,###"
-      layer: 2
-      x: 125
-      y: 31
-      scale: 0.2
+      layer: -1
+      x: 220
+      y: 43
+      scale: 0.4
       align: center
     5:
       name: entity_font
-      pattern: "<#ffffff>[papi:customfont_mini_{valhallaraces_racename}] // [papi:customfont_mini_{valhallaraces_classname_1}]"
+      pattern: "<#ffffff>[papi:valhallaraces_racename] // [papi:valhallaraces_classname_1]"
       placeholder-string-format:
         number: "#,###"
-      layer: 2
-      x: 83
+      layer: -1
+      x: 150
       y: 13
-      scale: 0.3
+      scale: 0.5
       align: left
+      outline: true
     6:
       name: entity_font
-      pattern: "<#ffffff>[papi:customfont_mini_X][level]"
+      pattern: "<#ffffff>X[level]"
       placeholder-string-format:
         number: "#,###"
-      layer: 2
-      x: 86
-      y: 41
-      scale: 0.3
+      layer: -1
+      x: 160
+      y: 62
+      scale: 0.4
       align: left
+      outline: true
     7:
       name: entity_font
-      pattern: "<#ffffff>[papi:customfont_mini_X{10,000}]$" # {10,000} Replace with your papi(Placeholder API) money/coin 
+      pattern: "<#ffffff>X[papi:10,000]$" #[papi:10,000] Replace with your papi(Placeholder API) money/coin ex = [papi:cmi_money]" 
       placeholder-string-format:
         number: "#,###"
-      layer: 2
-      x: 118
-      y: 41
-      scale: 0.3
+      layer: -1
+      x: 205
+      y: 62
+      scale: 0.4
       align: left
+      outline: true
     8:
       name: entity_font
-      pattern: "<#ffffff>[papi:customfont_mini_X{playerpoints_points}]P"
+      pattern: "<#ffffff>[papi:playerpoints_points]P"
       placeholder-string-format:
         number: "#,###"
-      layer: 2
-      x: 157
-      y: 41
-      scale: 0.3
+      layer: -1
+      x: 270
+      y: 62
+      scale: 0.4
       align: left
+      outline: true
 
 entity_image:
   images:
     1:
       name: entity_health_empty_image
+      scale: 2.0
     2:
       name: entity_health_yellow_image
+      scale: 2.0
     3:
       name: entity_health_red_image
+      scale: 2.0
 entity_text:
   texts:
     1:
@@ -645,68 +666,59 @@ entity_text:
       placeholder-string-format:
         number: "#,###"
       x: 0
-      y: -5
-      scale: 0.4
+      y: -7
+      scale: 0.5
       align: center
+      outline: true
 
 top_right_layout:
   images:
     1:
       name: text_box_image
-      scale: 1
-      layer: -1000
-      x: -90
-      y: 20
+      scale: 1.5
+      layer: -3
+      x: -125
+      y: 30
   texts:
     1:
       name: entity_font
-      pattern: "<#ffe486>[papi:customfont_mini_WORLD] <#ffffff>[papi:customfont_mini_{player_world}] | <#ffe486>[papi:customfont_mini_TIME] <#ffffff>[papi:customfont_mini_{rs_time}]"
+      pattern: "<#ffe486>World <#ffffff>[papi:player_world] | <#ffe486>Biome <#ffffff>[papi:player_biome_capitalized]"
       placeholder-string-format:
         number: "#,###"
-      x: 30
-      y: 25
-      scale: 0.3
+      x: 80
+      y: 40
+      scale: 0.5
       align: right
     2:
       name: entity_font
-      pattern: "<#ffe486>[papi:customfont_mini_season] <#ffffff>[papi:customfont_mini_{rs_season}] | <#ffe486>[papi:customfont_mini_D/M/Y] <#ffffff>[papi:customfont_mini_{rs_day_world}//{rs_month_world}//{rs_year_world}]"
+      pattern: "<#ffe486>Time <#ffffff>[papi:player_world_time_12] | <#ffe486>XYZ <#ffffff>[papi:player_x] [papi:player_y] [papi:player_z]"
       placeholder-string-format:
         number: "#,###"
-      x: 30
-      y: 32
-      scale: 0.3
+      x: 80
+      y: 55
+      scale: 0.5
       align: right
-    4:
-      name: entity_font
-      pattern: "<#ffe486>[papi:customfont_mini_temp.] <#ffffff>[papi:customfont_mini_{rs_temperature_int_celcius}°C] | <#ffe486>[papi:customfont_mini_XYZ] <#ffffff>[papi:customfont_mini_{player_x}//{player_y}//{player_x}]"
-      placeholder-string-format:
-        number: "#,###"
-      x: 30
-      y: 40
-      scale: 0.3
-      align: right
-
 down_right_layout:
   images:
       #-------------------------------------------- Empty Slot -------------- 
     1:
       name: empty_armor_slot_boots_empty
-      scale: 1
-      layer: -1000
-      x: -10
-      y: -28
+      scale: 2
+      layer: -10
+      x: -30
+      y: -40
     2:
       name: empty_armor_slot_leggings_empty
-      scale: 1
-      layer: -1000
-      x: -10
-      y: -48
+      scale: 2
+      layer: -10
+      x: -30
+      y: -80
     3:
       name: empty_armor_slot_chestplate_empty
-      scale: 1
-      layer: -1000
-      x: -10
-      y: -68
+      scale: 2
+      layer: -10
+      x: -30
+      y: -120
       conditions:
         1:
           first: papi:armor_material_chestplate
@@ -714,17 +726,17 @@ down_right_layout:
           operation: "!="
     4:
       name: empty_armor_slot_helmet_empty
-      scale: 1
-      layer: -1000
-      x: -10
-      y: -88
+      scale: 2
+      layer: -10
+      x: -30
+      y: -153
     #-------------------------------------------- Iron Material --------------  
     5:
       name: iron_helmet_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -88
+      scale: 2
+      layer: -1
+      x: -30
+      y: -153
       conditions:
         1:
           first: papi:armor_has_helmet
@@ -760,10 +772,10 @@ down_right_layout:
           operation: "=="
     6:
       name: iron_chestplate_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -68
+      scale: 2
+      layer: -1
+      x: -30
+      y: -120
       conditions:
         1:
           first: papi:armor_has_chestplate
@@ -803,10 +815,10 @@ down_right_layout:
           operation: "=="
     7:
       name: iron_leggings_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -48
+      scale: 2
+      layer: -1
+      x: -30
+      y: -80
       conditions:
         1:
           first: papi:armor_has_leggings
@@ -842,10 +854,10 @@ down_right_layout:
           operation: "=="
     8:
       name: iron_boots_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -28
+      scale: 2
+      layer: -1
+      x: -30
+      y: -40
       conditions:
         1:
           first: papi:armor_has_boots
@@ -882,10 +894,10 @@ down_right_layout:
     #-------------------------------------------- Golden Material --------------  
     9:
       name: golden_helmet_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -88
+      scale: 2
+      layer: -1
+      x: -30
+      y: -153
       conditions:
         1:
           first: papi:armor_has_helmet
@@ -921,10 +933,10 @@ down_right_layout:
           operation: "=="
     10:
       name: golden_chestplate_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -68
+      scale: 2
+      layer: -1
+      x: -30
+      y: -120
       conditions:
         1:
           first: papi:armor_has_chestplate
@@ -964,10 +976,10 @@ down_right_layout:
           operation: "=="
     11:
       name: golden_leggings_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -48
+      scale: 2
+      layer: -1
+      x: -30
+      y: -80
       conditions:
         1:
           first: papi:armor_has_leggings
@@ -1003,10 +1015,10 @@ down_right_layout:
           operation: "=="
     12:
       name: golden_boots_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -28
+      scale: 2
+      layer: -1
+      x: -30
+      y: -40
       conditions:
         1:
           first: papi:armor_has_boots
@@ -1043,10 +1055,10 @@ down_right_layout:
     #-------------------------------------------- Chainmail Material --------------  
     13:
       name: chainmail_helmet_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -88
+      scale: 2
+      layer: -1
+      x: -30
+      y: -153
       conditions:
         1:
           first: papi:armor_has_helmet
@@ -1082,10 +1094,10 @@ down_right_layout:
           operation: "=="
     14:
       name: chainmail_chestplate_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -68
+      scale: 2
+      layer: -1
+      x: -30
+      y: -120
       conditions:
         1:
           first: papi:armor_has_chestplate
@@ -1125,10 +1137,10 @@ down_right_layout:
           operation: "=="
     15:
       name: chainmail_leggings_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -48
+      scale: 2
+      layer: -1
+      x: -30
+      y: -80
       conditions:
         1:
           first: papi:armor_has_leggings
@@ -1164,10 +1176,10 @@ down_right_layout:
           operation: "=="
     16:
       name: chainmail_boots_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -28
+      scale: 2
+      layer: -1
+      x: -30
+      y: -40
       conditions:
         1:
           first: papi:armor_has_boots
@@ -1204,10 +1216,10 @@ down_right_layout:
     #-------------------------------------------- Diamond Material --------------  
     17:
       name: diamond_helmet_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -88
+      scale: 2
+      layer: -1
+      x: -30
+      y: -153
       conditions:
         1:
           first: papi:armor_has_helmet
@@ -1243,10 +1255,10 @@ down_right_layout:
           operation: "=="
     18:
       name: diamond_chestplate_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -68
+      scale: 2
+      layer: -1
+      x: -30
+      y: -120
       conditions:
         1:
           first: papi:armor_has_chestplate
@@ -1286,10 +1298,10 @@ down_right_layout:
           operation: "=="
     19:
       name: diamond_leggings_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -48
+      scale: 2
+      layer: -1
+      x: -30
+      y: -80
       conditions:
         1:
           first: papi:armor_has_leggings
@@ -1325,10 +1337,10 @@ down_right_layout:
           operation: "=="
     20:
       name: diamond_boots_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -28
+      scale: 2
+      layer: -1
+      x: -30
+      y: -40
       conditions:
         1:
           first: papi:armor_has_boots
@@ -1365,10 +1377,10 @@ down_right_layout:
     #-------------------------------------------- Netherite Material --------------  
     21:
       name: netherite_helmet_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -88
+      scale: 2
+      layer: -1
+      x: -30
+      y: -153
       conditions:
         1:
           first: papi:armor_has_helmet
@@ -1404,10 +1416,10 @@ down_right_layout:
           operation: "=="
     22:
       name: netherite_chestplate_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -68
+      scale: 2
+      layer: -1
+      x: -30
+      y: -120
       conditions:
         1:
           first: papi:armor_has_chestplate
@@ -1447,10 +1459,10 @@ down_right_layout:
           operation: "=="
     23:
       name: netherite_leggings_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -48
+      scale: 2
+      layer: -1
+      x: -30
+      y: -80
       conditions:
         1:
           first: papi:armor_has_leggings
@@ -1486,10 +1498,10 @@ down_right_layout:
           operation: "=="
     24:
       name: netherite_boots_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -28
+      scale: 2
+      layer: -1
+      x: -30
+      y: -40
       conditions:
         1:
           first: papi:armor_has_boots
@@ -1526,10 +1538,10 @@ down_right_layout:
     #-------------------------------------------- Leather Material --------------  
     25:
       name: leather_helmet_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -88
+      scale: 2
+      layer: -1
+      x: -30
+      y: -153
       conditions:
         1:
           first: papi:armor_has_helmet
@@ -1565,10 +1577,10 @@ down_right_layout:
           operation: "=="
     26:
       name: leather_chestplate_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -68
+      scale: 2
+      layer: -1
+      x: -30
+      y: -120
       conditions:
         1:
           first: papi:armor_has_chestplate
@@ -1608,10 +1620,10 @@ down_right_layout:
           operation: "=="
     27:
       name: leather_leggings_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -48
+      scale: 2
+      layer: -1
+      x: -30
+      y: -80
       conditions:
         1:
           first: papi:armor_has_leggings
@@ -1647,10 +1659,10 @@ down_right_layout:
           operation: "=="
     28:
       name: leather_boots_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -28
+      scale: 2
+      layer: -1
+      x: -30
+      y: -40
       conditions:
         1:
           first: papi:armor_has_boots
@@ -1687,10 +1699,10 @@ down_right_layout:
     #-------------------------------------------- Other Material -------------- 
     29:
       name: turtle_helmet_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -88
+      scale: 2
+      layer: -1
+      x: -30
+      y: -153
       conditions:
         1:
           first: papi:armor_has_helmet
@@ -1730,10 +1742,10 @@ down_right_layout:
           operation: "=="
     30:
       name: elytra_icon
-      scale: 1
-      layer: 1
-      x: -10
-      y: -68
+      scale: 2
+      layer: -1
+      x: -30
+      y: -120
       conditions:
         1:
           first: papi:armor_has_chestplate
@@ -1781,10 +1793,10 @@ durability_down_right_layout:
       #-------------------------------------------- Helmet Slot -------------- 
     1:
       name: durability_empty_bar_image
-      scale: 1
-      layer: 2
-      x: -9
-      y: -77
+      scale: 2
+      layer: -3
+      x: -28
+      y: -128
       conditions:
         1:
           first: papi:armor_has_helmet
@@ -1804,10 +1816,10 @@ durability_down_right_layout:
           operation: "=="
     2:
       name: helmet_durability_empty_bar_image
-      scale: 1
-      layer: 3
-      x: -9
-      y: -77
+      scale: 2
+      layer: -2
+      x: -28
+      y: -128
       conditions:
         1:
           first: dead
@@ -1816,10 +1828,10 @@ durability_down_right_layout:
       #-------------------------------------------- Chestplate Slot -------------- 
     3:
       name: durability_empty_bar_image
-      scale: 1
-      layer: 2
-      x: -9
-      y: -54
+      scale: 2
+      layer: -3
+      x: -28
+      y: -87
       conditions:
         1:
           first: papi:armor_has_chestplate
@@ -1839,10 +1851,10 @@ durability_down_right_layout:
           operation: "=="
     4:
       name: chestplate_durability_empty_bar_image
-      scale: 1
-      layer: 3
-      x: -9
-      y: -54
+      scale: 2
+      layer: -2
+      x: -28
+      y: -87
       conditions:
         1:
           first: dead
@@ -1851,10 +1863,10 @@ durability_down_right_layout:
       #-------------------------------------------- Leggings Slot -------------- 
     6:
       name: durability_empty_bar_image
-      scale: 1
-      layer: 2
-      x: -9
-      y: -35
+      scale: 2
+      layer: -3
+      x: -28
+      y: -48
       conditions:
         1:
           first: papi:armor_has_leggings
@@ -1874,10 +1886,10 @@ durability_down_right_layout:
           operation: "=="
     7:
       name: leggings_durability_empty_bar_image
-      scale: 1
-      layer: 3
-      x: -9
-      y: -35
+      scale: 2
+      layer: -2
+      x: -28
+      y: -48
       conditions:
         1:
           first: dead
@@ -1886,10 +1898,10 @@ durability_down_right_layout:
       #-------------------------------------------- Boots Slot -------------- 
     8:
       name: durability_empty_bar_image
-      scale: 1
-      layer: 2
-      x: -9
-      y: -17
+      scale: 2
+      layer: -3
+      x: -28
+      y: -14
       conditions:
         1:
           first: papi:armor_has_boots
@@ -1909,10 +1921,10 @@ durability_down_right_layout:
           operation: "=="
     9:
       name: boots_durability_empty_bar_image
-      scale: 1
-      layer: 3
-      x: -9
-      y: -17
+      scale: 2
+      layer: -2
+      x: -28
+      y: -14
       conditions:
         1:
           first: dead
@@ -1926,10 +1938,10 @@ durability_num_down_right_layout:
       name: entity_font
       pattern: "<#ffffff>[papi:player_armor_helmet_durability]"
       outline: true
-      x: -20
-      y: -84
-      scale: 0.4
-      layer: 0
+      x: -50
+      y: -144
+      scale: 0.6
+      layer: -2
       align: right
       conditions:
         1:
@@ -1953,10 +1965,10 @@ durability_num_down_right_layout:
       name: entity_font
       pattern: "<#ffffff>[papi:player_armor_chestplate_durability]"
       outline: true
-      x: -20
-      y: -64
-      scale: 0.4
-      layer: 0
+      x: -50
+      y: -103
+      scale: 0.6
+      layer: -2
       align: right
       conditions:
         1:
@@ -1980,10 +1992,10 @@ durability_num_down_right_layout:
       name: entity_font
       pattern: "<#ffffff>[papi:player_armor_leggings_durability]"
       outline: true
-      x: -20
-      y: -44
-      scale: 0.4
-      layer: 0
+      x: -50
+      y: -66
+      scale: 0.6
+      layer: -2
       align: right
       conditions:
         1:
@@ -2007,10 +2019,10 @@ durability_num_down_right_layout:
       name: entity_font
       pattern: "<#ffffff>[papi:player_armor_boots_durability]"
       outline: true
-      x: -20
-      y: -24
-      scale: 0.4
-      layer: 0
+      x: -50
+      y: -30
+      scale: 0.6
+      layer: -2
       align: right
       conditions:
         1:
@@ -2030,4 +2042,5 @@ durability_num_down_right_layout:
           second: false
           operation: "=="
       #-------------------------------------------- Other Durability Number  -------------- 
+
       

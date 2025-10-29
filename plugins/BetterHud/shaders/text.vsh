@@ -1,6 +1,23 @@
 #version 150
 
+#CreateConstant
+
 #moj_import <fog.glsl>
+
+#if SHADER_VERSION >= 3
+#moj_import <minecraft:dynamictransforms.glsl>
+#moj_import <minecraft:projection.glsl>
+#moj_import <minecraft:globals.glsl>
+out float sphericalVertexDistance;
+out float cylindricalVertexDistance;
+#else
+uniform mat4 ProjMat;
+uniform mat4 ModelViewMat;
+uniform int FogShape;
+out float vertexDistance;
+uniform vec2 ScreenSize;
+uniform float GameTime;
+#endif
 
 in vec3 Position;
 in vec4 Color;
@@ -10,20 +27,12 @@ in ivec2 UV2;
 uniform sampler2D Sampler0;
 uniform sampler2D Sampler2;
 
-uniform mat4 ModelViewMat;
-uniform mat4 ProjMat;
-uniform int FogShape;
-uniform vec2 ScreenSize;
-uniform float GameTime;
 uniform vec3 ChunkOffset;
 
-out float vertexDistance;
 out vec4 vertexColor;
 out vec2 texCoord0;
 
 out float applyColor;
-
-#CreateConstant
 
 bool range(float t, float m1, float m2) {
     return t >= m1 && t <= m2;
@@ -45,13 +54,7 @@ bool checkElement(float z) {
     return false;
 }
 
-bool checkExp(float z) {
-    if (z == 0) return true; //<=1.20.4 vanilla
-    else if (z == 600) return true; //>=1.20.5 vanilla
-    return false;
-}
-
-float getDistance(vec3 pos, int shape) {
+float fogDistance(vec3 pos, int shape) {
     if (shape == 0) {
         return length(pos);
     } else {
@@ -61,6 +64,7 @@ float getDistance(vec3 pos, int shape) {
     }
 }
 
+
 #GenerateOtherDefinedMethod
 
 void main() {
@@ -69,9 +73,8 @@ void main() {
     vec2 uiScreen = ui / ScreenSize;
     vec3 color = Color.xyz;
     applyColor = 0;
-    bool isElement = checkElement(pos.z);
     vertexColor = Color * texelFetch(Sampler2, UV2 / 16, 0);
-    if (pos.y >= ui.y && ProjMat[3].x == -1 && (isElement || checkElement(pos.z - 0.03))) {
+    if (pos.y >= ui.y && ProjMat[3].x == -1) {
         int bit = int(pos.y) >> HEIGHT_BIT;
 
         if (((bit >> MAX_BIT) & 1) == 1) {
@@ -92,7 +95,11 @@ void main() {
                 #CreateLayout
             }
 
-            vertexColor = (isElement && !outline) ? vec4(0) : Color * texelFetch(Sampler2, UV2 / 16, 0) * vec4(1, 1, 1, opacity);
+#if SHADER_VERSION < 2
+            vertexColor = (checkElement(pos.z) && !outline) ? vec4(0) : Color * texelFetch(Sampler2, UV2 / 16, 0) * vec4(1, 1, 1, opacity);
+#else
+            vertexColor = Color * texelFetch(Sampler2, UV2 / 16, 0) * vec4(1, 1, 1, opacity);
+#endif
 
             //Wave
             if ((property & 1) > 0) {
@@ -131,7 +138,7 @@ void main() {
         }
     } else {
 //HideExp        vec3 exp = vec3(128.0, 255.0, 32.0);
-//HideExp        if (ProjMat[3].x == -1 && range(pos.y, ui.y - 60, ui.y - 20) && range(pos.x, ui.x / 2 - 60, ui.x / 2 + 60) && checkExp(pos.z) && (range(color, exp / 256, exp / 254) || color == vec3(0))) {
+//HideExp        if (ProjMat[3].x == -1 && range(pos.y, ui.y - 60, ui.y - 20) && range(pos.x, ui.x / 2 - 60, ui.x / 2 + 60) && (range(color, exp / 256, exp / 254) || color == vec3(0))) {
 //HideExp            vertexColor = vec4(0);
 //HideExp        }
 //RemapHotBar        if ((int(pos.z) == 200 || int(pos.z) == 600) && ProjMat[3].x == -1 && ui.y - pos.y <= 20) {
@@ -197,9 +204,15 @@ void main() {
 //RemapHotBar        }
     }
 
-#GenerateOtherMainMethod
+    #GenerateOtherMainMethod
 
-    vertexDistance = getDistance(pos, FogShape);
+#if SHADER_VERSION >= 3
+    sphericalVertexDistance = fog_spherical_distance(pos);
+    cylindricalVertexDistance = fog_cylindrical_distance(pos);
+#else
+    vertexDistance = fogDistance(pos, FogShape);
+#endif
+
     texCoord0 = UV0;
     gl_Position = ProjMat * ModelViewMat * vec4(pos, 1.0);
 }

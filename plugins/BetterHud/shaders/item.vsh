@@ -1,7 +1,25 @@
 #version 150
 
+#CreateConstant
+
 #moj_import <light.glsl>
 #moj_import <fog.glsl>
+
+#if SHADER_VERSION >= 3
+#moj_import <minecraft:dynamictransforms.glsl>
+#moj_import <minecraft:projection.glsl>
+#moj_import <minecraft:globals.glsl>
+out float sphericalVertexDistance;
+out float cylindricalVertexDistance;
+#else
+uniform mat4 ProjMat;
+uniform mat4 ModelViewMat;
+uniform int FogShape;
+uniform vec3 Light0_Direction;
+uniform vec3 Light1_Direction;
+out float vertexDistance;
+uniform vec2 ScreenSize;
+#endif
 
 in vec3 Position;
 in vec4 Color;
@@ -11,26 +29,15 @@ in ivec2 UV2;
 in vec3 Normal;
 
 uniform sampler2D Sampler2;
-
-uniform mat4 ModelViewMat;
-uniform mat4 ProjMat;
-uniform int FogShape;
-
-uniform vec3 Light0_Direction;
-uniform vec3 Light1_Direction;
-uniform vec2 ScreenSize;
 uniform vec3 ChunkOffset;
 
-out float vertexDistance;
 out vec4 vertexColor;
 out vec2 texCoord0;
 out vec2 texCoord1;
 out vec2 texCoord2;
 out vec4 normal;
 
-#CreateConstant
-
-float getDistance(vec3 pos, int shape) {
+float fogDistance(vec3 pos, int shape) {
     if (shape == 0) {
         return length(pos);
     } else {
@@ -53,7 +60,7 @@ void main() {
 //RemapHotBar
 //RemapHotBar        float pixel = pos.x + 0.5;
 //RemapHotBar        if (pixel + 100 < center && pixel + 128 >= center) {
-//RemapHotBar            
+//RemapHotBar
 //RemapHotBar            hotbarX += ui.x / 100.0 * (HOTBAR_1_GUI_X) + (HOTBAR_1_PIXEL_X) - center + 110;
 //RemapHotBar            hotbarY += ui.y / 100.0 * (HOTBAR_1_GUI_Y) + (HOTBAR_1_PIXEL_Y) - ui.y;
 //RemapHotBar
@@ -63,7 +70,7 @@ void main() {
 //RemapHotBar            hotbarY += ui.y / 100.0 * (HOTBAR_2_GUI_Y) + (HOTBAR_2_PIXEL_Y) - ui.y;
 //RemapHotBar
 //RemapHotBar        } else if (pixel + 50 < center && pixel + 68 >= center) {
-//RemapHotBar            
+//RemapHotBar
 //RemapHotBar            hotbarX += ui.x / 100.0 * (HOTBAR_3_GUI_X) + (HOTBAR_3_PIXEL_X) - center + 60;
 //RemapHotBar            hotbarY += ui.y / 100.0 * (HOTBAR_3_GUI_Y) + (HOTBAR_3_PIXEL_Y) - ui.y;
 //RemapHotBar
@@ -96,7 +103,7 @@ void main() {
 //RemapHotBar
 //RemapHotBar            hotbarX += ui.x / 100.0 * (HOTBAR_9_GUI_X) + (HOTBAR_9_PIXEL_X) - center - 60;
 //RemapHotBar            hotbarY += ui.y / 100.0 * (HOTBAR_9_GUI_Y) + (HOTBAR_9_PIXEL_Y) - ui.y;
-//RemapHotBar            
+//RemapHotBar
 //RemapHotBar        } else if (pixel - 90 < center && pixel - 72 >= center) {
 //RemapHotBar
 //RemapHotBar            hotbarX += ui.x / 100.0 * (HOTBAR_10_GUI_X) + (HOTBAR_10_PIXEL_X) - center - 80;
@@ -109,8 +116,15 @@ void main() {
 
     gl_Position = ProjMat * ModelViewMat * vec4(pos, 1.0);
 
-    vertexDistance = getDistance(pos, FogShape);
+#if SHADER_VERSION >= 3
+    sphericalVertexDistance = fog_spherical_distance(pos);
+    cylindricalVertexDistance = fog_cylindrical_distance(pos);
+#else
+    vertexDistance = fogDistance(pos, FogShape);
+#endif
+
     vertexColor = minecraft_mix_light(Light0_Direction, Light1_Direction, Normal, Color) * texelFetch(Sampler2, UV2 / 16, 0);
+
     texCoord0 = UV0;
     texCoord1 = UV1;
     texCoord2 = UV2;
