@@ -12,7 +12,7 @@ bossbar-line: 1
 bossbar-resource-pack-line: 0
 merge-boss-bar: true
 disable-to-bedrock-player: true
-build-folder-location: ItemsAdder/contents/betterhud/resourcepack
+build-folder-location: Nexo/pack/external_packs/BetterHud
 pack-type: folder
 enable-protection: false
 enable-self-host: false

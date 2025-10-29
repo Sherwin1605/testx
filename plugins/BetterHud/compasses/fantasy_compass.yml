@@ -32,7 +32,7 @@ fantasy_compass:
       home:
         name: "fantasy_assets/compass/home.png"
         y: -10
-  scale: 1.0
+  scale: 0.6
   scale-equation: 1 - t/20
   length: 20
   space: 2
@@ -41,5 +41,5 @@ fantasy_compass:
     y: 0
   pixel:
     x: 0
-    y: 23
+    y: 21
   apply-opacity: true

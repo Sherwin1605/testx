@@ -1,4 +1,4 @@
-menu_title: ':offset_-12::page_two:'
+menu_title: '<shift:-12><glyph:page_two>'
 size: 54
 open_requirement:
   requirements:
@@ -11,7 +11,7 @@ items:
 #------------------------------------------------------------------------------------------- Enable Button ------------------
   'player_durability_bar':
     material: BOOK
-    model_data: 900000
+    model_data: 85099
     slots: 
       - 0
     display_name: '&aEnable'
@@ -22,7 +22,7 @@ items:
       - "[message] &9[Fantasy-HUD] &fYou have &aEnabled &ePlayer armor durability bar"
   'player_durability_number':
     material: BOOK
-    model_data: 900000
+    model_data: 85099
     slots: 
       - 9
     display_name: '&aEnable'
@@ -33,7 +33,7 @@ items:
       - "[message] &9[Fantasy-HUD] &fYou have &aEnabled &ePlayer sub skills number"
   'vehicle_health_bar':
     material: BOOK
-    model_data: 900000
+    model_data: 85099
     slots: 
       - 18
     display_name: '&aEnable'
@@ -44,7 +44,7 @@ items:
       - "[message] &9[Fantasy-HUD] &fYou have &aEnabled &eVehicle health bar"
   'player_air_bar':
     material: BOOK
-    model_data: 900000
+    model_data: 85099
     slots: 
       - 27
     display_name: '&aEnable'
@@ -55,7 +55,7 @@ items:
       - "[message] &9[Fantasy-HUD] &fYou have &aEnabled &ePlayer oxygen bar"
   'player_compass_hud':
     material: BOOK
-    model_data: 900000
+    model_data: 85099
     slots: 
       - 36
     display_name: '&aEnable'
@@ -68,7 +68,7 @@ items:
 #------------------------------------------------------------------------------------------- Disabled Button ------------------
   'player_durability_bar2':
     material: BOOK
-    model_data: 900000
+    model_data: 85099
     slots: 
       - 8
     display_name: '&cDisabled'
@@ -79,7 +79,7 @@ items:
       - "[message] &9[Fantasy-HUD] &fYou have &cDisabled &ePlayer armor durability bar"
   'player_durability_number2':
     material: BOOK
-    model_data: 900000
+    model_data: 85099
     slots: 
       - 17
     display_name: '&cDisabled'
@@ -90,7 +90,7 @@ items:
       - "[message] &9[Fantasy-HUD] &fYou have &cDisabled &ePlayer sub skills number"
   'vehicle_health_bar2':
     material: BOOK
-    model_data: 900000
+    model_data: 85099
     slots: 
       - 26
     display_name: '&cDisabled'
@@ -101,7 +101,7 @@ items:
       - "[message] &9[Fantasy-HUD] &fYou have &aEnabled &eVehicle health bar"
   'player_air_bar2':
     material: BOOK
-    model_data: 900000
+    model_data: 85099
     slots: 
       - 35
     display_name: '&cDisabled'
@@ -112,7 +112,7 @@ items:
       - "[message] &9[Fantasy-HUD] &fYou have &cDisabled &ePlayer oxygen bar"
   'player_compass_hud2':
     material: BOOK
-    model_data: 900000
+    model_data: 85099
     slots: 
       - 44
     display_name: '&cDisabled'
@@ -125,7 +125,7 @@ items:
 #------------------------------------------------------------------------------------------- Previous Page ------------------
   'next_page':
     material: BOOK
-    model_data: 900000
+    model_data: 85099
     slots: 
       - 49
     display_name: '&ePREVIOUS'
