@@ -1,0 +1,33 @@
+fantasy_entity_health_popup:
+  move:
+    duration: 1
+    pixel:
+      x-equation: 0
+      y-equation: 40t
+  push: true
+  queue: true
+  key-mapping: true
+  triggers:
+    1:
+      class: entity_attack 
+  layouts:
+    1:
+      name: entity_image
+      scale: 2.0
+      gui:
+        x: 50
+        y: 0
+      pixel:
+        x: 0
+        y: 55
+        
+    2:
+      name: entity_text
+      scale: 2.0
+      gui:
+        x: 50
+        y: 0
+      pixel:
+        x: 0
+        y: 52
+  duration: 20

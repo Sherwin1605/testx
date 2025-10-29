@@ -1,0 +1,9 @@
+info:
+  namespace: "custom_guis"
+font_images:
+  page_one:
+    path: "font/guis/page_one.png"
+    y_position: 47
+  page_two:
+    path: "font/guis/page_two.png"
+    y_position: 47
