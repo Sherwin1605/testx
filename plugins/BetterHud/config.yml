@@ -45,3 +45,4 @@ legacy-serializer: ampersand
 minecraft-jar-version: bukkit
 remove-default-hotbar: false
 disable-legacy-offset: true
+merge-with-external-resources: true

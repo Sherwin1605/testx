@@ -199,14 +199,14 @@ contents:
           amount: 15.0
           name: generic.attack_damage
           slot: HAND
-          uuid: 7e92bf0f-f88e-4f7b-be8c-b240ee71c903
+          uuid: 1a12bedc-c909-4c8d-b55a-12bc9c980e96
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: fd5ef818-1888-4289-84c8-eb8adfd0fc69
+          uuid: 48ac5517-cbf1-4199-8569-4285a3ae14ef
           operation: 0
       ItemFlags:
       - HIDE_ATTRIBUTES
@@ -253,14 +253,14 @@ contents:
           amount: 11.0
           name: generic.attack_damage
           slot: HAND
-          uuid: 27c69b02-0fee-491a-8005-4ce95b8b5b60
+          uuid: 58a7e0c9-bf80-41ad-afb6-a2efefe6a13f
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: 843259ab-b729-4cd4-aeee-3e3f5c22bde8
+          uuid: 21dfcd03-8ca5-49d9-a896-1358daa93754
           operation: 0
       ItemFlags:
       - HIDE_ATTRIBUTES
@@ -305,14 +305,14 @@ contents:
           amount: 11.0
           name: generic.attack_damage
           slot: HAND
-          uuid: 3f90cfc7-7638-4cde-956a-085132a8a0b8
+          uuid: 0b80c89a-1853-44cd-924a-9a4376b5c835
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: 18760708-8534-4a84-b345-7a9f60df7d07
+          uuid: 3fa6c245-8eb4-48ba-93a9-8c2888e20531
           operation: 0
       ItemFlags:
       - HIDE_ATTRIBUTES

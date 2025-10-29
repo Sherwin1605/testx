@@ -221,3 +221,5 @@ expansions:
   checkitem:
     give_enabled: false
     remove_enabled: false
+  localtime:
+    date_format: dd/MM/yyyy hh:mma

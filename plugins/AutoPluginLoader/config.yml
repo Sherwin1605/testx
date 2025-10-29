@@ -1,0 +1,104 @@
+# config.yml
+messages:
+  # --- Core alerts --------------------------------------------------------
+  Plugin-Automatically-Updated: '&bᴀᴘʟ &7• &a%plugin% &fwas automatically updated &7(⏱ %time% ms)'
+  Plugin-Automatically-Loaded:  '&bᴀᴘʟ &7• &a%plugin% &fwas automatically loaded &7(⏱ %time% ms)'
+
+  # --- Command list frame -------------------------------------------------
+  Header: '&8┏&m━━&b ᴘʟᴜɢɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ &8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━&8┓'
+  Footer: '&8┗&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&8┛'
+  Command-Format: '&8• &e/%command% &7→ &f%description%'
+
+  # --- Generic responses --------------------------------------------------
+  Config-Reloaded: '&bᴀᴘʟ &7• &fThe config.yml was &asuccessfully &freloaded.'
+  No-Permission:    '&bᴀᴘʟ &7• &cYou do not have permission to do that.'
+  Cant-Put-APL-There: '&bᴀᴘʟ &7• &fYou can’t use &aAutoPluginLoader &fas a plugin argument.'
+  Invalid-Plugin:  '&bᴀᴘʟ &7• &c%plugin% &fis not a plugin on this server.'
+  Invalid-Subcommand: '&bᴀᴘʟ &7• &fThat sub-command doesn''t exist. &7(&e/apl &fto view the list&7)'
+  No-Description:  '&bᴀᴘʟ &7• &c%plugin% &fhas no plugin description.'
+  
+  # --- History responses --------------------------------------------------
+  History-Header: '&8&m┏&m━━&b ᴀᴘʟ ʜɪꜱᴛᴏʀʏ &8&m━━━━━━━━━━━━━━━━━&8┓'
+  History-Footer: '&8┗&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&8┛'
+  History-Display-Format: '&7(%timestamp%) &f%action% &7» &b%pluginName%' # Example entry: "(12:34:56) Loaded » WorldEdit"
+  No-History: '&bᴀᴘʟ &7• &fThere is currently no history. &7(This clears every server restart)'
+
+  # --- Status checks ------------------------------------------------------
+  Already-Loaded:   '&bᴀᴘʟ &7• &a%plugin% &fis already loaded.'
+  Already-Unloaded: '&bᴀᴘʟ &7• &a%plugin% &fis already unloaded.'
+  Failed-To-Load:   '&bᴀᴘʟ &7• &cFailed to load %plugin%. &7(Check console.)'
+
+  Plugin-Is-Reloading: '&bᴀᴘʟ &7• &a%plugin% &fis reloading…'
+  Plugin-Has-Reloaded: '&bᴀᴘʟ &7• &a%plugin% &fhas been reloaded.'
+  Plugin-Loaded:       '&bᴀᴘʟ &7• &a%plugin% &fhas been enabled.'
+  Plugin-Unloaded:     '&bᴀᴘʟ &7• &a%plugin% &fhas been disabled.'
+  Plugin-Unloaded-With-Dependencies: '&bᴀᴘʟ &7• &a%plugin% &fdisabled &7(its dependencies were also reloaded)'
+  Plugin-Unloaded-Note: '&bᴀᴘʟ &7• &fHint&8: &e/apl unload (plugin) -d &freloads its dependencies too.'
+  Nothing-Was-Changed: '&bᴀᴘʟ &7• &fNo plugins needed loading or updating.'
+
+  # --- Command / info lists ----------------------------------------------
+  No-Commands-Registered: '&bᴀᴘʟ &7• &c%plugin% &fhas no registered commands.'
+  Sub-command-Unknown:    '&bᴀᴘʟ &7• &c%argument% &fis not a valid sub-command.'
+  Version:  '&bᴀᴘʟ &7• &fCurrent version&8: &a%version%'
+  Commands: '&bᴀᴘʟ &7• &a%plugin%&f''s commands&8: &e%commands%&f.'
+  Commands-Split: '&f, &e'
+
+  Plugins-Info:
+    - '&b» &fPlugin&8: &a%plugin%'
+    - '&8• &fVersion&8: &a%version%'
+    - '&8• &fAuthor(s)&8: &a%authors%'
+    - '&8• &fStatus&8: %status%'
+
+  Plugin-Split: '&f, &a'
+
+  Plugin-List:
+    - '&b• &fPlugins &b»'
+    - '&8• &fEnabled&8: &a%enabled%&f.'
+    - '&8• &fDisabled&8: &c%disabled%&f.'
+
+  Enabled-Split:  '&f, &a'
+  Disabled-Split: '&f, &c'
+
+  # --- Usage hints --------------------------------------------------------
+  Usages:
+    Load:   '&bᴀᴘʟ &7• &fUsage&8: &e/apl load (plugin)'
+    Unload: '&bᴀᴘʟ &7• &fUsage&8: &e/apl unload (plugin)'
+    Unload-With-Dependencies: '&bᴀᴘʟ &7• &fUsage&8: &e/apl unload (plugin) -d'
+    Reload: '&bᴀᴘʟ &7• &fUsage&8: &e/apl reload (plugin)'
+    Usage:  '&bᴀᴘʟ &7• &fUsage&8: &e/apl usage (plugin)'
+    Info:   '&bᴀᴘʟ &7• &fUsage&8: &e/apl info (plugin)'
+
+# -------------------------------------------------------------------------
+
+update-check:
+  enabled: true
+  permission: autopluginloader.update
+  message: "&bᴀᴘʟ &7• &fA new version, &b%latest%&f, is available. You're running &e%current%&f."
+
+settings:
+  Your-Plugins-Folder: 'plugins'
+
+  Automatically-Load-Plugins:   true
+  Automatically-Update-Plugins: true # This DOES NOT mean when an update is released it will automatically be downloaded and uploaded to your server.
+  # The above option refers to if you click and drag an already loaded jar (Example: WorldEdit) into the plugins folder, but it's a new version.
+  # APL will detect that and reload the code. This updates its currently loaded version/code without the need of a restart.
+  # Sorry for any confusion. I hope this clears this feature up.
+
+  Load-Data-Delay: 5       # Seconds – must be < Timer-Delay
+  Task:
+    Timer-Delay: 10        # Seconds – must be > Load-Data-Delay
+    Timer: 1               # Seconds – check interval
+
+  Seconds-Before-Reloading: 5  # Minimum age (s) before an update triggers
+  Seconds-Before-Loading:   5  # Delay (s) after uploading a new *.jar
+
+  Always-Reload-A-Plugins-Dependencies: true   # If false, use “-d” flag when unloading
+  Send-Players-Alerts: true                    # Needs AutoPluginLoader.Alerts permission
+
+  Plugins-To-Ignore:                            # Skipped for auto-updates
+    - 'WorldEdit'
+    - 'WorldGuard'
+    - 'AutoPluginLoader'       # Don’t remove – avoids recursion issues
+    - 'Skript'                 # Skript reloads can break extensions
+    - 'ItemsAdder'
+    - 'Oraxen'
