@@ -1,0 +1,11 @@
+page_one:
+  texture: fantasy_gui/gui/page_one
+  ascent: 37
+  height: 256
+  char: ꐒ
+page_two:
+  texture: fantasy_gui/gui/page_two
+  ascent: 37
+  height: 256
+  char: ꐓ
+

@@ -17,5 +17,207 @@ boolean:
 date_format: MM/dd/yy HH:mm:ss
 debug: false
 expansions:
-  localtime:
-    date_format: dd/MM/yyyy hh:mma
+  player:
+    ping_value:
+      high: 100
+      medium: 50
+    direction:
+      north: N
+      south: S
+      north_west: NW
+      north_east: NE
+      east: E
+      south_east: SE
+      west: W
+      south_west: SW
+    ping_color:
+      medium: '&e'
+      high: '&c'
+      low: '&a'
+  customfont:
+    settings:
+      return_text_if_font_invalid: true
+    fonts:
+      accent:
+        uppercase: ĀBÇÐÊFǴĦÎĴĶĿMŇÖPQŘŞŢŬVŴXŸƵ
+        lowercase: ābčďéfǥĥɨĵķłmņǒpqřşŧùvŵxŷž
+        numbers: ''
+        special: ''
+      big:
+        uppercase: ᗩᗷᑕᗪEᖴGᕼIᒍKᒪᗰᑎOᑭᑫᖇᔕTᑌᐯᗯ᙭Yᘔ
+        lowercase: ᗩᗷᑕᗪEᖴGᕼIᒍKᒪᗰᑎOᑭᑫᖇᔕTᑌᐯᗯ᙭Yᘔ
+        numbers: ''
+        special: ''
+      bubble:
+        uppercase: ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ
+        lowercase: ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ
+        numbers: ⓪①②③④⑤⑥⑦⑧⑨
+        special: ''
+      currency:
+        uppercase: ₳฿₵ĐɆ₣₲ⱧłJ₭Ⱡ₥₦Ø₱QⱤ₴₮ɄV₩ӾɎⱫ
+        lowercase: ₳฿₵ĐɆ₣₲ⱧłJ₭Ⱡ₥₦Ø₱QⱤ₴₮ɄV₩ӾɎⱫ
+        numbers: ''
+        special: ''
+      cursed:
+        uppercase: ԹՅՇԺȝԲԳɧɿʝƙʅʍՌԾρφՐՏԵՄעաՃՎՀ
+        lowercase: ԹՅՇԺȝԲԳɧɿʝƙʅʍՌԾρφՐՏԵՄעաՃՎՀ
+        numbers: ''
+        special: ''
+      elegant:
+        uppercase: ąɓƈđε∱ɠɧïʆҡℓɱŋσþҩŗşŧų√щхγẕ
+        lowercase: ąɓƈđε∱ɠɧïʆҡℓɱŋσþҩŗşŧų√щхγẕ
+        numbers: ''
+        special: ''
+      greek:
+        uppercase: αႦƈԃҽϝɠԋιʝƙʅɱɳσρϙɾʂƚυʋɯxყȥ
+        lowercase: αႦƈԃҽϝɠԋιʝƙʅɱɳσρϙɾʂƚυʋɯxყȥ
+        numbers: ''
+        special: ''
+      knight:
+        uppercase: ḀḃḉḊḕḟḠḧḭjḲḶṁṆṏṖqṙṠṮṳṼẇẌẏẒ
+        lowercase: ḀḃḉḊḕḟḠḧḭjḲḶṁṆṏṖqṙṠṮṳṼẇẌẏẒ
+        numbers: ''
+        special: ''
+      krypto:
+        uppercase: คც८ძ૯Բ૭ҺɿʆқՆɱՈ૦ƿҩՐς੮υ౮ω૪עઽ
+        lowercase: คც८ძ૯Բ૭ҺɿʆқՆɱՈ૦ƿҩՐς੮υ౮ω૪עઽ
+        numbers: ''
+        special: ''
+      parenthesis:
+        uppercase: ⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵
+        lowercase: ⒜⒝⒞⒟⒠⒡⒢⒣⒤⒥⒦⒧⒨⒩⒪⒫⒬⒭⒮⒯⒰⒱⒲⒳⒴⒵
+        numbers: ⒪⑴⑵⑶⑷⑸⑹⑺⑻⑼
+        special: ''
+      random:
+        uppercase: ᏗᏰፈᎴᏋᎦᎶᏂᎥᏠᏦᏝᎷᏁᎧᎮᎤᏒᏕᏖᏬᏉᏇጀᎩፚ
+        lowercase: ᏗᏰፈᎴᏋᎦᎶᏂᎥᏠᏦᏝᎷᏁᎧᎮᎤᏒᏕᏖᏬᏉᏇጀᎩፚ
+        numbers: ''
+        special: ''
+      mini:
+        uppercase: ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘꞯʀꜱᴛᴜᴠᴡxʏᴢ
+        lowercase: ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘꞯʀꜱᴛᴜᴠᴡxʏᴢ
+        numbers: ''
+        special: ''
+      spaced:
+        uppercase: ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ
+        lowercase: ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ
+        numbers: ０１２３４５６７８９
+        special: ？！＠＃＄％^＊（）_－+=
+      superscript:
+        uppercase: ᴬᴮᶜᴰᴱᶠᴳᴴᴵᴶᴷᴸᴹᴺᴼᴾᵠᴿˢᵀᵁⱽᵂˣʸᶻ
+        lowercase: ᵃᵇᶜᵈᵉᶠᵍʰᶦʲᵏˡᵐⁿᵒᵖᵠʳˢᵗᵘᵛʷˣʸᶻ
+        numbers: ⁰¹²³⁴⁵⁶⁷⁸⁹
+        special: ?!@#$%^*⁽⁾_-+=
+      tail:
+        uppercase: ƛƁƇƊЄƑƓӇƖʆƘԼMƝƠƤƢƦƧƬƲƔƜҲƳȤ
+        lowercase: ʌƅƈɗєƒʛɦɪʝƙʅɱɲơƥƣɾƨƭυvɯҳɣȥ
+        numbers: ''
+        special: ''
+      upside-down-1:
+        uppercase: ∀ᙠƆᗡƎℲ⅁HIſ⋊˥WNOԀΌᴚS⊥∩ΛWX⅄Z
+        lowercase: ɐqɔpǝɟɓɥıɾʞlɯuopqɹsʇuʌʍxʎz
+        numbers: 0⇂ᄅƐㄣގ9ㄥ89
+        special: ?!@#$℆^*()_-+=
+      upside-down-2:
+        uppercase: ɐqɔpǝɟɓɥıſʞๅɯuodbɹsʇnʌʍxʎz
+        lowercase: ɐqɔpǝɟɓɥıſʞๅɯuodbɹsʇnʌʍxʎz
+        numbers: 0⇂ᄅƐㄣގ9ㄥ89
+        special: ?!@#$℆^*()_-+=
+      upside-down-3:
+        uppercase: ĀBÇÐÊFǴĦÎĴĶĿMŇÖPQŘŞŢŬVŴXŸƵ
+        lowercase: ābčďéfǥĥɨĵķłmņǒpqřşŧùvŵxŷž
+        numbers: 0⇂ᄅƐㄣގ9ㄥ89
+        special: ?!@#$℆^*()_-+=
+      weird:
+        uppercase: ǟɮƈɖɛʄɢɦɨʝӄʟʍռօքզʀֆȶʊʋաӼʏʐ
+        lowercase: ǟɮƈɖɛʄɢɦɨʝӄʟʍռօքզʀֆȶʊʋաӼʏʐ
+        numbers: ''
+        special: ''
+      custom-1:
+        uppercase: αв¢∂єƒgнιנкℓмησρqяѕтυνωχуz
+        lowercase: αв¢∂єƒgнιנкℓмησρqяѕтυνωχуz
+        numbers: ''
+        special: ''
+      mini-thin:
+        uppercase: 𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙹𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉
+        lowercase: 𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚓𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣
+        numbers: 𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿
+        special: ''
+      mini-bold:
+        uppercase: 𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙
+        lowercase: 𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳
+        numbers: 𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗
+        special: ''
+      mini-italic:
+        uppercase: 𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘑𝘒𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡
+        lowercase: 𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘫𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻
+        numbers: 𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿
+        special: ''
+      mini-bold-italic:
+        uppercase: 𝘼𝘽𝘾𝘿𝙀𝙁𝙂𝙃𝙄𝙅𝙆𝙇𝙈𝙉𝙊𝙋𝙌𝙍𝙎𝙏𝙐𝙑𝙒𝙓𝙔𝙕
+        lowercase: 𝙖𝙗𝙘𝙙𝙚𝙛𝙜𝙝𝙞𝙟𝙠𝙡𝙢𝙣𝙤𝙥𝙦𝙧𝙨𝙩𝙪𝙫𝙬𝙭𝙮𝙯
+        numbers: 𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗
+        special: ''
+      calligraphy:
+        uppercase: 𝔄𝔅ℭ𝔇𝔈𝔉𝔊ℌℑ𝔍𝔎𝔏𝔐𝔑𝔒𝔓𝔔ℜ𝔖𝔗𝔘𝔙𝔚𝔛𝔜ℨ
+        lowercase: 𝔞𝔟𝔠𝔡𝔢𝔣𝔤𝔥𝔦𝔧𝔨𝔩𝔪𝔫𝔬𝔭𝔮𝔯𝔰𝔱𝔲𝔳𝔴𝔵𝔶𝔷
+        numbers: '0123456789'
+        special: ''
+      calligraphy-bold:
+        uppercase: 𝕬𝕭𝕮𝕯𝕰𝕱𝕲𝕳𝕴𝕵𝕶𝕷𝕸𝕹𝕺𝕻𝕼𝕽𝕾𝕿𝖀𝖁𝖂𝖃𝖄𝖅
+        lowercase: 𝖆𝖇𝖈𝖉𝖊𝖋𝖌𝖍𝖎𝖏𝖐𝖑𝖒𝖓𝖔𝖕𝖖𝖗𝖘𝖙𝖚𝖛𝖜𝖝𝖞𝖟
+        numbers: '0123456789'
+        special: ''
+      script:
+        uppercase: 𝒜𝐵𝒞𝒟𝐸𝐹𝒢𝐻𝐼𝒥𝒦𝐿𝑀𝒩𝒪𝒫𝒬𝑅𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵
+        lowercase: 𝒶𝒷𝒸𝒹𝑒𝒻𝑔𝒽𝒾𝒿𝓀𝓁𝓂𝓃𝑜𝓅𝓆𝓇𝓈𝓉𝓊𝓋𝓌𝓍𝓎𝓏
+        numbers: 𝟢𝟣𝟤𝟥𝟦𝟧𝟨𝟩𝟪𝟫
+        special: ''
+      script-bold:
+        uppercase: 𝓐𝓑𝓒𝓓𝓔𝓕𝓖𝓗𝓘𝓙𝓚𝓛𝓜𝓝𝓞𝓟𝓠𝓡𝓢𝓣𝓤𝓥𝓦𝓧𝓨𝓩
+        lowercase: 𝓪𝓫𝓬𝓭𝓮𝓯𝓰𝓱𝓲𝓳𝓴𝓵𝓶𝓷𝓸𝓹𝓺𝓻𝓼𝓽𝓾𝓿𝔀𝔁𝔂𝔃
+        numbers: 𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗
+        special: ''
+      double-struck:
+        uppercase: 𝔸𝔹ℂ𝔻𝔼𝔽𝔾ℍ𝕀𝕁𝕂𝕃𝕄ℕ𝕆ℙℚℝ𝕊𝕋𝕌𝕍𝕎𝕏𝕐ℤ
+        lowercase: 𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫
+        numbers: 𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡
+        special: ''
+      box:
+        uppercase: 🄰🄱🄲🄳🄴🄵🄶🄷🄸🄹🄺🄻🄼🄽🄾🄿🅀🅁🅂🅃🅄🅅🅆🅇🅈🅉
+        lowercase: 🄰🄱🄲🄳🄴🄵🄶🄷🄸🄹🄺🄻🄼🄽🄾🄿🅀🅁🅂🅃🅄🅅🅆🅇🅈🅉
+        numbers: 🄋➀➁➂➃➄➅➆➇➈
+        special: ''
+      box-lined:
+        uppercase: 🇦🇧🇨🇩🇪🇫🇬🇭🇮🇯🇰🇱🇲🇳🇴🇵🇶🇷🇸🇹🇺🇻🇼🇽🇾🇿
+        lowercase: 🇦🇧🇨🇩🇪🇫🇬🇭🇮🇯🇰🇱🇲🇳🇴🇵🇶🇷🇸🇹🇺🇻🇼🇽🇾🇿
+        numbers: 🄋➀➁➂➃➄➅➆➇➈
+        special: ''
+      box-filled:
+        uppercase: 🅰🅱🅲🅳🅴🅵🅶🅷🅸🅹🅺🅻🅼🅽🅾🅿🆀🆁🆂🆃🆄🆅🆆🆇🆈🆉
+        lowercase: 🅰🅱🅲🅳🅴🅵🅶🅷🅸🅹🅺🅻🅼🅽🅾🅿🆀🆁🆂🆃🆄🆅🆆🆇🆈🆉
+        numbers: 🄌❶❷❸❹❺❻❼❽❾
+        special: ''
+      digital-numbers:
+        uppercase: ''
+        lowercase: ''
+        numbers: 🯰🯱🯲🯳🯴🯵🯶🯷🯸🯹
+        special: ''
+      circled:
+        uppercase: 🅐🅑🅒🅓🅔🅕🅖🅗🅘🅙🅚🅛🅜🅝🅞🅟🅠🅡🅢🅣🅤🅥🅦🅧🅨🅩
+        lowercase: 🅐🅑🅒🅓🅔🅕🅖🅗🅘🅙🅚🅛🅜🅝🅞🅟🅠🅡🅢🅣🅤🅥🅦🅧🅨🅩
+        numbers: 🄌❶❷❸❹❺❻❼❽❾
+        special: ''
+  checkdate:
+    days:
+      monday: Monday
+      tuesday: Tuesday
+      wednesday: Wednesday
+      thursday: Thursday
+      friday: Friday
+      saturday: Saturday
+      sunday: Sunday
+      unknown: Unknown?
+  checkitem:
+    give_enabled: false
+    remove_enabled: false

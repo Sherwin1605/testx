@@ -1,0 +1,45 @@
+fantasy_compass:
+  type: circle
+  default: true
+  file:
+    n: 
+      name: "fantasy_assets/compass/n.png"
+    s: 
+      name: "fantasy_assets/compass/s.png"
+    w: 
+      name: "fantasy_assets/compass/w.png"
+    e: 
+      name: "fantasy_assets/compass/e.png"
+    nw: 
+      name: "fantasy_assets/compass/nw.png"
+      y: 2
+    ne: 
+      name: "fantasy_assets/compass/ne.png"
+      y: 2
+    sw: 
+      name: "fantasy_assets/compass/sw.png"
+      y: 2
+    se: 
+      name: "fantasy_assets/compass/se.png"
+      y: 2
+    point: 
+      name: "fantasy_assets/compass/point.png"
+      y: -8
+    custom-icon:
+      spawn:
+        name: "fantasy_assets/compass/spawn.png"
+        y: -10
+      home:
+        name: "fantasy_assets/compass/home.png"
+        y: -10
+  scale: 0.6
+  scale-equation: 1 - t/20
+  length: 20
+  space: 2
+  gui:
+    x: 50
+    y: 0
+  pixel:
+    x: 0
+    y: 21
+  apply-opacity: true
