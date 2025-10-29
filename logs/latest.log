@@ -956,3 +956,224 @@ Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1:
 2. change the url in config.yml (if needed)
 3. execute the /iareload command (to refresh the plugin)
 4. execute /iatexture all (to refresh the pack to every player)
+[03:18:59] [Server thread/INFO]: [ItemsAdder] Reloading...
+[03:18:59] [Server thread/ERROR]: [ItemsAdder]  
+[03:18:59] [Server thread/ERROR]: [ItemsAdder]  
+[03:18:59] [Server thread/ERROR]: [ItemsAdder] Error: Please check your config.yml and see if you have enabled multiple host types.
+You must enable one of them not all or none.
+[03:18:59] [Server thread/ERROR]: [ItemsAdder]  
+[03:18:59] [Server thread/WARN]: [ItemsAdder] Enabled 'no-host' option temporarily.
+[03:18:59] [Server thread/ERROR]: [ItemsAdder]  
+[03:18:59] [Server thread/ERROR]: [ItemsAdder]  
+[03:18:59] [Server thread/ERROR]: [ItemsAdder]  
+[03:18:59] [Server thread/ERROR]: [ItemsAdder]  
+[03:18:59] [Server thread/ERROR]: [ItemsAdder] Error: Please check your config.yml and see if you have enabled multiple host types.
+You must enable one of them not all or none.
+[03:18:59] [Server thread/ERROR]: [ItemsAdder]  
+[03:18:59] [Server thread/WARN]: [ItemsAdder] Enabled 'no-host' option temporarily.
+[03:18:59] [Server thread/ERROR]: [ItemsAdder]  
+[03:18:59] [Server thread/ERROR]: [ItemsAdder]  
+[03:18:59] [Server thread/INFO]: [ItemsAdder] [Pack] Extracting internal contents from .jar
+[03:18:59] [Server thread/INFO]: [ItemsAdder] [Pack] DONE extracting internal contents from .jar
+[03:18:59] [Server thread/ERROR]: [ItemsAdder] Image not found for font_image '_iainternal:no_recipe'. assets/_iainternal/textures/gui/no_recipe.png
+[03:18:59] [Server thread/ERROR]: [ItemsAdder] Image not found for font_image '_iainternal:crafting'. assets/_iainternal/textures/gui/crafting.png
+[03:18:59] [Server thread/ERROR]: [ItemsAdder] Image not found for font_image '_iainternal:cooking'. assets/_iainternal/textures/gui/cooking.png
+[03:18:59] [Server thread/ERROR]: [ItemsAdder] Image not found for font_image '_iainternal:blank_menu'. assets/_iainternal/textures/gui/blank_menu.png
+[03:18:59] [Server thread/ERROR]: [ItemsAdder] Image not found for font_image '_iainternal:anvil_repair'. assets/_iainternal/textures/gui/anvil_repair.png
+[03:18:59] [Server thread/ERROR]: [ItemsAdder] Image not found for font_image '_iainternal:smithing'. assets/_iainternal/textures/gui/smithing.png
+[03:18:59] [Craft Scheduler Thread - 29 - ItemsAdder/INFO]: [ItemsAdder] Loaded 0 items
+[03:18:59] [Craft Scheduler Thread - 29 - ItemsAdder/INFO]: [ItemsAdder] Used 0/188 REAL block IDs
+[03:18:59] [Craft Scheduler Thread - 29 - ItemsAdder/INFO]: [ItemsAdder] Used 0/750 REAL_NOTE block IDs
+[03:18:59] [Craft Scheduler Thread - 29 - ItemsAdder/INFO]: [ItemsAdder] Used 0/63 REAL_TRANSPARENT block IDs
+[03:18:59] [Craft Scheduler Thread - 29 - ItemsAdder/INFO]: [ItemsAdder] Used 0/127 REAL_WIRE block IDs
+[03:18:59] [Craft Scheduler Thread - 29 - ItemsAdder/INFO]: [ItemsAdder] Used 0/14 FIRE block IDs
+[03:18:59] [Craft Scheduler Thread - 29 - ItemsAdder/INFO]: [ItemsAdder] Used 6/6608 font_images
+[03:18:59] [Craft Scheduler Thread - 29 - ItemsAdder/INFO]: [ItemsAdder] [Init] Loaded 1 categories
+[03:18:59] [Craft Scheduler Thread - 29 - ItemsAdder/INFO]: [ItemsAdder] [Init] Loaded successfully in 99ms
+[03:18:59] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: img [1.0.1]
+[03:18:59] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: iaplayerstat [1.0.1]
+[03:19:09] [Server thread/ERROR]: [ItemsAdder]  
+[03:19:09] [Server thread/ERROR]: [ItemsAdder]  
+[03:19:09] [Server thread/ERROR]: [ItemsAdder] Error: Please check your config.yml and see if you have enabled multiple host types.
+You must enable one of them not all or none.
+[03:19:09] [Server thread/ERROR]: [ItemsAdder]  
+[03:19:09] [Server thread/WARN]: [ItemsAdder] Enabled 'no-host' option temporarily.
+[03:19:09] [Server thread/ERROR]: [ItemsAdder]  
+[03:19:09] [Server thread/ERROR]: [ItemsAdder]  
+[03:19:09] [Server thread/ERROR]: [ItemsAdder]  
+[03:19:09] [Server thread/ERROR]: [ItemsAdder]  
+[03:19:09] [Server thread/ERROR]: [ItemsAdder] Error: Please check your config.yml and see if you have enabled multiple host types.
+You must enable one of them not all or none.
+[03:19:09] [Server thread/ERROR]: [ItemsAdder]  
+[03:19:09] [Server thread/WARN]: [ItemsAdder] Enabled 'no-host' option temporarily.
+[03:19:09] [Server thread/ERROR]: [ItemsAdder]  
+[03:19:09] [Server thread/ERROR]: [ItemsAdder]  
+[03:19:09] [Server thread/INFO]: [ItemsAdder] [Pack] Extracting internal contents from .jar
+[03:19:09] [Server thread/INFO]: [ItemsAdder] [Pack] DONE extracting internal contents from .jar
+[03:19:09] [Server thread/ERROR]: [ItemsAdder] Image not found for font_image '_iainternal:no_recipe'. assets/_iainternal/textures/gui/no_recipe.png
+[03:19:09] [Server thread/ERROR]: [ItemsAdder] Image not found for font_image '_iainternal:crafting'. assets/_iainternal/textures/gui/crafting.png
+[03:19:09] [Server thread/ERROR]: [ItemsAdder] Image not found for font_image '_iainternal:cooking'. assets/_iainternal/textures/gui/cooking.png
+[03:19:09] [Server thread/ERROR]: [ItemsAdder] Image not found for font_image '_iainternal:blank_menu'. assets/_iainternal/textures/gui/blank_menu.png
+[03:19:09] [Server thread/ERROR]: [ItemsAdder] Image not found for font_image '_iainternal:anvil_repair'. assets/_iainternal/textures/gui/anvil_repair.png
+[03:19:09] [Server thread/ERROR]: [ItemsAdder] Image not found for font_image '_iainternal:smithing'. assets/_iainternal/textures/gui/smithing.png
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] Loaded 0 items
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] Used 0/188 REAL block IDs
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] Used 0/750 REAL_NOTE block IDs
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] Used 0/63 REAL_TRANSPARENT block IDs
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] Used 0/127 REAL_WIRE block IDs
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] Used 0/14 FIRE block IDs
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] Used 6/6608 font_images
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] [Init] Loaded 1 categories
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] [Init] Loaded successfully in 82ms
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder]  
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder]  
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] [Pack] Started generation
+[03:19:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: img [1.0.1]
+[03:19:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: iaplayerstat [1.0.1]
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder]  
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] [Pack] Generated resourcepack
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] [OK] Your zip file will be protected from unzip (as set in config.yml)
+[03:19:09] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] [Pack] Compressing resource_pack ... 
+[03:19:10] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder]  
+[03:19:10] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder]  
+[03:19:10] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] [Pack] Saved into /testx/plugins/ItemsAdder/output/generated.zip
+[03:19:10] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] [Pack] Compressed in 369ms
+[03:19:10] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: [ItemsAdder] READ HERE: 
+You selected no-host so you will have to handle the pack upload and apply manually.
+Probably you will use another plugin to apply the pack.
+[03:19:10] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]: ResourcePack
+[03:19:10] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]:      Path: /testx/plugins/ItemsAdder/output/generated.zip
+[03:19:10] [Craft Scheduler Thread - 43 - ItemsAdder/INFO]:      Size: 1 MB/250 MB
+[03:19:23] [ValhallaMMO-Async-Profile-Thread/INFO]: [ValhallaMMO] Starting saving all profiles
+[03:19:23] [ValhallaMMO-Async-Profile-Thread/INFO]: [ValhallaMMO] Finished saving all profiles in 0.0s
+[03:19:52] [Server thread/INFO]: Stopping the server
+[03:19:52] [Server thread/INFO]: Stopping server
+[03:19:52] [Server thread/INFO]: [TimePauser] Disabling TimePauser v1.0
+[03:19:52] [Server thread/INFO]: [LumberJack] Disabling LumberJack v5.4.0
+[03:19:52] [Server thread/INFO]: [TabList] Disabling TabList v5.7.7
+[03:19:52] [Server thread/INFO]: [Brutal_Nightmare] Disabling Brutal_Nightmare v4.6.5.1
+[03:19:52] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.8.2
+[03:19:52] [Server thread/INFO]: [NoDamageIndicator] Disabling NoDamageIndicator v1.0
+[03:19:52] [Server thread/INFO]: [ChestSort] Disabling ChestSort v14.2.0
+[03:19:52] [Server thread/INFO]: [UltraDamageIndicators] Disabling UltraDamageIndicators v1.0.0-release
+[03:19:52] [Server thread/INFO]: [UltraDamageIndicators] UltraDamageIndicators 1.0.0-release has been disabled!
+[03:19:52] [Server thread/INFO]: [superleashes] Disabling superleashes v1.0.6
+[03:19:52] [Server thread/INFO]: [EnchantmentSolution] Disabling EnchantmentSolution v2.5.15.2
+[03:19:52] [Server thread/INFO]: [AFKPlus] Disabling AFKPlus v3.4.9
+[03:19:52] [Server thread/INFO]: [AFKPlus] AFKPlus has been disabled!
+[03:19:52] [Server thread/INFO]: [ValhallaRaces] Disabling ValhallaRaces v2.2
+[03:19:52] [Server thread/INFO]: [HealthBar-Reloaded] Disabling HealthBar-Reloaded v2.0.5-beta
+[03:19:52] [Server thread/INFO]: HealthBar disabled: all the health bars have been removed.
+[03:19:52] [Server thread/INFO]: [PhysicsControl] Disabling PhysicsControl v1.2.2
+[03:19:52] [Server thread/INFO]: [Reactify] Disabling Reactify v1.0.b0
+[03:19:52] [Server thread/INFO]: [BetterStructures] Disabling BetterStructures v2.0.3
+[03:19:52] [Server thread/INFO]: [BetterStructures] Shutdown!
+[03:19:52] [Server thread/INFO]: [spark] Disabling spark v1.10.152
+[03:19:52] [Server thread/INFO]: [MythicHUD] Disabling MythicHUD v1.3.1
+[03:19:52] [Server thread/INFO]: [BloodEffect] Disabling BloodEffect v3.0.3
+[03:19:52] [Server thread/INFO]: [Blood Effects Reborn] The plugin has successfully unloaded!
+[03:19:52] [Server thread/INFO]: [EnchantsSquared] Disabling EnchantsSquared v2.5.17
+[03:19:52] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.5.8
+[03:19:52] [Server thread/INFO]: [AutoPluginLoader] Plugin has been disabled.
+[03:19:52] [Server thread/INFO]: [BackpackPlus] Disabling BackpackPlus v2.0.1
+[03:19:52] [Server thread/INFO]: [BackpackPlus] SQLite Successfully disconnected from the database
+[03:19:52] [Server thread/INFO]: [PlayMoreSounds] Disabling PlayMoreSounds v4.2
+[03:19:52] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v7.9
+[03:19:52] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[03:19:52] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 7.9
+[03:19:52] [Server thread/INFO]: [Jumpscares] Disabling Jumpscares v1.22.1
+[03:19:52] [Server thread/INFO]: [TimeBar] Disabling TimeBar v1.4.5
+[03:19:52] [Server thread/INFO]: [FokusAPI] Disabling FokusAPI v2.9
+[03:19:52] [Server thread/INFO]: [PhysicsToGo] Disabling PhysicsToGo v2.1.2
+[03:19:52] [Server thread/INFO]: [RealScoreboard] Disabling RealScoreboard v1.5.6
+[03:19:52] [Server thread/INFO]: [BukkitInventoryTweaks] Disabling BukkitInventoryTweaks v1.1.2
+[03:19:52] [Server thread/INFO]: [BukkitInventoryTweaks] Plugin is now disabled!
+[03:19:52] [Server thread/INFO]: [FancyGlow] Disabling FancyGlow v2.10.3
+[03:19:52] [Server thread/INFO]: [BookShelf] Disabling Bookshelf v3.1.18.0
+[03:19:52] [Server thread/INFO]: [Bookshelf] Saving bookshelves..
+[03:19:52] [Server thread/INFO]: [Bookshelf] Saving bookshelves for world world
+[03:19:52] [Server thread/INFO]: [Bookshelf] (world): All bookshelves are saved
+[03:19:52] [Server thread/INFO]: [Bookshelf] Saving bookshelves for world world_nether
+[03:19:52] [Server thread/INFO]: [Bookshelf] (world_nether): All bookshelves are saved
+[03:19:52] [Server thread/INFO]: [Bookshelf] Saving bookshelves for world world_the_end
+[03:19:52] [Server thread/INFO]: [Bookshelf] (world_the_end): All bookshelves are saved
+[03:19:52] [Server thread/INFO]: [Bookshelf] Bookshelves saved! (4ms)
+[03:19:52] [Server thread/INFO]: [Bookshelf] BookShelf has been Disabled!
+[03:19:52] [Server thread/INFO]: [Aurora] Disabling Aurora v5.11
+[03:19:52] [Server thread/INFO]: [GodItems] Disabling GodItems v3.0.1
+[03:19:52] [Server thread/INFO]: [GodItems] Saved player inventories: true
+[03:19:52] [Server thread/INFO]: [DoorsReloaded] Disabling DoorsReloaded v1.3.1
+[03:19:52] [Server thread/INFO]: [BeaconWaypoints] Disabling BeaconWaypoints v1.7.2
+[03:19:52] [Server thread/INFO]: [ItemsAdder] Disabling ItemsAdder v3.6.4
+[03:19:52] [Server thread/INFO]: [VeinMiner] Disabling VeinMiner v2.3.0
+[03:19:52] [Server thread/INFO]: [VeinMiner] Clearing localized data
+[03:19:52] [Server thread/INFO]: [CrashAPI] Disabling CrashAPI v1.1.13
+[03:19:52] [Server thread/INFO]: [EliteMobs] Disabling EliteMobs v8.7.16
+[03:19:52] [Server thread/INFO]: [EliteMobs] Starting EliteMobs shutdown sequence...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Regenerating exploded blocks...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Cancelling tasks...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Closing wormholes...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Spinning Regional Bosses down...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Wiping Elite entities clean...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Clearing events...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Clearing valid worlds...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Clearing zone based worlds...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Clearing config regional elites...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Clearing custom enchantments...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Clearing custom items...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Clearing Minidungeons...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Unregistering placeholders...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Unregistering handlers...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Clearing Treasure Chests...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Untracking quests...
+[03:19:52] [Server thread/INFO]: [EliteMobs] Saving EliteMobs databases...
+[03:19:52] [Server thread/INFO]: [EliteMobs] All done! Good night.
+[03:19:52] [Server thread/INFO]: [Terra] Disabling Terra v6.3.1-BETA+73baaec6c
+[03:19:52] [Server thread/INFO]: [ValhallaTrinkets] Disabling ValhallaTrinkets v2.6
+[03:19:52] [Server thread/INFO]: [EpicPluginLib] Disabling EpicPluginLib v2.7
+[03:19:52] [Server thread/INFO]: [RealisticSeasons] Disabling RealisticSeasons v11.9.2
+[03:19:52] [Server thread/INFO]: [InteractionVisualizer] Disabling InteractionVisualizer v1.18.18.0
+[03:19:52] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion interactionvisualizer
+[03:19:52] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin InteractionVisualizer was disabled.
+[03:19:52] [Server thread/INFO]: [InteractionVisualizer] Saving player preferences bitmask index, do not halt the server.
+[03:19:52] [Server thread/INFO]: [InteractionVisualizer] InteractionVisualizer has been disabled!
+[03:19:52] [Server thread/INFO]: [LoneLibs] Disabling LoneLibs v1.0.65
+[03:19:52] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.5.0
+[03:19:52] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[03:19:52] [Server thread/INFO]: [LuckPerms] Closing storage...
+[03:19:52] [Server thread/INFO]: [LuckPerms] Goodbye!
+[03:19:52] [Server thread/INFO]: [LevelledMobs] Disabling LevelledMobs v4.3.2.1 b125
+[03:19:52] [Server thread/INFO]: [LevelledMobs] Unregistering commands
+[03:19:52] [Server thread/INFO]: [LevelledMobs] Tasks: Shutting down other async tasks...
+[03:19:52] [Craft Scheduler Thread - 23 - LevelledMobs/INFO]: [LevelledMobs] Nametag update queue Manager has exited
+[03:19:52] [Craft Scheduler Thread - 22 - LevelledMobs/INFO]: [LevelledMobs] Mob processing queue Manager has exited
+[03:19:52] [Server thread/INFO]: [LevelledMobs] Shut-down complete (took 1ms)
+[03:19:52] [Server thread/INFO]: [ValhallaMMO] Disabling ValhallaMMO vpremium_1.4
+[03:19:52] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
+[03:19:52] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.1+6763-2e55f4f
+[03:19:52] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[03:19:52] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.6
+[03:19:52] [Server thread/INFO]: Saving players
+[03:19:52] [Server thread/INFO]: Saving worlds
+[03:19:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[03:19:52] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[03:19:52] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[03:19:52] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[03:19:52] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 28 entity chunks, 0 poi chunks in world 'world' in 0.01s
+[03:19:52] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[03:19:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[03:19:52] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[03:19:52] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[03:19:52] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[03:19:52] [Server thread/INFO]: [ChunkHolderManager] Saved 1 block chunks, 67 entity chunks, 0 poi chunks in world 'world_nether' in 0.02s
+[03:19:52] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[03:19:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[03:19:52] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[03:19:52] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[03:19:52] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[03:19:52] [Server thread/INFO]: [ChunkHolderManager] Saved 8 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[03:19:52] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[03:19:52] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[03:19:52] [Server thread/INFO]: Flushing Chunk IO
+[03:19:52] [Server thread/INFO]: Closing Thread Pool
+[03:19:52] [Server thread/INFO]: Closing Server
