@@ -1,0 +1,69 @@
+fantasy_hud:
+  layouts:
+    1:
+      name: left_top
+      x: 0
+      y: 0
+
+fantasy_hud_compass:
+  layouts: 
+    1:
+      name: top_center_layout
+      x: 50
+      y: 0 
+
+fantasy_hud_sublevel_images:
+  layouts:
+    1:
+      name: top_center_layout_sublevel_image
+      x: 50
+      y: 0
+
+fantasy_hud_sublevel_texts:
+  layouts:
+    1:
+      name: top_center_layout_sublevel_text
+      x: 50
+      y: 0
+
+fantasy_hud_season:
+  layouts:
+    1:
+      name: top_right_layout
+      x: 100
+      y: 0
+
+fantasy_hud_durability:
+  layouts:
+    1:
+      name: down_right_layout
+      x: 100
+      y: 100
+      
+fantasy_hud_durability_bar:
+  layouts:
+    1:
+      name: durability_down_right_layout
+      x: 100
+      y: 100
+
+fantasy_hud_durability_number:
+  layouts:
+    1:
+      name: durability_num_down_right_layout
+      x: 100
+      y: 100
+
+fantasy_hud_vehicle_hp:
+  layouts:
+    1:
+      name: left_vehicle_bar_layout
+      x: 50
+      y: 100
+
+fantasy_hud_air:
+  layouts:
+    1:
+      name: down_center_layout
+      x: 50
+      y: 100

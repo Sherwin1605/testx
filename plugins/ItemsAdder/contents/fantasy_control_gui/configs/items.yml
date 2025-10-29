@@ -1,0 +1,14 @@
+info:
+  namespace: custom_guis
+items:
+  transparent_texture:
+    enabled: true
+    display_name: "Transparent Texture"
+    permission: transparent.item
+    drop:
+      show_name: true
+    resource:
+      material: BOOK
+      generate: true
+      textures:
+        - item/custom_items/transparent_texture
