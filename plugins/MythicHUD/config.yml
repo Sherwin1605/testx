@@ -10,7 +10,7 @@ decimal-format: '#.##'
 nexo-hook: true
 copy-pack:
   enabled: true
-  path: ItemsAdder/contents/mythichud/resourcepack
+  path: ItemsAdder/contents/mmohud/resourcepack
 boss-bar:
   max: 7
   hud-position: 4
@@ -20,11 +20,11 @@ disable-netty-injection: false
 hide-exp: false
 hide-vanilla-hud: false
 updaters:
-  CONSUMING: true
-  EXPERIENCE: true
   RESPAWNING: true
   AIR: true
   ARMOR: true
+  CONSUMING: true
+  EXPERIENCE: true
 pack-support: all
 default-namespace: mythichud
 config-version: 11
