@@ -49,7 +49,7 @@ settings:
         item: _iainternal:icon_arrow_chest
       loot_blocks:
         item: DIAMOND_PICKAXE
-      blocks_populators:
+      worlds_populators:
         item: CHEST
       surface_populators:
         item: GRASS
