@@ -7,7 +7,7 @@ layout:
 check-update: 5
 placeholder-update: 5
 decimal-format: '#.##'
-nexo-hook: false
+nexo-hook: true
 copy-pack:
   enabled: true
   path: ItemsAdder/contents/mythichud/resourcepack
@@ -20,10 +20,10 @@ disable-netty-injection: false
 hide-exp: false
 hide-vanilla-hud: false
 updaters:
+  CONSUMING: true
+  EXPERIENCE: true
   RESPAWNING: true
   AIR: true
-  EXPERIENCE: true
-  CONSUMING: true
   ARMOR: true
 pack-support: all
 default-namespace: mythichud

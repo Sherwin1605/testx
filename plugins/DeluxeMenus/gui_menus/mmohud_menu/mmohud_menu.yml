@@ -1,0 +1,123 @@
+open_command:
+  - mmohud
+size: 18
+menu_title: '§r§f:offset_-8::menu_mmohud:'
+items:
+  icon_displaystats:
+    material: 'GRAY_DYE'
+    model_data: 4
+    hide_attributes: true
+    slot: 2
+    display_name: "&#d4d4d4Display MMO stats"
+  stat_displaystats_on:
+    material: 'GRAY_DYE'
+    model_data: 2
+    hide_attributes: true
+    slot: 11
+    priority: 0
+    view_requirement:
+      requirements:
+        has_meta:
+          type: has meta
+          key: displaystats
+          meta_type: BOOLEAN
+          value: true
+    display_name: "&r&f[&#ca4242OFF&r&f]"
+    lore:
+      - "&7Click to enable."
+    click_commands:
+      - "[meta] set displaystats BOOLEAN false"
+      - '[sound] UI_LOOM_SELECT_PATTERN 1 1.5'
+      - "[refresh]"
+  stat_displaystats_off:
+    material: 'GRAY_DYE'
+    model_data: 1
+    hide_attributes: true
+    slot: 11
+    priority: 1
+    display_name: "&r&f[&#7eca42ON&r&f]"
+    lore:
+      - "&7Click to disable."
+    click_commands:
+      - "[meta] set displaystats BOOLEAN true"
+      - '[sound] UI_LOOM_SELECT_PATTERN 1 1.5'
+      - "[refresh]"
+  icon_foodicon:
+    material: 'GRAY_DYE'
+    model_data: 3
+    hide_attributes: true
+    slot: 4
+    display_name: "&#d4d4d4Change food icon"
+  stat_foodicon_on:
+    material: 'GRAY_DYE'
+    model_data: 2
+    hide_attributes: true
+    slot: 13
+    priority: 0
+    view_requirement:
+      requirements:
+        has_meta:
+          type: has meta
+          key: foodicon
+          meta_type: BOOLEAN
+          value: true
+    display_name: "&r&f[&#ca4242Meat&r&f]"
+    lore:
+      - "&7Click to change."
+    click_commands:
+      - "[meta] set foodicon BOOLEAN false"
+      - '[sound] UI_LOOM_SELECT_PATTERN 1 1.5'
+      - "[refresh]"
+  stat_foodicon_off:
+    material: 'GRAY_DYE'
+    model_data: 1
+    hide_attributes: true
+    slot: 13
+    priority: 1
+    display_name: "&r&f[&#7eca42Bread&r&f]"
+    lore:
+      - "&7Click to change."
+    click_commands:
+      - "[meta] set foodicon BOOLEAN true"
+      - '[sound] UI_LOOM_SELECT_PATTERN 1 1.5'
+      - "[refresh]"
+  icon_currency:
+    material: 'GRAY_DYE'
+    model_data: 5
+    hide_attributes: true
+    slot: 6
+    display_name: "&#d4d4d4Format currency display"
+  stat_currency_on:
+    material: 'GRAY_DYE'
+    model_data: 2
+    hide_attributes: true
+    slot: 15
+    priority: 0
+    view_requirement:
+      requirements:
+        has_meta:
+          type: has meta
+          key: currency
+          meta_type: BOOLEAN
+          value: true
+    display_name: "&r&f[&#ca4242OFF&r&f]"
+    lore:
+      - "&7Click to enable."
+    click_commands:
+      - "[meta] set currency BOOLEAN false"
+      - '[sound] UI_LOOM_SELECT_PATTERN 1 1.5'
+      - "[refresh]"
+  stat_currency_off:
+    material: 'GRAY_DYE'
+    model_data: 1
+    hide_attributes: true
+    slot: 15
+    priority: 1
+    display_name: "&r&f[&#7eca42ON&r&f]"
+    lore:
+      - "&7Click to disable."
+    click_commands:
+      - "[meta] set currency BOOLEAN true"
+      - '[sound] UI_LOOM_SELECT_PATTERN 1 1.5'
+      - "[refresh]"
+# 9qn7m26YKbdRf5Zz9LME/lxkhM2bErmuykr6XYXnuo1DUqryFt0FhB1NcZc6U6vs9joo9daOYckcuow9v6vwIt49q+i8LJ58TWlTRMQwnWU=

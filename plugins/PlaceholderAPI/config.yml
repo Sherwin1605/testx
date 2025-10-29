@@ -205,3 +205,8 @@ expansions:
       saturday: Saturday
       sunday: Sunday
       unknown: Unknown?
+  math:
+    Disable-Warnings: false
+    Rounding: half-up
+    Decimals: 3
+    Debug: false

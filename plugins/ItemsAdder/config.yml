@@ -13,7 +13,7 @@ resource-pack:
       server-ip: 127.0.0.1
       pack-port: 8163
     external-host:
-      enabled: true
+      enabled: false
       url: ''
       skip-url-file-type-check___DONT_ASK_HELP_IF_SET_TRUE: false
   apply-on-join: true

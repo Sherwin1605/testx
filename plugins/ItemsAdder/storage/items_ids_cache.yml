@@ -1,3 +1,9 @@
+GRAY_DYE:
+  mmohud:toggle_switch_on: 1
+  mmohud:toggle_switch_off: 2
+  mmohud:menu_foodicon: 3
+  mmohud:menu_stats: 4
+  mmohud:menu_currency: 5
 PLAYER_HEAD:
   __manually_handled:_iainternal__player_phead_0: 10000
   __manually_handled:_iainternal__player_parm_left_3: 10001
