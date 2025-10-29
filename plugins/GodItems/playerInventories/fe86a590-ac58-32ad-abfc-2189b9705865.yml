@@ -40,21 +40,21 @@ armor:
           amount: 6.0
           name: generic.armor
           slot: HEAD
-          uuid: ba80bd43-137e-48c5-8749-de6a5732dd64
+          uuid: fb240fb8-db5b-4669-a675-cb043336b3ea
           operation: 0
         GENERIC_ARMOR_TOUGHNESS:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: 1.0
           name: generic.armor_toughness
           slot: HEAD
-          uuid: 06896747-d358-4975-bd2d-d7d417c4b45a
+          uuid: 180d2cfe-cc60-46f0-88d0-57e3848d45e9
           operation: 0
         GENERIC_KNOCKBACK_RESISTANCE:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: 0.0
           name: generic.knockback_resistance
           slot: HEAD
-          uuid: 938aa871-44e0-4efc-9d56-da052e0374e3
+          uuid: 5c709f37-b30a-4042-acfa-6bff25c98cee
           operation: 0
       Unbreakable: true
       PublicBukkitValues:
@@ -269,14 +269,14 @@ contents:
           amount: 11.0
           name: generic.attack_damage
           slot: HAND
-          uuid: 6663759b-a6f4-4147-b970-13a32e71d8a4
+          uuid: 22e82094-7531-4e5f-b0a3-581a11e29af2
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: 95c30c0d-bdb2-41d7-941c-d4fb1df3473d
+          uuid: 8292352b-6398-4a67-9c4b-20c47a7d8996
           operation: 0
       ItemFlags:
       - HIDE_ATTRIBUTES
