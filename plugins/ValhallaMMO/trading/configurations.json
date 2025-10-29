@@ -1,65 +1,5 @@
 [
   {
-    "type": "TOOLSMITH",
-    "merchantTypes": [
-      "toolsmith_simple"
-    ]
-  },
-  {
-    "type": "TRAVELING",
-    "merchantTypes": []
-  },
-  {
-    "type": "LEATHERWORKER",
-    "merchantTypes": [
-      "leatherworker_simple"
-    ]
-  },
-  {
-    "type": "NITWIT",
-    "merchantTypes": []
-  },
-  {
-    "type": "ARMORER",
-    "merchantTypes": [
-      "armorer_simple"
-    ]
-  },
-  {
-    "type": "SHEPHERD",
-    "merchantTypes": [
-      "shepherd_simple"
-    ]
-  },
-  {
-    "type": "WEAPONSMITH",
-    "merchantTypes": [
-      "weaponsmith_simple"
-    ]
-  },
-  {
-    "type": "CARTOGRAPHER",
-    "merchantTypes": []
-  },
-  {
-    "type": "BUTCHER",
-    "merchantTypes": [
-      "butcher_simple"
-    ]
-  },
-  {
-    "type": "FISHERMAN",
-    "merchantTypes": [
-      "fisherman_simple"
-    ]
-  },
-  {
-    "type": "CLERIC",
-    "merchantTypes": [
-      "cleric_simple"
-    ]
-  },
-  {
     "type": "FARMER",
     "merchantTypes": [
       "farmer_simple"
@@ -78,13 +18,73 @@
     ]
   },
   {
-    "type": "NONE",
+    "type": "TOOLSMITH",
+    "merchantTypes": [
+      "toolsmith_simple"
+    ]
+  },
+  {
+    "type": "CLERIC",
+    "merchantTypes": [
+      "cleric_simple"
+    ]
+  },
+  {
+    "type": "WEAPONSMITH",
+    "merchantTypes": [
+      "weaponsmith_simple"
+    ]
+  },
+  {
+    "type": "BUTCHER",
+    "merchantTypes": [
+      "butcher_simple"
+    ]
+  },
+  {
+    "type": "SHEPHERD",
+    "merchantTypes": [
+      "shepherd_simple"
+    ]
+  },
+  {
+    "type": "NITWIT",
     "merchantTypes": []
+  },
+  {
+    "type": "ARMORER",
+    "merchantTypes": [
+      "armorer_simple"
+    ]
+  },
+  {
+    "type": "FISHERMAN",
+    "merchantTypes": [
+      "fisherman_simple"
+    ]
   },
   {
     "type": "FLETCHER",
     "merchantTypes": [
       "fletcher_simple"
     ]
+  },
+  {
+    "type": "LEATHERWORKER",
+    "merchantTypes": [
+      "leatherworker_simple"
+    ]
+  },
+  {
+    "type": "TRAVELING",
+    "merchantTypes": []
+  },
+  {
+    "type": "CARTOGRAPHER",
+    "merchantTypes": []
+  },
+  {
+    "type": "NONE",
+    "merchantTypes": []
   }
 ]

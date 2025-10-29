@@ -189,7 +189,6 @@ armor:
         valhallammo:neutral_quality: 140i
         valhallammo:actual_stats: GENERIC_ARMOR:5.135135:ADD_NUMBER:false;GENERIC_ARMOR_TOUGHNESS:1.567568:ADD_NUMBER:false
         enchantmentsolution:stone_throw: Stone Throw
-        valhallammo:temporary_type_storage: DIAMOND_CHESTPLATE
         valhallammo:item_flags: DISPLAY_ATTRIBUTES
         enchantmentsolution:stone_throw_level: '3'
   boots:
