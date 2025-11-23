@@ -40,21 +40,21 @@ armor:
           amount: 6.0
           name: generic.armor
           slot: HEAD
-          uuid: 4bac6999-0b59-45d2-a76a-da3438f8df5b
+          uuid: 18fd55eb-29f7-473b-802d-9ea3f7c4af93
           operation: 0
         GENERIC_ARMOR_TOUGHNESS:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: 1.0
           name: generic.armor_toughness
           slot: HEAD
-          uuid: e774d239-1435-4320-836a-e84b3266ca90
+          uuid: 509590cd-2be0-4f0f-8b1f-cd63c83055d1
           operation: 0
         GENERIC_KNOCKBACK_RESISTANCE:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: 0.0
           name: generic.knockback_resistance
           slot: HEAD
-          uuid: 6d656181-bb29-4db0-a50d-75623e09c58b
+          uuid: d0aa312e-81bc-4fca-8683-df2f61cfb7a4
           operation: 0
       Unbreakable: true
       PublicBukkitValues:
@@ -165,7 +165,6 @@ armor:
         valhallammo:neutral_quality: 140i
         valhallammo:actual_stats: GENERIC_ARMOR:5.135135:ADD_NUMBER:false;GENERIC_ARMOR_TOUGHNESS:1.567568:ADD_NUMBER:false
         enchantmentsolution:stone_throw: Stone Throw
-        valhallammo:temporary_type_storage: DIAMOND_CHESTPLATE
         valhallammo:item_flags: DISPLAY_ATTRIBUTES
         enchantmentsolution:stone_throw_level: '3'
   boots:
@@ -188,7 +187,7 @@ armor:
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"1.57
         Armor Toughness"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
-        332/458"}],"text":""}'
+        118/458"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Vitality
         IV"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Metabolism
@@ -213,14 +212,14 @@ armor:
           operation: 0
       ItemFlags:
       - HIDE_ATTRIBUTES
-      Damage: 118
+      Damage: 318
       PublicBukkitValues:
         valhallammo:actual_stats: GENERIC_ARMOR_TOUGHNESS:1.567568:ADD_NUMBER:false;GENERIC_ARMOR:1.925676:ADD_NUMBER:false
         valhallammo:quality_smithing: 220i
         valhallammo:default_stats: GENERIC_ARMOR:3.0:ADD_NUMBER:false;GENERIC_ARMOR_TOUGHNESS:2.0:ADD_NUMBER:false
         enchantssquared:es_enchantments: 31:4;12:1
         enchantmentsolution:stone_throw: Stone Throw
-        valhallammo:durability: 332i
+        valhallammo:durability: 118i
         valhallammo:smithing_treatments: 1:1,7:1,8:3
         valhallammo:max_durability: 458i
         valhallammo:neutral_quality: 140i
@@ -268,14 +267,14 @@ contents:
           amount: 11.0
           name: generic.attack_damage
           slot: HAND
-          uuid: 22b6644c-f6bd-46c6-a019-e439102999ba
+          uuid: 65c9631f-b83c-48e4-b4e8-4ea66094024b
           operation: 0
         GENERIC_ATTACK_SPEED:
         - ==: org.bukkit.attribute.AttributeModifier
           amount: -3.0
           name: generic.attack_speed
           slot: HAND
-          uuid: a8357348-c738-44d7-9d22-6a46ae425758
+          uuid: cdff3a25-9b75-409a-b663-26f83c590289
           operation: 0
       ItemFlags:
       - HIDE_ATTRIBUTES
@@ -300,7 +299,7 @@ contents:
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"20%
         Immunity Reduction"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
-        1569/2827"}],"text":""}'
+        1407/2827"}],"text":""}'
       custom-model-data: 1981840
       attribute-modifiers:
         GENERIC_ATTACK_DAMAGE:
@@ -319,14 +318,14 @@ contents:
           operation: 0
       ItemFlags:
       - HIDE_ATTRIBUTES
-      Damage: 694
+      Damage: 784
       PublicBukkitValues:
         valhallammo:id: 10102i
         valhallammo:actual_stats: GENERIC_ATTACK_DAMAGE:4.310811:ADD_NUMBER:false;GENERIC_ATTACK_SPEED:4.0:ADD_NUMBER:false;IMMUNITY_REDUCTION:0.2:ADD_NUMBER:false
         valhallammo:quality_smithing: 190i
         valhallammo:weight_class: WEIGHTLESS
         valhallammo:default_stats: IMMUNITY_REDUCTION:0.2:ADD_NUMBER:false;GENERIC_ATTACK_DAMAGE:3.5000000000000013:ADD_NUMBER:false;GENERIC_ATTACK_SPEED:4.0:ADD_NUMBER:false
-        valhallammo:durability: 1569i
+        valhallammo:durability: 1407i
         valhallammo:max_durability: 2827i
         valhallammo:neutral_quality: 140i
         valhallammo:item_flags: DISPLAY_ATTRIBUTES
@@ -344,7 +343,7 @@ contents:
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"111.2%
         Shot Speed"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
-        554/556"}],"text":""}'
+        555/556"}],"text":""}'
       enchants:
         ARROW_FIRE: 2
         ARROW_INFINITE: 1
@@ -354,77 +353,60 @@ contents:
         DURABILITY: 5
       ItemFlags:
       - HIDE_ATTRIBUTES
-      Damage: 1
       PublicBukkitValues:
         valhallammo:actual_stats: BOW_STRENGTH:1.112245:ADD_NUMBER:false
         valhallammo:quality_smithing: 110i
         valhallammo:default_stats: BOW_STRENGTH:1.0:ADD_NUMBER:false
-        valhallammo:durability: 554i
+        valhallammo:durability: 555i
         valhallammo:max_durability: 556i
         valhallammo:neutral_quality: 80i
         valhallammo:item_flags: DISPLAY_ATTRIBUTES
   slot_11:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_blue","text":"Arcane
-        Tome of Ice"}],"text":""}'
-      lore:
-      - '{"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Ancient
-        knowledge is hidden within these pages,"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"allowing
-        you to control the ice"}],"text":""}'
-      - '{"text":""}'
-      - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"(Sheak
-        + Right Click) - Launch an Ice Shard"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"(Sneak
-        + Swap) - Magic Barrier"}],"text":""}'
-      - '{"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Item
-        Ability: "},{"italic":false,"color":"green","text":"ON"}],"text":""}'
-      custom-model-data: 1000035
-      enchants:
-        DURABILITY: 3
-      PublicBukkitValues:
-        goditems:code_name: ice_book
-  slot_8:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: EMERALD_BLOCK
-    amount: 25
+    type: IRON_INGOT
+    amount: 15
   slot_7:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: COOKED_BEEF
-    amount: 39
+    amount: 33
   slot_14:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: LAPIS_LAZULI
-    amount: 11
+    type: OBSIDIAN
+    amount: 5
   slot_15:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: NETHER_STAR
-    amount: 2
+    type: ARROW
+    amount: 57
   slot_16:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: ARROW
-    amount: 23
+    type: GHAST_TEAR
+    amount: 41
   slot_9:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: DIAMOND
-    amount: 2
+    type: FLINT_AND_STEEL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      lore:
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"1
+        "},{"italic":false,"color":"gray","text":"x "},{"italic":false,"color":"yellow","text":"Iron
+        Ingot"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"1
+        "},{"italic":false,"color":"gray","text":"x "},{"italic":false,"color":"yellow","text":"Flint"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"="}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Flint
+        and Steel"}],"text":""}'
+      Damage: 1
   slot_10:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: EMERALD
+    type: ENCHANTED_GOLDEN_APPLE
   slot_17:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
@@ -434,26 +416,26 @@ contents:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: STICK
-    amount: 18
+    amount: 32
   slot_19:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: CHEST
-    amount: 32
+    amount: 64
   slot_12:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: ENCHANTED_GOLDEN_APPLE
+    type: LAPIS_LAZULI
+    amount: 20
   slot_13:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: IRON_INGOT
-    amount: 17
+    type: NETHER_STAR
   slot_20:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: BOOK
-    amount: 35
+    type: CHEST
+    amount: 23
   slot_3:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
@@ -478,7 +460,7 @@ contents:
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"14.2%
         Mining Speed"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
-        1664/1666"}],"text":""}'
+        1651/1666"}],"text":""}'
       enchants:
         DIG_SPEED: 4
         ARROW_FIRE: 1
@@ -502,14 +484,14 @@ contents:
           operation: 0
       ItemFlags:
       - HIDE_ATTRIBUTES
-      Damage: 1
+      Damage: 14
       PublicBukkitValues:
         enchantmentsolution:smeltery: Smeltery
         valhallammo:actual_stats: GENERIC_ATTACK_DAMAGE:4.635135:ADD_NUMBER:false;DIG_SPEED:0.141892:ADD_NUMBER:false;MINING_SPEED:8.0:ADD_NUMBER:true;GENERIC_ATTACK_SPEED:1.113514:ADD_NUMBER:false
         valhallammo:quality_smithing: 220i
         valhallammo:default_stats: GENERIC_ATTACK_DAMAGE:5.5:ADD_NUMBER:false;MINING_SPEED:8.0:ADD_NUMBER:true;DIG_SPEED:0.0:ADD_NUMBER:false;GENERIC_ATTACK_SPEED:1.0:ADD_NUMBER:false
         enchantssquared:es_enchantments: 5:1;41:2
-        valhallammo:durability: 1664i
+        valhallammo:durability: 1651i
         valhallammo:smithing_treatments: 1:1,2:1,8:3
         valhallammo:max_durability: 1666i
         valhallammo:temporary_type_storage: DIAMOND_SHOVEL
@@ -519,40 +501,84 @@ contents:
   slot_21:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: BUCKET
+    type: OAK_LOG
+    amount: 6
   slot_22:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: CHARCOAL
-    amount: 8
+    type: POLISHED_ANDESITE
+    amount: 19
   slot_23:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: COAL
-    amount: 64
+    type: COBBLESTONE
+    amount: 52
   slot_24:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: BROWN_DYE
+    type: NETHERRACK
+    amount: 12
+  slot_25:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BOOK
+    amount: 64
+  slot_26:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: BUCKET
+  slot_4:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: DIAMOND_PICKAXE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00C2C6","text":"Diamond
-        Backpack"}],"text":""}'
       lore:
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"3392x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Deepslate
-        Bricks"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"2x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Cobbled
-        Deepslate"}],"text":""}'
-      custom-model-data: 800003
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Untempered"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Blunt"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Upgrades:
+        3"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Flawless"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"4.14
+        Attack Damage"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"1.31
+        Attack Speed"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"14.2%
+        Mining Speed"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Durability:
+        1664/1666"}],"text":""}'
+      enchants:
+        DIG_SPEED: 4
+        MENDING: 1
+      attribute-modifiers:
+        GENERIC_ATTACK_DAMAGE:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 3.135135
+          name: generic.attack_damage
+          slot: HAND
+          uuid: ba0f44a7-064e-4c35-b8f3-5928132f7637
+          operation: 0
+        GENERIC_ATTACK_SPEED:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: -2.686486
+          name: generic.attack_speed
+          slot: HAND
+          uuid: 05d9ecc2-6748-4811-a401-1eb3b5a8b379
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      Damage: 1
       PublicBukkitValues:
-        backpackplus:backpackuuid: ab19ec8e-4dda-4705-8c87-d193431f29b8
-        backpackplus:backpackused: 1i
-        backpackplus:database: SQLITE
-        backpackplus:backpacktier: 3i
-  slot_25:
+        valhallammo:actual_stats: GENERIC_ATTACK_DAMAGE:4.135135:ADD_NUMBER:false;MINING_SPEED:8.0:ADD_NUMBER:true;DIG_SPEED:0.141892:ADD_NUMBER:false;GENERIC_ATTACK_SPEED:1.313514:ADD_NUMBER:false
+        valhallammo:quality_smithing: 220i
+        valhallammo:default_stats: GENERIC_ATTACK_DAMAGE:5.0:ADD_NUMBER:false;MINING_SPEED:8.0:ADD_NUMBER:true;DIG_SPEED:0.0:ADD_NUMBER:false;GENERIC_ATTACK_SPEED:1.2:ADD_NUMBER:false
+        valhallammo:durability: 1664i
+        valhallammo:smithing_treatments: 1:1,2:1,8:3
+        valhallammo:max_durability: 1666i
+        valhallammo:neutral_quality: 140i
+        valhallammo:item_flags: DISPLAY_ATTRIBUTES
+  slot_5:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
     type: BROWN_DYE
@@ -565,7 +591,7 @@ contents:
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
         "},{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_red","text":"Berzerker
         Axe"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"30x
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"27x
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"light_purple","text":"Unstable
         Diamond"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"239x
@@ -580,12 +606,12 @@ contents:
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Lapis
         Lazuli"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"64x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Cod"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"64x
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"String"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"64x
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Raw
         Gold Block"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"64x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Cod"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"44x
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Blaze
         Rod"}],"text":""}'
@@ -616,14 +642,14 @@ contents:
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"9x
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Charcoal"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"8x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Gold
-        Block"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"8x
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Pumpkin
         Seeds"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"8x
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Raw
         Gold"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"8x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Gold
+        Block"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"6x
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Enchanted
         Golden Apple"}],"text":""}'
@@ -637,76 +663,97 @@ contents:
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Melon
         Seeds"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"2x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Nether
-        Star"}],"text":""}'
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Amethyst
+        Shard"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"2x
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Iron
         Block"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"2x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Amethyst
-        Shard"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Wither
-        Skeleton Skull"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Stone
-        Shovel"}],"text":""}'
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Nether
+        Star"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Shears"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Netherite
-        Upgrade Smithing Template"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Totem
-        Of Undying"}],"text":""}'
-      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Golden
-        Axe"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Fishing
         Rod"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Armor
-        Stand"}],"text":""}'
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Stone
+        Shovel"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Lead"}],"text":""}'
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Golden
+        Axe"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Netherite
+        Upgrade Smithing Template"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Bucket"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Name
         Tag"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Gray
+        Bed"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
         "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Iron
         Pickaxe"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Diamond
-        Pickaxe"}],"text":""}'
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Armor
+        Stand"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Bucket"}],"text":""}'
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Wither
+        Skeleton Skull"}],"text":""}'
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
-        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Gray
-        Bed"}],"text":""}'
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Totem
+        Of Undying"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F9C100","text":"1x
+        "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DADADA","text":"Lead"}],"text":""}'
       custom-model-data: 800003
       PublicBukkitValues:
         backpackplus:backpackuuid: b8a78b9c-d50a-4a7b-9b44-11bedf52f949
         backpackplus:backpackused: 1i
         backpackplus:database: SQLITE
         backpackplus:backpacktier: 3i
-  slot_26:
-    ==: org.bukkit.inventory.ItemStack
-    v: 3465
-    type: LEATHER
-    amount: 22
   slot_27:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: RAW_GOLD
-    amount: 24
+    type: CHARCOAL
+    amount: 8
   slot_28:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: RAW_IRON
-    amount: 4
+    type: BROWN_DYE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00C2C6","text":"Diamond
+        Backpack"}],"text":""}'
+      custom-model-data: 800003
+      PublicBukkitValues:
+        backpackplus:backpackuuid: ab19ec8e-4dda-4705-8c87-d193431f29b8
+        backpackplus:backpackused: 1i
+        backpackplus:database: SQLITE
+        backpackplus:backpacktier: 3i
   slot_29:
     ==: org.bukkit.inventory.ItemStack
     v: 3465
-    type: SOUL_SAND
+    type: NETHERITE_SCRAP
     amount: 21
+  slot_30:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: RAW_GOLD
+    amount: 48
+  slot_31:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: WATER_BUCKET
+  slot_32:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: GLASS
+    amount: 64
+  slot_33:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3465
+    type: GLASS
+    amount: 18

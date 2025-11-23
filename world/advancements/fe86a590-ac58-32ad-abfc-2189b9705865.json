@@ -7261,83 +7261,95 @@
     },
     "done": false
   },
-  "vanilla_refresh:player/hurt": {
-    "criteria": {
-      "requirement": "2025-10-21 22:37:07 +0000"
-    },
-    "done": true
-  },
   "incendium:technical/sentrys_wrath": {
     "criteria": {
-      "log_spam_fixer": "2025-10-29 04:18:12 +0000"
+      "log_spam_fixer": "2025-11-02 06:12:44 +0000"
     },
     "done": false
   },
   "incendium:technical/inventory/sentrys_wrath": {
     "criteria": {
-      "log_spam_fixer": "2025-10-29 04:18:12 +0000"
+      "log_spam_fixer": "2025-11-02 06:12:44 +0000"
     },
     "done": false
   },
   "incendium:technical/feed_ghastling": {
     "criteria": {
-      "log_spam_fixer": "2025-10-29 04:18:12 +0000"
+      "log_spam_fixer": "2025-11-02 06:12:44 +0000"
     },
     "done": false
   },
   "incendium:technical/on_player_hurt": {
     "criteria": {
-      "log_spam_fixer": "2025-10-29 04:18:12 +0000"
+      "log_spam_fixer": "2025-11-02 06:12:44 +0000"
     },
     "done": false
   },
   "incendium:technical/firestorm": {
     "criteria": {
-      "log_spam_fixer": "2025-10-29 04:18:12 +0000"
+      "log_spam_fixer": "2025-11-02 06:12:44 +0000"
     },
     "done": false
   },
   "incendium:technical/inventory/firestorm": {
     "criteria": {
-      "log_spam_fixer": "2025-10-29 04:18:12 +0000"
+      "log_spam_fixer": "2025-11-02 06:12:44 +0000"
     },
     "done": false
   },
   "incendium:technical/give_ghastling": {
     "criteria": {
-      "log_spam_fixer": "2025-10-29 04:18:12 +0000"
+      "log_spam_fixer": "2025-11-02 06:12:44 +0000"
     },
     "done": false
   },
   "incendium:technical/on_kill": {
     "criteria": {
-      "log_spam_fixer": "2025-10-29 04:18:12 +0000"
+      "log_spam_fixer": "2025-11-02 06:12:44 +0000"
     },
     "done": false
   },
   "incendium:technical/multiplex_crossbow": {
     "criteria": {
-      "log_spam_fixer": "2025-10-29 04:18:12 +0000"
+      "log_spam_fixer": "2025-11-02 06:12:44 +0000"
     },
     "done": false
   },
   "incendium:technical/on_inventory_change": {
     "criteria": {
-      "log_spam_fixer": "2025-10-29 04:18:12 +0000"
+      "log_spam_fixer": "2025-11-02 06:12:44 +0000"
     },
     "done": false
   },
   "incendium:technical/holy_wrath": {
     "criteria": {
-      "log_spam_fixer": "2025-10-29 04:18:12 +0000"
+      "log_spam_fixer": "2025-11-02 06:12:44 +0000"
     },
     "done": false
   },
   "incendium:technical/on_block": {
     "criteria": {
-      "log_spam_fixer": "2025-10-29 04:18:12 +0000"
+      "log_spam_fixer": "2025-11-02 06:12:44 +0000"
     },
     "done": false
+  },
+  "vanilla_refresh:player/hurt": {
+    "criteria": {
+      "requirement": "2025-11-02 06:06:32 +0000"
+    },
+    "done": true
+  },
+  "vanilla_refresh:has/ladder": {
+    "criteria": {
+      "requirement": "2025-11-02 05:42:38 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/return_to_sender": {
+    "criteria": {
+      "killed_ghast": "2025-11-02 06:02:47 +0000"
+    },
+    "done": true
   },
   "DataVersion": 3465
 }
